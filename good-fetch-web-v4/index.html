@@ -42,15 +42,14 @@ nav{display:flex;align-items:center;gap:26px;font-size:15px} nav a.active{border
 .main{padding-right:30px;border-right:1px solid var(--line)} .side{padding-left:26px}
 .hero{display:flex;justify-content:flex-end;align-items:center;padding:34px 0 26px;min-height:250px}
 .hero-visual{display:grid;grid-template-columns:minmax(160px,240px) minmax(0,1fr);align-items:center;gap:18px;width:100%;max-width:720px}
-.riva-hero{width:100%;max-width:240px;justify-self:end;mix-blend-mode:multiply}
+.riva-hero{display:block;width:100%;max-width:240px;justify-self:end;mix-blend-mode:multiply} .riva-hero img{display:block;width:100%;height:auto}
 .riva-note{font-family:"Bradley Hand","Segoe Print","Comic Sans MS",cursive;font-size:17px;line-height:1.45;font-style:italic;transform:rotate(-2deg);transform-origin:left center;margin:0;color:#171717;white-space:pre-line}
 .section-title{display:flex;justify-content:space-between;align-items:end;border-top:1px solid var(--line);padding-top:22px;margin-top:18px} .section-title h2{font-size:25px;margin:0;letter-spacing:-.03em} .count{font-size:12px;color:var(--muted)}
 .story{display:grid;grid-template-columns:48px 210px minmax(0,1fr);gap:18px;padding:24px 0;border-bottom:1px solid var(--line)} .num{font-size:52px;font-weight:900;line-height:1} .thumb{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:5px;background:#ddd} .kicker{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 8px} .story h3{font-size:24px;line-height:1.02;letter-spacing:-.035em;margin:0 0 8px} .summary{font-size:16px;line-height:1.35;color:#3f3f3c;margin:0 0 12px} .why{background:var(--soft);border-radius:8px;padding:11px 12px;font-size:14px;line-height:1.35} .why b{display:block;margin-bottom:3px} .source{display:inline-block;margin-top:10px;font-size:12px;font-weight:700}
 .intro-card{margin-top:26px;background:var(--soft);border-radius:14px;padding:24px} .intro-card h3{font-family:Georgia,serif;font-size:26px;font-weight:500;margin:0 0 14px} .intro-card p{font-size:17px;line-height:1.45;margin:0}
 .archive{margin-top:24px;padding-top:24px;border-top:1px solid var(--line)} .archive h3{font-size:26px;margin:0 0 14px} .archive button{display:block;width:100%;text-align:left;border:0;background:transparent;padding:10px 12px;border-radius:8px;cursor:pointer} .archive button.active{background:var(--soft)} .archive .view{font-weight:700;margin-top:6px}
 .about-card{margin-top:34px;padding:20px 0 34px;border-top:1px solid var(--line);font-size:13px;line-height:1.5;color:var(--muted)}
-footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 20px;padding:24px 0 40px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
-.footer-credit{flex:1 0 100%;margin:4px 0 0;font-size:12px;line-height:1.4;color:var(--muted)}
+footer{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px 20px;padding:24px 0 40px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
 .masthead{border-top:1px solid var(--line);padding-top:22px;margin-top:18px}
 .masthead h2{font-size:25px;margin:0;letter-spacing:-.03em;line-height:1.15}
 .masthead p{margin:8px 0 0;font-size:15px;color:var(--muted)}
@@ -80,7 +79,7 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 20px;pa
 <div class="grid" id="top">
 <main class="main">
   <section class="hero">
-    <div class="hero-visual"><img class="riva-hero" src="riva-newspaper-clean.png" alt="Riva holding the Good Fetch newspaper"/><p class="riva-note" data-i18n="rivaNote">Hi, I’m Riva. I fetch your daily news,
+    <div class="hero-visual"><picture class="riva-hero"><source srcset="riva-good-fetch.webp" type="image/webp"><img src="riva-good-fetch.png" alt="Riva, a cream Cavapoo, holding a rolled newspaper that reads Good Fetch, I fetched this for you."></picture><p class="riva-note" data-i18n="rivaNote">Hi, I’m Riva. I fetch your daily news,
 with my human and an AI agent helping out.
 I make mistakes sometimes. I’m a dog, after all.
 Come back tomorrow.</p></div>
@@ -99,7 +98,7 @@ Come back tomorrow.</p></div>
   </section>
 </aside>
 </div>
-<footer><span>Good Fetch · 2026</span><span data-i18n="footer">Fetched with Riva.</span><p class="footer-credit" data-i18n="credit">Made by Riva &amp; Cassie’s AI agent.</p></footer>
+<footer><span>Good Fetch · 2026</span><span data-i18n="footer">Fetched by Riva &amp; Cassie’s AI agent.</span></footer>
 </div>
 <script>
 const ui = {
@@ -112,8 +111,7 @@ const ui = {
     rivaNote: "Hi, I’m Riva. I fetch your daily news,\nwith my human and an AI agent helping out.\nI make mistakes sometimes. I’m a dog, after all.\nCome back tomorrow.",
     archive: 'Archive',
     viewAll: 'View all →',
-    footer: 'Fetched with Riva.',
-    credit: 'Made by Riva & Cassie’s AI agent.',
+    footer: 'Fetched by Riva & Cassie’s AI agent.',
     loading: "Loading today's edition…",
     loadError: "Today's edition couldn't be loaded. Please refresh in a moment.",
     missingEdition: "This edition isn't available yet.",
@@ -130,8 +128,7 @@ const ui = {
     rivaNote: 'Hi，我是 Riva。我负责你每天的新闻，\n我的人类和一个 AI 智能体给我打下手。\n偶尔也会出错，毕竟我只是一只狗。\n明天记得再来。',
     archive: '往期',
     viewAll: '查看全部 →',
-    footer: 'Riva 帮你叼来的。',
-    credit: '由 Riva 和 Cassie 的 AI 智能体制作。',
+    footer: '由 Riva 和 Cassie 的 AI 智能体为你精心制作。',
     loading: '正在加载今天的内容…',
     loadError: '今天的内容暂时没加载出来，请稍后再刷新。',
     missingEdition: '这一期还没有发布。',
