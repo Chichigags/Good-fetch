@@ -37,7 +37,7 @@ You do not put that header in the JSON. `2026-10-19` is shown as `October 19, 20
 
 Under the header, the page shows every story in `stories` (usually 1–3, sometimes more — there is no fixed count). Then one regional block, labelled exactly `SINGAPORE` or `SOUTHEAST ASIA`. Then, only if you include it, a closing recommendation labelled exactly `Worth a look`.
 
-There is no "Why it matters" field and no "summary" field. A story is a headline, optional opening paragraphs, any number of question sections, an optional `myTake`, and source links.
+There is no "Why it matters" field and no "summary" field. A story is a headline, optional opening paragraphs, any number of question sections, an optional `myTake`, an optional `details` block, and source links.
 
 ## Edition schema
 
@@ -89,6 +89,10 @@ There is no "Why it matters" field and no "summary" field. A story is a headline
     }
   ],
   "myTake": "Optional. Your own read, in a sentence or two.",
+  "details": [
+    "Optional extra paragraph, hidden until the reader opens More details.",
+    "Another short line, if you need it."
+  ],
   "sources": [
     { "name": "Reuters", "url": "https://www.reuters.com/..." }
   ],
@@ -105,6 +109,7 @@ There is no "Why it matters" field and no "summary" field. A story is a headline
 | `sections[].heading` | with a section | A question, such as `What's changing?` or `Who pays?`. |
 | `sections[].paragraphs` | with a section | A list of one or more paragraphs. Not a single summary line. |
 | `myTake` | no | Shown in the soft box. The label on the page is **Riva's Take** (中文: **Riva 的看法**), with **Analysis** underneath. The JSON field stays `myTake`. Omit it to leave the box out. This is not a "Why it matters" field. |
+| `details` | no | Extra paragraphs or short lines, hidden until the reader opens **More details** (中文: **更多细节**). The control starts closed. It sits after the question sections and Riva's Take, and before the source links. Omit the field, or use `[]`, and the story renders as before. A single string is also accepted. Each string is shown as body text, the same way opening paragraphs are. |
 | `sources` | yes | 1 or 2 links. Each has `name` (the publication) and `url` (full `https://` address). The page prints the name. |
 | `image` | no | Filename relative to `index.html`, such as `boat.png`. Omit it and the story is text only. |
 | `imageAlt` | no | Alt text for the picture. |
@@ -114,12 +119,13 @@ Lengths vary. A short story can be a headline, one opening paragraph, a `myTake`
 
 ### Optional Chinese
 
-The EN / 中文 switch translates the site chrome (the tagline, "Riva's Take", "Daily News Briefing", the archive labels). Story text stays in English unless you add a `Zh` twin:
+The EN / 中文 switch translates the site chrome (the tagline, "Riva's Take", "More details", "Daily News Briefing", the archive labels). Story text stays in English unless you add a `Zh` twin:
 
 - `headlineZh`
 - `openingZh` (same shape as `opening`)
 - `sections[].headingZh` and `sections[].paragraphsZh`
 - `myTakeZh`
+- `detailsZh` (same shape as `details`)
 - `recommendation.titleZh` and `recommendation.textZh`
 
 Omit any of these and that part stays in English. Do not translate `region.label`. It stays `SINGAPORE` or `SOUTHEAST ASIA`.
