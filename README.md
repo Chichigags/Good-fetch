@@ -29,11 +29,11 @@ Leave the `placeholder: true` dates already in `index.json` (Sep 6–9, 2026). T
 From `date`, the page draws the edition header itself:
 
 ```text
-GOOD FETCH | Sep 10, 2026
+GOOD FETCH | October 19, 2026
 Daily News Briefing
 ```
 
-You do not put that header in the JSON. `2026-09-10` is shown as `Sep 10, 2026`.
+You do not put that header in the JSON. `2026-10-19` is shown as `October 19, 2026`.
 
 Under the header, the page shows every story in `stories` (usually 1–3, sometimes more — there is no fixed count). Then one regional block, labelled exactly `SINGAPORE` or `SOUTHEAST ASIA`. Then, only if you include it, a closing recommendation labelled exactly `Worth Following` or `Worth Trying`.
 
@@ -108,6 +108,7 @@ There is no "Why it matters" field and no "summary" field. A story is a headline
 | `sources` | yes | 1 or 2 links. Each has `name` (the publication) and `url` (full `https://` address). The page prints the name. |
 | `image` | no | Filename relative to `index.html`, such as `boat.png`. Omit it and the story is text only. |
 | `imageAlt` | no | Alt text for the picture. |
+| `category` | no | Small label above the headline, such as `Business`. Omit it if the story has none. |
 
 Lengths vary. A short story can be a headline, one opening paragraph, My Take, and one source. A longer story can have several opening paragraphs and several question sections. Do not pad a story to a fixed length, and do not add empty sections.
 
@@ -205,7 +206,9 @@ This is a shape example, not a story to publish. Replace every sentence before y
 
 `region.label` may be `SINGAPORE` instead of `SOUTHEAST ASIA`. `recommendation.label` may be `Worth Following` instead of `Worth Trying`. Use only those spellings.
 
-The edition currently on the site is `good-fetch-web-v4/news/latest.json` (10 September 2026).
+The edition on the homepage is `good-fetch-web-v4/news/latest.json`, dated 19 October 2026. The same file is saved as `good-fetch-web-v4/news/2026-10-19.json`. The previous briefing stays available at `good-fetch-web-v4/news/2026-09-10.json`.
+
+If a draft uses `intro` instead of `opening`, `question` instead of `heading`, or `url` instead of `link` on the recommendation, the page still reads it. Save files with the names in the schema above: `opening`, `heading`, and `link`. A My Take is shown in the soft box labelled **My Take**, with the word **Analysis** under that label, so it reads as analysis rather than another news paragraph. Do not start the `myTake` text with "My Take:".
 
 ## Archive file
 

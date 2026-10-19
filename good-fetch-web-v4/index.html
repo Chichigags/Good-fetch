@@ -54,8 +54,10 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:24px 0 40px;b
 .masthead h2{font-size:25px;margin:0;letter-spacing:-.03em;line-height:1.15}
 .masthead p{margin:8px 0 0;font-size:15px;color:var(--muted)}
 .subhead{font-size:16px;line-height:1.3;letter-spacing:-.02em;margin:16px 0 6px}
-.sources{display:flex;flex-wrap:wrap;gap:4px 16px;margin-top:10px}
-.sources .source{margin-top:0}
+.sources{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin-top:10px}
+.sources .source{margin-top:0;max-width:100%;line-height:1.35}
+.why .take-kind{display:block;margin:0 0 6px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.story h3{line-height:1.2}
 .story.no-thumb{grid-template-columns:48px minmax(0,1fr)}
 .intro-card .rec-label{margin:0 0 8px;font-size:12px;font-weight:700;letter-spacing:.04em;line-height:1.3;color:var(--muted)}
 .load-note{margin:22px 0 36px;padding:16px 18px;background:var(--soft);border-radius:12px;color:#3f3f3c;font-size:15px;line-height:1.45}
@@ -104,6 +106,7 @@ const ui = {
     about: 'About',
     briefing: 'Daily News Briefing',
     myTake: 'My Take',
+    analysis: 'Analysis',
     rivaNote: "Hi, I'm Riva. I fetched the news, so you have something to say at dinner.",
     archive: 'Archive',
     viewAll: 'View all →',
@@ -121,6 +124,7 @@ const ui = {
     about: '关于',
     briefing: '每日新闻简报',
     myTake: '我的看法',
+    analysis: '分析',
     rivaNote: 'Hi，我是 Riva。新闻我帮你挑好了，让你吃饭聊天时有点东西可说。',
     archive: '往期',
     viewAll: '查看全部 →',
@@ -135,6 +139,7 @@ const ui = {
 };
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const MONTHS_LONG = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 let lang = 'en';
 let editions = [];
 let archiveFailed = false;
@@ -156,8 +161,16 @@ function formatDate(iso) {
   return month + ' ' + Number(match[3]) + ', ' + match[1];
 }
 
+function formatLongDate(iso) {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || '');
+  if (!match) return '';
+  const month = MONTHS_LONG[Number(match[2]) - 1];
+  if (!month) return '';
+  return month + ' ' + Number(match[3]) + ', ' + match[1];
+}
+
 function editionHeader(date) {
-  const label = formatDate(date);
+  const label = formatLongDate(date);
   return label ? 'GOOD FETCH | ' + label : 'GOOD FETCH';
 }
 
@@ -192,6 +205,26 @@ function localizedParagraphs(obj, key) {
   return paragraphList(obj[key]);
 }
 
+function firstString(obj, keys) {
+  for (const key of keys) {
+    const value = localizedString(obj, key);
+    if (value) return value;
+  }
+  return '';
+}
+
+function firstParagraphs(obj, keys) {
+  for (const key of keys) {
+    const value = localizedParagraphs(obj, key);
+    if (value.length) return value;
+  }
+  return [];
+}
+
+function takeBody(text) {
+  return text.replace(/^My Take:\s*/, '').replace(/^我的看法[:：]\s*/, '');
+}
+
 function safeUrl(url) {
   if (typeof url !== 'string' || !url.trim()) return '';
   try {
@@ -223,12 +256,13 @@ function paragraph(text) {
 function renderStory(parent, item, number) {
   if (!item || typeof item !== 'object') return false;
   const headline = localizedString(item, 'headline');
-  const opening = localizedParagraphs(item, 'opening');
+  const category = localizedString(item, 'category');
+  const opening = firstParagraphs(item, ['opening', 'intro']);
   const sections = Array.isArray(item.sections) ? item.sections : [];
-  const myTake = localizedString(item, 'myTake');
+  const myTake = takeBody(localizedString(item, 'myTake'));
   const sectionBlocks = sections.filter(section => {
     if (!section || typeof section !== 'object') return false;
-    return localizedString(section, 'heading') || localizedParagraphs(section, 'paragraphs').length;
+    return firstString(section, ['heading', 'question']) || localizedParagraphs(section, 'paragraphs').length;
   });
   if (!headline && !opening.length && !sectionBlocks.length && !myTake) return false;
 
@@ -242,6 +276,12 @@ function renderStory(parent, item, number) {
 
   const copy = document.createElement('div');
   copy.className = 'story-copy';
+  if (category) {
+    const kicker = document.createElement('p');
+    kicker.className = 'kicker';
+    kicker.textContent = category;
+    copy.append(kicker);
+  }
   if (headline) {
     const h3 = document.createElement('h3');
     h3.textContent = headline;
@@ -249,7 +289,7 @@ function renderStory(parent, item, number) {
   }
   opening.forEach(text => copy.append(paragraph(text)));
   sectionBlocks.forEach(section => {
-    const heading = localizedString(section, 'heading');
+    const heading = firstString(section, ['heading', 'question']);
     const paras = localizedParagraphs(section, 'paragraphs');
     if (heading) {
       const h4 = document.createElement('h4');
@@ -264,9 +304,12 @@ function renderStory(parent, item, number) {
     why.className = 'why';
     const label = document.createElement('b');
     label.textContent = ui[lang].myTake;
+    const kind = document.createElement('span');
+    kind.className = 'take-kind';
+    kind.textContent = ui[lang].analysis;
     const span = document.createElement('span');
     span.textContent = myTake;
-    why.append(label, span);
+    why.append(label, kind, span);
     copy.append(why);
   }
   const links = sourceList(item.sources);
@@ -348,7 +391,7 @@ function renderRecommendation(parent, rec) {
 function renderEdition(edition) {
   currentEdition = edition;
   messageKey = '';
-  const label = formatDate(edition.date);
+  const label = formatLongDate(edition.date);
   document.title = label ? 'Good Fetch | ' + label : 'Good Fetch';
   const root = document.getElementById('stories');
   root.replaceChildren();
