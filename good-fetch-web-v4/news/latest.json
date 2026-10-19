@@ -3,46 +3,47 @@
   "stories": [
     {
       "category": "Business",
-      "headline": "An AI cloud company's debt troubles are dragging down Asia's chip stocks",
+      "headline": "AI funding worries spread; Korean chip stocks under pressure",
+      "headlineZh": "AI融资忧虑蔓延，韩国芯片股承压",
       "opening": [
-        "South Korea's stock market fell more than 3% when it opened on Monday, then bargain hunters trimmed the loss. Chipmakers such as SK Hynix led the drop. Last week was the market's worst in 18 years, according to Reuters.",
-        "The trouble started in the US, at a company called CoreWeave. It borrows heavily to build data centres, then rents out the computing power to AI firms."
+        "South Korea's stock market fell more than 3% early on Monday before bargain hunters cut the losses, Reuters reported. Chipmaker SK Hynix was still down more than 3% mid-morning. Last week was the market's worst in 18 years, as chip stocks slumped on worries about whether AI spending can last.",
+        "One company at the centre of the wider AI scare, Reuters says, is CoreWeave. The US firm borrows heavily to build data centres, then rents out the computing power to AI companies."
+      ],
+      "openingZh": [
+        "据路透社报道，韩国股市周一早盘一度跌超3%，随后抄底资金让跌幅收窄。芯片股SK海力士到上午仍跌超3%。上周是韩国股市18年来最差的一周，市场担心AI投资能否持续，芯片股大跌。",
+        "据路透社报道，这轮更大范围的AI恐慌，焦点之一是CoreWeave。这家美国公司靠大量借钱建数据中心，再把算力租给AI公司。"
       ],
       "sections": [
         {
           "heading": "Why are investors nervous about CoreWeave?",
+          "headingZh": "投资者为什么担心CoreWeave？",
           "paragraphs": [
-            "CoreWeave has never made a profit, and it carries around $50 billion of debt, according to Reuters. A data centre only earns money once customers start paying rent, so until then CoreWeave keeps borrowing. Reuters says the selling began after big cloud companies hinted at delays to data-centre projects.",
-            "The yield on some of its bonds has jumped to near 16%. Put simply, lenders now want about 16% a year to keep lending, which shows how worried they are about getting paid back."
+            "CoreWeave has never made a profit, according to LSEG data cited by Reuters, and it carries about $50 billion of debt. Data centres bring in little money until customers' leases start, so the cash has to be found up front. Reuters says the slump in its shares and bonds came after big cloud companies hinted at delays to data-centre projects.",
+            "Some of CoreWeave's already-issued bonds, due in 2030, now trade at a market yield near 16%. That isn't the rate CoreWeave pays on them. It means investors buying the bonds now want a much higher return for the risk, which could also make future borrowing harder."
           ],
-          "headingZh": "投资者为什么对CoreWeave这么紧张？",
           "paragraphsZh": [
-            "据路透社报道，CoreWeave从来没赚过钱，背着约500亿美元的债。数据中心要等客户开始付租金才有收入，在那之前，CoreWeave只能继续借钱。路透社说，这轮抛售是在几家大型云公司暗示数据中心项目延期之后开始的。",
-            "它部分债券的收益率已经跳到接近16%。说白了，就是借钱给它的人现在要求每年约16%的回报才肯继续借，可见他们有多担心钱收不回来。"
+            "据路透社援引LSEG数据，CoreWeave从未盈利，背着约500亿美元的债务。数据中心要等客户的租约开始才有像样的收入，所以钱得先垫进去。路透社说，它的股价和债券是在几家大型云公司暗示数据中心项目延期之后大跌的。",
+            "CoreWeave一部分已发行、2030年到期的债券，现在在二级市场上的收益率接近16%。这不是CoreWeave实际要付的利率，而是说明现在买这些债券的投资者，要求拿到高得多的回报才愿意承担风险，这也可能让它以后融资更难。"
           ]
         },
         {
-          "heading": "Why is Korea feeling it?",
+          "heading": "What's behind Monday's fall in Seoul?",
+          "headingZh": "周一首尔股市下跌，原因是什么？",
           "paragraphs": [
-            "Korean memory-chip makers sell into the same data-centre boom, and chip stocks make up a big share of Korea's market, analysts told The Asia Business Daily. The fear is that if the money for new data centres dries up, chip orders shrink too.",
-            "Some outlets also blamed the cheap new model DeepSeek released on Saturday. Reuters linked Monday's fall to Friday's slump in US tech stocks instead. Nobody has shown which mattered more."
+            "Reuters tied it to Friday's slump in US tech stocks, which included CoreWeave. Some other outlets linked the fall to the cheap new model DeepSeek released on Saturday instead. Nobody has shown which mattered more."
           ],
-          "headingZh": "韩国为什么也跟着疼？",
           "paragraphsZh": [
-            "分析师告诉《亚洲经济》，韩国的存储芯片厂商吃的是同一波数据中心热潮，而芯片股在韩国股市里占比很大。大家担心的是：如果建新数据中心的钱没了，芯片订单也会跟着缩水。",
-            "也有媒体把账算到DeepSeek周六发布的廉价新模型头上。但路透社认为，周一的下跌是跟着上周五美国科技股的暴跌来的。到底哪个因素影响更大，目前没人说得清。"
+            "路透社认为，这是跟随上周五美国科技股的下跌，CoreWeave也在下跌之列。也有其他媒体把这次下跌和DeepSeek周六发布的廉价新模型联系起来。到底哪个因素影响更大，目前没人说得清。"
           ]
         },
         {
           "heading": "Is CoreWeave actually in trouble?",
-          "paragraphs": [
-            "Opinions are split. CoreWeave's CEO told staff that markets can \"misunderstand and act irrationally\", and said the company's signed deals more than cover its debt, Reuters reported. Nvidia, a major shareholder, has agreed to buy any computing capacity CoreWeave can't sell for years to come.",
-            "What nobody knows yet is whether its borrowing costs will come down. Korean analysts see Meta's and Tesla's results later this week as the next test of confidence in AI spending."
-          ],
           "headingZh": "CoreWeave真的有麻烦吗？",
+          "paragraphs": [
+            "Opinions are split. Its CEO told staff that markets can \"misunderstand and act irrationally\", and said its deal backlog more than covers its debt, Reuters reported. Nvidia, which backs CoreWeave, has agreed to buy its unsold computing capacity until 2032. Whether investors' worries will ease is still unknown."
+          ],
           "paragraphsZh": [
-            "看法不一。据路透社报道，CoreWeave的CEO对员工说，市场有时会“误解并做出非理性反应”，还说公司已签的合同足以覆盖债务。大股东英伟达已经同意，未来几年会买下CoreWeave卖不掉的算力。",
-            "现在还没人知道的是，它的借钱成本会不会降下来。韩国分析师把本周晚些时候Meta和特斯拉的财报，看作市场对AI投资还有没有信心的下一场考验。"
+            "看法不一。据路透社报道，CoreWeave的CEO对员工说，市场有时会“误解并做出非理性反应”，还说公司已签约的订单储备足以覆盖债务。支持CoreWeave的英伟达已经同意，到2032年前买下它卖不出去的算力。投资者的担忧会不会缓解，目前还不知道。"
           ]
         }
       ],
@@ -52,114 +53,118 @@
           "url": "https://www.investing.com/news/stock-market-news/analysiswhy-coreweave-is-in-the-crosshairs-of-the-ai-scare-4954698"
         },
         {
-          "name": "The Asia Business Daily: AI Fears Hit KOSPI",
-          "url": "https://www.asiae.co.kr/en/article/2026101910121689514"
+          "name": "Reuters (via Business Recorder): South Korean shares start week lower on AI worries",
+          "url": "https://www.brecorder.com/news/40444903"
         }
-      ],
-      "headlineZh": "一家AI云公司的债务麻烦，正在拖累亚洲芯片股",
-      "openingZh": [
-        "韩国股市周一开盘跌了3%以上，随后抄底资金把跌幅收窄了一些。领跌的是SK海力士等芯片股。据路透社报道，上周是韩国股市18年来最惨的一周。",
-        "麻烦的源头在美国，一家叫CoreWeave的公司。它靠大量借钱建数据中心，再把算力租给AI公司。"
       ]
     },
     {
       "category": "China / AI policy",
-      "headline": "China wants licences to export its top AI models, but its chatbots can still travel",
+      "headline": "China now requires registration for some AI tech exports, and proposes licences for its top models",
+      "headlineZh": "中国对部分AI技术出口实行登记，并拟对顶级模型出口设许可",
       "opening": [
-        "On Oct 16, China's commerce and science ministries proposed adding 23 AI technologies to the list of tech that is banned from export or needs permission to leave the country. The rules are only a draft, open for comments until Nov 15. One part already applies: companies must register covered exports before they go ahead."
+        "On Oct 16, China's commerce and science ministries did two things. They started a temporary registration rule that applies now, and they published a draft list of AI, biotech and solar technologies that would be banned from export or need a licence. Comments on the draft are open until Nov 15."
+      ],
+      "openingZh": [
+        "10月16日，中国商务部和科技部做了两件事：一是立即实行一项临时登记规定；二是公布一份征求意见稿，拟将部分人工智能、生物医药和光伏技术列为禁止出口或需许可才能出口的技术。征求意见截至11月15日。"
       ],
       "sections": [
         {
-          "heading": "Which AI would be covered?",
+          "heading": "What's in effect now?",
+          "headingZh": "现在已经生效的是什么？",
           "paragraphs": [
-            "Mainly the biggest models. The draft restricts their inner workings, such as weights (the learned numbers that make a model work) and source code. It applies to models that were trained with huge amounts of computing, have at least 2 trillion parameters, or rank in the world's top 10. The outright bans are narrower and cover things like AI that writes malware."
+            "Before exporting any technology on the draft list, companies must register on a commerce ministry platform. The rule runs until the revised list formally takes effect. It covers transferring ownership of the technology abroad, licensing it for use abroad, and a Chinese owner or controller of the technology becoming foreign. Exports that have started but aren't finished are covered too."
           ],
-          "headingZh": "哪些AI会被管？",
           "paragraphsZh": [
-            "主要是最大的那些模型。草案限制的是模型的“内核”，比如权重（让模型能工作的那堆学出来的数字）和源代码。适用对象是训练算力极大、参数量至少2万亿，或者能力排进全球前10的模型。直接禁止出口的范围更窄，比如能写恶意代码的AI。"
+            "企业在出口征求意见稿所列技术之前，必须先在商务部的平台上登记，一直到修订后的目录正式实施为止。需要登记的情形包括：向境外转让技术所有权、授权境外使用，以及技术的所有权人或实际控制人变更为境外主体。已经开始但尚未完成的出口，也在登记范围内。"
           ]
         },
         {
-          "heading": "Can people outside China still use Chinese AI?",
+          "heading": "What's proposed?",
+          "headingZh": "征求意见稿提出了什么？",
           "paragraphs": [
-            "Mostly, yes, according to the ministry. Offering a model through an app, a website or an API (the connection other software uses to call it) doesn't count as an export. Installing a restricted model on servers abroad would count.",
-            "Work that is already public as open source isn't covered. New open-source releases would get fast-track approval, which the ministry calls \"report and go\"."
+            "The draft adds 23 AI technologies. It would restrict the core technology of large models, such as weights (the learned numbers that make a model work) and source code. That applies if a model involves computation of at least 10^26 operations, has at least 2 trillion parameters, or reaches a \"globally leading\" level. The annex defines \"globally leading\" as ranking in the global top 10, at the time of export, in public evaluations by major Chinese and foreign testing bodies and large industry platforms. Those evaluations cover overall performance, specialised abilities, global usage, safety and training efficiency. Some AI technologies would be banned outright, such as AI-driven generation of malicious code.",
+            "The ministry also proposes carve-outs. Technology already public through open source or academic papers is proposed to be excluded. After the rules take effect, offering a restricted model through an API (the connection other software uses to call it), an app, a website or SaaS wouldn't count as an export, but installing it on servers abroad would. Under the proposal, open-sourcing AI technology would qualify for automatic licensing, one of the proposed convenience measures, which the ministry says would basically mean \"report and go\" (即报即出)."
           ],
-          "headingZh": "中国以外的人还能用中国的AI吗？",
           "paragraphsZh": [
-            "据商务部的说法，基本可以。通过App、网站或API（其他软件调用模型的接口）对外提供模型服务，不算技术出口。但把限制类模型装到海外服务器上，就算了。",
-            "已经开源公开的技术不在管理范围内。新的开源发布可以走快速通道，商务部的说法是基本实现“即报即出”。"
+            "征求意见稿拟新增23项人工智能技术。对于大模型，拟限制出口的是其核心技术，比如权重（让模型能工作的那堆学出来的数字）和源代码。适用条件是满足以下任一项：计算量≥10^26次浮点运算、参数量≥2万亿，或者能力达到“全球领先水平”。附件对“全球领先水平”的定义是：出口活动发生时，在国内外主流测评机构、大规模产业平台等针对综合性能、专项业务能力、全球调用量、安全性能、训练效率等的公开评估中，排名全球前10。还有一些人工智能技术拟直接禁止出口，比如人工智能驱动的恶意代码生成技术。",
+            "商务部还提出了一些例外和便利。已通过开源、发表学术论文等方式进入公共领域的技术，拟不纳入出口管理范围。措施正式实施后，用限制类大模型对外提供API调用（其他软件调用模型的接口）、App或网页交互、SaaS应用，不属于技术出口；但在海外本地化部署则属于。按照征求意见稿，人工智能技术开源拟适用自动许可等便利措施，商务部说基本可以实现“即报即出”。"
           ]
         },
         {
-          "heading": "What don't we know yet?",
-          "paragraphs": [
-            "The rules could change after the consultation. The draft names no models, and the top-10 test shifts whenever the rankings change. It also doesn't explain how registering a new open-source model would work in practice. The ministry says the move doesn't target any country."
-          ],
+          "heading": "What's still unknown?",
           "headingZh": "还有什么不清楚？",
+          "paragraphs": [
+            "The draft could change after the consultation, and it names no models. The top-10 test shifts whenever the rankings change. The documents don't spell out how a new open-source release would be handled under the registration rule in practice. The ministry says the revision doesn't target any country."
+          ],
           "paragraphsZh": [
-            "征求意见之后，规则可能会改。草案没有点名任何模型，而“全球前10”这个标准会随排名变化而变。草案也没说清楚，新开源一个模型实际要怎么登记。商务部表示，此举不针对任何国家。"
+            "征求意见之后，草案可能会改，而且草案没有点名任何模型。“全球前10”这一标准会随排名变化而变。这些文件都没有讲清楚，新发布一个开源模型，在登记规定下实际要怎么处理。商务部表示，此次修订不针对任何国家。"
           ]
         }
       ],
       "sources": [
         {
-          "name": "Ministry of Commerce of China: spokesperson Q&A on the catalogue revision (Chinese)",
-          "url": "https://www.mofcom.gov.cn/zwgk/zcjd/art/2026/art_b11d5c1e9374421e93e85dc87eba6e38.html"
+          "name": "MOFCOM & MOST Announcement No. 48 of 2026 (Chinese)",
+          "url": "https://www.mofcom.gov.cn/zcfb/dwmygl/art/2026/art_61446ab4beee4f63973d4d0ab3097648.html"
         },
         {
-          "name": "TechNode Global: China proposes export controls on 23 AI technologies",
-          "url": "https://technode.global/2026/10/18/china-ai-export-controls-23-technologies/"
+          "name": "Annex 1: draft list of AI, biomedicine and solar technologies (Chinese, .wps download)",
+          "url": "https://www.mofcom.gov.cn/api-gateway/jpaas-web-server/front/document/download?fileUrl=YW5UzzlvCwcM%2FNHHX%2FtT6KYc7i4iYCs13RxyX1cYsF7Mi050tv2zWwJDAqyqUOFf3lPQeAoPgP%2BrmQMGF7Tta7RdRW1C2hni5Ufl7eigFU2aoR9BIV7bpVR%2BwDBnd46wm5m7QVY2Mj%2FXPJaIbSdBzxKM6WqPb1yMuUzPhfLWixM%3D&fileName=1.%E6%8B%9F%E5%88%97%E5%85%A5%E3%80%8A%E4%B8%AD%E5%9B%BD%E7%A6%81%E6%AD%A2%E5%87%BA%E5%8F%A3%E9%99%90%E5%88%B6%E5%87%BA%E5%8F%A3%E6%8A%80%E6%9C%AF%E7%9B%AE%E5%BD%95%E3%80%8B%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E3%80%81%E7%94%9F%E7%89%A9%E5%8C%BB%E8%8D%AF%E3%80%81%E5%85%89%E4%BC%8F%E6%8A%80%E6%9C%AF%E8%8C%83%E5%9B%B4%EF%BC%88%E5%BE%81%E6%B1%82%E6%84%8F%E8%A7%81%E7%A8%BF%EF%BC%89.wps"
+        },
+        {
+          "name": "MOFCOM spokesperson Q&A on the catalogue revision (Chinese)",
+          "url": "https://www.mofcom.gov.cn/zwgk/zcjd/art/2026/art_b11d5c1e9374421e93e85dc87eba6e38.html"
         }
-      ],
-      "headlineZh": "中国拟对顶级AI模型出口设许可，但聊天机器人照样能“出海”",
-      "openingZh": [
-        "10月16日，中国商务部和科技部提议把23项AI技术列入禁止或限制出口的技术目录，限制类出口需要许可。这还只是征求意见稿，意见征集到11月15日。不过有一部分已经生效：企业在出口相关技术之前，必须先登记。"
       ]
     },
     {
       "category": "Work",
-      "headline": "At Anthropic, juniors are getting far fewer of the tech jobs as AI agents take on more work",
+      "headline": "At Anthropic, juniors' share of technical hires fell from 27% to 9%",
+      "headlineZh": "Anthropic初级技术招聘占比从27%降至9%",
       "opening": [
-        "Anthropic, the company behind Claude, has studied its own workforce. It's a rare look inside a company that runs much of its work through AI agents. It's also a company that sells those agents."
+        "Anthropic, the company behind Claude, has studied its own workforce. It's a rare look inside a company that has built its work around AI. It's also a company that sells those agents."
+      ],
+      "openingZh": [
+        "Claude背后的公司Anthropic研究了自己的员工队伍。很少有机会能这样看到一家围绕AI来组织工作的公司内部是什么样子。当然，它本身也是卖这些智能体的公司。"
       ],
       "sections": [
         {
-          "heading": "Who is getting hired less?",
+          "heading": "What changed in hiring?",
+          "headingZh": "招聘发生了什么变化？",
           "paragraphs": [
-            "Juniors. Since early 2025, the share of Anthropic's technical hires who were junior has dropped from 27% to 9%. Overall technical hiring still grew, because the company tripled in size over the past year. Hiring managers now say they look for judgement and independence more than specific technical skills."
+            "The mix shifted. The share of Anthropic's technical hires who were junior fell from 27% to 9%, the report says. That's a share, not a headcount: technical hiring still grew in absolute numbers, and the company tripled in size over the past year. For technical candidates, hiring managers' interview notes now put more weight on judgement and autonomy, and less on domain expertise."
           ],
-          "headingZh": "谁被招得少了？",
           "paragraphsZh": [
-            "新人。从2025年初到现在，Anthropic技术岗招聘里初级员工的占比从27%降到了9%。技术岗总招聘量还是在增长，因为公司规模在过去一年里变成了原来的三倍。招聘经理们现在说，比起具体的技术本领，他们更看重判断力和独立性。"
+            "变化的是结构。报告说，Anthropic技术岗招聘中初级员工的占比从27%降到了9%。这是占比，不是人数：技术岗招聘的绝对人数仍在增长，公司规模在过去一年里变成了原来的三倍。在技术岗候选人的面试评语里，招聘经理现在更看重判断力和自主性，对领域专长的讨论则变少了。"
           ]
         },
         {
           "heading": "Do agents really work six times as many hours as people?",
-          "paragraphs": [
-            "Only in a narrow sense. By August, agents run by staff were logging six times as many hours as the employees, the report says. That compares agents' running time with a 40-hour human week, so it doesn't mean six robot workers per person. The agents also spend about 80% of a session waiting for a human to reply."
-          ],
           "headingZh": "智能体的工作时长真是人的六倍吗？",
+          "paragraphs": [
+            "Only in a narrow sense. By August, agents run by staff were logging six times as many hours as the employees, the report says. That compares agents' running time with a 40-hour human week, so it doesn't mean six robot workers per person. In interactive sessions, agents also spend about 80% of the time waiting for a human."
+          ],
           "paragraphsZh": [
-            "只在很窄的意义上成立。报告说，到8月，员工指挥的智能体累计的工作时长是员工本人的六倍。但这是拿智能体的运行时间去比人每周40小时的工时，并不意味着每个人手下有六个“机器人员工”。而且在一次会话里，智能体大约80%的时间都在等人回复。"
+            "只在很窄的意义上成立。报告说，到8月，员工指挥的智能体累计的工作时长是员工本人的六倍。但这是拿智能体的运行时间去比人每周40小时的工时，并不意味着每个人手下有六个“机器人员工”。而且在交互式会话里，智能体大约80%的时间都在等人。"
           ]
         },
         {
           "heading": "So what are the humans doing?",
+          "headingZh": "那人都在干什么？",
           "paragraphs": [
             "More managing. Engineers are producing much more code, the report says, though it cautions that the people who adopted agents first weren't a random group. Staff also spend more time writing instructions for agents, checking their output and sitting in meetings.",
-            "The same thing is happening in Asia. A marketing manager at a big tech firm in Shanghai told the SCMP that her agent and her boss's agent argued over who owned a task. \"Agents can create communication overhead too,\" she said.",
-            "The figures come from Anthropic's own internal records, so outsiders can't check them. Anthropic admits its efforts to protect staff, such as moving people into new roles, don't fix the slowdown in junior hiring."
+            "An interviewee in Shanghai described a similar problem to the SCMP. SCMP reports that when Xiao Mengjie, an AI product marketing manager at a big tech firm, gave two agents a task, her agent and her supervisor's agent got stuck debating who should own which parts. \"Agents can create communication overhead too,\" she said.",
+            "The figures come from Anthropic's own internal records, so outsiders can't check them. Anthropic admits that none of its efforts to protect staff, such as moving people into new roles, directly addresses the slowdown in junior hiring."
           ],
-          "headingZh": "那人都在干什么？",
           "paragraphsZh": [
             "更多是在管理。报告说，工程师产出的代码多了很多，但也提醒，最早用上智能体的那批人并不是随机挑出来的。员工还花了更多时间给智能体写指令、检查它们的产出，以及开会。",
-            "亚洲也出现了同样的情况。上海一家大型科技公司的市场经理告诉《南华早报》，她的智能体和她上司的智能体为了一项任务归谁吵了起来。“智能体也会制造沟通成本，”她说。",
-            "这些数据来自Anthropic自己的内部记录，外人没法核实。Anthropic也承认，它保护员工的那些做法，比如把人调到新岗位，解决不了初级招聘放缓的问题。"
+            "上海一位受访者也向《南华早报》描述了类似困扰。据《南华早报》报道，在一家大型科技公司做AI产品市场经理的Xiao Mengjie给两个智能体布置任务后，她的智能体和她上司的智能体为谁负责哪部分争论不休。“智能体也会制造沟通成本，”她说。",
+            "这些数据来自Anthropic自己的内部记录，外人没法核实。Anthropic也承认，它保护员工的那些做法，比如把人调到新岗位，都没有直接解决初级招聘放缓的问题。"
           ]
         }
       ],
-      "myTake": "The six-to-one figure will get the headlines, but it measures running time, not output. The number that matters more for people starting out is the fall from 27% to 9% in junior hires. Combined with hiring managers now favouring judgement over execution, it suggests the routine work beginners used to learn on is thinning out first. This is one unusual company with a stake in the story, so treat it as an early signal, not proof.",
+      "myTake": "The six-to-one figure will get the headlines, but it measures running time, not output. The number that matters more for people starting out is the junior share of technical hires falling from 27% to 9%. With hiring managers also favouring judgement over execution, the routine work beginners used to learn on may be the first to thin out. This is one unusual company with a stake in the story, so treat it as an early signal, not proof.",
+      "myTakeZh": "“六比一”这个数字会抢走头条，但它衡量的是运行时间，不是产出。对刚入行的人来说，更值得在意的是初级员工在技术岗招聘中的占比从27%降到9%。再加上招聘经理更看重判断力而不是执行力，新人过去赖以练手的常规工作，可能会最先变少。这只是一家很特殊、而且和这个话题有利益关系的公司，所以把它当作早期信号，而不是定论。",
       "sources": [
         {
           "name": "Anthropic: How employment is changing at Anthropic",
@@ -169,12 +174,7 @@
           "name": "South China Morning Post: The AI promise was automation. The reality? Managing digital workers",
           "url": "https://www.scmp.com/tech/big-tech/article/3371246/ai-promise-was-automation-reality-managing-digital-workers"
         }
-      ],
-      "headlineZh": "在Anthropic，AI智能体干的活越来越多，新人拿到的技术岗却少了很多",
-      "openingZh": [
-        "Claude背后的公司Anthropic研究了自己的员工队伍。很少有机会能这样看到一家把大量工作交给AI智能体的公司内部是什么样子。当然，它本身也是卖这些智能体的公司。"
-      ],
-      "myTakeZh": "“六比一”这个数字会抢走头条，但它衡量的是运行时间，不是产出。对刚入行的人来说，更值得在意的是初级员工在招聘中的占比从27%掉到9%。再加上招聘经理现在更看重判断力而不是执行力，这说明新人过去赖以练手的那些常规工作，正在最先变少。这只是一家很特殊、而且和这个话题有利益关系的公司，所以把它当作早期信号就好，而不是定论。"
+      ]
     }
   ],
   "region": {
@@ -182,44 +182,51 @@
     "stories": [
       {
         "category": "Environment",
-        "headline": "Singapore takes legal action against 10 Indonesian firms over the haze",
+        "headline": "Singapore to issue haze-prevention notices to 3 more Indonesian firms, 10 in total",
+        "headlineZh": "新加坡将向另外3家印尼公司发出防霾通知，总数达10家",
         "opening": [
-          "Singapore's environment agency said on Monday that it will send legal notices to three more Indonesian companies over fires in Kalimantan. Seven firms linked to fires in Sumatra got notices last Friday, so the total is now 10.",
-          "The air was a little cleaner on Monday. On Sunday, western Singapore had hit a PSI of 230, the worst reading this year. The PSI is Singapore's air-quality index, and anything above 100 counts as unhealthy."
+          "Air quality improved on Monday but hasn't cleared. At 6pm, the 24-hour PSI ranged from 89 in the north to 114 in the west, CNA reported. A reading of 101 and above counts as unhealthy. The west peaked at 230 on Sunday morning, the highest this haze season. Live readings are on NEA's haze site, haze.gov.sg.",
+          "NEA forecasts a PSI of 90 to 160 for Tuesday. It warns that winds from Tuesday night to Thursday may bring smoke from Kalimantan fires towards Singapore."
+        ],
+        "openingZh": [
+          "周一空气质量有所改善，但还没有好转到位。据亚洲新闻台报道，下午6点，24小时PSI从北部的89到西部的114不等。PSI达到101及以上就算不健康。西部在周日上午达到230，是今年烟霾季的最高读数。实时读数可查看国家环境局的烟霾网站haze.gov.sg。",
+          "国家环境局预测周二PSI在90到160之间，并提醒从周二晚上到周四，风向可能把加里曼丹火灾的烟雾吹向新加坡。"
         ],
         "sections": [
           {
-            "heading": "What do the notices make companies do?",
+            "heading": "What does this mean for my day?",
+            "headingZh": "这对日常生活有什么影响？",
             "paragraphs": [
-              "Each company must fight the fires on its land, stop any burning and send the agency a plan to stop it happening again. Under Singapore's haze law, a company found responsible can be fined up to S$2 million."
+              "When deciding on masks and outdoor activity, the Ministry of Health says to use the 1-hour PM2.5 reading, not the 24-hour PSI. When PM2.5 is in the high band (151 to 250), vulnerable people such as the elderly, pregnant women and those with heart or lung conditions should avoid outdoor activity. N95 masks aren't needed for commuting or indoors.",
+              "Firefly says it is running a reduced Subang-Seletar schedule until Oct 21 and plans to resume full service on Oct 22, subject to conditions. The Great Eastern Women's Run, planned for Nov 1, has been cancelled, CNA reported."
             ],
+            "paragraphsZh": [
+              "卫生部说，决定要不要戴口罩、要不要到户外活动，要看1小时PM2.5读数，而不是24小时PSI。PM2.5处于“高”级别（151至250）时，老人、孕妇和有心肺疾病的人等易感人群应避免户外活动。通勤和在室内时，不需要戴N95口罩。",
+              "Firefly航空表示，梳邦往返实里达的航班在10月21日前减班运营，计划在10月22日全面恢复，视运营情况而定。据亚洲新闻台报道，原定11月1日举行的大东方女子跑已经取消。"
+            ]
+          },
+          {
+            "heading": "What do the notices require?",
             "headingZh": "这些通知要求公司做什么？",
+            "paragraphs": [
+              "NEA said on Monday it will issue notices to three more companies over fires in Kalimantan. Seven firms linked to fires in Sumatra got notices on Friday. Each must fight the fires on its land, stop any burning and send NEA a plan to stop it happening again.",
+              "These are preventive notices, not penalties. Under Singapore's haze law, a company found guilty of causing haze can be fined up to S$2 million, and ignoring a notice is also punishable. Environment minister Grace Fu said on Monday that the government hadn't heard from the first seven firms."
+            ],
             "paragraphsZh": [
-              "每家公司都必须扑灭自己土地上的火，停止任何焚烧，并向环境局提交防止再次发生的计划。根据新加坡的烟霾法，被认定负有责任的公司最高可被罚款200万新元。"
+              "国家环境局周一表示，将因加里曼丹的火灾向另外3家公司发出通知。上周五，7家与苏门答腊火灾有关的公司已经收到通知。每家公司都必须扑灭自己土地上的火、停止任何焚烧，并向国家环境局提交防止再次发生的计划。",
+              "这些是预防性通知，不是处罚。根据新加坡的烟霾法，被判定造成烟霾的公司最高可被罚款200万新元，不遵守通知也会受罚。可持续发展与环境部长傅海燕周一说，政府目前还没有收到首批7家公司的回复。"
             ]
           },
           {
-            "heading": "Can Singapore really punish companies in Indonesia?",
+            "heading": "Can Singapore really enforce this?",
+            "headingZh": "新加坡真能执法吗？",
             "paragraphs": [
-              "It's hard, and the government says so. \"It is not easy. I will be the first to admit, but we must try,\" environment minister Grace Fu said on Friday. After the 2015 haze, Singapore sent notices to six companies, and CNA reports that most of those investigations are still open.",
-              "Singapore-listed palm oil firms such as Wilmar have also faced questions, though none of them is among the 10 named. They denied or played down any link to the fires, and their shares fell, The Straits Times reported."
+              "It's hard, and the government says so. \"It is not easy. I will be the first to admit, but we must try,\" Fu said on Friday. After the 2015 haze, NEA issued notices to six companies, and CNA reports that investigations into four of them are still ongoing.",
+              "Separately, Singapore-listed palm oil firms such as Wilmar have faced questions, though none of them is itself among the 10 firms named. They denied or played down any link to the fires, and their shares fell, The Straits Times reported."
             ],
-            "headingZh": "新加坡真能惩罚印尼的公司吗？",
             "paragraphsZh": [
-              "很难，政府自己也这么说。“这并不容易，我第一个承认，但我们必须尝试，”可持续发展与环境部长傅海燕上周五说。据亚洲新闻台报道，2015年烟霾之后，新加坡向6家公司发出过通知，其中大部分调查至今仍未结案。",
-              "据《海峡时报》报道，丰益国际等在新加坡上市的棕榈油公司也受到了质疑，不过它们都不在这次点名的10家公司里。这些公司否认或淡化了与火灾的关联，股价也随之下跌。"
-            ]
-          },
-          {
-            "heading": "Is the haze over?",
-            "paragraphs": [
-              "Not yet. The agency says dry weather keeps the risk of severe haze high, and a change in the winds could bring smoke back from Tuesday night. Firefly's flights between Seletar and Subang stayed cancelled through Monday.",
-              "When deciding whether to wear a mask, the health ministry says to check the 1-hour PM2.5 reading, not the 24-hour PSI."
-            ],
-            "headingZh": "烟霾结束了吗？",
-            "paragraphsZh": [
-              "还没有。环境局说，天气干燥让严重烟霾的风险依然很高，而风向一变，烟雾可能从周二晚上起再次飘来。Firefly航空实里达往返梳邦的航班一直取消到周一。",
-              "卫生部说，决定要不要戴口罩时，看1小时PM2.5读数，而不是24小时PSI。"
+              "很难，政府自己也这么说。“这并不容易，我第一个承认，但我们必须尝试，”傅海燕上周五说。据亚洲新闻台报道，2015年烟霾之后，国家环境局向6家公司发出过通知，其中4家的调查至今仍在进行。",
+              "另外，据《海峡时报》报道，丰益国际等在新加坡上市的棕榈油公司也受到质疑，不过它们本身都不在这次点名的10家公司之中。这些公司否认或淡化了与火灾的关联，股价也出现下跌。"
             ]
           }
         ],
@@ -229,14 +236,21 @@
             "url": "https://www.channelnewsasia.com/singapore/nea-haze-notices-indonesia-companies-transboundary-haze-pollution-act-6471111"
           },
           {
-            "name": "CNA: Air quality improves as 24-hour PSI readings fall to moderate levels in three regions",
+            "name": "CNA: Singapore haze: Air quality improves but PM2.5 readings rise again in three regions",
             "url": "https://www.channelnewsasia.com/singapore/singapore-haze-psi-oct-19-6469736"
+          },
+          {
+            "name": "NEA: live PSI and PM2.5 readings (official)",
+            "url": "https://www.haze.gov.sg/"
+          },
+          {
+            "name": "Ministry of Health: haze health advisory (official)",
+            "url": "https://www.moh.gov.sg/others/haze/"
+          },
+          {
+            "name": "Firefly: Seletar flight operations update",
+            "url": "https://www.fireflyz.com.my/my/en/media-centre/important-for-you/xsp-flight-update.html"
           }
-        ],
-        "headlineZh": "新加坡就烟霾对10家印尼公司采取法律行动",
-        "openingZh": [
-          "新加坡国家环境局周一表示，将因加里曼丹的火灾，再向3家印尼公司发出法律通知。上周五已有7家与苏门答腊火灾有关的公司收到通知，所以总数现在是10家。",
-          "周一的空气稍微好了一点。周日，新加坡西部的PSI一度达到230，是今年最差的读数。PSI是新加坡的空气质量指数，超过100就算不健康。"
         ]
       }
     ]
@@ -244,9 +258,9 @@
   "recommendation": {
     "label": "Worth a look",
     "title": "DeepSeek's Search & Fetch APIs",
-    "link": "https://api-docs.deepseek.com/guides/search/",
-    "text": "If you build AI agents, DeepSeek has opened its own search engine to developers: Search returns web results, and Fetch turns a web page into Markdown text. Each costs $0.75 per 1,000 successful calls, and failed calls are free. Calls made through DeepSeek's tools inside Claude Code, Codex or DeepSeek Harness are free until billing starts on Nov 1 (Beijing time, the same as Singapore's). You need a DeepSeek API account with credit, and we haven't tested it ourselves.",
     "titleZh": "DeepSeek的Search和Fetch API",
-    "textZh": "如果你在做AI智能体，DeepSeek已经把自家的搜索引擎开放给开发者了：Search返回网页搜索结果，Fetch把网页转成Markdown文本。两个接口都是每1,000次成功调用0.75美元，失败的调用不收费。通过Claude Code、Codex或DeepSeek Harness里的DeepSeek工具发起的调用暂时免费，11月1日（北京时间，和新加坡时间相同）起开始计费。你需要一个有余额的DeepSeek API账户，另外我们自己还没有试用过。"
+    "link": "https://api-docs.deepseek.com/guides/search/",
+    "text": "If you build AI agents, DeepSeek now offers its in-house search engine through two APIs: Search returns web results, and Fetch turns a page into Markdown. Each costs $0.75 per 1,000 successful requests, and failed requests, empty results and timeouts aren't billed. If you use the DeepSeek API through Claude Code, Codex or DeepSeek Harness, their server-side search and fetch calls are free until billing starts at 00:00 on Nov 1, Beijing time (the same as Singapore time). You need a DeepSeek API account with credit, and we haven't tested it ourselves.",
+    "textZh": "如果你在做AI智能体，DeepSeek现在通过两个API开放了自家搜索引擎：Search返回网页搜索结果，Fetch把网页转成Markdown。两者都是每1,000次成功请求0.75美元，失败、结果为空或超时的请求不收费。如果你通过Claude Code、Codex或DeepSeek Harness使用DeepSeek API，其中服务端的搜索和抓取调用在11月1日北京时间0点（和新加坡时间相同）开始计费之前免费。你需要一个有余额的DeepSeek API账户，另外我们自己还没有试用过。"
   }
 }
