@@ -1,0 +1,175 @@
+{
+  "date": "2026-10-19",
+  "stories": [
+    {
+      "category": "Business",
+      "headline": "An AI cloud company's debt troubles are dragging down Asia's chip stocks",
+      "opening": [
+        "South Korea's stock market fell more than 3% when it opened on Monday, then bargain hunters trimmed the loss. Chipmakers such as SK Hynix led the drop. Last week was the market's worst in 18 years, according to Reuters.",
+        "The trouble started in the US, at a company called CoreWeave. It borrows heavily to build data centres, then rents out the computing power to AI firms."
+      ],
+      "sections": [
+        {
+          "heading": "Why are investors nervous about CoreWeave?",
+          "paragraphs": [
+            "CoreWeave has never made a profit, and it carries around $50 billion of debt, according to Reuters. A data centre only earns money once customers start paying rent, so until then CoreWeave keeps borrowing. Reuters says the selling began after big cloud companies hinted at delays to data-centre projects.",
+            "The yield on some of its bonds has jumped to near 16%. Put simply, lenders now want about 16% a year to keep lending, which shows how worried they are about getting paid back."
+          ]
+        },
+        {
+          "heading": "Why is Korea feeling it?",
+          "paragraphs": [
+            "Korean memory-chip makers sell into the same data-centre boom, and chip stocks make up a big share of Korea's market, analysts told The Asia Business Daily. The fear is that if the money for new data centres dries up, chip orders shrink too.",
+            "Some outlets also blamed the cheap new model DeepSeek released on Saturday. Reuters linked Monday's fall to Friday's slump in US tech stocks instead. Nobody has shown which mattered more."
+          ]
+        },
+        {
+          "heading": "Is CoreWeave actually in trouble?",
+          "paragraphs": [
+            "Opinions are split. CoreWeave's CEO told staff that markets can \"misunderstand and act irrationally\", and said the company's signed deals more than cover its debt, Reuters reported. Nvidia, a major shareholder, has agreed to buy any computing capacity CoreWeave can't sell for years to come.",
+            "What nobody knows yet is whether its borrowing costs will come down. Korean analysts see Meta's and Tesla's results later this week as the next test of confidence in AI spending."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Reuters (via Investing.com): Why CoreWeave is in the crosshairs of the AI scare",
+          "url": "https://www.investing.com/news/stock-market-news/analysiswhy-coreweave-is-in-the-crosshairs-of-the-ai-scare-4954698"
+        },
+        {
+          "name": "The Asia Business Daily: AI Fears Hit KOSPI",
+          "url": "https://www.asiae.co.kr/en/article/2026101910121689514"
+        }
+      ]
+    },
+    {
+      "category": "China / AI policy",
+      "headline": "China wants licences to export its top AI models, but its chatbots can still travel",
+      "opening": [
+        "On Oct 16, China's commerce and science ministries proposed adding 23 AI technologies to the list of tech that is banned from export or needs permission to leave the country. The rules are only a draft, open for comments until Nov 15. One part already applies: companies must register covered exports before they go ahead."
+      ],
+      "sections": [
+        {
+          "heading": "Which AI would be covered?",
+          "paragraphs": [
+            "Mainly the biggest models. The draft restricts their inner workings, such as weights (the learned numbers that make a model work) and source code. It applies to models that were trained with huge amounts of computing, have at least 2 trillion parameters, or rank in the world's top 10. The outright bans are narrower and cover things like AI that writes malware."
+          ]
+        },
+        {
+          "heading": "Can people outside China still use Chinese AI?",
+          "paragraphs": [
+            "Mostly, yes, according to the ministry. Offering a model through an app, a website or an API (the connection other software uses to call it) doesn't count as an export. Installing a restricted model on servers abroad would count.",
+            "Work that is already public as open source isn't covered. New open-source releases would get fast-track approval, which the ministry calls \"report and go\"."
+          ]
+        },
+        {
+          "heading": "What don't we know yet?",
+          "paragraphs": [
+            "The rules could change after the consultation. The draft names no models, and the top-10 test shifts whenever the rankings change. It also doesn't explain how registering a new open-source model would work in practice. The ministry says the move doesn't target any country."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Ministry of Commerce of China: spokesperson Q&A on the catalogue revision (Chinese)",
+          "url": "https://www.mofcom.gov.cn/zwgk/zcjd/art/2026/art_b11d5c1e9374421e93e85dc87eba6e38.html"
+        },
+        {
+          "name": "TechNode Global: China proposes export controls on 23 AI technologies",
+          "url": "https://technode.global/2026/10/18/china-ai-export-controls-23-technologies/"
+        }
+      ]
+    },
+    {
+      "category": "Work",
+      "headline": "At Anthropic, juniors are getting far fewer of the tech jobs as AI agents take on more work",
+      "opening": [
+        "Anthropic, the company behind Claude, has studied its own workforce. It's a rare look inside a company that runs much of its work through AI agents. It's also a company that sells those agents."
+      ],
+      "sections": [
+        {
+          "heading": "Who is getting hired less?",
+          "paragraphs": [
+            "Juniors. Since early 2025, the share of Anthropic's technical hires who were junior has dropped from 27% to 9%. Overall technical hiring still grew, because the company tripled in size over the past year. Hiring managers now say they look for judgement and independence more than specific technical skills."
+          ]
+        },
+        {
+          "heading": "Do agents really work six times as many hours as people?",
+          "paragraphs": [
+            "Only in a narrow sense. By August, agents run by staff were logging six times as many hours as the employees, the report says. That compares agents' running time with a 40-hour human week, so it doesn't mean six robot workers per person. The agents also spend about 80% of a session waiting for a human to reply."
+          ]
+        },
+        {
+          "heading": "So what are the humans doing?",
+          "paragraphs": [
+            "More managing. Engineers are producing much more code, the report says, though it cautions that the people who adopted agents first weren't a random group. Staff also spend more time writing instructions for agents, checking their output and sitting in meetings.",
+            "The same thing is happening in Asia. A marketing manager at a big tech firm in Shanghai told the SCMP that her agent and her boss's agent argued over who owned a task. \"Agents can create communication overhead too,\" she said.",
+            "The figures come from Anthropic's own internal records, so outsiders can't check them. Anthropic admits its efforts to protect staff, such as moving people into new roles, don't fix the slowdown in junior hiring."
+          ]
+        }
+      ],
+      "myTake": "The six-to-one figure will get the headlines, but it measures running time, not output. The number that matters more for people starting out is the fall from 27% to 9% in junior hires. Combined with hiring managers now favouring judgement over execution, it suggests the routine work beginners used to learn on is thinning out first. This is one unusual company with a stake in the story, so treat it as an early signal, not proof.",
+      "sources": [
+        {
+          "name": "Anthropic: How employment is changing at Anthropic",
+          "url": "https://www.anthropic.com/research/employment-at-anthropic"
+        },
+        {
+          "name": "South China Morning Post: The AI promise was automation. The reality? Managing digital workers",
+          "url": "https://www.scmp.com/tech/big-tech/article/3371246/ai-promise-was-automation-reality-managing-digital-workers"
+        }
+      ]
+    }
+  ],
+  "region": {
+    "label": "SINGAPORE",
+    "stories": [
+      {
+        "category": "Environment",
+        "headline": "Singapore takes legal action against 10 Indonesian firms over the haze",
+        "opening": [
+          "Singapore's environment agency said on Monday that it will send legal notices to three more Indonesian companies over fires in Kalimantan. Seven firms linked to fires in Sumatra got notices last Friday, so the total is now 10.",
+          "The air was a little cleaner on Monday. On Sunday, western Singapore had hit a PSI of 230, the worst reading this year. The PSI is Singapore's air-quality index, and anything above 100 counts as unhealthy."
+        ],
+        "sections": [
+          {
+            "heading": "What do the notices make companies do?",
+            "paragraphs": [
+              "Each company must fight the fires on its land, stop any burning and send the agency a plan to stop it happening again. Under Singapore's haze law, a company found responsible can be fined up to S$2 million."
+            ]
+          },
+          {
+            "heading": "Can Singapore really punish companies in Indonesia?",
+            "paragraphs": [
+              "It's hard, and the government says so. \"It is not easy. I will be the first to admit, but we must try,\" environment minister Grace Fu said on Friday. After the 2015 haze, Singapore sent notices to six companies, and CNA reports that most of those investigations are still open.",
+              "Singapore-listed palm oil firms such as Wilmar have also faced questions, though none of them is among the 10 named. They denied or played down any link to the fires, and their shares fell, The Straits Times reported."
+            ]
+          },
+          {
+            "heading": "Is the haze over?",
+            "paragraphs": [
+              "Not yet. The agency says dry weather keeps the risk of severe haze high, and a change in the winds could bring smoke back from Tuesday night. Firefly's flights between Seletar and Subang stayed cancelled through Monday.",
+              "When deciding whether to wear a mask, the health ministry says to check the 1-hour PM2.5 reading, not the 24-hour PSI."
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "name": "CNA: Singapore to issue haze prevention notices to three more firms in Indonesia",
+            "url": "https://www.channelnewsasia.com/singapore/nea-haze-notices-indonesia-companies-transboundary-haze-pollution-act-6471111"
+          },
+          {
+            "name": "CNA: Air quality improves as 24-hour PSI readings fall to moderate levels in three regions",
+            "url": "https://www.channelnewsasia.com/singapore/singapore-haze-psi-oct-19-6469736"
+          }
+        ]
+      }
+    ]
+  },
+  "recommendation": {
+    "label": "Worth Trying",
+    "title": "DeepSeek's Search & Fetch APIs",
+    "link": "https://api-docs.deepseek.com/guides/search/",
+    "text": "If you build AI agents, DeepSeek has opened its own search engine to developers: Search returns web results, and Fetch turns a web page into Markdown text. Each costs $0.75 per 1,000 successful calls, and failed calls are free. Calls made through DeepSeek's tools inside Claude Code, Codex or DeepSeek Harness are free until billing starts on Nov 1 (Beijing time, the same as Singapore's). You need a DeepSeek API account with credit, and we haven't tested it ourselves."
+  }
+}
