@@ -33,17 +33,19 @@ GOOD FETCH | October 19, 2026
 Daily News Briefing
 ```
 
-You do not put that header in the JSON. `2026-10-19` is shown as `October 19, 2026` in English and as `2026年10月19日` in 中文 (`GOOD FETCH｜2026年10月19日`). The same Chinese date is used on the archive buttons, so 中文 mode does not show English month names.
+You do not put that header in the JSON. `2026-10-19` is shown as `October 19, 2026` in English and as `2026年10月19日` in 中文 (`GOOD FETCH｜2026年10月19日`). The same Chinese date is used on the archive buttons, so 中文 mode does not show English month names. If you include `publishedAt`, a smaller muted line under that date reads **Published 05:42 SGT** (中文: **新加坡时间 05:42 发布**). The clock is always Singapore time. `updatedAt` extends it to **Published 05:42 SGT · Updated 09:10 SGT** (中文: **新加坡时间 05:42 发布，09:10 更新**). Leave both out and that line is not shown.
 
-Under the header, the page shows every story in `stories` (usually 1–3, sometimes more — there is no fixed count), then the stories in `region.stories`, in the same list. Then, only if you include it, a closing recommendation labelled exactly `Worth a look`.
+Under the header, the page shows every story in `stories` (usually 1–3, sometimes more — there is no fixed count), then the stories in `region.stories`, in the same list. Then, only if you include it, a closing recommendation labelled exactly `Worth a look`. After that, only if you include `closing`, a short sign-off from Riva.
 
-There is no "Why it matters" field and no "summary" field. A story is a headline, optional opening paragraphs, any number of question sections, an optional `myTake`, an optional `details` block, and source links.
+There is no "Why it matters" field and no "summary" field. A story is a headline, optional opening paragraphs, any number of question sections (including none), an optional `myTake`, an optional `details` block, and source links. Set `update` to `true` for a small Update tag beside the category. `updateNote`, when present, is one short line under the headline.
 
 ## Edition schema
 
 ```json
 {
   "date": "YYYY-MM-DD",
+  "publishedAt": "2026-10-20T05:42:00+08:00",
+  "updatedAt": "2026-10-20T09:10:00+08:00",
   "stories": [ Story, ... ],
   "region": {
     "label": "SINGAPORE",
@@ -57,13 +59,16 @@ There is no "Why it matters" field and no "summary" field. A story is a headline
     "price": "Optional. What it costs.",
     "availability": "Optional. When or where it is available.",
     "note": "Optional. We haven't tested it."
-  }
+  },
+  "closing": "Optional. Only fetched this much today."
 }
 ```
 
 | Field | Required | Notes |
 | --- | --- | --- |
 | `date` | yes | `YYYY-MM-DD`. Drives the header and which archive button is highlighted. |
+| `publishedAt` | no | When the edition went out, as ISO 8601 with an offset, such as `2026-10-20T05:42:00+08:00`. The page shows **Published 05:42 SGT** under the date (中文: **新加坡时间 05:42 发布**). The time is converted to Asia/Singapore no matter which offset you write and no matter the reader's timezone. Omit it, or leave it blank, and the line is left out. |
+| `updatedAt` | no | Same format as `publishedAt`. When both are set, the line continues ** · Updated 09:10 SGT** (中文: **，09:10 更新**). Omit it and only the published time is shown. It is not shown on its own. |
 | `stories` | yes | Main stories, in reading order. One or more. Not capped at 3. |
 | `region` | yes | One group of stories that follow the main stories. |
 | `region.label` | yes | Keep `SINGAPORE` or `SOUTHEAST ASIA` in the file. The page does not print this heading. |
@@ -76,11 +81,15 @@ There is no "Why it matters" field and no "summary" field. A story is a headline
 | `recommendation.price` | no | A short cost line under the sentence. Omit it to leave the line out. |
 | `recommendation.availability` | no | A short availability line under the price. |
 | `recommendation.note` | no | A short closing line, such as `We haven't tested it`. |
+| `closing` | no | A short sign-off from Riva, after the last story, region story, and recommendation, and before the archive. Omit it, or leave it blank, and that line is left out. 中文 uses `closingZh` when you write one. |
 
 ### Story
 
 ```json
 {
+  "category": "Business",
+  "update": true,
+  "updateNote": "Optional. What changed since the earlier edition.",
   "headline": "The headline, in sentence case",
   "opening": [
     "Optional first paragraph: what happened.",
@@ -110,13 +119,16 @@ There is no "Why it matters" field and no "summary" field. A story is a headline
 
 | Field | Required | Notes |
 | --- | --- | --- |
+| `category` | no | Small label above the headline, such as `Business` or `Singapore / Environment`. The same label for main stories and region stories. Omit it if the story has none. |
+| `update` | no | `true` shows a small **Update** tag beside the category (中文: **更新**). Omit it, or use `false`, and there is no tag. |
+| `updateNote` | no | One short line under the headline, such as what is new since an earlier edition. Omit it, or leave it blank, and the headline is followed by the opening as before. The line is shown when the text is present, whether or not `update` is `true`. |
 | `headline` | yes | No separate one-line summary. The headline is the only title. |
 | `opening` | no | A list of paragraphs before the question sections. Omit it, or use `[]`, when the story starts straight in with a question. A single string is also accepted. |
 | `sections` | no | A list. Use as many as the story needs, including none. Each one is a question-style `heading` plus one or more `paragraphs`. Omit the list when the story has no subsections. |
 | `sections[].heading` | with a section | A question, such as `What's changing?` or `Who pays?`. |
 | `sections[].paragraphs` | with a section | A list of one or more paragraphs. Not a single summary line. |
-| `myTake` | no | Shown in the soft box. The label on the page is **Riva's Take** (中文: **Riva 的看法**), with **Analysis** underneath. The JSON field stays `myTake`. Omit it to leave the box out. This is not a "Why it matters" field. |
-| `details` | no | Extra paragraphs or short lines, hidden until the reader opens **More details** (中文: **更多细节**). The control starts closed. It sits after the question sections and Riva's Take, and before the sources. Omit the field, or use `[]`, and the story renders as before. A single string is also accepted. Each string is shown as body text, the same way opening paragraphs are. |
+| `myTake` | no | Shown in the soft box. The label on the page is **Riva's Take** (中文: **Riva 的看法**), with **Analysis** underneath. The JSON field stays `myTake`. Omit it, or leave it blank, and the box is left out. This is not a "Why it matters" field. |
+| `details` | no | Extra paragraphs or short lines, hidden until the reader opens **More details** (中文: **更多细节**). The control starts closed. It sits after the question sections and Riva's Take, and before the sources. Omit the field, or use `[]`, and nothing is shown there. A single string is also accepted. Each string is shown as body text, the same way opening paragraphs are. |
 | `sources` | yes | One or more links, at the end of the story under the heading **Sources** (中文: **来源**). |
 | `sources[].name` | yes | The link text. Put a reprint in the name, such as `Reuters, via Investing.com`. |
 | `sources[].url` | yes | A full `https://` address. |
@@ -124,15 +136,15 @@ There is no "Why it matters" field and no "summary" field. A story is a headline
 | `sources[].download` | no | A file type, such as `WPS`. The page adds **Download WPS file** (中文: **下载 WPS 文件**) so the reader knows it is a file, not a web page. |
 | `image` | no | Filename relative to `index.html`, such as `boat.png`. Omit it and the story is text only. |
 | `imageAlt` | no | Alt text for the picture. |
-| `category` | no | Small label above the headline, such as `Business` or `Singapore / Environment`. The same label for main stories and region stories. Omit it if the story has none. |
 
-Lengths vary. A short story can be a headline, one opening paragraph, a `myTake`, and one source. A longer story can have several opening paragraphs and several question sections. Do not pad a story to a fixed length, and do not add empty sections.
+Lengths vary. A short story can be a headline, one opening paragraph, and one source, with no `sections`, no `details`, and no `myTake`. A longer story can have several opening paragraphs and several question sections, and still omit `details`. Do not pad a story to a fixed length, and do not add empty sections. A blank `myTake` is the same as leaving the field out.
 
 ### Optional Chinese
 
-The EN / 中文 switch translates the site chrome (the tagline, "Riva's Take", "More details", "Daily News Briefing", the archive labels). Story text stays in English unless you add a `Zh` twin:
+The EN / 中文 switch translates the site chrome (the tagline, "Riva's Take", "More details", "Update", "Daily News Briefing", the archive labels). Story text stays in English unless you add a `Zh` twin:
 
 - `categoryZh` (the small label above the headline; if you omit it, 中文 mode keeps `category`)
+- `updateNoteZh` (the short line under the headline; if you omit it, 中文 mode keeps `updateNote`)
 - `headlineZh`
 - `openingZh` (same shape as `opening`)
 - `sections[].headingZh` and `sections[].paragraphsZh`
@@ -140,6 +152,9 @@ The EN / 中文 switch translates the site chrome (the tagline, "Riva's Take", "
 - `detailsZh` (same shape as `details`)
 - `sources[].nameZh`
 - `recommendation.labelZh`, `recommendation.titleZh`, `recommendation.textZh`, `recommendation.priceZh`, `recommendation.availabilityZh`, and `recommendation.noteZh`
+- `closingZh` (the sign-off; if you omit it, 中文 mode keeps `closing`)
+
+`update` has no Chinese twin. The page prints **Update** or **更新**.
 
 Omit any of these and that part stays in English. Where Chinese meets Latin or digits, write one ordinary space in the JSON (`AI 融资`, `27% 降至 9%`). The page prints that space as written. `region.label` stays `SINGAPORE` or `SOUTHEAST ASIA` in the file. The page does not show it.
 

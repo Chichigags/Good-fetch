@@ -53,6 +53,7 @@ footer{display:flex;justify-content:space-between;align-items:baseline;flex-wrap
 .masthead{border-top:1px solid var(--line);padding-top:22px;margin-top:18px}
 .masthead h2{font-size:25px;margin:0;letter-spacing:-.03em;line-height:1.15}
 .masthead p{margin:8px 0 0;font-size:15px;color:var(--muted)}
+.masthead .published{margin:6px 0 0;font-size:12px;line-height:1.45;color:var(--muted)}
 .subhead{font-size:16px;line-height:1.3;letter-spacing:-.02em;margin:16px 0 6px}
 .sources{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin-top:16px;max-width:100%;min-width:0}
 .sources-heading{margin:0;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;line-height:1.4;color:#3f3f3c}
@@ -69,6 +70,11 @@ footer{display:flex;justify-content:space-between;align-items:baseline;flex-wrap
 .more-details .summary{margin-top:10px}
 .more-details .summary:last-child{margin-bottom:0}
 .why .take-kind{display:block;margin:0 0 6px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.kicker-row{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 12px;margin:0 0 8px}
+.kicker-row .kicker{margin:0}
+.update-note{margin:0 0 10px;font-size:14px;line-height:1.45;font-style:italic;color:var(--muted);overflow-wrap:break-word}
+.riva-closing{margin:32px auto 8px;max-width:34em;padding:0 12px;text-align:center;font-size:15px;line-height:1.55;font-style:italic;color:#3f3f3c;overflow-wrap:break-word}
+.riva-closing .sign{display:block;margin-top:2px;font-family:"Bradley Hand","Segoe Print","Comic Sans MS",cursive;font-size:18px;line-height:1.2;font-style:italic;color:#171717}
 .story h3{line-height:1.2}
 .story.no-thumb{grid-template-columns:48px minmax(0,1fr)}
 .intro-card .rec-label{margin:0 0 10px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;line-height:1.3;color:#3f3f3c}
@@ -78,6 +84,7 @@ footer{display:flex;justify-content:space-between;align-items:baseline;flex-wrap
 @media(max-width:620px){.shell{width:min(calc(100% - 28px),var(--max))} header{min-height:70px} .brand strong{font-size:26px} .tagline{max-width:none} .masthead h2{font-size:22px} .hero-visual{grid-template-columns:1fr;gap:8px} .riva-hero{max-width:180px} .riva-note{font-size:16px} .story,.story.no-thumb{grid-template-columns:34px 1fr} .thumb{grid-column:2} .story-copy{grid-column:2} .num{font-size:40px}}
 html[lang="zh-CN"] body{font-family:"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif}
 html[lang="zh-CN"] .summary{line-height:1.75;margin-bottom:1em}
+html[lang="zh-CN"] .update-note,html[lang="zh-CN"] .riva-closing{line-height:1.75}
 html[lang="zh-CN"] .why{line-height:1.75}
 html[lang="zh-CN"] .story h3{font-size:22px;line-height:1.4;letter-spacing:0}
 html[lang="zh-CN"] .masthead h2{font-size:22px;line-height:1.45;letter-spacing:0}
@@ -149,7 +156,8 @@ const ui = {
     sourcesHeading: 'Sources',
     official: 'Official',
     downloadFile: 'Download {type} file',
-    moreDetails: 'More details'
+    moreDetails: 'More details',
+    update: 'Update'
   },
   zh: {
     tagline: '一只狗，在亚洲看 AI',
@@ -170,7 +178,8 @@ const ui = {
     sourcesHeading: '来源',
     official: '官方',
     downloadFile: '下载 {type} 文件',
-    moreDetails: '更多细节'
+    moreDetails: '更多细节',
+    update: '更新'
   }
 };
 
@@ -218,6 +227,25 @@ function editionHeader(date) {
   }
   const label = formatLongDate(date);
   return label ? 'GOOD FETCH | ' + label : 'GOOD FETCH';
+}
+
+function singaporeClock(value) {
+  const text = clean(value);
+  if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(?::\d{2}(?:\.\d+)?)?(?:Z|[+-]\d{2}:\d{2})$/.test(text)) return '';
+  const ms = Date.parse(text);
+  if (!Number.isFinite(ms)) return '';
+  const sgt = new Date(ms + 8 * 60 * 60 * 1000);
+  return String(sgt.getUTCHours()).padStart(2, '0') + ':' + String(sgt.getUTCMinutes()).padStart(2, '0');
+}
+
+function publicationLine(edition) {
+  const published = singaporeClock(edition && edition.publishedAt);
+  if (!published) return '';
+  const updated = singaporeClock(edition && edition.updatedAt);
+  if (lang === 'zh') {
+    return updated ? '新加坡时间 ' + published + ' 发布，' + updated + ' 更新' : '新加坡时间 ' + published + ' 发布';
+  }
+  return updated ? 'Published ' + published + ' SGT · Updated ' + updated + ' SGT' : 'Published ' + published + ' SGT';
 }
 
 function clean(value) {
@@ -364,7 +392,22 @@ function renderStory(parent, item, number) {
 
   const copy = document.createElement('div');
   copy.className = 'story-copy';
-  if (category) {
+  const updateNote = localizedString(item, 'updateNote');
+  if (item.update === true) {
+    const row = document.createElement('div');
+    row.className = 'kicker-row';
+    if (category) {
+      const kicker = document.createElement('p');
+      kicker.className = 'kicker';
+      kicker.textContent = category;
+      row.append(kicker);
+    }
+    const tag = document.createElement('p');
+    tag.className = 'kicker update-tag';
+    tag.textContent = ui[lang].update;
+    row.append(tag);
+    copy.append(row);
+  } else if (category) {
     const kicker = document.createElement('p');
     kicker.className = 'kicker';
     kicker.textContent = category;
@@ -374,6 +417,12 @@ function renderStory(parent, item, number) {
     const h3 = document.createElement('h3');
     h3.textContent = headline;
     copy.append(h3);
+  }
+  if (updateNote) {
+    const note = document.createElement('p');
+    note.className = 'update-note';
+    note.textContent = updateNote;
+    copy.append(note);
   }
   opening.forEach(text => copy.append(paragraph(text)));
   sectionBlocks.forEach(section => {
@@ -479,6 +528,19 @@ function renderRecommendation(parent, rec) {
   return true;
 }
 
+function renderClosing(parent, edition) {
+  const text = localizedString(edition, 'closing');
+  if (!text) return;
+  const line = document.createElement('p');
+  line.className = 'riva-closing';
+  line.append(document.createTextNode(text));
+  const sign = document.createElement('span');
+  sign.className = 'sign';
+  sign.textContent = 'Riva';
+  line.append(sign);
+  parent.append(line);
+}
+
 function renderEdition(edition) {
   currentEdition = edition;
   messageKey = '';
@@ -490,9 +552,17 @@ function renderEdition(edition) {
   mast.className = 'masthead';
   const h2 = document.createElement('h2');
   h2.textContent = editionHeader(edition.date);
+  mast.append(h2);
+  const published = publicationLine(edition);
+  if (published) {
+    const stamp = document.createElement('p');
+    stamp.className = 'published';
+    stamp.textContent = published;
+    mast.append(stamp);
+  }
   const sub = document.createElement('p');
   sub.textContent = ui[lang].briefing;
-  mast.append(h2, sub);
+  mast.append(sub);
   root.append(mast);
 
   let number = renderStoryList(root, edition.stories, 1);
@@ -506,6 +576,7 @@ function renderEdition(edition) {
     note.textContent = ui[lang].empty;
     root.append(note);
   }
+  renderClosing(root, edition);
 }
 
 function showMessage(key) {
