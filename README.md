@@ -33,7 +33,7 @@ GOOD FETCH | October 19, 2026
 Daily News Briefing
 ```
 
-You do not put that header in the JSON. `2026-10-19` is shown as `October 19, 2026` in English and as `2026年10月19日` in 中文 (`GOOD FETCH｜2026年10月19日`). The same Chinese date is used on the archive buttons, so 中文 mode does not show English month names.
+You do not put that header in the JSON. `2026-10-19` is shown as `October 19, 2026` in English and as `2026年10月19日` in 中文 (`GOOD FETCH｜2026年10月19日`). The same Chinese date is used on the archive buttons, so 中文 mode does not show English month names. If you include `publishedAt`, a smaller muted line under that date reads **Published 05:42 SGT** (中文: **新加坡时间 05:42 发布**). The clock is always Singapore time. `updatedAt` extends it to **Published 05:42 SGT · Updated 09:10 SGT** (中文: **新加坡时间 05:42 发布，09:10 更新**). Leave both out and that line is not shown.
 
 Under the header, the page shows every story in `stories` (usually 1–3, sometimes more — there is no fixed count), then the stories in `region.stories`, in the same list. Then, only if you include it, a closing recommendation labelled exactly `Worth a look`. After that, only if you include `closing`, a short sign-off from Riva.
 
@@ -44,6 +44,8 @@ There is no "Why it matters" field and no "summary" field. A story is a headline
 ```json
 {
   "date": "YYYY-MM-DD",
+  "publishedAt": "2026-10-20T05:42:00+08:00",
+  "updatedAt": "2026-10-20T09:10:00+08:00",
   "stories": [ Story, ... ],
   "region": {
     "label": "SINGAPORE",
@@ -65,6 +67,8 @@ There is no "Why it matters" field and no "summary" field. A story is a headline
 | Field | Required | Notes |
 | --- | --- | --- |
 | `date` | yes | `YYYY-MM-DD`. Drives the header and which archive button is highlighted. |
+| `publishedAt` | no | When the edition went out, as ISO 8601 with an offset, such as `2026-10-20T05:42:00+08:00`. The page shows **Published 05:42 SGT** under the date (中文: **新加坡时间 05:42 发布**). The time is converted to Asia/Singapore no matter which offset you write and no matter the reader's timezone. Omit it, or leave it blank, and the line is left out. |
+| `updatedAt` | no | Same format as `publishedAt`. When both are set, the line continues ** · Updated 09:10 SGT** (中文: **，09:10 更新**). Omit it and only the published time is shown. It is not shown on its own. |
 | `stories` | yes | Main stories, in reading order. One or more. Not capped at 3. |
 | `region` | yes | One group of stories that follow the main stories. |
 | `region.label` | yes | Keep `SINGAPORE` or `SOUTHEAST ASIA` in the file. The page does not print this heading. |

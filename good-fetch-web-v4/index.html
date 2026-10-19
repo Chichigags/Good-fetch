@@ -53,6 +53,7 @@ footer{display:flex;justify-content:space-between;align-items:baseline;flex-wrap
 .masthead{border-top:1px solid var(--line);padding-top:22px;margin-top:18px}
 .masthead h2{font-size:25px;margin:0;letter-spacing:-.03em;line-height:1.15}
 .masthead p{margin:8px 0 0;font-size:15px;color:var(--muted)}
+.masthead .published{margin:6px 0 0;font-size:12px;line-height:1.45;color:var(--muted)}
 .subhead{font-size:16px;line-height:1.3;letter-spacing:-.02em;margin:16px 0 6px}
 .sources{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin-top:16px;max-width:100%;min-width:0}
 .sources-heading{margin:0;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;line-height:1.4;color:#3f3f3c}
@@ -226,6 +227,25 @@ function editionHeader(date) {
   }
   const label = formatLongDate(date);
   return label ? 'GOOD FETCH | ' + label : 'GOOD FETCH';
+}
+
+function singaporeClock(value) {
+  const text = clean(value);
+  if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(?::\d{2}(?:\.\d+)?)?(?:Z|[+-]\d{2}:\d{2})$/.test(text)) return '';
+  const ms = Date.parse(text);
+  if (!Number.isFinite(ms)) return '';
+  const sgt = new Date(ms + 8 * 60 * 60 * 1000);
+  return String(sgt.getUTCHours()).padStart(2, '0') + ':' + String(sgt.getUTCMinutes()).padStart(2, '0');
+}
+
+function publicationLine(edition) {
+  const published = singaporeClock(edition && edition.publishedAt);
+  if (!published) return '';
+  const updated = singaporeClock(edition && edition.updatedAt);
+  if (lang === 'zh') {
+    return updated ? '新加坡时间 ' + published + ' 发布，' + updated + ' 更新' : '新加坡时间 ' + published + ' 发布';
+  }
+  return updated ? 'Published ' + published + ' SGT · Updated ' + updated + ' SGT' : 'Published ' + published + ' SGT';
 }
 
 function clean(value) {
@@ -532,9 +552,17 @@ function renderEdition(edition) {
   mast.className = 'masthead';
   const h2 = document.createElement('h2');
   h2.textContent = editionHeader(edition.date);
+  mast.append(h2);
+  const published = publicationLine(edition);
+  if (published) {
+    const stamp = document.createElement('p');
+    stamp.className = 'published';
+    stamp.textContent = published;
+    mast.append(stamp);
+  }
   const sub = document.createElement('p');
   sub.textContent = ui[lang].briefing;
-  mast.append(h2, sub);
+  mast.append(sub);
   root.append(mast);
 
   let number = renderStoryList(root, edition.stories, 1);
