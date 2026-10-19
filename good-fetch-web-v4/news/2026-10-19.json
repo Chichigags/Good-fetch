@@ -242,7 +242,7 @@
     ]
   },
   "recommendation": {
-    "label": "Worth Trying",
+    "label": "Worth a look",
     "title": "DeepSeek's Search & Fetch APIs",
     "link": "https://api-docs.deepseek.com/guides/search/",
     "text": "If you build AI agents, DeepSeek has opened its own search engine to developers: Search returns web results, and Fetch turns a web page into Markdown text. Each costs $0.75 per 1,000 successful calls, and failed calls are free. Calls made through DeepSeek's tools inside Claude Code, Codex or DeepSeek Harness are free until billing starts on Nov 1 (Beijing time, the same as Singapore's). You need a DeepSeek API account with credit, and we haven't tested it ourselves.",

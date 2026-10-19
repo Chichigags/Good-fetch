@@ -35,7 +35,7 @@ Daily News Briefing
 
 You do not put that header in the JSON. `2026-10-19` is shown as `October 19, 2026`.
 
-Under the header, the page shows every story in `stories` (usually 1–3, sometimes more — there is no fixed count). Then one regional block, labelled exactly `SINGAPORE` or `SOUTHEAST ASIA`. Then, only if you include it, a closing recommendation labelled exactly `Worth Following` or `Worth Trying`.
+Under the header, the page shows every story in `stories` (usually 1–3, sometimes more — there is no fixed count). Then one regional block, labelled exactly `SINGAPORE` or `SOUTHEAST ASIA`. Then, only if you include it, a closing recommendation labelled exactly `Worth a look`.
 
 There is no "Why it matters" field and no "summary" field. A story is a headline, optional opening paragraphs, any number of question sections, an optional `myTake`, and source links.
 
@@ -50,7 +50,7 @@ There is no "Why it matters" field and no "summary" field. A story is a headline
     "stories": [ Story, ... ]
   },
   "recommendation": {
-    "label": "Worth Following",
+    "label": "Worth a look",
     "title": "Name of the thing",
     "link": "https://example.com/thing",
     "text": "One or two sentences on why it is worth a look."
@@ -66,7 +66,7 @@ There is no "Why it matters" field and no "summary" field. A story is a headline
 | `region.label` | yes | Exactly `SINGAPORE` or `SOUTHEAST ASIA`. No other spelling. |
 | `region.stories` | yes | One or more stories, same shape as the main stories. |
 | `recommendation` | no | Omit the whole object when there is nothing to recommend. |
-| `recommendation.label` | when recommending | Exactly `Worth Following` or `Worth Trying`. |
+| `recommendation.label` | when recommending | Exactly `Worth a look`. The page prints this label as written, in both EN and 中文. Older files that say `Worth Trying` or `Worth Following` still display that text. |
 | `recommendation.title` | when recommending | The name of the link. |
 | `recommendation.link` | when recommending | A full `https://` URL. |
 | `recommendation.text` | when recommending | A short note, one or two sentences. |
@@ -196,15 +196,15 @@ This is a shape example, not a story to publish. Replace every sentence before y
     ]
   },
   "recommendation": {
-    "label": "Worth Trying",
+    "label": "Worth a look",
     "title": "Name of a place, product, or link",
-    "link": "https://example.com/worth-trying",
+    "link": "https://example.com/worth-a-look",
     "text": "One or two sentences. Delete the whole recommendation object if you have nothing this good."
   }
 }
 ```
 
-`region.label` may be `SINGAPORE` instead of `SOUTHEAST ASIA`. `recommendation.label` may be `Worth Following` instead of `Worth Trying`. Use only those spellings.
+`region.label` may be `SINGAPORE` instead of `SOUTHEAST ASIA`. For a new edition, `recommendation.label` is `Worth a look`.
 
 The edition on the homepage is `good-fetch-web-v4/news/latest.json`, dated 19 October 2026. The same file is saved as `good-fetch-web-v4/news/2026-10-19.json`.
 
