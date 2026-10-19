@@ -14,6 +14,11 @@
           "paragraphs": [
             "CoreWeave has never made a profit, and it carries around $50 billion of debt, according to Reuters. A data centre only earns money once customers start paying rent, so until then CoreWeave keeps borrowing. Reuters says the selling began after big cloud companies hinted at delays to data-centre projects.",
             "The yield on some of its bonds has jumped to near 16%. Put simply, lenders now want about 16% a year to keep lending, which shows how worried they are about getting paid back."
+          ],
+          "headingZh": "投资者为什么对CoreWeave这么紧张？",
+          "paragraphsZh": [
+            "据路透社报道，CoreWeave从来没赚过钱，背着约500亿美元的债。数据中心要等客户开始付租金才有收入，在那之前，CoreWeave只能继续借钱。路透社说，这轮抛售是在几家大型云公司暗示数据中心项目延期之后开始的。",
+            "它部分债券的收益率已经跳到接近16%。说白了，就是借钱给它的人现在要求每年约16%的回报才肯继续借，可见他们有多担心钱收不回来。"
           ]
         },
         {
@@ -21,6 +26,11 @@
           "paragraphs": [
             "Korean memory-chip makers sell into the same data-centre boom, and chip stocks make up a big share of Korea's market, analysts told The Asia Business Daily. The fear is that if the money for new data centres dries up, chip orders shrink too.",
             "Some outlets also blamed the cheap new model DeepSeek released on Saturday. Reuters linked Monday's fall to Friday's slump in US tech stocks instead. Nobody has shown which mattered more."
+          ],
+          "headingZh": "韩国为什么也跟着疼？",
+          "paragraphsZh": [
+            "分析师告诉《亚洲经济》，韩国的存储芯片厂商吃的是同一波数据中心热潮，而芯片股在韩国股市里占比很大。大家担心的是：如果建新数据中心的钱没了，芯片订单也会跟着缩水。",
+            "也有媒体把账算到DeepSeek周六发布的廉价新模型头上。但路透社认为，周一的下跌是跟着上周五美国科技股的暴跌来的。到底哪个因素影响更大，目前没人说得清。"
           ]
         },
         {
@@ -28,6 +38,11 @@
           "paragraphs": [
             "Opinions are split. CoreWeave's CEO told staff that markets can \"misunderstand and act irrationally\", and said the company's signed deals more than cover its debt, Reuters reported. Nvidia, a major shareholder, has agreed to buy any computing capacity CoreWeave can't sell for years to come.",
             "What nobody knows yet is whether its borrowing costs will come down. Korean analysts see Meta's and Tesla's results later this week as the next test of confidence in AI spending."
+          ],
+          "headingZh": "CoreWeave真的有麻烦吗？",
+          "paragraphsZh": [
+            "看法不一。据路透社报道，CoreWeave的CEO对员工说，市场有时会“误解并做出非理性反应”，还说公司已签的合同足以覆盖债务。大股东英伟达已经同意，未来几年会买下CoreWeave卖不掉的算力。",
+            "现在还没人知道的是，它的借钱成本会不会降下来。韩国分析师把本周晚些时候Meta和特斯拉的财报，看作市场对AI投资还有没有信心的下一场考验。"
           ]
         }
       ],
@@ -40,6 +55,11 @@
           "name": "The Asia Business Daily: AI Fears Hit KOSPI",
           "url": "https://www.asiae.co.kr/en/article/2026101910121689514"
         }
+      ],
+      "headlineZh": "一家AI云公司的债务麻烦，正在拖累亚洲芯片股",
+      "openingZh": [
+        "韩国股市周一开盘跌了3%以上，随后抄底资金把跌幅收窄了一些。领跌的是SK海力士等芯片股。据路透社报道，上周是韩国股市18年来最惨的一周。",
+        "麻烦的源头在美国，一家叫CoreWeave的公司。它靠大量借钱建数据中心，再把算力租给AI公司。"
       ]
     },
     {
@@ -53,6 +73,10 @@
           "heading": "Which AI would be covered?",
           "paragraphs": [
             "Mainly the biggest models. The draft restricts their inner workings, such as weights (the learned numbers that make a model work) and source code. It applies to models that were trained with huge amounts of computing, have at least 2 trillion parameters, or rank in the world's top 10. The outright bans are narrower and cover things like AI that writes malware."
+          ],
+          "headingZh": "哪些AI会被管？",
+          "paragraphsZh": [
+            "主要是最大的那些模型。草案限制的是模型的“内核”，比如权重（让模型能工作的那堆学出来的数字）和源代码。适用对象是训练算力极大、参数量至少2万亿，或者能力排进全球前10的模型。直接禁止出口的范围更窄，比如能写恶意代码的AI。"
           ]
         },
         {
@@ -60,12 +84,21 @@
           "paragraphs": [
             "Mostly, yes, according to the ministry. Offering a model through an app, a website or an API (the connection other software uses to call it) doesn't count as an export. Installing a restricted model on servers abroad would count.",
             "Work that is already public as open source isn't covered. New open-source releases would get fast-track approval, which the ministry calls \"report and go\"."
+          ],
+          "headingZh": "中国以外的人还能用中国的AI吗？",
+          "paragraphsZh": [
+            "据商务部的说法，基本可以。通过App、网站或API（其他软件调用模型的接口）对外提供模型服务，不算技术出口。但把限制类模型装到海外服务器上，就算了。",
+            "已经开源公开的技术不在管理范围内。新的开源发布可以走快速通道，商务部的说法是基本实现“即报即出”。"
           ]
         },
         {
           "heading": "What don't we know yet?",
           "paragraphs": [
             "The rules could change after the consultation. The draft names no models, and the top-10 test shifts whenever the rankings change. It also doesn't explain how registering a new open-source model would work in practice. The ministry says the move doesn't target any country."
+          ],
+          "headingZh": "还有什么不清楚？",
+          "paragraphsZh": [
+            "征求意见之后，规则可能会改。草案没有点名任何模型，而“全球前10”这个标准会随排名变化而变。草案也没说清楚，新开源一个模型实际要怎么登记。商务部表示，此举不针对任何国家。"
           ]
         }
       ],
@@ -78,6 +111,10 @@
           "name": "TechNode Global: China proposes export controls on 23 AI technologies",
           "url": "https://technode.global/2026/10/18/china-ai-export-controls-23-technologies/"
         }
+      ],
+      "headlineZh": "中国拟对顶级AI模型出口设许可，但聊天机器人照样能“出海”",
+      "openingZh": [
+        "10月16日，中国商务部和科技部提议把23项AI技术列入禁止或限制出口的技术目录，限制类出口需要许可。这还只是征求意见稿，意见征集到11月15日。不过有一部分已经生效：企业在出口相关技术之前，必须先登记。"
       ]
     },
     {
@@ -91,12 +128,20 @@
           "heading": "Who is getting hired less?",
           "paragraphs": [
             "Juniors. Since early 2025, the share of Anthropic's technical hires who were junior has dropped from 27% to 9%. Overall technical hiring still grew, because the company tripled in size over the past year. Hiring managers now say they look for judgement and independence more than specific technical skills."
+          ],
+          "headingZh": "谁被招得少了？",
+          "paragraphsZh": [
+            "新人。从2025年初到现在，Anthropic技术岗招聘里初级员工的占比从27%降到了9%。技术岗总招聘量还是在增长，因为公司规模在过去一年里变成了原来的三倍。招聘经理们现在说，比起具体的技术本领，他们更看重判断力和独立性。"
           ]
         },
         {
           "heading": "Do agents really work six times as many hours as people?",
           "paragraphs": [
             "Only in a narrow sense. By August, agents run by staff were logging six times as many hours as the employees, the report says. That compares agents' running time with a 40-hour human week, so it doesn't mean six robot workers per person. The agents also spend about 80% of a session waiting for a human to reply."
+          ],
+          "headingZh": "智能体的工作时长真是人的六倍吗？",
+          "paragraphsZh": [
+            "只在很窄的意义上成立。报告说，到8月，员工指挥的智能体累计的工作时长是员工本人的六倍。但这是拿智能体的运行时间去比人每周40小时的工时，并不意味着每个人手下有六个“机器人员工”。而且在一次会话里，智能体大约80%的时间都在等人回复。"
           ]
         },
         {
@@ -105,6 +150,12 @@
             "More managing. Engineers are producing much more code, the report says, though it cautions that the people who adopted agents first weren't a random group. Staff also spend more time writing instructions for agents, checking their output and sitting in meetings.",
             "The same thing is happening in Asia. A marketing manager at a big tech firm in Shanghai told the SCMP that her agent and her boss's agent argued over who owned a task. \"Agents can create communication overhead too,\" she said.",
             "The figures come from Anthropic's own internal records, so outsiders can't check them. Anthropic admits its efforts to protect staff, such as moving people into new roles, don't fix the slowdown in junior hiring."
+          ],
+          "headingZh": "那人都在干什么？",
+          "paragraphsZh": [
+            "更多是在管理。报告说，工程师产出的代码多了很多，但也提醒，最早用上智能体的那批人并不是随机挑出来的。员工还花了更多时间给智能体写指令、检查它们的产出，以及开会。",
+            "亚洲也出现了同样的情况。上海一家大型科技公司的市场经理告诉《南华早报》，她的智能体和她上司的智能体为了一项任务归谁吵了起来。“智能体也会制造沟通成本，”她说。",
+            "这些数据来自Anthropic自己的内部记录，外人没法核实。Anthropic也承认，它保护员工的那些做法，比如把人调到新岗位，解决不了初级招聘放缓的问题。"
           ]
         }
       ],
@@ -118,7 +169,12 @@
           "name": "South China Morning Post: The AI promise was automation. The reality? Managing digital workers",
           "url": "https://www.scmp.com/tech/big-tech/article/3371246/ai-promise-was-automation-reality-managing-digital-workers"
         }
-      ]
+      ],
+      "headlineZh": "在Anthropic，AI智能体干的活越来越多，新人拿到的技术岗却少了很多",
+      "openingZh": [
+        "Claude背后的公司Anthropic研究了自己的员工队伍。很少有机会能这样看到一家把大量工作交给AI智能体的公司内部是什么样子。当然，它本身也是卖这些智能体的公司。"
+      ],
+      "myTakeZh": "“六比一”这个数字会抢走头条，但它衡量的是运行时间，不是产出。对刚入行的人来说，更值得在意的是初级员工在招聘中的占比从27%掉到9%。再加上招聘经理现在更看重判断力而不是执行力，这说明新人过去赖以练手的那些常规工作，正在最先变少。这只是一家很特殊、而且和这个话题有利益关系的公司，所以把它当作早期信号就好，而不是定论。"
     }
   ],
   "region": {
@@ -136,6 +192,10 @@
             "heading": "What do the notices make companies do?",
             "paragraphs": [
               "Each company must fight the fires on its land, stop any burning and send the agency a plan to stop it happening again. Under Singapore's haze law, a company found responsible can be fined up to S$2 million."
+            ],
+            "headingZh": "这些通知要求公司做什么？",
+            "paragraphsZh": [
+              "每家公司都必须扑灭自己土地上的火，停止任何焚烧，并向环境局提交防止再次发生的计划。根据新加坡的烟霾法，被认定负有责任的公司最高可被罚款200万新元。"
             ]
           },
           {
@@ -143,6 +203,11 @@
             "paragraphs": [
               "It's hard, and the government says so. \"It is not easy. I will be the first to admit, but we must try,\" environment minister Grace Fu said on Friday. After the 2015 haze, Singapore sent notices to six companies, and CNA reports that most of those investigations are still open.",
               "Singapore-listed palm oil firms such as Wilmar have also faced questions, though none of them is among the 10 named. They denied or played down any link to the fires, and their shares fell, The Straits Times reported."
+            ],
+            "headingZh": "新加坡真能惩罚印尼的公司吗？",
+            "paragraphsZh": [
+              "很难，政府自己也这么说。“这并不容易，我第一个承认，但我们必须尝试，”可持续发展与环境部长傅海燕上周五说。据亚洲新闻台报道，2015年烟霾之后，新加坡向6家公司发出过通知，其中大部分调查至今仍未结案。",
+              "据《海峡时报》报道，丰益国际等在新加坡上市的棕榈油公司也受到了质疑，不过它们都不在这次点名的10家公司里。这些公司否认或淡化了与火灾的关联，股价也随之下跌。"
             ]
           },
           {
@@ -150,6 +215,11 @@
             "paragraphs": [
               "Not yet. The agency says dry weather keeps the risk of severe haze high, and a change in the winds could bring smoke back from Tuesday night. Firefly's flights between Seletar and Subang stayed cancelled through Monday.",
               "When deciding whether to wear a mask, the health ministry says to check the 1-hour PM2.5 reading, not the 24-hour PSI."
+            ],
+            "headingZh": "烟霾结束了吗？",
+            "paragraphsZh": [
+              "还没有。环境局说，天气干燥让严重烟霾的风险依然很高，而风向一变，烟雾可能从周二晚上起再次飘来。Firefly航空实里达往返梳邦的航班一直取消到周一。",
+              "卫生部说，决定要不要戴口罩时，看1小时PM2.5读数，而不是24小时PSI。"
             ]
           }
         ],
@@ -162,6 +232,11 @@
             "name": "CNA: Air quality improves as 24-hour PSI readings fall to moderate levels in three regions",
             "url": "https://www.channelnewsasia.com/singapore/singapore-haze-psi-oct-19-6469736"
           }
+        ],
+        "headlineZh": "新加坡就烟霾对10家印尼公司采取法律行动",
+        "openingZh": [
+          "新加坡国家环境局周一表示，将因加里曼丹的火灾，再向3家印尼公司发出法律通知。上周五已有7家与苏门答腊火灾有关的公司收到通知，所以总数现在是10家。",
+          "周一的空气稍微好了一点。周日，新加坡西部的PSI一度达到230，是今年最差的读数。PSI是新加坡的空气质量指数，超过100就算不健康。"
         ]
       }
     ]
@@ -170,6 +245,8 @@
     "label": "Worth Trying",
     "title": "DeepSeek's Search & Fetch APIs",
     "link": "https://api-docs.deepseek.com/guides/search/",
-    "text": "If you build AI agents, DeepSeek has opened its own search engine to developers: Search returns web results, and Fetch turns a web page into Markdown text. Each costs $0.75 per 1,000 successful calls, and failed calls are free. Calls made through DeepSeek's tools inside Claude Code, Codex or DeepSeek Harness are free until billing starts on Nov 1 (Beijing time, the same as Singapore's). You need a DeepSeek API account with credit, and we haven't tested it ourselves."
+    "text": "If you build AI agents, DeepSeek has opened its own search engine to developers: Search returns web results, and Fetch turns a web page into Markdown text. Each costs $0.75 per 1,000 successful calls, and failed calls are free. Calls made through DeepSeek's tools inside Claude Code, Codex or DeepSeek Harness are free until billing starts on Nov 1 (Beijing time, the same as Singapore's). You need a DeepSeek API account with credit, and we haven't tested it ourselves.",
+    "titleZh": "DeepSeek的Search和Fetch API",
+    "textZh": "如果你在做AI智能体，DeepSeek已经把自家的搜索引擎开放给开发者了：Search返回网页搜索结果，Fetch把网页转成Markdown文本。两个接口都是每1,000次成功调用0.75美元，失败的调用不收费。通过Claude Code、Codex或DeepSeek Harness里的DeepSeek工具发起的调用暂时免费，11月1日（北京时间，和新加坡时间相同）起开始计费。你需要一个有余额的DeepSeek API账户，另外我们自己还没有试用过。"
   }
 }
