@@ -11,7 +11,7 @@
       ],
       "openingZh": [
         "据路透社报道，韩国股市周一早盘一度跌超3%，随后抄底资金让跌幅收窄。芯片股SK海力士到上午仍跌超3%。上周是韩国股市18年来最差的一周，市场担心AI投资能否持续，芯片股大跌。",
-        "据路透社报道，这轮更大范围的AI恐慌，焦点之一是CoreWeave。这家美国公司靠大量借钱建数据中心，再把算力租给AI公司。"
+        "据路透社报道，这轮市场对AI投资的担忧，焦点之一是CoreWeave。这家美国公司靠大量借钱建数据中心，再把算力租给AI公司。"
       ],
       "sections": [
         {
@@ -22,7 +22,7 @@
             "Some of CoreWeave's already-issued bonds, due in 2030, now trade at a market yield near 16%. That isn't the rate CoreWeave pays on them. It means investors buying the bonds now want a much higher return for the risk, which could also make future borrowing harder."
           ],
           "paragraphsZh": [
-            "据路透社援引LSEG数据，CoreWeave从未盈利，背着约500亿美元的债务。数据中心要等客户的租约开始才有像样的收入，所以钱得先垫进去。路透社说，它的股价和债券是在几家大型云公司暗示数据中心项目延期之后大跌的。",
+            "据路透社援引LSEG数据，CoreWeave从未盈利，背着约500亿美元的债务。数据中心要等客户的租约开始才开始带来收入，所以钱得先垫进去。路透社说，它的股价和债券是在几家大型云公司暗示数据中心项目延期之后大跌的。",
             "CoreWeave一部分已发行、2030年到期的债券，现在在二级市场上的收益率接近16%。这不是CoreWeave实际要付的利率，而是说明现在买这些债券的投资者，要求拿到高得多的回报才愿意承担风险，这也可能让它以后融资更难。"
           ]
         },
@@ -87,7 +87,7 @@
             "The ministry also proposes carve-outs. Technology already public through open source or academic papers is proposed to be excluded. After the rules take effect, offering a restricted model through an API (the connection other software uses to call it), an app, a website or SaaS wouldn't count as an export, but installing it on servers abroad would. Under the proposal, open-sourcing AI technology would qualify for automatic licensing, one of the proposed convenience measures, which the ministry says would basically mean \"report and go\" (即报即出)."
           ],
           "paragraphsZh": [
-            "征求意见稿拟新增23项人工智能技术。对于大模型，拟限制出口的是其核心技术，比如权重（让模型能工作的那堆学出来的数字）和源代码。适用条件是满足以下任一项：计算量≥10^26次浮点运算、参数量≥2万亿，或者能力达到“全球领先水平”。附件对“全球领先水平”的定义是：出口活动发生时，在国内外主流测评机构、大规模产业平台等针对综合性能、专项业务能力、全球调用量、安全性能、训练效率等的公开评估中，排名全球前10。还有一些人工智能技术拟直接禁止出口，比如人工智能驱动的恶意代码生成技术。",
+            "征求意见稿拟新增23项人工智能技术。对于大模型，拟限制出口的是其核心技术，比如权重（模型训练中学到的数值）和源代码。适用条件是满足以下任一项：计算量≥10^26次浮点运算、参数量≥2万亿，或者能力达到“全球领先水平”。附件对“全球领先水平”的定义是：出口活动发生时，在国内外主流测评机构、大规模产业平台等针对综合性能、专项业务能力、全球调用量、安全性能、训练效率等的公开评估中，排名全球前10。还有一些人工智能技术拟直接禁止出口，比如人工智能驱动的恶意代码生成技术。",
             "商务部还提出了一些例外和便利。已通过开源、发表学术论文等方式进入公共领域的技术，拟不纳入出口管理范围。措施正式实施后，用限制类大模型对外提供API调用（其他软件调用模型的接口）、App或网页交互、SaaS应用，不属于技术出口；但在海外本地化部署则属于。按照征求意见稿，人工智能技术开源拟适用自动许可等便利措施，商务部说基本可以实现“即报即出”。"
           ]
         },
@@ -145,7 +145,7 @@
             "Only in a narrow sense. By August, agents run by staff were logging six times as many hours as the employees, the report says. That compares agents' running time with a 40-hour human week, so it doesn't mean six robot workers per person. In interactive sessions, agents also spend about 80% of the time waiting for a human."
           ],
           "paragraphsZh": [
-            "只在很窄的意义上成立。报告说，到8月，员工指挥的智能体累计的工作时长是员工本人的六倍。但这是拿智能体的运行时间去比人每周40小时的工时，并不意味着每个人手下有六个“机器人员工”。而且在交互式会话里，智能体大约80%的时间都在等人。"
+            "要看怎么算。报告说，到8月，员工指挥的智能体累计的工作时长是员工本人的六倍。但这是拿智能体的运行时间去比人每周40小时的工时，并不意味着每个人手下有六个“机器人员工”。而且在交互式会话里，智能体大约80%的时间都在等人。"
           ]
         },
         {
@@ -189,7 +189,7 @@
           "NEA forecasts a PSI of 90 to 160 for Tuesday. It warns that winds from Tuesday night to Thursday may bring smoke from Kalimantan fires towards Singapore."
         ],
         "openingZh": [
-          "周一空气质量有所改善，但还没有好转到位。据亚洲新闻台报道，下午6点，24小时PSI从北部的89到西部的114不等。PSI达到101及以上就算不健康。西部在周日上午达到230，是今年烟霾季的最高读数。实时读数可查看国家环境局的烟霾网站haze.gov.sg。",
+          "周一空气有所好转，但部分地区仍处于不健康水平。据亚洲新闻台报道，下午6点，24小时PSI从北部的89到西部的114不等。PSI达到101及以上就算不健康。西部在周日上午达到230，是今年烟霾季的最高读数。实时读数可查看国家环境局的烟霾网站haze.gov.sg。",
           "国家环境局预测周二PSI在90到160之间，并提醒从周二晚上到周四，风向可能把加里曼丹火灾的烟雾吹向新加坡。"
         ],
         "sections": [
