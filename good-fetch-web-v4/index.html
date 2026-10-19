@@ -49,7 +49,8 @@ nav{display:flex;align-items:center;gap:26px;font-size:15px} nav a.active{border
 .intro-card{margin-top:26px;background:var(--soft);border-radius:14px;padding:24px} .intro-card h3{font-family:Georgia,serif;font-size:26px;font-weight:500;margin:0 0 14px} .intro-card p{font-size:17px;line-height:1.45;margin:0}
 .archive{margin-top:24px;padding-top:24px;border-top:1px solid var(--line)} .archive h3{font-size:26px;margin:0 0 14px} .archive button{display:block;width:100%;text-align:left;border:0;background:transparent;padding:10px 12px;border-radius:8px;cursor:pointer} .archive button.active{background:var(--soft)} .archive .view{font-weight:700;margin-top:6px}
 .about-card{margin-top:34px;padding:20px 0 34px;border-top:1px solid var(--line);font-size:13px;line-height:1.5;color:var(--muted)}
-footer{display:flex;justify-content:space-between;gap:20px;padding:24px 0 40px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 20px;padding:24px 0 40px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+.footer-credit{flex:1 0 100%;margin:4px 0 0;font-size:12px;line-height:1.4;color:var(--muted)}
 .masthead{border-top:1px solid var(--line);padding-top:22px;margin-top:18px}
 .masthead h2{font-size:25px;margin:0;letter-spacing:-.03em;line-height:1.15}
 .masthead p{margin:8px 0 0;font-size:15px;color:var(--muted)}
@@ -98,7 +99,7 @@ Come back tomorrow.</p></div>
   </section>
 </aside>
 </div>
-<footer><span>Good Fetch · 2026</span><span data-i18n="footer">Fetched with Riva.</span></footer>
+<footer><span>Good Fetch · 2026</span><span data-i18n="footer">Fetched with Riva.</span><p class="footer-credit" data-i18n="credit">Made by Riva &amp; Cassie’s AI agent.</p></footer>
 </div>
 <script>
 const ui = {
@@ -112,6 +113,7 @@ const ui = {
     archive: 'Archive',
     viewAll: 'View all →',
     footer: 'Fetched with Riva.',
+    credit: 'Made by Riva & Cassie’s AI agent.',
     loading: "Loading today's edition…",
     loadError: "Today's edition couldn't be loaded. Please refresh in a moment.",
     missingEdition: "This edition isn't available yet.",
@@ -129,6 +131,7 @@ const ui = {
     archive: '往期',
     viewAll: '查看全部 →',
     footer: 'Riva 帮你叼来的。',
+    credit: '由 Riva 和 Cassie 的 AI 智能体制作。',
     loading: '正在加载今天的内容…',
     loadError: '今天的内容暂时没加载出来，请稍后再刷新。',
     missingEdition: '这一期还没有发布。',
