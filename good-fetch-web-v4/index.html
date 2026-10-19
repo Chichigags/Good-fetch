@@ -56,6 +56,15 @@ footer{display:flex;justify-content:space-between;align-items:baseline;flex-wrap
 .subhead{font-size:16px;line-height:1.3;letter-spacing:-.02em;margin:16px 0 6px}
 .sources{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin-top:10px}
 .sources .source{margin-top:0;max-width:100%;line-height:1.35}
+.more-details{margin:2px 0 2px}
+.more-details summary{display:inline-flex;align-items:center;gap:6px;max-width:100%;font-size:13px;line-height:1.35;font-weight:500;color:var(--muted);cursor:pointer;list-style:none}
+.more-details summary::-webkit-details-marker{display:none}
+.more-details summary::marker{content:''}
+.more-details summary::before{content:'';flex:0 0 auto;width:0;height:0;border-top:3.5px solid transparent;border-bottom:3.5px solid transparent;border-left:5px solid currentColor;transform-origin:center}
+.more-details[open] summary::before{transform:rotate(90deg)}
+.more-details summary:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:4px}
+.more-details .summary{margin-top:10px}
+.more-details .summary:last-child{margin-bottom:0}
 .why .take-kind{display:block;margin:0 0 6px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .story h3{line-height:1.2}
 .story.no-thumb{grid-template-columns:48px minmax(0,1fr)}
@@ -117,7 +126,8 @@ const ui = {
     missingEdition: "This edition isn't available yet.",
     archiveError: "Archive couldn't be loaded.",
     empty: 'This edition has no stories yet.',
-    sourceFallback: 'Source'
+    sourceFallback: 'Source',
+    moreDetails: 'More details'
   },
   zh: {
     tagline: '从亚洲看 AI 新鲜事。',
@@ -134,7 +144,8 @@ const ui = {
     missingEdition: '这一期还没有发布。',
     archiveError: '往期列表暂时没加载出来。',
     empty: '这一期还没有新闻。',
-    sourceFallback: '来源'
+    sourceFallback: '来源',
+    moreDetails: '更多细节'
   }
 };
 
@@ -260,11 +271,12 @@ function renderStory(parent, item, number) {
   const opening = firstParagraphs(item, ['opening', 'intro']);
   const sections = Array.isArray(item.sections) ? item.sections : [];
   const myTake = takeBody(localizedString(item, 'myTake'));
+  const detailLines = localizedParagraphs(item, 'details');
   const sectionBlocks = sections.filter(section => {
     if (!section || typeof section !== 'object') return false;
     return firstString(section, ['heading', 'question']) || localizedParagraphs(section, 'paragraphs').length;
   });
-  if (!headline && !opening.length && !sectionBlocks.length && !myTake) return false;
+  if (!headline && !opening.length && !sectionBlocks.length && !myTake && !detailLines.length) return false;
 
   const article = document.createElement('article');
   article.className = 'story';
@@ -311,6 +323,15 @@ function renderStory(parent, item, number) {
     span.textContent = myTake;
     why.append(label, kind, span);
     copy.append(why);
+  }
+  if (detailLines.length) {
+    const details = document.createElement('details');
+    details.className = 'more-details';
+    const summary = document.createElement('summary');
+    summary.textContent = ui[lang].moreDetails;
+    details.append(summary);
+    detailLines.forEach(text => details.append(paragraph(text)));
+    copy.append(details);
   }
   const links = sourceList(item.sources);
   if (links.length) {
