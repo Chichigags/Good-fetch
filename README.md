@@ -119,7 +119,7 @@ Lengths vary. A short story can be a headline, one opening paragraph, a `myTake`
 
 ### Optional Chinese
 
-The EN / 中文 switch translates the site chrome (the tagline, "Riva's Take", "Daily News Briefing", the archive labels). Story text stays in English unless you add a `Zh` twin:
+The EN / 中文 switch translates the site chrome (the tagline, "Riva's Take", "More details", "Daily News Briefing", the archive labels). Story text stays in English unless you add a `Zh` twin:
 
 - `headlineZh`
 - `openingZh` (same shape as `opening`)
