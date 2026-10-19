@@ -37,7 +37,7 @@ You do not put that header in the JSON. `2026-10-19` is shown as `October 19, 20
 
 Under the header, the page shows every story in `stories` (usually 1–3, sometimes more — there is no fixed count). Then one regional block, labelled exactly `SINGAPORE` or `SOUTHEAST ASIA`. Then, only if you include it, a closing recommendation labelled exactly `Worth Following` or `Worth Trying`.
 
-There is no "Why it matters" field and no "summary" field. A story is a headline, optional opening paragraphs, any number of question sections, an optional My Take, and source links.
+There is no "Why it matters" field and no "summary" field. A story is a headline, optional opening paragraphs, any number of question sections, an optional `myTake`, and source links.
 
 ## Edition schema
 
@@ -104,17 +104,17 @@ There is no "Why it matters" field and no "summary" field. A story is a headline
 | `sections` | no | A list. Use as many as the story needs, including none. Each one is a question-style `heading` plus one or more `paragraphs`. Omit the list when the story has no subsections. |
 | `sections[].heading` | with a section | A question, such as `What's changing?` or `Who pays?`. |
 | `sections[].paragraphs` | with a section | A list of one or more paragraphs. Not a single summary line. |
-| `myTake` | no | Shown in the soft box labelled **My Take**. Omit it to leave the box out. This is not a "Why it matters" field. |
+| `myTake` | no | Shown in the soft box. The label on the page is **Riva's Take** (中文: **Riva 的看法**), with **Analysis** underneath. The JSON field stays `myTake`. Omit it to leave the box out. This is not a "Why it matters" field. |
 | `sources` | yes | 1 or 2 links. Each has `name` (the publication) and `url` (full `https://` address). The page prints the name. |
 | `image` | no | Filename relative to `index.html`, such as `boat.png`. Omit it and the story is text only. |
 | `imageAlt` | no | Alt text for the picture. |
 | `category` | no | Small label above the headline, such as `Business`. Omit it if the story has none. |
 
-Lengths vary. A short story can be a headline, one opening paragraph, My Take, and one source. A longer story can have several opening paragraphs and several question sections. Do not pad a story to a fixed length, and do not add empty sections.
+Lengths vary. A short story can be a headline, one opening paragraph, a `myTake`, and one source. A longer story can have several opening paragraphs and several question sections. Do not pad a story to a fixed length, and do not add empty sections.
 
 ### Optional Chinese
 
-The EN / 中文 switch translates the site chrome (the tagline, "My Take", "Daily News Briefing", the archive labels). Story text stays in English unless you add a `Zh` twin:
+The EN / 中文 switch translates the site chrome (the tagline, "Riva's Take", "Daily News Briefing", the archive labels). Story text stays in English unless you add a `Zh` twin:
 
 - `headlineZh`
 - `openingZh` (same shape as `opening`)
@@ -206,9 +206,9 @@ This is a shape example, not a story to publish. Replace every sentence before y
 
 `region.label` may be `SINGAPORE` instead of `SOUTHEAST ASIA`. `recommendation.label` may be `Worth Following` instead of `Worth Trying`. Use only those spellings.
 
-The edition on the homepage is `good-fetch-web-v4/news/latest.json`, dated 19 October 2026. The same file is saved as `good-fetch-web-v4/news/2026-10-19.json`. The previous briefing stays available at `good-fetch-web-v4/news/2026-09-10.json`.
+The edition on the homepage is `good-fetch-web-v4/news/latest.json`, dated 19 October 2026. The same file is saved as `good-fetch-web-v4/news/2026-10-19.json`.
 
-If a draft uses `intro` instead of `opening`, `question` instead of `heading`, or `url` instead of `link` on the recommendation, the page still reads it. Save files with the names in the schema above: `opening`, `heading`, and `link`. A My Take is shown in the soft box labelled **My Take**, with the word **Analysis** under that label, so it reads as analysis rather than another news paragraph. Do not start the `myTake` text with "My Take:".
+If a draft uses `intro` instead of `opening`, `question` instead of `heading`, or `url` instead of `link` on the recommendation, the page still reads it. Save files with the names in the schema above: `opening`, `heading`, and `link`. The `myTake` text is shown in the soft box labelled **Riva's Take**, with the word **Analysis** under that label, so it reads as analysis rather than another news paragraph. Do not start the `myTake` text with "Riva's Take:" or "My Take:".
 
 ## Archive file
 
@@ -217,8 +217,7 @@ If a draft uses `intro` instead of `opening`, `question` instead of `heading`, o
 ```json
 {
   "editions": [
-    { "date": "2026-10-19", "label": "Oct 19, 2026" },
-    { "date": "2026-09-10", "label": "Sep 10, 2026" }
+    { "date": "2026-10-19", "label": "Oct 19, 2026" }
   ]
 }
 ```
