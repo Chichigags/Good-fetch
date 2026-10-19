@@ -1,0 +1,74 @@
+{
+  "date": "2026-09-10",
+  "stories": [
+    {
+      "headline": "China's AI chipmakers are raising prices as HBM stays scarce",
+      "opening": [
+        "Huawei's advanced Ascend 950DT accelerator is being quoted above RMB 250,000, roughly 20–50% higher than two months ago. Cambricon has also lifted pricing on its upcoming 690 chip by 20–30%."
+      ],
+      "myTake": "AI compute is getting more expensive. That can eventually show up in the price of the tools and services people use every day.",
+      "myTakeZh": "AI 算力正在变贵，最后可能会反映到我们每天使用的 AI 工具和服务价格上。",
+      "image": "openai.png",
+      "imageAlt": "OpenAI",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/chinas-ai-chipmakers-raise-prices-high-bandwidth-memory-shortage-bites-2026-09-10/"
+        }
+      ]
+    },
+    {
+      "headline": "Enflame heads to Shanghai with a $912m IPO",
+      "opening": [
+        "Tencent-backed Enflame raised RMB 6.12bn and is set to debut on the STAR Market. It forecasts sharp revenue growth, while Tencent remains by far its biggest customer."
+      ],
+      "myTake": "Money is still pouring into the AI chip layer. The opportunity is real, but so is the risk when one customer matters too much.",
+      "myTakeZh": "资本还在继续押注 AI 芯片，但客户太集中的风险也很真实。",
+      "image": "iphone.png",
+      "imageAlt": "Phone",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/tencent-backed-enflame-debut-shanghai-friday-912-million-ipo-2026-09-09/"
+        }
+      ]
+    }
+  ],
+  "region": {
+    "label": "SINGAPORE",
+    "stories": [
+      {
+        "headline": "The haze is back in the unhealthy range",
+        "opening": [
+          "Central Singapore's 24-hour PSI reached 102 late Wednesday. Smoke from fires in Sumatra and Kalimantan continues to create a haze risk."
+        ],
+        "myTake": "This can change what you do today: exercise, dog walks and outdoor meals are all worth a quick PSI check.",
+        "myTakeZh": "这会直接影响你今天怎么安排：运动、遛狗、户外吃饭前，都值得先看一眼 PSI。",
+        "image": "pills.png",
+        "imageAlt": "Local story thumbnail",
+        "sources": [
+          {
+            "name": "Channel NewsAsia",
+            "url": "https://www.channelnewsasia.com/singapore/haze-singapore-psi-unhealthy-nea-6372581"
+          }
+        ]
+      },
+      {
+        "headline": "Small-car COE hits a new record: S$133,009",
+        "opening": [
+          "Category A COE rose to a record S$133,009. Category B also climbed to S$135,001."
+        ],
+        "myTake": "Even if you're not buying a car, this is a quick read on how expensive mobility has become in Singapore.",
+        "myTakeZh": "就算你不买车，这也是理解新加坡出行成本到底有多高的一条新闻。",
+        "image": "boat.png",
+        "imageAlt": "Local story thumbnail",
+        "sources": [
+          {
+            "name": "Channel NewsAsia",
+            "url": "https://www.channelnewsasia.com/singapore/coe-premiums-sep-9-bidding-exercise-6371946"
+          }
+        ]
+      }
+    ]
+  }
+}

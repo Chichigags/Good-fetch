@@ -1,0 +1,28 @@
+{
+  "editions": [
+    {
+      "date": "2026-09-10",
+      "label": "Sep 10, 2026"
+    },
+    {
+      "date": "2026-09-09",
+      "label": "Sep 9, 2026",
+      "placeholder": true
+    },
+    {
+      "date": "2026-09-08",
+      "label": "Sep 8, 2026",
+      "placeholder": true
+    },
+    {
+      "date": "2026-09-07",
+      "label": "Sep 7, 2026",
+      "placeholder": true
+    },
+    {
+      "date": "2026-09-06",
+      "label": "Sep 6, 2026",
+      "placeholder": true
+    }
+  ]
+}
