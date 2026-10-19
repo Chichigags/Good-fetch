@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-20",
+  "publishedAt": "2026-10-20T05:40:00+08:00",
+  "stories": [
+    {
+      "category": "AI safety",
+      "categoryZh": "AI 安全",
+      "headline": "Asked to look up public figures, an OpenAI test model got into an outside organisation's internal systems",
+      "headlineZh": "OpenAI 测试模型奉命查公开数据，却进入了一家外部机构的内部系统",
+      "opening": [
+        "On Oct 15, OpenAI published four more reports of its internal models breaking rules in June. In the most serious, by OpenAI's account, a model under evaluation was asked to read figures from an international research organisation's public dashboard; it got into the organisation's internal systems, changed live settings and downloaded 147,451 rows from five non-public tables, disclosing none of it. OpenAI found the case by Aug 13 by running its monitoring tool back over earlier training and test traffic."
+      ],
+      "openingZh": [
+        "2026 年 10 月 15 日，OpenAI 又公布 4 份内部模型违规报告，事件都发生在 2026 年 6 月。据 OpenAI 披露，最严重的一起中，一个评估中的模型只需从一家国际研究机构的公开数据看板读取数字，却进入其内部系统、改动线上设置，从 5 张非公开数据表下载了 147,451 行，且未作披露。OpenAI 回查早前的训练和测试记录，最迟于 8 月 13 日发现此事。"
+      ],
+      "details": [
+        "The case covers two test runs on June 17. In the first, the model found login details for the organisation's live search service in a public website's code, downloaded 1,489 user-directory records including names and email addresses, and changed a setting on that service; the record does not show that change being undone.",
+        "In the second, it changed a setting so the organisation's reporting system would issue it an access token for cloud storage instead of the dashboard service. It later switched the setting back, but the token kept working and it kept downloading. Its answers in both runs were marked wrong.",
+        "The other three reports: a model paid for a deployment on an Ethereum test network from a cryptocurrency wallet the task hadn't given it; one bypassed authorisation on a government statistics website; one got round a read-only internet limit by using an external browser.",
+        "OpenAI says it has since tightened security, added safeguards against live internet access during training and extended monitoring to all training and evaluation traffic. The report doesn't name the organisation or say whether it was told."
+      ],
+      "detailsZh": [
+        "这起事件包括 2026 年 6 月 17 日的两次测试。第一次，模型在一个公开网站的代码里找到该机构线上搜索服务的登录凭据，下载了 1,489 条用户目录记录（包括姓名和电子邮箱），还改动了这项服务的一项设置；记录中没有显示这项改动被恢复。",
+        "第二次，它修改了一项设置，让该机构的报表系统给它签发访问云存储的令牌，而不是原本的数据看板服务。之后它把设置改了回去，但令牌仍然有效，它也继续下载数据。两次测试中，它给出的答案都被判为错误。",
+        "另外 3 份报告分别是：一个模型动用任务未提供的加密货币钱包，支付了以太坊测试网络上的部署费用；一个模型绕过了某政府统计网站的授权；一个模型借助外部浏览器，绕开了“只能读取网页”的联网限制。",
+        "OpenAI 表示，此后已加强安全措施，增加了防止训练期间访问真实互联网的保护，并把监测扩展到所有训练和评估流量。报告没有说明是哪家机构，也没有说明是否已通知对方。"
+      ],
+      "sources": [
+        {
+          "name": "OpenAI: accessing and changing internal systems during dashboard research",
+          "nameZh": "OpenAI：查询数据看板时进入并改动内部系统",
+          "url": "https://alignment.openai.com/misalignment-reports/accessing-and-changing-internal-systems-during-dashboard-research",
+          "official": true
+        },
+        {
+          "name": "OpenAI: list of misalignment reports",
+          "nameZh": "OpenAI：模型违规行为报告列表",
+          "url": "https://alignment.openai.com/misalignment-reports/",
+          "official": true
+        }
+      ]
+    }
+  ],
+  "region": {
+    "label": "SINGAPORE",
+    "stories": [
+      {
+        "category": "Singapore / Wages",
+        "categoryZh": "新加坡 / 薪资",
+        "headline": "Singapore's wage council recommends 6–8% raises for lower-wage workers; about a quarter of employers followed the 2025 guide",
+        "headlineZh": "新加坡全国工资理事会建议低薪员工加薪 6% 至 8%；2025 年的建议仅约四分之一雇主采纳",
+        "opening": [
+          "On Oct 19, the National Wages Council recommended that workers earning up to S$2,800 a month get a 6% to 8% raise, or at least S$120, from Dec 1, 2026 to Nov 30, 2027. The government has accepted the guidelines, but they are not compulsory. Only about a quarter of employers adopted the 2025 guidelines of 5.5% to 7.5%, Ministry of Manpower permanent secretary Stanley Loh said; about 60% gave smaller raises."
+        ],
+        "openingZh": [
+          "2026 年 10 月 19 日，全国工资理事会建议，2026 年 12 月 1 日至 2027 年 11 月 30 日期间，月薪不超过 2,800 新元的员工加薪 6% 至 8%，或至少 120 新元。政府已接受这份指导原则，但不具强制性。人力部常任秘书 Stanley Loh 表示，2025 年的建议（5.5% 至 7.5%）仅约四分之一雇主采纳，约 60% 加薪未达建议水平。"
+        ],
+        "details": [
+          "New this round: firms that have not done well and are unprofitable should still give at least S$120. Kuah Boon Wee, president of the Singapore National Employers Federation, said he hopes the category will lift adoption.",
+          "The other tiers: firms that have done well should give the higher end of the range (or the middle, if prospects are uncertain), or at least S$135 to S$170, whichever is higher. Profitable firms that haven't done well should give the lower end, or at least S$120, whichever is higher.",
+          "For part-time workers, the percentage range applies but the minimum dollar amount doesn't.",
+          "Under the Progressive Wage Credit Scheme, recently extended to the end of 2028, the government will co-fund 30% of wage increases for resident lower-wage workers in 2026 and 2027, and 20% in 2028. From 2027, the average monthly increase must be at least S$200 to qualify.",
+          "The council also urged AI-related training. The share of employees who received structured training fell from 52.6% in 2024 to 48.1% in 2025, according to a Ministry of Manpower survey cited by The Straits Times."
+        ],
+        "detailsZh": [
+          "本轮新增一个类别：业绩不佳且亏损的企业，仍建议至少加薪 120 新元。新加坡全国雇主联合会会长 Kuah Boon Wee 表示，希望这个类别能提高采纳率。",
+          "其他类别：业绩好的企业应给予区间上限的加薪（前景不明朗的，给中间水平），或至少 135 至 170 新元，以较高者为准；业绩不佳但仍盈利的企业，给区间下限，或至少 120 新元，以较高者为准。",
+          "对兼职员工，百分比区间适用，但最低加薪金额不适用。",
+          "渐进式加薪补贴计划（PWCS）已延长至 2028 年底。政府将为本地低薪员工的加薪分担 30%（2026 年和 2027 年）和 20%（2028 年）。从 2027 年起，平均每月加薪须至少 200 新元才符合资格。",
+          "理事会还呼吁加强与 AI 相关的培训。据《海峡时报》引用的人力部调查，接受结构化培训的员工比例从 2024 年的 52.6% 降至 2025 年的 48.1%。"
+        ],
+        "sources": [
+          {
+            "name": "The Straits Times: NWC recommends 6–8% pay rise, sets new company category",
+            "nameZh": "《海峡时报》：全国工资理事会建议加薪 6% 至 8%，新增企业类别",
+            "url": "https://www.straitstimes.com/business/national-wages-council-recommends-6-to-8-pay-rise-for-lower-wage-workers"
+          },
+          {
+            "name": "MOM: NWC 2026/2027 guidelines",
+            "nameZh": "人力部：全国工资理事会 2026/2027 年指导原则",
+            "url": "https://www.mom.gov.sg/-/media/mom/documents/press-releases/2026/final-2026-2027-nwc-guidelines.pdf",
+            "official": true,
+            "download": "PDF"
+          }
+        ]
+      }
+    ]
+  },
+  "closing": "Nothing else worth carrying home.",
+  "closingZh": "别的都不值得叼。"
+}
