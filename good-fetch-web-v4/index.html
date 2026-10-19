@@ -45,17 +45,20 @@ nav{display:flex;align-items:center;gap:26px;font-size:15px} nav a.active{border
 .riva-hero{display:block;width:100%;max-width:240px;justify-self:end;mix-blend-mode:multiply} .riva-hero img{display:block;width:100%;height:auto}
 .riva-note{font-family:"Bradley Hand","Segoe Print","Comic Sans MS",cursive;font-size:17px;line-height:1.45;font-style:italic;transform:rotate(-2deg);transform-origin:left center;margin:0;color:#171717;white-space:pre-line}
 .section-title{display:flex;justify-content:space-between;align-items:end;border-top:1px solid var(--line);padding-top:22px;margin-top:18px} .section-title h2{font-size:25px;margin:0;letter-spacing:-.03em} .count{font-size:12px;color:var(--muted)}
-.story{display:grid;grid-template-columns:48px 210px minmax(0,1fr);gap:18px;padding:24px 0;border-bottom:1px solid var(--line)} .num{font-size:52px;font-weight:900;line-height:1} .thumb{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:5px;background:#ddd} .kicker{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 8px} .story h3{font-size:24px;line-height:1.02;letter-spacing:-.035em;margin:0 0 8px} .summary{font-size:16px;line-height:1.35;color:#3f3f3c;margin:0 0 12px} .why{background:var(--soft);border-radius:8px;padding:11px 12px;font-size:14px;line-height:1.35} .why b{display:block;margin-bottom:3px} .source{display:inline-block;margin-top:10px;font-size:12px;font-weight:700}
-.intro-card{margin-top:26px;background:var(--soft);border-radius:14px;padding:24px} .intro-card h3{font-family:Georgia,serif;font-size:26px;font-weight:500;margin:0 0 14px} .intro-card p{font-size:17px;line-height:1.45;margin:0}
-.archive{margin-top:24px;padding-top:24px;border-top:1px solid var(--line)} .archive h3{font-size:26px;margin:0 0 14px} .archive button{display:block;width:100%;text-align:left;border:0;background:transparent;padding:10px 12px;border-radius:8px;cursor:pointer} .archive button.active{background:var(--soft)} .archive .view{font-weight:700;margin-top:6px}
+.story{display:grid;grid-template-columns:48px 210px minmax(0,1fr);gap:18px;padding:24px 0;border-bottom:1px solid var(--line);min-width:0} .num{font-size:52px;font-weight:900;line-height:1} .thumb{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:5px;background:#ddd} .kicker{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 8px} .story h3{font-size:24px;line-height:1.02;letter-spacing:-.035em;margin:0 0 8px;overflow-wrap:break-word} .summary{font-size:16px;line-height:1.35;color:#3f3f3c;margin:0 0 12px;overflow-wrap:break-word} .why{background:var(--soft);border-radius:8px;padding:11px 12px;font-size:14px;line-height:1.35} .why b{display:block;margin-bottom:3px} .story-copy{min-width:0}
+.intro-card{margin-top:28px;background:#f3f1ea;border:1px solid var(--line);border-radius:16px;padding:22px 22px 18px} .intro-card h3{font-family:Georgia,serif;font-size:26px;font-weight:500;margin:0 0 8px;line-height:1.3;overflow-wrap:anywhere} .intro-card .rec-why{margin:0;font-size:16px;line-height:1.5;color:#1c1c1a} .intro-card .rec-meta{margin:10px 0 0;font-size:14px;line-height:1.55;color:#3f3f3c;overflow-wrap:break-word}
+.archive{margin-top:24px;padding-top:24px;border-top:1px solid var(--line)} .archive h3{font-size:26px;margin:0 0 14px} .archive button{display:block;width:100%;text-align:left;border:0;background:transparent;padding:10px 12px;border-radius:8px;cursor:pointer} .archive button[hidden]{display:none} .archive button.active{background:var(--soft)} .archive .view{font-weight:700;margin-top:6px}
 .about-card{margin-top:34px;padding:20px 0 34px;border-top:1px solid var(--line);font-size:13px;line-height:1.5;color:var(--muted)}
 footer{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px 20px;padding:24px 0 40px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
 .masthead{border-top:1px solid var(--line);padding-top:22px;margin-top:18px}
 .masthead h2{font-size:25px;margin:0;letter-spacing:-.03em;line-height:1.15}
 .masthead p{margin:8px 0 0;font-size:15px;color:var(--muted)}
 .subhead{font-size:16px;line-height:1.3;letter-spacing:-.02em;margin:16px 0 6px}
-.sources{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin-top:10px}
-.sources .source{margin-top:0;max-width:100%;line-height:1.35}
+.sources{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin-top:16px;max-width:100%;min-width:0}
+.sources-heading{margin:0;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;line-height:1.4;color:#3f3f3c}
+.source-row{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px;max-width:100%;min-width:0;margin:0}
+.sources .source{display:inline;margin:0;max-width:100%;font-size:13px;font-weight:600;line-height:1.45;color:#1c1c1a;overflow-wrap:anywhere}
+.source-tag{font-size:12px;font-weight:600;line-height:1.4;color:#3f3f3c}
 .more-details{margin:2px 0 2px}
 .more-details summary{display:inline-flex;align-items:center;gap:6px;max-width:100%;font-size:13px;line-height:1.35;font-weight:500;color:var(--muted);cursor:pointer;list-style:none}
 .more-details summary::-webkit-details-marker{display:none}
@@ -68,11 +71,27 @@ footer{display:flex;justify-content:space-between;align-items:baseline;flex-wrap
 .why .take-kind{display:block;margin:0 0 6px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .story h3{line-height:1.2}
 .story.no-thumb{grid-template-columns:48px minmax(0,1fr)}
-.intro-card .rec-label{margin:0 0 8px;font-size:12px;font-weight:700;letter-spacing:.04em;line-height:1.3;color:var(--muted)}
+.intro-card .rec-label{margin:0 0 10px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;line-height:1.3;color:#3f3f3c}
 .load-note{margin:22px 0 36px;padding:16px 18px;background:var(--soft);border-radius:12px;color:#3f3f3c;font-size:15px;line-height:1.45}
 .archive .note{margin:0;padding:10px 12px;font-size:14px;line-height:1.4;color:var(--muted)}
 @media(max-width:900px){.grid{grid-template-columns:1fr} .main{border-right:0;padding-right:0} .side{padding-left:0} .hero{justify-content:flex-start;min-height:0} .hero-visual{max-width:100%;grid-template-columns:minmax(140px,200px) minmax(0,1fr)} .riva-hero{justify-self:start;max-width:200px} .story{grid-template-columns:40px 120px minmax(0,1fr)} .story.no-thumb{grid-template-columns:40px minmax(0,1fr)} nav a{display:none}}
 @media(max-width:620px){.shell{width:min(calc(100% - 28px),var(--max))} header{min-height:70px} .brand strong{font-size:26px} .tagline{max-width:none} .masthead h2{font-size:22px} .hero-visual{grid-template-columns:1fr;gap:8px} .riva-hero{max-width:180px} .riva-note{font-size:16px} .story,.story.no-thumb{grid-template-columns:34px 1fr} .thumb{grid-column:2} .story-copy{grid-column:2} .num{font-size:40px}}
+html[lang="zh-CN"] body{font-family:"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif}
+html[lang="zh-CN"] .summary{line-height:1.75;margin-bottom:1em}
+html[lang="zh-CN"] .why{line-height:1.75}
+html[lang="zh-CN"] .story h3{font-size:22px;line-height:1.4;letter-spacing:0}
+html[lang="zh-CN"] .masthead h2{font-size:22px;line-height:1.45;letter-spacing:0}
+html[lang="zh-CN"] .subhead{line-height:1.45;letter-spacing:0}
+html[lang="zh-CN"] .kicker,html[lang="zh-CN"] .sources-heading,html[lang="zh-CN"] .intro-card .rec-label{letter-spacing:0;text-transform:none}
+html[lang="zh-CN"] .sources-heading,html[lang="zh-CN"] .intro-card .rec-label{font-size:13px}
+html[lang="zh-CN"] .intro-card h3{font-family:"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif;font-size:22px;line-height:1.4;font-weight:700}
+html[lang="zh-CN"] .intro-card .rec-why,html[lang="zh-CN"] .intro-card .rec-meta{line-height:1.75}
+@media(max-width:620px){html[lang="zh-CN"] .story h3{font-size:20px;line-height:1.4} html[lang="zh-CN"] .masthead h2,html[lang="zh-CN"] .intro-card h3{font-size:20px;line-height:1.4}}
+body.archive-bottom .grid{grid-template-columns:minmax(0,1fr)}
+body.archive-bottom .main{border-right:0;padding-right:0}
+body.archive-bottom .side{padding:0}
+body.archive-bottom .hero{justify-content:flex-start}
+body.archive-bottom .archive h3{font-size:18px}
 </style>
 </head>
 <body>
@@ -127,6 +146,9 @@ const ui = {
     archiveError: "Archive couldn't be loaded.",
     empty: 'This edition has no stories yet.',
     sourceFallback: 'Source',
+    sourcesHeading: 'Sources',
+    official: 'Official',
+    downloadFile: 'Download {type} file',
     moreDetails: 'More details'
   },
   zh: {
@@ -145,6 +167,9 @@ const ui = {
     archiveError: '往期列表暂时没加载出来。',
     empty: '这一期还没有新闻。',
     sourceFallback: '来源',
+    sourcesHeading: '来源',
+    official: '官方',
+    downloadFile: '下载 {type} 文件',
     moreDetails: '更多细节'
   }
 };
@@ -180,7 +205,17 @@ function formatLongDate(iso) {
   return month + ' ' + Number(match[3]) + ', ' + match[1];
 }
 
+function formatChineseDate(iso) {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || '');
+  if (!match) return '';
+  return match[1] + '年' + Number(match[2]) + '月' + Number(match[3]) + '日';
+}
+
 function editionHeader(date) {
+  if (lang === 'zh') {
+    const label = formatChineseDate(date);
+    return label ? 'GOOD FETCH｜' + label : 'GOOD FETCH';
+  }
   const label = formatLongDate(date);
   return label ? 'GOOD FETCH | ' + label : 'GOOD FETCH';
 }
@@ -252,9 +287,50 @@ function sourceList(value) {
     if (!item || typeof item !== 'object') return;
     const url = safeUrl(item.url);
     if (!url) return;
-    links.push({ name: clean(item.name), url });
+    links.push({
+      name: localizedString(item, 'name'),
+      url,
+      official: item.official === true,
+      download: clean(item.download)
+    });
   });
   return links;
+}
+
+function renderSources(parent, sources) {
+  const links = sourceList(sources);
+  if (!links.length) return;
+  const wrap = document.createElement('div');
+  wrap.className = 'sources';
+  const heading = document.createElement('p');
+  heading.className = 'sources-heading';
+  heading.textContent = ui[lang].sourcesHeading;
+  wrap.append(heading);
+  links.forEach(link => {
+    const row = document.createElement('p');
+    row.className = 'source-row';
+    const a = document.createElement('a');
+    a.className = 'source';
+    a.href = link.url;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    a.textContent = (link.name || ui[lang].sourceFallback) + ' →';
+    row.append(a);
+    if (link.official) {
+      const tag = document.createElement('span');
+      tag.className = 'source-tag';
+      tag.textContent = ui[lang].official;
+      row.append(tag);
+    }
+    if (link.download) {
+      const file = document.createElement('span');
+      file.className = 'source-tag';
+      file.textContent = ui[lang].downloadFile.replace('{type}', link.download);
+      row.append(file);
+    }
+    wrap.append(row);
+  });
+  parent.append(wrap);
 }
 
 function paragraph(text) {
@@ -333,21 +409,7 @@ function renderStory(parent, item, number) {
     detailLines.forEach(text => details.append(paragraph(text)));
     copy.append(details);
   }
-  const links = sourceList(item.sources);
-  if (links.length) {
-    const wrap = document.createElement('div');
-    wrap.className = 'sources';
-    links.forEach(link => {
-      const a = document.createElement('a');
-      a.className = 'source';
-      a.href = link.url;
-      a.target = '_blank';
-      a.rel = 'noopener noreferrer';
-      a.textContent = (link.name || ui[lang].sourceFallback) + ' →';
-      wrap.append(a);
-    });
-    copy.append(wrap);
-  }
+  renderSources(copy, item.sources);
 
   article.append(num);
   if (imageUrl) {
@@ -373,19 +435,19 @@ function renderStoryList(parent, stories, start) {
 
 function renderRecommendation(parent, rec) {
   if (!rec || typeof rec !== 'object') return false;
-  const label = clean(rec.label);
   const title = localizedString(rec, 'title');
   const text = localizedString(rec, 'text');
+  const price = localizedString(rec, 'price');
+  const availability = localizedString(rec, 'availability');
+  const note = localizedString(rec, 'note');
   const href = safeUrl(rec.link || rec.url || '');
-  if (!title && !text) return false;
+  if (!title && !text && !price && !availability && !note) return false;
   const card = document.createElement('section');
   card.className = 'intro-card';
-  if (label) {
-    const kicker = document.createElement('p');
-    kicker.className = 'rec-label';
-    kicker.textContent = label;
-    card.append(kicker);
-  }
+  const kicker = document.createElement('p');
+  kicker.className = 'rec-label';
+  kicker.textContent = lang === 'zh' ? (clean(rec.labelZh) || '值得一看') : (clean(rec.label) || 'Worth a look');
+  card.append(kicker);
   if (title) {
     const h3 = document.createElement('h3');
     if (href) {
@@ -402,9 +464,17 @@ function renderRecommendation(parent, rec) {
   }
   if (text) {
     const body = document.createElement('p');
+    body.className = 'rec-why';
     body.textContent = text;
     card.append(body);
   }
+  [price, availability, note].forEach(line => {
+    if (!line) return;
+    const meta = document.createElement('p');
+    meta.className = 'rec-meta';
+    meta.textContent = line;
+    card.append(meta);
+  });
   parent.append(card);
   return true;
 }
@@ -412,8 +482,7 @@ function renderRecommendation(parent, rec) {
 function renderEdition(edition) {
   currentEdition = edition;
   messageKey = '';
-  const label = formatLongDate(edition.date);
-  document.title = label ? 'Good Fetch | ' + label : 'Good Fetch';
+  document.title = editionHeader(edition.date);
   const root = document.getElementById('stories');
   root.replaceChildren();
 
@@ -427,20 +496,8 @@ function renderEdition(edition) {
   root.append(mast);
 
   let number = renderStoryList(root, edition.stories, 1);
-  const beforeRegion = number;
   if (edition.region && typeof edition.region === 'object') {
-    const section = document.createElement('section');
-    const regionLabel = clean(edition.region.label);
-    if (regionLabel) {
-      const title = document.createElement('div');
-      title.className = 'section-title';
-      const heading = document.createElement('h2');
-      heading.textContent = regionLabel;
-      title.append(heading);
-      section.append(title);
-    }
-    number = renderStoryList(section, edition.region.stories, number);
-    if (number > beforeRegion) root.append(section);
+    number = renderStoryList(root, edition.region.stories, number);
   }
   const hasRecommendation = renderRecommendation(root, edition.recommendation);
   if (number === 1 && !hasRecommendation) {
@@ -467,10 +524,22 @@ function renderStories() {
   else if (messageKey) showMessage(messageKey);
 }
 
+function placeArchive() {
+  const aside = document.querySelector('.side');
+  const grid = document.querySelector('.grid');
+  const footer = document.querySelector('footer');
+  if (!aside || !grid || !footer) return;
+  const few = editions.length < 5;
+  document.body.classList.toggle('archive-bottom', few);
+  if (few) footer.before(aside);
+  else grid.append(aside);
+}
+
 function renderArchive() {
   const list = document.getElementById('archive-list');
   const view = document.getElementById('view-all');
   list.replaceChildren();
+  placeArchive();
   if (archiveFailed) {
     const note = document.createElement('p');
     note.className = 'note';
@@ -484,7 +553,7 @@ function renderArchive() {
     const button = document.createElement('button');
     button.type = 'button';
     const custom = clean(item.label);
-    button.textContent = custom || formatDate(item.date);
+    button.textContent = lang === 'zh' ? (formatChineseDate(item.date) || formatDate(item.date)) : (custom || formatDate(item.date));
     if (item.date === activeDate) {
       button.classList.add('active');
       button.setAttribute('aria-current', 'date');
@@ -492,7 +561,7 @@ function renderArchive() {
     button.addEventListener('click', () => openEdition(item.date));
     list.append(button);
   });
-  view.hidden = editions.length === 0;
+  view.hidden = editions.length <= 5;
   view.textContent = ui[lang].viewAll;
 }
 

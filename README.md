@@ -33,9 +33,9 @@ GOOD FETCH | October 19, 2026
 Daily News Briefing
 ```
 
-You do not put that header in the JSON. `2026-10-19` is shown as `October 19, 2026`.
+You do not put that header in the JSON. `2026-10-19` is shown as `October 19, 2026` in English and as `2026年10月19日` in 中文 (`GOOD FETCH｜2026年10月19日`). The same Chinese date is used on the archive buttons, so 中文 mode does not show English month names.
 
-Under the header, the page shows every story in `stories` (usually 1–3, sometimes more — there is no fixed count). Then one regional block, labelled exactly `SINGAPORE` or `SOUTHEAST ASIA`. Then, only if you include it, a closing recommendation labelled exactly `Worth a look`.
+Under the header, the page shows every story in `stories` (usually 1–3, sometimes more — there is no fixed count), then the stories in `region.stories`, in the same list. Then, only if you include it, a closing recommendation labelled exactly `Worth a look`.
 
 There is no "Why it matters" field and no "summary" field. A story is a headline, optional opening paragraphs, any number of question sections, an optional `myTake`, an optional `details` block, and source links.
 
@@ -53,7 +53,10 @@ There is no "Why it matters" field and no "summary" field. A story is a headline
     "label": "Worth a look",
     "title": "Name of the thing",
     "link": "https://example.com/thing",
-    "text": "One or two sentences on why it is worth a look."
+    "text": "One sentence on why it is worth a look.",
+    "price": "Optional. What it costs.",
+    "availability": "Optional. When or where it is available.",
+    "note": "Optional. We haven't tested it."
   }
 }
 ```
@@ -62,14 +65,17 @@ There is no "Why it matters" field and no "summary" field. A story is a headline
 | --- | --- | --- |
 | `date` | yes | `YYYY-MM-DD`. Drives the header and which archive button is highlighted. |
 | `stories` | yes | Main stories, in reading order. One or more. Not capped at 3. |
-| `region` | yes | Exactly one regional block. |
-| `region.label` | yes | Exactly `SINGAPORE` or `SOUTHEAST ASIA`. No other spelling. |
-| `region.stories` | yes | One or more stories, same shape as the main stories. |
-| `recommendation` | no | Omit the whole object when there is nothing to recommend. |
-| `recommendation.label` | when recommending | Exactly `Worth a look`. The page prints this label as written, in both EN and 中文. Older files that say `Worth Trying` or `Worth Following` still display that text. |
-| `recommendation.title` | when recommending | The name of the link. |
-| `recommendation.link` | when recommending | A full `https://` URL. |
-| `recommendation.text` | when recommending | A short note, one or two sentences. |
+| `region` | yes | One group of stories that follow the main stories. |
+| `region.label` | yes | Keep `SINGAPORE` or `SOUTHEAST ASIA` in the file. The page does not print this heading. |
+| `region.stories` | yes | One or more stories, same shape as the main stories. Each one uses its own `category` as the small label. There is no separate region heading. |
+| `recommendation` | no | Omit the whole object when there is nothing to recommend. The page shows it as a tinted editor's-pick card, not as another numbered story. |
+| `recommendation.label` | when recommending | Small label. Use `Worth a look` for a new edition. In English the page prints this text. In 中文 it prints `labelZh`, or **值得一看** when `labelZh` is omitted. |
+| `recommendation.title` | when recommending | The name of the link. It is the card title. |
+| `recommendation.link` | when recommending | A full `https://` URL. The title links here. |
+| `recommendation.text` | when recommending | One sentence on why it is worth a look, under the title. |
+| `recommendation.price` | no | A short cost line under the sentence. Omit it to leave the line out. |
+| `recommendation.availability` | no | A short availability line under the price. |
+| `recommendation.note` | no | A short closing line, such as `We haven't tested it`. |
 
 ### Story
 
@@ -94,7 +100,8 @@ There is no "Why it matters" field and no "summary" field. A story is a headline
     "Another short line, if you need it."
   ],
   "sources": [
-    { "name": "Reuters", "url": "https://www.reuters.com/..." }
+    { "name": "Reuters, via Investing.com", "url": "https://www.reuters.com/..." },
+    { "name": "MOFCOM: Annex 1", "url": "https://example.com/annex.wps", "official": true, "download": "WPS" }
   ],
   "image": "openai.png",
   "imageAlt": "Short description of the picture"
@@ -109,11 +116,15 @@ There is no "Why it matters" field and no "summary" field. A story is a headline
 | `sections[].heading` | with a section | A question, such as `What's changing?` or `Who pays?`. |
 | `sections[].paragraphs` | with a section | A list of one or more paragraphs. Not a single summary line. |
 | `myTake` | no | Shown in the soft box. The label on the page is **Riva's Take** (中文: **Riva 的看法**), with **Analysis** underneath. The JSON field stays `myTake`. Omit it to leave the box out. This is not a "Why it matters" field. |
-| `details` | no | Extra paragraphs or short lines, hidden until the reader opens **More details** (中文: **更多细节**). The control starts closed. It sits after the question sections and Riva's Take, and before the source links. Omit the field, or use `[]`, and the story renders as before. A single string is also accepted. Each string is shown as body text, the same way opening paragraphs are. |
-| `sources` | yes | 1 or 2 links. Each has `name` (the publication) and `url` (full `https://` address). The page prints the name. |
+| `details` | no | Extra paragraphs or short lines, hidden until the reader opens **More details** (中文: **更多细节**). The control starts closed. It sits after the question sections and Riva's Take, and before the sources. Omit the field, or use `[]`, and the story renders as before. A single string is also accepted. Each string is shown as body text, the same way opening paragraphs are. |
+| `sources` | yes | One or more links, at the end of the story under the heading **Sources** (中文: **来源**). |
+| `sources[].name` | yes | The link text. Put a reprint in the name, such as `Reuters, via Investing.com`. |
+| `sources[].url` | yes | A full `https://` address. |
+| `sources[].official` | no | `true` adds a small **Official** tag (中文: **官方**). Omit it, or use `false`, for everything else. |
+| `sources[].download` | no | A file type, such as `WPS`. The page adds **Download WPS file** (中文: **下载 WPS 文件**) so the reader knows it is a file, not a web page. |
 | `image` | no | Filename relative to `index.html`, such as `boat.png`. Omit it and the story is text only. |
 | `imageAlt` | no | Alt text for the picture. |
-| `category` | no | Small label above the headline, such as `Business`. Omit it if the story has none. |
+| `category` | no | Small label above the headline, such as `Business` or `Singapore / Environment`. The same label for main stories and region stories. Omit it if the story has none. |
 
 Lengths vary. A short story can be a headline, one opening paragraph, a `myTake`, and one source. A longer story can have several opening paragraphs and several question sections. Do not pad a story to a fixed length, and do not add empty sections.
 
@@ -121,14 +132,16 @@ Lengths vary. A short story can be a headline, one opening paragraph, a `myTake`
 
 The EN / 中文 switch translates the site chrome (the tagline, "Riva's Take", "More details", "Daily News Briefing", the archive labels). Story text stays in English unless you add a `Zh` twin:
 
+- `categoryZh` (the small label above the headline; if you omit it, 中文 mode keeps `category`)
 - `headlineZh`
 - `openingZh` (same shape as `opening`)
 - `sections[].headingZh` and `sections[].paragraphsZh`
 - `myTakeZh`
 - `detailsZh` (same shape as `details`)
-- `recommendation.titleZh` and `recommendation.textZh`
+- `sources[].nameZh`
+- `recommendation.labelZh`, `recommendation.titleZh`, `recommendation.textZh`, `recommendation.priceZh`, `recommendation.availabilityZh`, and `recommendation.noteZh`
 
-Omit any of these and that part stays in English. Do not translate `region.label`. It stays `SINGAPORE` or `SOUTHEAST ASIA`.
+Omit any of these and that part stays in English. Where Chinese meets Latin or digits, write one ordinary space in the JSON (`AI 融资`, `27% 降至 9%`). The page prints that space as written. `region.label` stays `SINGAPORE` or `SOUTHEAST ASIA` in the file. The page does not show it.
 
 ## Example edition
 
@@ -180,6 +193,7 @@ This is a shape example, not a story to publish. Replace every sentence before y
     "label": "SOUTHEAST ASIA",
     "stories": [
       {
+        "category": "Singapore / Environment",
         "headline": "Example: a regional story",
         "opening": [
           "What happened in Singapore or elsewhere in Southeast Asia."
@@ -210,7 +224,7 @@ This is a shape example, not a story to publish. Replace every sentence before y
 }
 ```
 
-`region.label` may be `SINGAPORE` instead of `SOUTHEAST ASIA`. For a new edition, `recommendation.label` is `Worth a look`.
+`region.label` may be `SINGAPORE` instead of `SOUTHEAST ASIA`. Either way, the page does not print that word as a heading. Give the regional story its own `category`. For a new edition, `recommendation.label` is `Worth a look`.
 
 The edition on the homepage is `good-fetch-web-v4/news/latest.json`, dated 19 October 2026. The same file is saved as `good-fetch-web-v4/news/2026-10-19.json`.
 
@@ -228,7 +242,7 @@ If a draft uses `intro` instead of `opening`, `question` instead of `heading`, o
 }
 ```
 
-Newest first. The sidebar shows the five newest dates, plus **View all**, which reveals the rest. Clicking a date with no `news/YYYY-MM-DD.json` file shows a short "not available" message instead of breaking the page. If `latest.json` itself fails to load, the page keeps the header and Riva, and shows a refresh message in the story column.
+Newest first. While there are fewer than five editions, the list sits above the footer and the stories use the full width. At five or more, it returns to the right-hand sidebar. **View all** appears only when there are more than five dates. In 中文 each button is the date as `2026年10月19日`, even if `label` is the English form. Clicking a date with no `news/YYYY-MM-DD.json` file shows a short "not available" message instead of breaking the page. If `latest.json` itself fails to load, the page keeps the header and Riva, and shows a refresh message in the story column.
 
 ## Deploy
 
