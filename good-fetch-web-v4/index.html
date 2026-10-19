@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Good Fetch</title>
-<meta name="description" content="Daily news briefing. Quick read. No doomscrolling."/>
+<meta name="description" content="Daily news briefing. Fresh AI news. An Asian angle."/>
 <meta name="theme-color" content="#fbfbf8"/>
 <meta name="apple-mobile-web-app-title" content="Good Fetch"/>
 <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -16,7 +16,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
 <link rel="manifest" href="manifest.json"/>
 <meta property="og:title" content="Good Fetch"/>
-<meta property="og:description" content="Daily news briefing. Quick read. No doomscrolling."/>
+<meta property="og:description" content="Daily news briefing. Fresh AI news. An Asian angle."/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://good-fetch-theta.vercel.app/"/>
 <meta property="og:image" content="https://good-fetch-theta.vercel.app/og-image.png"/>
@@ -26,7 +26,7 @@
 <meta property="og:image:height" content="630"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Good Fetch"/>
-<meta name="twitter:description" content="Daily news briefing. Quick read. No doomscrolling."/>
+<meta name="twitter:description" content="Daily news briefing. Fresh AI news. An Asian angle."/>
 <meta name="twitter:image" content="https://good-fetch-theta.vercel.app/og-image.png"/>
 <meta name="twitter:image:alt" content="Riva, the Good Fetch dog, holding the newspaper"/>
 <!-- Daily editions load from news/latest.json. Publishing instructions are in the repository README. Do not paste stories into this file. -->
@@ -35,15 +35,15 @@
 *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}
 a{color:inherit;text-decoration:none} button{font:inherit}
 .shell{width:min(calc(100% - 56px),var(--max));margin:auto}
-header{height:78px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:24px}
+header{min-height:78px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:24px}
 .brand{display:flex;flex-direction:column;gap:2px} .brand strong{font-size:30px;line-height:1;font-weight:900;letter-spacing:-.05em} .tagline{font-size:12px;color:var(--muted)}
 nav{display:flex;align-items:center;gap:26px;font-size:15px} nav a.active{border-bottom:2px solid;padding-bottom:6px} .langs{display:flex;gap:8px;align-items:center} .langs button{border:0;background:transparent;padding:7px 10px;cursor:pointer;border-radius:999px} .langs .active{background:#111;color:#fff}
 .grid{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:0}
 .main{padding-right:30px;border-right:1px solid var(--line)} .side{padding-left:26px}
 .hero{display:flex;justify-content:flex-end;align-items:center;padding:34px 0 26px;min-height:250px}
-.hero-visual{display:grid;grid-template-columns:minmax(0,1fr) 220px;align-items:center;gap:14px;width:100%;max-width:560px}
-.riva-hero{width:100%;max-width:300px;justify-self:end;mix-blend-mode:multiply}
-.riva-note{font-family:"Bradley Hand","Segoe Print","Comic Sans MS",cursive;font-size:17px;line-height:1.35;font-style:italic;transform:rotate(-2deg);margin:0;color:#171717}
+.hero-visual{display:grid;grid-template-columns:minmax(160px,240px) minmax(0,1fr);align-items:center;gap:18px;width:100%;max-width:720px}
+.riva-hero{width:100%;max-width:240px;justify-self:end;mix-blend-mode:multiply}
+.riva-note{font-family:"Bradley Hand","Segoe Print","Comic Sans MS",cursive;font-size:17px;line-height:1.45;font-style:italic;transform:rotate(-2deg);transform-origin:left center;margin:0;color:#171717;white-space:pre-line}
 .section-title{display:flex;justify-content:space-between;align-items:end;border-top:1px solid var(--line);padding-top:22px;margin-top:18px} .section-title h2{font-size:25px;margin:0;letter-spacing:-.03em} .count{font-size:12px;color:var(--muted)}
 .story{display:grid;grid-template-columns:48px 210px minmax(0,1fr);gap:18px;padding:24px 0;border-bottom:1px solid var(--line)} .num{font-size:52px;font-weight:900;line-height:1} .thumb{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:5px;background:#ddd} .kicker{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 8px} .story h3{font-size:24px;line-height:1.02;letter-spacing:-.035em;margin:0 0 8px} .summary{font-size:16px;line-height:1.35;color:#3f3f3c;margin:0 0 12px} .why{background:var(--soft);border-radius:8px;padding:11px 12px;font-size:14px;line-height:1.35} .why b{display:block;margin-bottom:3px} .source{display:inline-block;margin-top:10px;font-size:12px;font-weight:700}
 .intro-card{margin-top:26px;background:var(--soft);border-radius:14px;padding:24px} .intro-card h3{font-family:Georgia,serif;font-size:26px;font-weight:500;margin:0 0 14px} .intro-card p{font-size:17px;line-height:1.45;margin:0}
@@ -62,17 +62,16 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:24px 0 40px;b
 .intro-card .rec-label{margin:0 0 8px;font-size:12px;font-weight:700;letter-spacing:.04em;line-height:1.3;color:var(--muted)}
 .load-note{margin:22px 0 36px;padding:16px 18px;background:var(--soft);border-radius:12px;color:#3f3f3c;font-size:15px;line-height:1.45}
 .archive .note{margin:0;padding:10px 12px;font-size:14px;line-height:1.4;color:var(--muted)}
-@media(max-width:900px){.grid{grid-template-columns:1fr} .main{border-right:0;padding-right:0} .side{padding-left:0} .hero{justify-content:flex-start;min-height:0} .hero-visual{max-width:500px} .riva-hero{justify-self:start;max-width:260px} .story{grid-template-columns:40px 120px minmax(0,1fr)} .story.no-thumb{grid-template-columns:40px minmax(0,1fr)} nav a{display:none}}
-@media(max-width:620px){.shell{width:min(calc(100% - 28px),var(--max))} header{height:70px} .brand strong{font-size:26px} .tagline{max-width:220px} .masthead h2{font-size:22px} .story,.story.no-thumb{grid-template-columns:34px 1fr} .thumb{grid-column:2} .story-copy{grid-column:2} .num{font-size:40px}}
+@media(max-width:900px){.grid{grid-template-columns:1fr} .main{border-right:0;padding-right:0} .side{padding-left:0} .hero{justify-content:flex-start;min-height:0} .hero-visual{max-width:100%;grid-template-columns:minmax(140px,200px) minmax(0,1fr)} .riva-hero{justify-self:start;max-width:200px} .story{grid-template-columns:40px 120px minmax(0,1fr)} .story.no-thumb{grid-template-columns:40px minmax(0,1fr)} nav a{display:none}}
+@media(max-width:620px){.shell{width:min(calc(100% - 28px),var(--max))} header{min-height:70px} .brand strong{font-size:26px} .tagline{max-width:none} .masthead h2{font-size:22px} .hero-visual{grid-template-columns:1fr;gap:8px} .riva-hero{max-width:180px} .riva-note{font-size:16px} .story,.story.no-thumb{grid-template-columns:34px 1fr} .thumb{grid-column:2} .story-copy{grid-column:2} .num{font-size:40px}}
 </style>
 </head>
 <body>
 <div class="shell">
 <header>
-  <a class="brand" href="#top"><strong>Good Fetch</strong><span class="tagline" data-i18n="tagline">Quick read. No doomscrolling.</span></a>
+  <a class="brand" href="#top"><strong>Good Fetch</strong><span class="tagline" data-i18n="tagline">Fresh AI news. An Asian angle.</span></a>
   <nav>
     <a class="active" href="#top" data-i18n="home">Home</a>
-    <a href="#about" data-i18n="about">About</a>
     <div class="langs"><button type="button" class="active" data-lang="en">EN</button><button type="button" data-lang="zh">中文</button></div>
   </nav>
 </header>
@@ -80,7 +79,10 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:24px 0 40px;b
 <div class="grid" id="top">
 <main class="main">
   <section class="hero">
-    <div class="hero-visual"><img class="riva-hero" src="riva-newspaper-clean.png" alt="Riva holding the Good Fetch newspaper"/><p class="riva-note" data-i18n="rivaNote">Hi, I'm Riva. I fetched the news, so you have something to say at dinner.</p></div>
+    <div class="hero-visual"><img class="riva-hero" src="riva-newspaper-clean.png" alt="Riva holding the Good Fetch newspaper"/><p class="riva-note" data-i18n="rivaNote">Hi, I’m Riva. I fetch your daily news,
+with my human and an AI agent helping out.
+I make mistakes sometimes. I’m a dog, after all.
+Come back tomorrow.</p></div>
   </section>
   <div id="stories">
     <p class="load-note" data-i18n="loading">Loading today's edition…</p>
@@ -96,18 +98,17 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:24px 0 40px;b
   </section>
 </aside>
 </div>
-<footer id="about"><span>Good Fetch · 2026</span><span data-i18n="footer">Fetched with Riva.</span></footer>
+<footer><span>Good Fetch · 2026</span><span data-i18n="footer">Fetched with Riva.</span></footer>
 </div>
 <script>
 const ui = {
   en: {
-    tagline: 'Quick read. No doomscrolling.',
+    tagline: 'Fresh AI news. An Asian angle.',
     home: 'Home',
-    about: 'About',
     briefing: 'Daily News Briefing',
-    myTake: 'My Take',
+    myTake: "Riva's Take",
     analysis: 'Analysis',
-    rivaNote: "Hi, I'm Riva. I fetched the news, so you have something to say at dinner.",
+    rivaNote: "Hi, I’m Riva. I fetch your daily news,\nwith my human and an AI agent helping out.\nI make mistakes sometimes. I’m a dog, after all.\nCome back tomorrow.",
     archive: 'Archive',
     viewAll: 'View all →',
     footer: 'Fetched with Riva.',
@@ -119,13 +120,12 @@ const ui = {
     sourceFallback: 'Source'
   },
   zh: {
-    tagline: '今日要事，速速看完。',
+    tagline: '从亚洲看 AI 新鲜事。',
     home: '首页',
-    about: '关于',
     briefing: '每日新闻简报',
-    myTake: '我的看法',
+    myTake: 'Riva 的看法',
     analysis: '分析',
-    rivaNote: 'Hi，我是 Riva。新闻我帮你挑好了，让你吃饭聊天时有点东西可说。',
+    rivaNote: 'Hi，我是 Riva。我负责你每天的新闻，\n我的人类和一个 AI 智能体给我打下手。\n偶尔也会出错，毕竟我只是一只狗。\n明天记得再来。',
     archive: '往期',
     viewAll: '查看全部 →',
     footer: 'Riva 帮你叼来的。',
