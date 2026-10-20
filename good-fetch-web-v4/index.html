@@ -76,7 +76,7 @@ footer{display:flex;justify-content:space-between;align-items:baseline;flex-wrap
 .update-note{margin:0 0 10px;font-size:14px;line-height:1.45;font-style:italic;color:var(--muted);overflow-wrap:break-word}
 .riva-closing{margin:32px auto 8px;max-width:34em;padding:0 12px;text-align:center;font-size:15px;line-height:1.55;font-style:italic;color:#3f3f3c;overflow-wrap:break-word}
 .riva-closing .sign{display:block;margin-top:2px;font-family:"Bradley Hand","Segoe Print","Comic Sans MS",cursive;font-size:18px;line-height:1.2;font-style:italic;color:#171717}
-.journal{max-width:720px;margin:40px 0 0}
+.journal{max-width:none;width:100%;margin:40px 0 0}
 .journal-eye{margin:0 0 4px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .journal-name{margin:0 0 16px;font-size:28px;line-height:1.2;letter-spacing:-.03em;font-weight:700}
 .journal .kicker{margin:0 0 10px}
@@ -103,7 +103,7 @@ footer{display:flex;justify-content:space-between;align-items:baseline;flex-wrap
 .load-note{margin:22px 0 36px;padding:16px 18px;background:var(--soft);border-radius:12px;color:#3f3f3c;font-size:15px;line-height:1.45}
 .archive .note{margin:0;padding:10px 12px;font-size:14px;line-height:1.4;color:var(--muted)}
 @media(max-width:900px){.grid{grid-template-columns:1fr} .main{border-right:0;padding-right:0} .side{padding-left:0} .hero{justify-content:flex-start;min-height:0} .hero-visual{max-width:100%;grid-template-columns:minmax(140px,200px) minmax(0,1fr)} .riva-hero{justify-self:start;max-width:200px} .story{grid-template-columns:40px 120px minmax(0,1fr)} .story.no-thumb{grid-template-columns:40px minmax(0,1fr)} nav a{display:none}}
-@media(max-width:620px){.shell{width:min(calc(100% - 28px),var(--max))} header{min-height:70px} .brand strong{font-size:26px} .tagline{max-width:none} .masthead h2{font-size:22px} .hero{padding:18px 0 16px} .hero-visual{grid-template-columns:112px minmax(0,1fr);align-items:center;gap:12px} .riva-hero{justify-self:start;width:112px;max-width:112px} .riva-note{min-width:0;font-size:15px} .riva-farewell{font-size:14px} .story,.story.no-thumb{grid-template-columns:34px 1fr} .thumb{grid-column:2} .story-copy{grid-column:2} .num{font-size:40px}}
+@media(max-width:620px){.shell{width:min(calc(100% - 28px),var(--max))} header{min-height:70px} .brand strong{font-size:26px} .tagline{max-width:none} .masthead h2{font-size:22px} .hero{padding:18px 0 16px} .hero-visual{grid-template-columns:112px minmax(0,1fr);align-items:center;gap:12px} .riva-hero{justify-self:start;width:112px;max-width:112px} .riva-note{min-width:0;font-size:13px} .riva-farewell{font-size:14px} .story,.story.no-thumb{grid-template-columns:34px 1fr} .thumb{grid-column:2} .story-copy{grid-column:2} .num{font-size:40px}}
 html[lang="zh-CN"] body{font-family:"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif}
 html[lang="zh-CN"] .summary{line-height:1.75;margin-bottom:1em}
 html[lang="zh-CN"] .update-note,html[lang="zh-CN"] .riva-closing{line-height:1.75}
@@ -142,7 +142,7 @@ body.archive-bottom .archive h3{font-size:18px}
     <div class="hero-visual"><picture class="riva-hero"><source srcset="riva-good-fetch.webp" type="image/webp"><img src="riva-good-fetch.png" alt="Riva, a cream Cavapoo, holding a rolled newspaper that reads Good Fetch, I fetched this for you."></picture><p class="riva-note" data-i18n="rivaNote">Hi, I’m Riva.
 I fetch what’s changing in AI and
 what’s worth wondering about in life.
-My human and her AI agent help me out.</p></div>
+My human and her AI agent help me&nbsp;out.</p></div>
   </section>
   <div id="stories">
     <p class="load-note" data-i18n="loading">Loading today's edition…</p>
@@ -170,7 +170,7 @@ const ui = {
     briefing: 'Daily News Briefing',
     myTake: "Riva's Take",
     analysis: 'Analysis',
-    rivaNote: "Hi, I’m Riva.\nI fetch what’s changing in AI and\nwhat’s worth wondering about in life.\nMy human and her AI agent help me out.",
+    rivaNote: "Hi, I’m Riva.\nI fetch what’s changing in AI and\nwhat’s worth wondering about in life.\nMy human and her AI agent help me\u00A0out.",
     rivaFarewell: "I make mistakes sometimes. I’m a dog, after all.\nCome back tomorrow.",
     archive: 'Archive',
     viewAll: 'View all →',

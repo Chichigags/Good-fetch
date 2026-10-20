@@ -14,13 +14,6 @@
     "introZh": [
       "假如你换了一台更便宜的电脑，却发现所有常用软件都得重新写一遍，你还会换吗？AI 开发者选择芯片时，也有类似的烦恼。"
     ],
-    "image": {
-      "src": "images/2026-10-20-what-changed.png",
-      "alt": "Line drawing of two computer chips connected by a single curved cable",
-      "altZh": "简笔画：两块芯片由一根弯曲的线连在一起",
-      "credit": "Illustration: Good Fetch",
-      "creditZh": "插图：Good Fetch"
-    },
     "sections": [
       {
         "heading": "Why is switching AI chips so hard?",
@@ -97,13 +90,6 @@
     "introZh": [
       "在新加坡，刚出地铁站就下起暴雨，你却能一路走好远都不用撑伞。头顶这条长长的有盖走廊，可不是碰巧修出来的。"
     ],
-    "image": {
-      "src": "images/2026-10-20-stay-curious.png",
-      "alt": "Line drawing of a long covered walkway from a station toward apartment blocks, with rain falling and two people walking dry underneath",
-      "altZh": "简笔画：一条从车站通往住宅楼的长长有盖走廊，外面下着雨，两个人在走廊下走着",
-      "credit": "Illustration: Good Fetch",
-      "creditZh": "插图：Good Fetch"
-    },
     "sections": [
       {
         "heading": "Isn't it just because of the rain?",
