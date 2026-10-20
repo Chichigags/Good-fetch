@@ -32,7 +32,7 @@
 <!-- Daily editions load from news/latest.json. Publishing instructions are in the repository README. Do not paste stories into this file. -->
 <style>
 :root{--bg:#fbfbf8;--ink:#0a0a0a;--muted:#5d5d58;--line:#d9d9d4;--soft:#f0efeb;--max:1320px}
-*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;overflow-anchor:none}
 a{color:inherit;text-decoration:none} button{font:inherit}
 .shell{width:min(calc(100% - 56px),var(--max));margin:auto}
 header{min-height:78px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:24px}
@@ -76,6 +76,27 @@ footer{display:flex;justify-content:space-between;align-items:baseline;flex-wrap
 .update-note{margin:0 0 10px;font-size:14px;line-height:1.45;font-style:italic;color:var(--muted);overflow-wrap:break-word}
 .riva-closing{margin:32px auto 8px;max-width:34em;padding:0 12px;text-align:center;font-size:15px;line-height:1.55;font-style:italic;color:#3f3f3c;overflow-wrap:break-word}
 .riva-closing .sign{display:block;margin-top:2px;font-family:"Bradley Hand","Segoe Print","Comic Sans MS",cursive;font-size:18px;line-height:1.2;font-style:italic;color:#171717}
+.journal{max-width:720px;margin:40px 0 0}
+.journal-eye{margin:0 0 4px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.journal-name{margin:0 0 16px;font-size:28px;line-height:1.2;letter-spacing:-.03em;font-weight:700}
+.journal .kicker{margin:0 0 10px}
+.journal .kicker-row{margin:0 0 10px}
+.journal .kicker-row .kicker{margin:0}
+.journal .update-note{margin:0 0 12px}
+.journal-lead{display:grid;grid-template-columns:minmax(0,1.63fr) minmax(0,1fr);grid-template-areas:"title image" "intro image";column-gap:28px;row-gap:12px;align-items:start;margin:0 0 8px}
+.journal-lead h3{grid-area:title;margin:0;font-family:Georgia,"Times New Roman",serif;font-size:32px;font-weight:500;line-height:1.2;letter-spacing:-.02em;overflow-wrap:break-word}
+.journal-intro{grid-area:intro;min-width:0}
+.journal-intro .summary:last-child{margin-bottom:0}
+.journal-figure{grid-area:image;margin:0;min-width:0}
+.journal-figure img{display:block;width:100%;height:auto;border:1px solid var(--line);background:#fff}
+.journal-credit{margin:6px 0 0;font-size:12px;line-height:1.4;color:var(--muted)}
+.journal .summary{font-size:17px;line-height:1.65;color:#1c1c1a}
+.journal .subhead{margin:22px 0 8px;font-family:Georgia,"Times New Roman",serif;font-size:20px;font-weight:500;line-height:1.35}
+.journal-ending{margin:22px 0 0;font-family:Georgia,"Times New Roman",serif;font-size:17px;line-height:1.55;font-style:italic;color:#3f3f3c}
+.journal .sources{margin-top:22px}
+.journal-lead.no-figure{grid-template-columns:minmax(0,1fr);grid-template-areas:"title" "intro"}
+.masthead .sample-flag{margin:8px 0 0;font-size:13px;line-height:1.4;color:var(--muted)}
+@media(max-width:700px){.journal-lead{grid-template-columns:minmax(0,1fr);grid-template-areas:"title" "image" "intro";row-gap:14px} .journal-lead.no-figure{grid-template-areas:"title" "intro"} .journal-figure{justify-self:center;width:min(100%,320px)} .journal-lead h3{font-size:26px} .journal-name{font-size:24px}}
 .story h3{line-height:1.2}
 .story.no-thumb{grid-template-columns:48px minmax(0,1fr)}
 .intro-card .rec-label{margin:0 0 10px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;line-height:1.3;color:#3f3f3c}
@@ -90,7 +111,10 @@ html[lang="zh-CN"] .why{line-height:1.75}
 html[lang="zh-CN"] .story h3{font-size:22px;line-height:1.4;letter-spacing:0}
 html[lang="zh-CN"] .masthead h2{font-size:22px;line-height:1.45;letter-spacing:0}
 html[lang="zh-CN"] .subhead{line-height:1.45;letter-spacing:0}
-html[lang="zh-CN"] .kicker,html[lang="zh-CN"] .sources-heading,html[lang="zh-CN"] .intro-card .rec-label{letter-spacing:0;text-transform:none}
+html[lang="zh-CN"] .kicker,html[lang="zh-CN"] .sources-heading,html[lang="zh-CN"] .intro-card .rec-label,html[lang="zh-CN"] .journal-eye{letter-spacing:0;text-transform:none}
+html[lang="zh-CN"] .journal-name,html[lang="zh-CN"] .journal-lead h3,html[lang="zh-CN"] .journal .subhead,html[lang="zh-CN"] .journal-ending{font-family:"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif;letter-spacing:0}
+html[lang="zh-CN"] .journal .summary,html[lang="zh-CN"] .journal-ending{line-height:1.75}
+html[lang="zh-CN"] .journal-name,html[lang="zh-CN"] .journal-lead h3{line-height:1.4;font-weight:700}
 html[lang="zh-CN"] .sources-heading,html[lang="zh-CN"] .intro-card .rec-label{font-size:13px}
 html[lang="zh-CN"] .intro-card h3{font-family:"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif;font-size:22px;line-height:1.4;font-weight:700}
 html[lang="zh-CN"] .intro-card .rec-why,html[lang="zh-CN"] .intro-card .rec-meta{line-height:1.75}
@@ -161,7 +185,12 @@ const ui = {
     official: 'Official',
     downloadFile: 'Download {type} file',
     moreDetails: 'More details',
-    update: 'Update'
+    update: 'Update',
+    whatChanged: '01 · What Changed?',
+    lookOut: 'Look Out',
+    stayCurious: '02 · Stay Curious',
+    lookAround: 'Look Around',
+    sampleLayout: 'Sample layout. Not an edition.'
   },
   zh: {
     tagline: '保持对世界的好奇。',
@@ -184,7 +213,12 @@ const ui = {
     official: '官方',
     downloadFile: '下载 {type} 文件',
     moreDetails: '更多细节',
-    update: '更新'
+    update: '更新',
+    whatChanged: '01 · 有什么变了？',
+    lookOut: '向外看',
+    stayCurious: '02 · 保持好奇',
+    lookAround: '看身边',
+    sampleLayout: '示例版式，不是正式内容。'
   }
 };
 
@@ -313,6 +347,16 @@ function safeUrl(url) {
   return '';
 }
 
+function editionImageUrl(src) {
+  const text = clean(src);
+  if (!text || text.includes('..') || /[\0\\]/.test(text)) return '';
+  if (/^[a-z][a-z0-9+.-]*:/i.test(text)) return safeUrl(text);
+  if (text.startsWith('/') || text.startsWith('//')) return '';
+  const path = (text.startsWith('news/') ? text : 'news/' + text.replace(/^\.\//, ''));
+  if (!/^news\/[A-Za-z0-9._/-]+$/.test(path)) return '';
+  return safeUrl(path);
+}
+
 function sourceList(value) {
   if (!Array.isArray(value)) return [];
   const links = [];
@@ -389,6 +433,7 @@ function renderStory(parent, item, number) {
 
   const article = document.createElement('article');
   article.className = 'story';
+  article.dataset.anchor = 'story-' + number;
   const num = document.createElement('div');
   num.className = 'num';
   num.textContent = String(number);
@@ -498,6 +543,7 @@ function renderRecommendation(parent, rec) {
   if (!title && !text && !price && !availability && !note) return false;
   const card = document.createElement('section');
   card.className = 'intro-card';
+  card.dataset.anchor = 'recommendation';
   const kicker = document.createElement('p');
   kicker.className = 'rec-label';
   kicker.textContent = lang === 'zh' ? (clean(rec.labelZh) || '值得一看') : (clean(rec.label) || 'Worth a look');
@@ -533,11 +579,136 @@ function renderRecommendation(parent, rec) {
   return true;
 }
 
+function renderV2Story(parent, item, anchor, eyeKey, nameKey) {
+  if (!item || typeof item !== 'object') return false;
+  const headline = localizedString(item, 'headline');
+  const category = localizedString(item, 'category');
+  const updateNote = localizedString(item, 'updateNote');
+  const intro = localizedParagraphs(item, 'intro');
+  const ending = localizedString(item, 'ending');
+  const sections = Array.isArray(item.sections) ? item.sections : [];
+  const sectionBlocks = sections.filter(section => {
+    if (!section || typeof section !== 'object') return false;
+    return localizedString(section, 'heading') || localizedParagraphs(section, 'paragraphs').length;
+  });
+  const image = item.image && typeof item.image === 'object' ? item.image : null;
+  const imageUrl = image ? editionImageUrl(image.src) : '';
+  const links = sourceList(item.sources);
+  if (!headline && !category && !updateNote && !intro.length && !sectionBlocks.length && !ending && !links.length) return false;
+
+  const article = document.createElement('article');
+  article.className = 'journal';
+  article.dataset.anchor = anchor;
+
+  const eye = document.createElement('p');
+  eye.className = 'journal-eye';
+  eye.textContent = ui[lang][eyeKey];
+  const name = document.createElement('h2');
+  name.className = 'journal-name';
+  name.textContent = ui[lang][nameKey];
+  article.append(eye, name);
+
+  if (item.update === true) {
+    const row = document.createElement('div');
+    row.className = 'kicker-row';
+    if (category) {
+      const kicker = document.createElement('p');
+      kicker.className = 'kicker';
+      kicker.textContent = category;
+      row.append(kicker);
+    }
+    const tag = document.createElement('p');
+    tag.className = 'kicker update-tag';
+    tag.textContent = ui[lang].update;
+    row.append(tag);
+    article.append(row);
+  } else if (category) {
+    const kicker = document.createElement('p');
+    kicker.className = 'kicker';
+    kicker.textContent = category;
+    article.append(kicker);
+  }
+  if (updateNote) {
+    const note = document.createElement('p');
+    note.className = 'update-note';
+    note.textContent = updateNote;
+    article.append(note);
+  }
+
+  if (headline || intro.length || imageUrl) {
+    const lead = document.createElement('div');
+    lead.className = 'journal-lead';
+    if (headline) {
+      const h3 = document.createElement('h3');
+      h3.textContent = headline;
+      lead.append(h3);
+    }
+    if (imageUrl) {
+      const figure = document.createElement('figure');
+      figure.className = 'journal-figure';
+      const img = document.createElement('img');
+      img.src = imageUrl;
+      img.alt = localizedString(image, 'alt');
+      figure.append(img);
+      const credit = localizedString(image, 'credit');
+      if (credit) {
+        const cap = document.createElement('figcaption');
+        cap.className = 'journal-credit';
+        cap.textContent = credit;
+        figure.append(cap);
+      }
+      lead.append(figure);
+    } else {
+      lead.classList.add('no-figure');
+    }
+    if (intro.length) {
+      const block = document.createElement('div');
+      block.className = 'journal-intro';
+      intro.forEach(text => block.append(paragraph(text)));
+      lead.append(block);
+    }
+    article.append(lead);
+  }
+
+  sectionBlocks.forEach(section => {
+    const heading = localizedString(section, 'heading');
+    const paras = localizedParagraphs(section, 'paragraphs');
+    if (heading) {
+      const h4 = document.createElement('h4');
+      h4.className = 'subhead';
+      h4.textContent = heading;
+      article.append(h4);
+    }
+    paras.forEach(text => article.append(paragraph(text)));
+  });
+  if (ending) {
+    const line = document.createElement('p');
+    line.className = 'journal-ending';
+    line.textContent = ending;
+    article.append(line);
+  }
+  renderSources(article, item.sources);
+  parent.append(article);
+  return true;
+}
+
+function renderV2Edition(parent, edition) {
+  const changed = renderV2Story(parent, edition.whatChanged, 'what-changed', 'lookOut', 'whatChanged');
+  const curious = renderV2Story(parent, edition.stayCurious, 'stay-curious', 'lookAround', 'stayCurious');
+  if (!changed && !curious) {
+    const note = document.createElement('p');
+    note.className = 'load-note';
+    note.textContent = ui[lang].empty;
+    parent.append(note);
+  }
+}
+
 function renderClosing(parent, edition) {
   const text = localizedString(edition, 'closing');
   if (!text) return;
   const line = document.createElement('p');
   line.className = 'riva-closing';
+  line.dataset.anchor = 'closing';
   line.append(document.createTextNode(text));
   const sign = document.createElement('span');
   sign.className = 'sign';
@@ -555,6 +726,7 @@ function renderEdition(edition) {
 
   const mast = document.createElement('div');
   mast.className = 'masthead';
+  mast.dataset.anchor = 'mast';
   const h2 = document.createElement('h2');
   h2.textContent = editionHeader(edition.date);
   mast.append(h2);
@@ -568,7 +740,19 @@ function renderEdition(edition) {
   const sub = document.createElement('p');
   sub.textContent = ui[lang].briefing;
   mast.append(sub);
+  if (edition.sample === true) {
+    const flag = document.createElement('p');
+    flag.className = 'sample-flag';
+    flag.textContent = ui[lang].sampleLayout;
+    mast.append(flag);
+  }
   root.append(mast);
+
+  if (edition.format === 'v2') {
+    renderV2Edition(root, edition);
+    renderClosing(root, edition);
+    return;
+  }
 
   let number = renderStoryList(root, edition.stories, 1);
   if (edition.region && typeof edition.region === 'object') {
@@ -667,7 +851,35 @@ async function openEdition(date) {
   }
 }
 
+function readingPlace() {
+  const anchors = [...document.querySelectorAll('[data-anchor]')];
+  if (!anchors.length) return null;
+  const viewH = window.innerHeight || document.documentElement.clientHeight || 800;
+  let best = anchors[0];
+  let bestArea = -1;
+  anchors.forEach((el, i) => {
+    const top = el.getBoundingClientRect().top;
+    const next = anchors[i + 1];
+    const bottom = next ? next.getBoundingClientRect().top : el.getBoundingClientRect().bottom;
+    const visible = Math.min(viewH, bottom) - Math.max(0, top);
+    if (visible > bestArea) {
+      bestArea = visible;
+      best = el;
+    }
+  });
+  return { id: best.dataset.anchor, delta: best.getBoundingClientRect().top };
+}
+
+function restorePlace(place) {
+  if (!place || !place.id) return;
+  const el = document.querySelector('[data-anchor="' + CSS.escape(place.id) + '"]');
+  if (!el) return;
+  const shift = el.getBoundingClientRect().top - place.delta;
+  if (shift) window.scrollBy(0, shift);
+}
+
 function setLang(next) {
+  const place = readingPlace();
   lang = next === 'zh' ? 'zh' : 'en';
   document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
   document.querySelectorAll('[data-lang]').forEach(button => {
@@ -679,6 +891,19 @@ function setLang(next) {
   });
   renderStories();
   renderArchive();
+  restorePlace(place);
+  requestAnimationFrame(() => restorePlace(place));
+  document.querySelectorAll('#stories img').forEach(img => {
+    if (!img.complete) img.addEventListener('load', () => restorePlace(place), { once: true });
+  });
+}
+
+function samplePreview() {
+  try {
+    return new URLSearchParams(window.location.search).get('sample') === 'v2';
+  } catch (error) {
+    return false;
+  }
 }
 
 async function boot() {
@@ -694,7 +919,7 @@ async function boot() {
   }
   renderArchive();
   try {
-    const edition = await fetchJson('news/latest.json');
+    const edition = await fetchJson(samplePreview() ? 'news/_sample-v2.json' : 'news/latest.json');
     if (myId !== requestId) return;
     if (!edition || typeof edition !== 'object' || Array.isArray(edition)) throw new Error('bad edition');
     activeDate = isIsoDate(edition.date) ? edition.date : '';

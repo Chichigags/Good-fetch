@@ -1,0 +1,97 @@
+{
+  "format": "v2",
+  "sample": true,
+  "date": "2099-01-01",
+  "publishedAt": "2099-01-01T05:40:00+08:00",
+  "updatedAt": "2099-01-01T09:10:00+08:00",
+  "whatChanged": {
+    "category": "Sample category",
+    "categoryZh": "示例分类",
+    "update": true,
+    "updateNote": "Sample update note. This line is not a news item.",
+    "updateNoteZh": "示例更新说明。这一行不是新闻。",
+    "headline": "Sample headline for the first section",
+    "headlineZh": "第一节的示例标题",
+    "intro": [
+      "Placeholder paragraph one. On a wide screen this text sits to the left of the drawing.",
+      "Placeholder paragraph two. It exists so the opening has a second block of reading."
+    ],
+    "introZh": [
+      "占位段落一。宽屏时这段文字在图画的左边。",
+      "占位段落二。用来让导语有第二段可看的文字。"
+    ],
+    "image": {
+      "src": "images/_sample-what-changed.png",
+      "alt": "Sample line drawing of a circle, a square, and an arrow",
+      "altZh": "示例简笔画：一个圆、一个方块和一支箭头",
+      "credit": "Sample illustration",
+      "creditZh": "示例插图"
+    },
+    "sections": [
+      {
+        "heading": "Is this a real story?",
+        "headingZh": "这是一篇真的报道吗？",
+        "paragraphs": [
+          "No. These sentences are layout filler. They do not describe an event, a company, or a number.",
+          "A second placeholder paragraph stays on the page. Nothing here is hidden behind another click."
+        ],
+        "paragraphsZh": [
+          "不是。这些句子只用来看版式，不描述任何事件、公司或数字。",
+          "第二段占位文字一直留在页面上，没有被折起来，也不需要再点开。"
+        ]
+      }
+    ],
+    "ending": "A quiet sample ending. Nothing here is a conclusion about the world.",
+    "endingZh": "一句安静的示例收尾。这里没有关于世界的结论。",
+    "sources": [
+      {
+        "name": "Sample source",
+        "nameZh": "示例来源",
+        "url": "https://example.com/sample-what-changed",
+        "official": true
+      }
+    ]
+  },
+  "stayCurious": {
+    "category": "Another sample category",
+    "categoryZh": "另一个示例分类",
+    "headline": "Sample headline for the second section",
+    "headlineZh": "第二节的示例标题",
+    "intro": [
+      "More placeholder text. This opening also sits beside its own drawing on a wide screen."
+    ],
+    "introZh": [
+      "更多占位文字。宽屏时这一段也排在它自己的图画旁边。"
+    ],
+    "image": {
+      "src": "images/_sample-stay-curious.png",
+      "alt": "Sample line drawing of a window and a leaf",
+      "altZh": "示例简笔画：一扇窗和一片叶子",
+      "credit": "Sample illustration",
+      "creditZh": "示例插图"
+    },
+    "sections": [
+      {
+        "heading": "What should this paragraph say?",
+        "headingZh": "这段文字应该写什么？",
+        "paragraphs": [
+          "Only that it is a stand-in. Read it to check line length, then forget it."
+        ],
+        "paragraphsZh": [
+          "只说明它是占位。用它看行宽就好，看完可以忘掉。"
+        ]
+      }
+    ],
+    "ending": "Another quiet sample line, still not a real closing thought.",
+    "endingZh": "另一句安静的示例，仍然不是真正的收尾。",
+    "sources": [
+      {
+        "name": "Sample source two",
+        "nameZh": "示例来源二",
+        "url": "https://example.com/sample-stay-curious"
+      }
+    ]
+  },
+  "closing": "Sample sign-off. Not a real farewell.",
+  "closingZh": "示例收尾，不是真正的告别。"
+}
