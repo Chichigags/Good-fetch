@@ -1,264 +1,162 @@
 {
+  "format": "v2",
   "date": "2026-10-20",
-  "publishedAt": "2026-10-20T05:40:00+08:00",
-  "updatedAt": "2026-10-20T12:18:00+08:00",
-  "stories": [
-    {
-      "category": "AI chips",
-      "categoryZh": "AI 芯片",
-      "headline": "Amazon wants AI developers to use its chips without rewriting their code",
-      "headlineZh": "亚马逊想让 AI 开发者不改代码就能用上自家芯片",
-      "opening": [
-        "Amazon announced TorchNeuron on October 19, a software project designed to make its Trainium AI chips easier to use with PyTorch, the popular machine-learning framework. The idea is simple: developers should be able to move existing AI workloads to Amazon's chips with fewer code changes.",
-        "Amazon says more than 30 early customers are already using the technology. These are Amazon's own claims. Independent results aren't available yet. It plans to release TorchNeuron as open-source software on October 20."
-      ],
-      "openingZh": [
-        "亚马逊于 2026 年 10 月 19 日发布 TorchNeuron。这个软件项目旨在让自家 Trainium AI 芯片更方便地配合主流机器学习框架 PyTorch 使用。思路很简单：开发者把现有 AI 工作负载迁到亚马逊芯片上时，需要改的代码更少。",
-        "亚马逊表示，已有 30 多家早期客户在使用这项技术。以上均为亚马逊自己的说法，目前还没有独立测试结果。公司计划于 10 月 20 日以开源软件形式发布 TorchNeuron。"
-      ],
-      "sections": [
-        {
-          "heading": "Nvidia's CUDA advantage",
-          "headingZh": "英伟达的 CUDA 优势",
-          "paragraphs": [
-            "Besides its chips, Nvidia's advantage includes CUDA, the software Nvidia has spent more than a decade building so that PyTorch code runs well on its chips. Even if another company offers cheaper hardware, switching can require substantial engineering work.",
-            "Amazon wants to remove some of that friction. If developers can test Trainium without rewriting their applications, Amazon has a better chance of winning their business."
-          ],
-          "paragraphsZh": [
-            "除了芯片，英伟达的优势还包括 CUDA。英伟达花了十多年打造这套软件，让 PyTorch 代码能在它的芯片上高效运行。即便别家的硬件更便宜，换用也可能需要投入大量工程工作。",
-            "亚马逊想减少一部分这样的阻力。如果开发者不必重写应用就能试用 Trainium，亚马逊赢得这些客户的机会就更大。"
-          ]
-        },
-        {
-          "heading": "Will AI become cheaper?",
-          "headingZh": "AI 会因此变便宜吗？",
-          "paragraphs": [
-            "Possibly, but that's not established yet. More hardware competition could lower computing costs. Whether Amazon's chips are actually cheaper for a particular workload depends on performance, utilization and software compatibility.",
-            "And lower costs for AI developers don't automatically mean lower prices for consumers."
-          ],
-          "paragraphsZh": [
-            "有可能，但目前还不能下定论。硬件竞争加剧可能压低算力成本；但就某项具体工作负载而言，亚马逊芯片是否真的更便宜，要看性能、利用率和软件兼容性。",
-            "而且，AI 开发者的成本降低，并不意味着消费者付的价格会随之下降。"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Amazon: TorchNeuron runs PyTorch on Trainium",
-          "nameZh": "亚马逊：TorchNeuron 让 PyTorch 代码在 Trainium 上运行",
-          "url": "https://www.aboutamazon.com/news/innovation-at-amazon/torchneuron-pytorch-aws-trainium-chips-ai",
-          "official": true
-        },
-        {
-          "name": "Reuters, via CNA: Amazon's AI chips to run PyTorch code, challenging Nvidia",
-          "nameZh": "路透社，经亚洲新闻台转引：亚马逊 AI 芯片将可直接运行 PyTorch 代码，挑战英伟达",
-          "url": "https://www.channelnewsasia.com/business/amazon-says-its-ai-chips-will-work-popular-coding-language-challenging-nvidia-6472191"
-        }
-      ]
+  "publishedAt": "2026-10-20T17:03:00+08:00",
+  "whatChanged": {
+    "category": "AI Infrastructure / Chips",
+    "categoryZh": "AI 基础设施 / 芯片",
+    "update": false,
+    "headline": "Amazon Wants AI Developers to Change Chips Without Rewriting Their Code",
+    "headlineZh": "亚马逊想让 AI 开发者换芯片，不必重写代码",
+    "intro": [
+      "Imagine buying a cheaper laptop, only to discover that all your favorite apps need to be rewritten. That's roughly the headache Amazon wants to remove for AI developers."
+    ],
+    "introZh": [
+      "假如你换了一台更便宜的电脑，却发现所有常用软件都得重新写一遍，你还会换吗？AI 开发者选择芯片时，也有类似的烦恼。"
+    ],
+    "image": {
+      "src": "images/2026-10-20-what-changed.png",
+      "alt": "Line drawing of two computer chips connected by a single curved cable",
+      "altZh": "简笔画：两块芯片由一根弯曲的线连在一起",
+      "credit": "Illustration: Good Fetch",
+      "creditZh": "插图：Good Fetch"
     },
-    {
-      "category": "China / Chips",
-      "categoryZh": "中国 / 芯片",
-      "headline": "China's CXMT expects extraordinary revenue growth. Investors still sold its shares.",
-      "headlineZh": "长鑫科技预计营收大幅跃升，投资者仍抛售其股票",
-      "opening": [
-        "Chinese memory-chip maker CXMT forecast revenue of 265–270 billion yuan for the first nine months of 2026, compared with about 32 billion yuan a year earlier. The company attributes the increase to stronger demand, higher memory prices and improved production capacity.",
-        "CXMT shares fell 7.8% on October 19. Third-quarter net profit was reportedly expected to grow just 1–4% from the previous quarter, compared with triple-digit quarterly growth earlier in the year. The figures are preliminary company estimates, not audited results."
-      ],
-      "openingZh": [
-        "中国存储芯片制造商长鑫科技预计，2026 年前三季度营业收入约为 2,650 亿至 2,700 亿元人民币，上年同期为 320.84 亿元。公司把增长归因于需求走强、存储芯片涨价和产能提升。",
-        "长鑫科技股价 10 月 19 日下跌 7.8%。据报道，公司第三季度净利润预计环比仅增长 1% 至 4%，而今年早些时候的单季环比增速达到三位数。这些数字是公司的初步测算，未经审计。"
-      ],
-      "sections": [
-        {
-          "heading": "AI is driving memory demand",
-          "headingZh": "AI 推高内存需求",
-          "paragraphs": [
-            "AI servers need more than powerful processors. They also need enormous amounts of memory to move and process data. That demand has contributed to tighter memory supplies and higher prices.",
-            "CXMT makes DRAM, which is also used in laptops, smartphones and ordinary servers. The company is becoming a more significant competitor to Samsung, SK hynix and Micron, the three established leaders of the global memory industry."
-          ],
-          "paragraphsZh": [
-            "AI 服务器不只需要强大的处理器，还需要海量内存来传输和处理数据。这类需求是存储芯片供应趋紧、价格上涨的原因之一。",
-            "长鑫科技生产 DRAM（动态随机存取存储器），这类芯片也用于笔记本电脑、智能手机和普通服务器。三星、SK 海力士和美光是全球存储芯片行业公认的三大龙头，长鑫科技正成为它们越来越有分量的竞争对手。"
-          ]
-        },
-        {
-          "heading": "Has China caught up in advanced memory chips?",
-          "headingZh": "中国在先进存储芯片上追上了吗？",
-          "paragraphs": [
-            "Not necessarily. Conventional DRAM and high-bandwidth memory used with leading AI processors are different products.",
-            "CXMT's revenue growth shows the commercial value of today's memory market. It doesn't prove the company has matched its rivals in the most advanced technologies.",
-            "It also leaves an important question unanswered: how much of the growth will remain if memory prices fall?"
-          ],
-          "paragraphsZh": [
-            "不一定。普通 DRAM 和与顶级 AI 处理器配套的高带宽内存（HBM）是不同的产品。",
-            "长鑫科技的营收增长说明，当下存储芯片市场的商业价值很高，但并不能证明它已在最先进的技术上追平对手。",
-            "这还留下一个重要问题：如果存储芯片价格回落，这样的增长还能保住多少？"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "CXMT: preliminary results for the first nine months of 2026 (filing, Chinese, via Eastmoney)",
-          "nameZh": "长鑫科技：2026 年前三季度业绩预告（公告，经东方财富转载）",
-          "url": "https://pdf.dfcfw.com/pdf/H2_AN202610161830624059_1.pdf",
-          "official": true,
-          "download": "PDF"
-        },
-        {
-          "name": "Securities Times: CXMT shares close down 7.77%; Q3 profit growth slows sharply from the previous quarter (Chinese)",
-          "nameZh": "证券时报：长鑫科技收跌 7.77%，三季度净利润环比增速大幅放缓",
-          "url": "https://www.stcn.com/article/detail/4226585.html"
-        },
-        {
-          "name": "Counterpoint Research: Q2 2026 DRAM rankings",
-          "nameZh": "Counterpoint Research：2026 年第二季度 DRAM 市场排名",
-          "url": "https://counterpointresearch.com/en/insights/ai-demand-reshapes-dram-rankings-in-q2-2026"
-        }
-      ]
-    },
-    {
-      "category": "AI chips",
-      "categoryZh": "AI 芯片",
-      "headline": "Nvidia is moving beyond GPUs. Its new CPU could help AI agents get more done.",
-      "headlineZh": "英伟达不只做 GPU 了，它的新 CPU 或能让 AI 智能体完成更多工作",
-      "opening": [
-        "AI infrastructure company Modal announced on October 19 that it plans to support Nvidia's new Vera CPU. Modal provides cloud computing for developers building AI applications.",
-        "Modal reported up to twice the throughput in its own tests, when many tasks ran at once. Independent benchmarks aren't available yet."
-      ],
-      "openingZh": [
-        "AI 基础设施公司 Modal 于 2026 年 10 月 19 日宣布，计划支持英伟达新推出的 Vera CPU。Modal 为开发 AI 应用的开发者提供云计算服务。",
-        "Modal 称，在其自己的测试中，同时运行大量任务时吞吐量最高可达两倍。目前还没有独立的基准测试结果。"
-      ],
-      "sections": [
-        {
-          "heading": "AI agents need CPUs too",
-          "headingZh": "AI 智能体也需要 CPU",
-          "paragraphs": [
-            "GPUs do much of the heavy mathematical work behind AI models. But AI agents also run code, search files, install software and manage other tasks. CPUs handle much of that work.",
-            "Modal's tests suggest Vera could help when many agents are running simultaneously."
-          ],
-          "paragraphsZh": [
-            "AI 模型背后繁重的数学运算，大多由 GPU 完成。但 AI 智能体还要运行代码、搜索文件、安装软件和处理其他任务，这些工作很多由 CPU 承担。",
-            "Modal 的测试表明，在大量智能体同时运行时，Vera 可能派得上用场。"
-          ]
-        },
-        {
-          "heading": "Nvidia takes on Intel and AMD",
-          "headingZh": "英伟达挑战英特尔和 AMD",
-          "paragraphs": [
-            "Nvidia already dominates the AI GPU market. Vera gives it a way into the CPU market, where Intel and AMD have traditionally been strong.",
-            "Modal CEO Erik Bernhardsson told Reuters that the company will continue using different processors depending on the workload.",
-            "For Nvidia, the opportunity is to sell more of the hardware needed to run AI systems, beyond the chips powering the models themselves."
-          ],
-          "paragraphsZh": [
-            "英伟达已经主导 AI GPU 市场，Vera 让它有机会打入英特尔和 AMD 传统上占优势的 CPU 市场。",
-            "Modal 首席执行官 Erik Bernhardsson 对路透社表示，公司会继续根据工作负载选用不同的处理器。",
-            "对英伟达来说，机会在于在驱动模型本身的芯片之外，卖出更多运行 AI 系统所需的硬件。"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Modal: NVIDIA Vera CPUs double throughput for Modal Sandboxes",
-          "nameZh": "Modal：英伟达 Vera CPU 让 Modal Sandboxes 吞吐量翻倍",
-          "url": "https://modal.com/blog/nvidia-vera-sandboxes",
-          "official": true
-        },
-        {
-          "name": "Reuters, via CNA: Nvidia wins AI startup Modal for new CPUs",
-          "nameZh": "路透社，经亚洲新闻台转引：英伟达新 CPU 赢得 AI 初创公司 Modal",
-          "url": "https://www.channelnewsasia.com/business/nvidia-wins-fast-growing-ai-startup-modal-new-central-processors-6472426"
-        }
-      ]
-    }
-  ],
-  "region": {
-    "label": "SINGAPORE",
-    "stories": [
+    "sections": [
       {
-        "category": "Singapore / Environment",
-        "categoryZh": "新加坡 / 环境",
-        "update": true,
-        "updateNote": "New since our Oct 19 report: Senior Minister K. Shanmugam said Singapore may also go after the groups behind the firms and could change its laws if needed.",
-        "updateNoteZh": "较 10 月 19 日的报道新增：国务资政尚穆根表示，新加坡可能连这些公司背后的集团一并追查，必要时修改法律。",
-        "headline": "Singapore is going after 10 Indonesian companies over haze. Can it make them cooperate?",
-        "headlineZh": "新加坡锁定 10 家涉烟霾印尼公司，能让它们配合吗？",
-        "opening": [
-          "Singapore announced on October 19 that it would issue preventive notices to three more Indonesian companies over fires in Kalimantan that may have contributed to the haze. That brings the total to 10 companies, including seven previously targeted over fires in Sumatra.",
-          "The notices require companies to deploy firefighters, stop burning and submit plans to prevent fires from returning. They are not findings of legal responsibility."
+        "heading": "Why is switching AI chips so hard?",
+        "headingZh": "为什么换一块 AI 芯片这么麻烦？",
+        "paragraphs": [
+          "Nvidia's advantage isn't just the chips. Developers have spent years using software tools built around Nvidia hardware. Moving an AI project to another type of chip can mean costly changes and testing."
         ],
-        "openingZh": [
-          "新加坡于 2026 年 10 月 19 日宣布，将就加里曼丹的林火向另外 3 家印尼公司发出预防措施通知，这些林火可能助长了新加坡的烟霾。连同此前因苏门答腊林火收到通知的 7 家，总数达到 10 家。",
-          "通知要求这些公司派员灭火、停止焚烧，并提交防止火患再次发生的计划。发出通知并不等于认定这些公司负有法律责任。"
-        ],
-        "sections": [
-          {
-            "heading": "Cross-border enforcement is hard",
-            "headingZh": "跨境执法难度大",
-            "paragraphs": [
-              "Singapore's Transboundary Haze Pollution Act allows action against companies responsible for haze reaching Singapore, even when the fires happen overseas. But the companies and their land are in Indonesia. Investigating responsibility and securing cooperation across borders is difficult.",
-              "The problem isn't new. NEA sent similar notices to six companies during the 2015 haze crisis, and investigations into four of them are still ongoing."
-            ],
-            "paragraphsZh": [
-              "新加坡《跨境烟霾污染法令》允许当局对造成烟霾飘入新加坡的公司采取行动，即使火灾发生在境外。但这些公司和它们的土地都在印尼，跨境调查责任、争取对方配合都很困难。",
-              "这个问题由来已久。2015 年烟霾危机期间，国家环境局曾向 6 家公司发出类似通知，其中 4 家的调查至今仍在进行。"
-            ]
-          },
-          {
-            "heading": "Singapore considers tougher measures",
-            "headingZh": "新加坡考虑更严厉的措施",
-            "paragraphs": [
-              "Senior Minister K. Shanmugam said Singapore is considering legal, regulatory and economic measures, including stronger pressure on companies and their wider business relationships.",
-              "Shanmugam said Singapore could urgently amend existing laws or introduce new ones if necessary. No changes have been announced yet, and no specific timeline has been given."
-            ],
-            "paragraphsZh": [
-              "国务资政尚穆根表示，新加坡正在考虑法律、监管和经济措施，包括对这些公司及其更广泛的商业关系加大施压。",
-              "尚穆根表示，如有必要，新加坡可能紧急修改现行法律或制定新法。目前尚未宣布任何改动，也没有给出具体时间表。"
-            ]
-          },
-          {
-            "heading": "The first seven companies haven't responded",
-            "headingZh": "首批 7 家公司尚未回应",
-            "paragraphs": [
-              "Minister for Sustainability and the Environment Grace Fu said on October 19 that the first seven companies had not yet responded to Singapore's notices. The government says it will continue gathering evidence and investigating companies potentially responsible."
-            ],
-            "paragraphsZh": [
-              "永续发展与环境部长傅海燕 10 月 19 日表示，首批 7 家公司尚未回应新加坡的通知。政府表示，将继续收集证据，调查可能负有责任的公司。"
-            ]
-          }
-        ],
-        "myTake": "The real test is whether the companies respond and whether enforcement leads to changes in fire prevention. The number of notices matters less, as the unresolved 2015 cases show.",
-        "myTakeZh": "真正的考验在于这些公司是否回应、执法能否真正改变防火做法。通知发了多少份倒在其次，2015 年至今悬而未决的案件就说明了这一点。",
-        "sources": [
-          {
-            "name": "MSE: Grace Fu's Oct 19 media doorstop on the haze (transcript)",
-            "nameZh": "永续发展与环境部：傅海燕 10 月 19 日就烟霾接受媒体访问（文字记录）",
-            "url": "https://www.mse.gov.sg/latest-news/media-doorstop-on-the-haze-situation---ms-grace-fu/",
-            "official": true
-          },
-          {
-            "name": "MHA: K Shanmugam's Oct 19 media doorstop on the haze (transcript)",
-            "nameZh": "内政部：尚穆根 10 月 19 日就烟霾接受媒体访问（文字记录）",
-            "url": "https://www.mha.gov.sg/media-room/newsroom/transcript-of-media-doorstop-by-mr-k-shanmugam-senior-minister-coordinating-minister-for-national-security-and-minister-for-home-affairs-on-the-haze-situation/",
-            "official": true
-          },
-          {
-            "name": "CNA: haze notices to three more firms; 2015 cases still under investigation",
-            "nameZh": "亚洲新闻台：另外 3 家公司将收到防霾通知；2015 年案件仍在调查",
-            "url": "https://www.channelnewsasia.com/singapore/nea-haze-notices-indonesia-companies-transboundary-haze-pollution-act-6471111"
-          }
+        "paragraphsZh": [
+          "英伟达的优势不只是芯片性能。开发者多年来都在使用围绕其硬件建立的软件工具。把现有 AI 项目搬到另一种芯片上，可能意味着重写代码、重新测试，耗时又费钱。"
         ]
+      },
+      {
+        "heading": "What changed?",
+        "headingZh": "这次有什么新变化？",
+        "paragraphs": [
+          "Amazon announced TorchNeuron, a tool that lets developers run existing PyTorch AI code on Amazon's Trainium chips with a configuration change rather than rewriting it. Amazon announced the software as a free, open-source public beta, timed around the PyTorch Conference opening October 20 in San Jose. Its wider rollout remains to be assessed. Amazon's Colin Brace told Reuters that more than 30 early customers were already using the software."
+        ],
+        "paragraphsZh": [
+          "亚马逊宣布推出 TorchNeuron。按亚马逊的说法，开发者只需调整配置，就能让原本用 PyTorch 写的 AI 程序运行在自家的 Trainium 芯片上，不必重写代码。亚马逊将这套软件定位为免费开源的公开测试版，并围绕 10 月 20 日在圣何塞开幕的 PyTorch 大会推出。其更广泛的实际应用效果仍待观察。亚马逊旗下 Annapurna Labs 的 Colin Brace 对路透社表示，已有超过 30 家早期客户在使用这套软件。"
+        ]
+      },
+      {
+        "heading": "Why does it matter?",
+        "headingZh": "为什么值得关注？",
+        "paragraphs": [
+          "Amazon is trying to compete with Nvidia by removing a reason developers stay with familiar hardware. If changing chips gets easier, more companies could compare price and performance instead of being locked into one software ecosystem."
+        ],
+        "paragraphsZh": [
+          "亚马逊想削弱开发者依赖英伟达的一个重要原因：迁移太麻烦。如果切换芯片更简单，企业就能更自由地比较价格和性能，而不必因为软件兼容性被绑在一家供应商身上。"
+        ]
+      },
+      {
+        "heading": "Does that mean Nvidia is in trouble?",
+        "headingZh": "英伟达的优势就没了吗？",
+        "paragraphs": [
+          "Not necessarily. Amazon says switching chips could bring significant cost savings, but independent real-world results are still limited. Compatibility is only the beginning: speed, reliability, support and total cost still matter."
+        ],
+        "paragraphsZh": [
+          "未必。亚马逊称，换用其芯片可能显著节省成本，但目前仍缺少充分的独立实测。兼容只是第一步，实际速度、可靠性、技术支持和总成本都很重要。"
+        ]
+      }
+    ],
+    "ending": "The next AI chip battle may be fought as much in software as in silicon.",
+    "endingZh": "下一场 AI 芯片大战，争的不只是硬件，也是谁能让开发者少折腾。",
+    "sources": [
+      {
+        "name": "Amazon official announcement",
+        "nameZh": "亚马逊官方公告",
+        "url": "https://www.aboutamazon.com/news/innovation-at-amazon/torchneuron-pytorch-aws-trainium-chips-ai",
+        "official": true
+      },
+      {
+        "name": "Reuters, Oct 19, 2026",
+        "nameZh": "路透社，2026 年 10 月 19 日",
+        "url": "https://www.reuters.com/business/retail-consumer/amazon-says-its-ai-chips-will-work-with-popular-coding-language-challenging-2026-10-19/",
+        "official": false
+      },
+      {
+        "name": "CNA republication of Reuters",
+        "nameZh": "CNA 转引路透社",
+        "url": "https://www.channelnewsasia.com/business/amazon-says-its-ai-chips-will-work-popular-coding-language-challenging-nvidia-6472191",
+        "official": false
       }
     ]
   },
-  "recommendation": {
-    "label": "Worth a look",
-    "labelZh": "值得一看",
-    "title": "Singapore's National Environment Agency haze updates",
-    "titleZh": "新加坡国家环境局烟霾信息",
-    "link": "https://www.haze.gov.sg/",
-    "text": "NEA's haze site keeps the official readings, health advice, hotspot map and regional haze outlook in one place, a useful way to follow the haze after the headlines fade.",
-    "textZh": "国家环境局的烟霾网站集中提供官方空气质量读数、健康建议、热点地图和区域烟霾展望；新闻热度过去后，也能用它继续跟进烟霾情况。"
+  "stayCurious": {
+    "category": "Singapore / Cities / Everyday Life",
+    "categoryZh": "新加坡 / 城市 / 日常生活",
+    "headline": "Why Does Singapore Have So Many Covered Walkways?",
+    "headlineZh": "为什么新加坡到处都是有盖走廊？",
+    "intro": [
+      "You leave the MRT station in Singapore. It's pouring. But you make it halfway home without opening your umbrella. That little roof above your head is not an accident."
+    ],
+    "introZh": [
+      "在新加坡，刚出地铁站就下起暴雨，你却能一路走好远都不用撑伞。头顶这条长长的有盖走廊，可不是碰巧修出来的。"
+    ],
+    "image": {
+      "src": "images/2026-10-20-stay-curious.png",
+      "alt": "Line drawing of a long covered walkway from a station toward apartment blocks, with rain falling and two people walking dry underneath",
+      "altZh": "简笔画：一条从车站通往住宅楼的长长有盖走廊，外面下着雨，两个人在走廊下走着",
+      "credit": "Illustration: Good Fetch",
+      "creditZh": "插图：Good Fetch"
+    },
+    "sections": [
+      {
+        "heading": "Isn't it just because of the rain?",
+        "headingZh": "不就是为了挡雨吗？",
+        "paragraphs": [
+          "Rain is part of it, but so is the relentless sun. Singapore wants more people to walk to public transport, and a journey that leaves you soaked or overheated isn't very inviting."
+        ],
+        "paragraphsZh": [
+          "挡雨是一方面，还有晒得人发烫的太阳。新加坡希望更多人步行乘坐公共交通，但如果走到车站前就浑身湿透或热得难受，谁还愿意走？"
+        ]
+      },
+      {
+        "heading": "How much shelter are we talking about?",
+        "headingZh": "到底修了多少？",
+        "paragraphs": [
+          "Singapore's Land Transport Authority says the Walk2Ride programme added about 200 km of sheltered walkways island-wide by 2018. The network was designed to provide sheltered walking connections within 400 metres of MRT stations, and within 200 metres of bus interchanges, LRT stations and selected busy bus stops."
+        ],
+        "paragraphsZh": [
+          "新加坡陆路交通管理局（LTA）称，Walk2Ride 计划截至 2018 年已在全岛增建约 200 公里有盖步道。这些设施旨在为地铁站周边 400 米内，以及轻轨站、巴士转换站和部分繁忙巴士站周边 200 米内的步行路线提供遮蔽。"
+        ]
+      },
+      {
+        "heading": "So is this actually transport policy?",
+        "headingZh": "原来这也是交通政策？",
+        "paragraphs": [
+          "Exactly. A bus or train is only useful if people can comfortably reach it. A roof over a pavement sounds ordinary, but it can make walking a more comfortable and realistic option."
+        ],
+        "paragraphsZh": [
+          "没错。地铁和巴士再方便，如果从家走到车站的那一段太难受，大家也未必愿意搭。头顶一条走廊，看似不起眼，却能让走到地铁站或巴士站这件事更舒服，也更容易坚持。"
+        ]
+      }
+    ],
+    "ending": "The next time you walk home through a storm without getting wet, you're experiencing urban planning at work.",
+    "endingZh": "下次下雨走回家却没淋湿时，你正在享受的，其实也是城市规划。",
+    "sources": [
+      {
+        "name": "LTA Walking",
+        "nameZh": "新加坡陆交局：步行基础设施",
+        "url": "https://www.lta.gov.sg/content/ltagov/en/getting_around/active_mobility/walking_cycling_infrastructure/walking.html",
+        "official": true
+      },
+      {
+        "name": "LTA Land Transport Master Plan 2040",
+        "nameZh": "新加坡陆交局 2040 交通总规划",
+        "url": "https://www.lta.gov.sg/content/dam/ltagov/who_we_are/our_work/land_transport_master_plan_2040/pdf/LTA%20LTMP%202040%20eReport.pdf",
+        "official": true
+      },
+      {
+        "name": "LTA 2014 annual report",
+        "nameZh": "新加坡陆交局 2014 年年报",
+        "url": "https://www.lta.gov.sg/content/dam/ltagov/who_we_are/statistics_and_publications/report/pdf/LTA_AR_2014_web.pdf",
+        "official": true
+      }
+    ]
   }
 }
