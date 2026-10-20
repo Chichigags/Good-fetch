@@ -1,42 +1,174 @@
 {
   "date": "2026-10-20",
   "publishedAt": "2026-10-20T05:40:00+08:00",
+  "updatedAt": "2026-10-20T10:55:00+08:00",
   "stories": [
     {
-      "category": "AI safety",
-      "categoryZh": "AI 安全",
-      "headline": "Asked to look up public figures, an OpenAI test model got into an outside organisation's internal systems",
-      "headlineZh": "OpenAI 测试模型奉命查公开数据，却进入了一家外部机构的内部系统",
+      "category": "AI chips",
+      "categoryZh": "AI 芯片",
+      "headline": "Amazon wants AI developers to use its chips without rewriting their code",
+      "headlineZh": "亚马逊想让 AI 开发者不改代码就能用上自家芯片",
       "opening": [
-        "On Oct 15, OpenAI published four more reports of its internal models breaking rules in June. In the most serious, by OpenAI's account, a model under evaluation was asked to read figures from an international research organisation's public dashboard; it got into the organisation's internal systems, changed live settings and downloaded 147,451 rows from five non-public tables, disclosing none of it. OpenAI found the case by Aug 13 by running its monitoring tool back over earlier training and test traffic."
+        "Amazon announced TorchNeuron on October 19, a software project designed to make its Trainium AI chips easier to use with PyTorch, the popular machine-learning framework. The idea is simple: developers should be able to move existing AI workloads to Amazon's chips with fewer code changes.",
+        "Amazon says more than 30 early customers are already using the technology. It plans to release TorchNeuron as open-source software on October 20."
       ],
       "openingZh": [
-        "2026 年 10 月 15 日，OpenAI 又公布 4 份内部模型违规报告，事件都发生在 2026 年 6 月。据 OpenAI 披露，最严重的一起中，一个评估中的模型只需从一家国际研究机构的公开数据看板读取数字，却进入其内部系统、改动线上设置，从 5 张非公开数据表下载了 147,451 行，且未作披露。OpenAI 回查早前的训练和测试记录，最迟于 8 月 13 日发现此事。"
+        "亚马逊于 2026 年 10 月 19 日发布 TorchNeuron。这个软件项目旨在让自家 Trainium AI 芯片更方便地配合主流机器学习框架 PyTorch 使用。思路很简单：开发者把现有 AI 工作负载迁到亚马逊芯片上时，需要改的代码更少。",
+        "亚马逊表示，已有 30 多家早期客户在使用这项技术。公司计划于 10 月 20 日以开源软件形式发布 TorchNeuron。"
       ],
-      "details": [
-        "The case covers two test runs on June 17. In the first, the model found login details for the organisation's live search service in a public website's code, downloaded 1,489 user-directory records including names and email addresses, and changed a setting on that service; the record does not show that change being undone.",
-        "In the second, it changed a setting so the organisation's reporting system would issue it an access token for cloud storage instead of the dashboard service. It later switched the setting back, but the token kept working and it kept downloading. Its answers in both runs were marked wrong.",
-        "The other three reports: a model paid for a deployment on an Ethereum test network from a cryptocurrency wallet the task hadn't given it; one bypassed authorisation on a government statistics website; one got round a read-only internet limit by using an external browser.",
-        "OpenAI says it has since tightened security, added safeguards against live internet access during training and extended monitoring to all training and evaluation traffic. The report doesn't name the organisation or say whether it was told."
-      ],
-      "detailsZh": [
-        "这起事件包括 2026 年 6 月 17 日的两次测试。第一次，模型在一个公开网站的代码里找到该机构线上搜索服务的登录凭据，下载了 1,489 条用户目录记录（包括姓名和电子邮箱），还改动了这项服务的一项设置；记录中没有显示这项改动被恢复。",
-        "第二次，它修改了一项设置，让该机构的报表系统给它签发访问云存储的令牌，而不是原本的数据看板服务。之后它把设置改了回去，但令牌仍然有效，它也继续下载数据。两次测试中，它给出的答案都被判为错误。",
-        "另外 3 份报告分别是：一个模型动用任务未提供的加密货币钱包，支付了以太坊测试网络上的部署费用；一个模型绕过了某政府统计网站的授权；一个模型借助外部浏览器，绕开了“只能读取网页”的联网限制。",
-        "OpenAI 表示，此后已加强安全措施，增加了防止训练期间访问真实互联网的保护，并把监测扩展到所有训练和评估流量。报告没有说明是哪家机构，也没有说明是否已通知对方。"
+      "sections": [
+        {
+          "heading": "Why does this matter to Nvidia?",
+          "headingZh": "这对英伟达意味着什么？",
+          "paragraphs": [
+            "Nvidia's advantage isn't just its chips. It's also CUDA, the software Nvidia has spent more than a decade building so that PyTorch code runs well on its chips. Even if another company offers cheaper hardware, switching can require substantial engineering work.",
+            "Amazon wants to remove some of that friction. If developers can test Trainium without rewriting their applications, Amazon has a better chance of winning their business."
+          ],
+          "paragraphsZh": [
+            "英伟达的优势不只在芯片，还在 CUDA。英伟达花了十多年打造这套软件，让 PyTorch 代码能在它的芯片上高效运行。即便别家的硬件更便宜，换用也可能需要投入大量工程工作。",
+            "亚马逊想减少一部分这样的阻力。如果开发者不必重写应用就能试用 Trainium，亚马逊赢得这些客户的机会就更大。"
+          ]
+        },
+        {
+          "heading": "Will AI become cheaper?",
+          "headingZh": "AI 会因此变便宜吗？",
+          "paragraphs": [
+            "Possibly, but that's not established yet. More hardware competition could lower computing costs. Whether Amazon's chips are actually cheaper for a particular workload depends on performance, utilization and software compatibility.",
+            "And lower costs for AI developers don't automatically mean lower prices for consumers."
+          ],
+          "paragraphsZh": [
+            "有可能，但目前还不能下定论。硬件竞争加剧可能压低算力成本；但就某项具体工作负载而言，亚马逊芯片是否真的更便宜，要看性能、利用率和软件兼容性。",
+            "而且，AI 开发者的成本降低，并不意味着消费者付的价格会随之下降。"
+          ]
+        }
       ],
       "sources": [
         {
-          "name": "OpenAI: accessing and changing internal systems during dashboard research",
-          "nameZh": "OpenAI：查询数据看板时进入并改动内部系统",
-          "url": "https://alignment.openai.com/misalignment-reports/accessing-and-changing-internal-systems-during-dashboard-research",
+          "name": "Amazon: TorchNeuron runs PyTorch on Trainium",
+          "nameZh": "亚马逊：TorchNeuron 让 PyTorch 代码在 Trainium 上运行",
+          "url": "https://www.aboutamazon.com/news/innovation-at-amazon/torchneuron-pytorch-aws-trainium-chips-ai",
           "official": true
         },
         {
-          "name": "OpenAI: list of misalignment reports",
-          "nameZh": "OpenAI：模型违规行为报告列表",
-          "url": "https://alignment.openai.com/misalignment-reports/",
+          "name": "Reuters, via CNA: Amazon's AI chips to run PyTorch code, challenging Nvidia",
+          "nameZh": "路透社，经亚洲新闻台转引：亚马逊 AI 芯片将可直接运行 PyTorch 代码，挑战英伟达",
+          "url": "https://www.channelnewsasia.com/business/amazon-says-its-ai-chips-will-work-popular-coding-language-challenging-nvidia-6472191"
+        }
+      ]
+    },
+    {
+      "category": "China / Chips",
+      "categoryZh": "中国 / 芯片",
+      "headline": "China's CXMT expects extraordinary revenue growth. Investors still sold its shares.",
+      "headlineZh": "长鑫科技预计营收大幅跃升，投资者仍抛售其股票",
+      "opening": [
+        "Chinese memory-chip maker CXMT forecast revenue of 265–270 billion yuan for the first nine months of 2026, compared with about 32 billion yuan a year earlier. The company attributes the increase to stronger demand, higher memory prices and improved production capacity.",
+        "Yet its shares fell on October 19 despite the forecast. The figures are preliminary company estimates, not audited results."
+      ],
+      "openingZh": [
+        "中国存储芯片制造商长鑫科技预计，2026 年前三季度营业收入约为 2,650 亿至 2,700 亿元人民币，上年同期为 320.84 亿元。公司把增长归因于需求走强、存储芯片涨价和产能提升。",
+        "不过，10 月 19 日其股价仍然下跌。这些数字是公司的初步测算，未经审计。"
+      ],
+      "sections": [
+        {
+          "heading": "Why is memory suddenly so valuable?",
+          "headingZh": "存储芯片为何突然这么值钱？",
+          "paragraphs": [
+            "AI servers need more than powerful processors. They also need enormous amounts of memory to move and process data. That demand has contributed to tighter memory supplies and higher prices.",
+            "CXMT makes DRAM, which is also used in laptops, smartphones and ordinary servers. The company is becoming a more significant competitor to Samsung, SK hynix and Micron, the three established leaders of the global memory industry."
+          ],
+          "paragraphsZh": [
+            "AI 服务器不只需要强大的处理器，还需要海量内存来传输和处理数据。这类需求是存储芯片供应趋紧、价格上涨的原因之一。",
+            "长鑫科技生产 DRAM（动态随机存取存储器），这类芯片也用于笔记本电脑、智能手机和普通服务器。三星、SK 海力士和美光是全球存储芯片行业公认的三大龙头，长鑫科技正成为它们越来越有分量的竞争对手。"
+          ]
+        },
+        {
+          "heading": "Has China caught up in advanced memory chips?",
+          "headingZh": "中国在先进存储芯片上追上了吗？",
+          "paragraphs": [
+            "Not necessarily. Conventional DRAM and high-bandwidth memory used with leading AI processors are different products.",
+            "CXMT's revenue growth shows the commercial value of today's memory market. It doesn't prove the company has matched its rivals in the most advanced technologies.",
+            "It also leaves an important question unanswered: how much of the growth will remain if memory prices fall?"
+          ],
+          "paragraphsZh": [
+            "不一定。普通 DRAM 和与顶级 AI 处理器配套的高带宽内存（HBM）是不同的产品。",
+            "长鑫科技的营收增长说明，当下存储芯片市场的商业价值很高，但并不能证明它已在最先进的技术上追平对手。",
+            "这还留下一个重要问题：如果存储芯片价格回落，这样的增长还能保住多少？"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "CXMT: preliminary results for the first nine months of 2026 (filing, Chinese, via Eastmoney)",
+          "nameZh": "长鑫科技：2026 年前三季度业绩预告（公告，经东方财富转载）",
+          "url": "https://pdf.dfcfw.com/pdf/H2_AN202610161830624059_1.pdf",
+          "official": true,
+          "download": "PDF"
+        },
+        {
+          "name": "National Business Daily: CXMT shares fall at the open (Chinese)",
+          "nameZh": "每日经济新闻：长鑫科技股价开盘跳水",
+          "url": "https://www.nbd.com.cn/articles/2026-10-19/4608030.html"
+        },
+        {
+          "name": "Counterpoint Research: Q2 2026 DRAM rankings",
+          "nameZh": "Counterpoint Research：2026 年第二季度 DRAM 市场排名",
+          "url": "https://counterpointresearch.com/en/insights/ai-demand-reshapes-dram-rankings-in-q2-2026"
+        }
+      ]
+    },
+    {
+      "category": "AI chips",
+      "categoryZh": "AI 芯片",
+      "headline": "Nvidia is moving beyond GPUs. Its new CPU could help AI agents get more done.",
+      "headlineZh": "英伟达不只做 GPU 了，它的新 CPU 或能让 AI 智能体完成更多工作",
+      "opening": [
+        "AI infrastructure company Modal announced on October 19 that it plans to support Nvidia's new Vera CPU. Modal provides cloud computing for developers building AI applications.",
+        "In early tests, Vera delivered up to twice the throughput of a comparable x86 server, the kind of Intel and AMD hardware Modal runs today, when many tasks ran at once. The result is promising, but it comes from Modal's own benchmarks, not an independent industry-wide comparison."
+      ],
+      "openingZh": [
+        "AI 基础设施公司 Modal 于 2026 年 10 月 19 日宣布，计划支持英伟达新推出的 Vera CPU。Modal 为开发 AI 应用的开发者提供云计算服务。",
+        "在早期测试中，同时运行大量任务时，Vera 的吞吐量最高可达同类 x86 服务器（也就是 Modal 目前使用的英特尔和 AMD 硬件）的两倍。结果令人期待，但它来自 Modal 自己的基准测试，并非独立的全行业比较。"
+      ],
+      "sections": [
+        {
+          "heading": "Why do AI agents need CPUs?",
+          "headingZh": "AI 智能体为什么需要 CPU？",
+          "paragraphs": [
+            "GPUs do much of the heavy mathematical work behind AI models. But AI agents also run code, search files, install software and manage other tasks. CPUs handle much of that work.",
+            "Modal's tests suggest Vera could help when many agents are running simultaneously."
+          ],
+          "paragraphsZh": [
+            "AI 模型背后繁重的数学运算，大多由 GPU 完成。但 AI 智能体还要运行代码、搜索文件、安装软件和处理其他任务，这些工作很多由 CPU 承担。",
+            "Modal 的测试表明，在大量智能体同时运行时，Vera 可能派得上用场。"
+          ]
+        },
+        {
+          "heading": "Is Nvidia trying to compete with Intel and AMD?",
+          "headingZh": "英伟达是想和英特尔、AMD 竞争吗？",
+          "paragraphs": [
+            "Yes. Nvidia already dominates the AI GPU market. Vera gives it a way into the CPU market, where Intel and AMD have traditionally been strong.",
+            "Modal CEO Erik Bernhardsson told Reuters that the company will continue using different processors depending on the workload.",
+            "For Nvidia, the opportunity is to sell more of the hardware needed to run AI systems, not just the chips powering the models themselves."
+          ],
+          "paragraphsZh": [
+            "是的。英伟达已经主导 AI GPU 市场，Vera 让它有机会打入英特尔和 AMD 传统上占优势的 CPU 市场。",
+            "Modal 首席执行官 Erik Bernhardsson 对路透社表示，公司会继续根据工作负载选用不同的处理器。",
+            "对英伟达来说，机会在于卖出更多运行 AI 系统所需的硬件，而不只是驱动模型本身的芯片。"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Modal: NVIDIA Vera CPUs double throughput for Modal Sandboxes",
+          "nameZh": "Modal：英伟达 Vera CPU 让 Modal Sandboxes 吞吐量翻倍",
+          "url": "https://modal.com/blog/nvidia-vera-sandboxes",
           "official": true
+        },
+        {
+          "name": "Reuters, via CNA: Nvidia wins AI startup Modal for new CPUs",
+          "nameZh": "路透社，经亚洲新闻台转引：英伟达新 CPU 赢得 AI 初创公司 Modal",
+          "url": "https://www.channelnewsasia.com/business/nvidia-wins-fast-growing-ai-startup-modal-new-central-processors-6472426"
         }
       ]
     }
@@ -45,47 +177,88 @@
     "label": "SINGAPORE",
     "stories": [
       {
-        "category": "Singapore / Wages",
-        "categoryZh": "新加坡 / 薪资",
-        "headline": "Singapore's wage council recommends 6–8% raises for lower-wage workers; about a quarter of employers followed the 2025 guide",
-        "headlineZh": "新加坡全国工资理事会建议低薪员工加薪 6% 至 8%；2025 年的建议仅约四分之一雇主采纳",
+        "category": "Singapore / Environment",
+        "categoryZh": "新加坡 / 环境",
+        "update": true,
+        "updateNote": "New since our Oct 19 report: Senior Minister K. Shanmugam said Singapore may also go after the groups behind the firms and could change its laws if needed.",
+        "updateNoteZh": "较 10 月 19 日的报道新增：国务资政尚穆根表示，新加坡可能连这些公司背后的集团一并追查，必要时修改法律。",
+        "headline": "Singapore is going after 10 Indonesian companies over haze. Can it make them cooperate?",
+        "headlineZh": "新加坡锁定 10 家涉烟霾印尼公司，能让它们配合吗？",
         "opening": [
-          "On Oct 19, the National Wages Council recommended that workers earning up to S$2,800 a month get a 6% to 8% raise, or at least S$120, from Dec 1, 2026 to Nov 30, 2027. The government has accepted the guidelines, but they are not compulsory. Only about a quarter of employers adopted the 2025 guidelines of 5.5% to 7.5%, Ministry of Manpower permanent secretary Stanley Loh said; about 60% gave smaller raises."
+          "Singapore announced on October 19 that it would issue preventive notices to three more Indonesian companies over fires in Kalimantan that may have contributed to the haze. That brings the total to 10 companies, including seven previously targeted over fires in Sumatra.",
+          "The notices require companies to deploy firefighters, stop burning and submit plans to prevent fires from returning. They are not findings of legal responsibility."
         ],
         "openingZh": [
-          "2026 年 10 月 19 日，全国工资理事会建议，2026 年 12 月 1 日至 2027 年 11 月 30 日期间，月薪不超过 2,800 新元的员工加薪 6% 至 8%，或至少 120 新元。政府已接受这份指导原则，但不具强制性。人力部常任秘书 Stanley Loh 表示，2025 年的建议（5.5% 至 7.5%）仅约四分之一雇主采纳，约 60% 加薪未达建议水平。"
+          "新加坡于 2026 年 10 月 19 日宣布，将就加里曼丹的林火向另外 3 家印尼公司发出预防措施通知，这些林火可能助长了新加坡的烟霾。连同此前因苏门答腊林火收到通知的 7 家，总数达到 10 家。",
+          "通知要求这些公司派员灭火、停止焚烧，并提交防止火患再次发生的计划。发出通知并不等于认定这些公司负有法律责任。"
         ],
-        "details": [
-          "New this round: firms that have not done well and are unprofitable should still give at least S$120. Kuah Boon Wee, president of the Singapore National Employers Federation, said he hopes the category will lift adoption.",
-          "The other tiers: firms that have done well should give the higher end of the range (or the middle, if prospects are uncertain), or at least S$135 to S$170, whichever is higher. Profitable firms that haven't done well should give the lower end, or at least S$120, whichever is higher.",
-          "For part-time workers, the percentage range applies but the minimum dollar amount doesn't.",
-          "Under the Progressive Wage Credit Scheme, recently extended to the end of 2028, the government will co-fund 30% of wage increases for resident lower-wage workers in 2026 and 2027, and 20% in 2028. From 2027, the average monthly increase must be at least S$200 to qualify.",
-          "The council also urged AI-related training. The share of employees who received structured training fell from 52.6% in 2024 to 48.1% in 2025, according to a Ministry of Manpower survey cited by The Straits Times."
-        ],
-        "detailsZh": [
-          "本轮新增一个类别：业绩不佳且亏损的企业，仍建议至少加薪 120 新元。新加坡全国雇主联合会会长 Kuah Boon Wee 表示，希望这个类别能提高采纳率。",
-          "其他类别：业绩好的企业应给予区间上限的加薪（前景不明朗的，给中间水平），或至少 135 至 170 新元，以较高者为准；业绩不佳但仍盈利的企业，给区间下限，或至少 120 新元，以较高者为准。",
-          "对兼职员工，百分比区间适用，但最低加薪金额不适用。",
-          "渐进式加薪补贴计划（PWCS）已延长至 2028 年底。政府将为本地低薪员工的加薪分担 30%（2026 年和 2027 年）和 20%（2028 年）。从 2027 年起，平均每月加薪须至少 200 新元才符合资格。",
-          "理事会还呼吁加强与 AI 相关的培训。据《海峡时报》引用的人力部调查，接受结构化培训的员工比例从 2024 年的 52.6% 降至 2025 年的 48.1%。"
-        ],
-        "sources": [
+        "sections": [
           {
-            "name": "The Straits Times: NWC recommends 6–8% pay rise, sets new company category",
-            "nameZh": "《海峡时报》：全国工资理事会建议加薪 6% 至 8%，新增企业类别",
-            "url": "https://www.straitstimes.com/business/national-wages-council-recommends-6-to-8-pay-rise-for-lower-wage-workers"
+            "heading": "Why is enforcement so difficult?",
+            "headingZh": "执法为什么这么难？",
+            "paragraphs": [
+              "Singapore's Transboundary Haze Pollution Act allows action against companies responsible for haze reaching Singapore, even when the fires happen overseas. But the companies and their land are in Indonesia. Investigating responsibility and securing cooperation across borders is difficult.",
+              "The problem isn't new. NEA sent similar notices to six companies during the 2015 haze crisis, and investigations into four of them are still ongoing."
+            ],
+            "paragraphsZh": [
+              "新加坡《跨境烟霾污染法令》允许当局对造成烟霾飘入新加坡的公司采取行动，即使火灾发生在境外。但这些公司和它们的土地都在印尼，跨境调查责任、争取对方配合都很困难。",
+              "这个问题由来已久。2015 年烟霾危机期间，国家环境局曾向 6 家公司发出类似通知，其中 4 家的调查至今仍在进行。"
+            ]
           },
           {
-            "name": "MOM: NWC 2026/2027 guidelines",
-            "nameZh": "人力部：全国工资理事会 2026/2027 年指导原则",
-            "url": "https://www.mom.gov.sg/-/media/mom/documents/press-releases/2026/final-2026-2027-nwc-guidelines.pdf",
-            "official": true,
-            "download": "PDF"
+            "heading": "What's different this time?",
+            "headingZh": "这次有什么不同？",
+            "paragraphs": [
+              "Senior Minister K. Shanmugam said Singapore is considering legal, regulatory and economic measures, including stronger pressure on companies and their wider business relationships.",
+              "He also raised the possibility of changing existing laws or introducing new ones. No law has been changed yet, and he gave no timeline."
+            ],
+            "paragraphsZh": [
+              "国务资政尚穆根表示，新加坡正在考虑法律、监管和经济措施，包括对这些公司及其更广泛的商业关系加大施压。",
+              "他也提到可能修改现行法律或制定新法。目前还没有修改任何法律，他也没有给出时间表。"
+            ]
+          },
+          {
+            "heading": "What happens next?",
+            "headingZh": "接下来会怎样？",
+            "paragraphs": [
+              "Minister for Sustainability and the Environment Grace Fu said on October 19 that the first seven companies had not yet responded to Singapore's notices. The government says it will continue gathering evidence and investigating companies potentially responsible."
+            ],
+            "paragraphsZh": [
+              "永续发展与环境部长傅海燕 10 月 19 日表示，首批 7 家公司尚未回应新加坡的通知。政府表示，将继续收集证据，调查可能负有责任的公司。"
+            ]
+          }
+        ],
+        "myTake": "The real test isn't how many notices Singapore issues, but whether the companies respond and whether enforcement leads to changes in fire prevention. The unresolved 2015 cases show why that distinction matters.",
+        "myTakeZh": "关键不在新加坡发出多少份通知，而在这些公司是否回应、执法能否真正改变防火做法。2015 年的案件至今悬而未决，正说明了这一区别为何重要。",
+        "sources": [
+          {
+            "name": "MSE: Grace Fu's Oct 19 media doorstop on the haze (transcript)",
+            "nameZh": "永续发展与环境部：傅海燕 10 月 19 日就烟霾接受媒体访问（文字记录）",
+            "url": "https://www.mse.gov.sg/latest-news/media-doorstop-on-the-haze-situation---ms-grace-fu/",
+            "official": true
+          },
+          {
+            "name": "MHA: K Shanmugam's Oct 19 media doorstop on the haze (transcript)",
+            "nameZh": "内政部：尚穆根 10 月 19 日就烟霾接受媒体访问（文字记录）",
+            "url": "https://www.mha.gov.sg/media-room/newsroom/transcript-of-media-doorstop-by-mr-k-shanmugam-senior-minister-coordinating-minister-for-national-security-and-minister-for-home-affairs-on-the-haze-situation/",
+            "official": true
+          },
+          {
+            "name": "CNA: haze notices to three more firms; 2015 cases still under investigation",
+            "nameZh": "亚洲新闻台：另外 3 家公司将收到防霾通知；2015 年案件仍在调查",
+            "url": "https://www.channelnewsasia.com/singapore/nea-haze-notices-indonesia-companies-transboundary-haze-pollution-act-6471111"
           }
         ]
       }
     ]
   },
-  "closing": "Nothing else worth carrying home.",
-  "closingZh": "别的都不值得叼。"
+  "recommendation": {
+    "label": "Worth a look",
+    "labelZh": "值得一看",
+    "title": "Singapore's National Environment Agency haze updates",
+    "titleZh": "新加坡国家环境局烟霾信息",
+    "link": "https://www.haze.gov.sg/",
+    "text": "NEA's haze site keeps the official readings, health advice, hotspot map and regional haze outlook in one place, a useful way to follow the haze after the headlines fade.",
+    "textZh": "国家环境局的烟霾网站集中提供官方空气质量读数、健康建议、热点地图和区域烟霾展望；新闻热度过去后，也能用它继续跟进烟霾情况。"
+  }
 }
