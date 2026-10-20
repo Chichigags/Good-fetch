@@ -1,7 +1,7 @@
 {
   "date": "2026-10-20",
   "publishedAt": "2026-10-20T05:40:00+08:00",
-  "updatedAt": "2026-10-20T10:55:00+08:00",
+  "updatedAt": "2026-10-20T12:18:00+08:00",
   "stories": [
     {
       "category": "AI chips",
@@ -10,22 +10,22 @@
       "headlineZh": "亚马逊想让 AI 开发者不改代码就能用上自家芯片",
       "opening": [
         "Amazon announced TorchNeuron on October 19, a software project designed to make its Trainium AI chips easier to use with PyTorch, the popular machine-learning framework. The idea is simple: developers should be able to move existing AI workloads to Amazon's chips with fewer code changes.",
-        "Amazon says more than 30 early customers are already using the technology. It plans to release TorchNeuron as open-source software on October 20."
+        "Amazon says more than 30 early customers are already using the technology. These are Amazon's own claims. Independent results aren't available yet. It plans to release TorchNeuron as open-source software on October 20."
       ],
       "openingZh": [
         "亚马逊于 2026 年 10 月 19 日发布 TorchNeuron。这个软件项目旨在让自家 Trainium AI 芯片更方便地配合主流机器学习框架 PyTorch 使用。思路很简单：开发者把现有 AI 工作负载迁到亚马逊芯片上时，需要改的代码更少。",
-        "亚马逊表示，已有 30 多家早期客户在使用这项技术。公司计划于 10 月 20 日以开源软件形式发布 TorchNeuron。"
+        "亚马逊表示，已有 30 多家早期客户在使用这项技术。以上均为亚马逊自己的说法，目前还没有独立测试结果。公司计划于 10 月 20 日以开源软件形式发布 TorchNeuron。"
       ],
       "sections": [
         {
-          "heading": "Why does this matter to Nvidia?",
-          "headingZh": "这对英伟达意味着什么？",
+          "heading": "Nvidia's CUDA advantage",
+          "headingZh": "英伟达的 CUDA 优势",
           "paragraphs": [
-            "Nvidia's advantage isn't just its chips. It's also CUDA, the software Nvidia has spent more than a decade building so that PyTorch code runs well on its chips. Even if another company offers cheaper hardware, switching can require substantial engineering work.",
+            "Besides its chips, Nvidia's advantage includes CUDA, the software Nvidia has spent more than a decade building so that PyTorch code runs well on its chips. Even if another company offers cheaper hardware, switching can require substantial engineering work.",
             "Amazon wants to remove some of that friction. If developers can test Trainium without rewriting their applications, Amazon has a better chance of winning their business."
           ],
           "paragraphsZh": [
-            "英伟达的优势不只在芯片，还在 CUDA。英伟达花了十多年打造这套软件，让 PyTorch 代码能在它的芯片上高效运行。即便别家的硬件更便宜，换用也可能需要投入大量工程工作。",
+            "除了芯片，英伟达的优势还包括 CUDA。英伟达花了十多年打造这套软件，让 PyTorch 代码能在它的芯片上高效运行。即便别家的硬件更便宜，换用也可能需要投入大量工程工作。",
             "亚马逊想减少一部分这样的阻力。如果开发者不必重写应用就能试用 Trainium，亚马逊赢得这些客户的机会就更大。"
           ]
         },
@@ -63,16 +63,16 @@
       "headlineZh": "长鑫科技预计营收大幅跃升，投资者仍抛售其股票",
       "opening": [
         "Chinese memory-chip maker CXMT forecast revenue of 265–270 billion yuan for the first nine months of 2026, compared with about 32 billion yuan a year earlier. The company attributes the increase to stronger demand, higher memory prices and improved production capacity.",
-        "Yet its shares fell on October 19 despite the forecast. The figures are preliminary company estimates, not audited results."
+        "CXMT shares fell 7.8% on October 19. Third-quarter net profit was reportedly expected to grow just 1–4% from the previous quarter, compared with triple-digit quarterly growth earlier in the year. The figures are preliminary company estimates, not audited results."
       ],
       "openingZh": [
         "中国存储芯片制造商长鑫科技预计，2026 年前三季度营业收入约为 2,650 亿至 2,700 亿元人民币，上年同期为 320.84 亿元。公司把增长归因于需求走强、存储芯片涨价和产能提升。",
-        "不过，10 月 19 日其股价仍然下跌。这些数字是公司的初步测算，未经审计。"
+        "长鑫科技股价 10 月 19 日下跌 7.8%。据报道，公司第三季度净利润预计环比仅增长 1% 至 4%，而今年早些时候的单季环比增速达到三位数。这些数字是公司的初步测算，未经审计。"
       ],
       "sections": [
         {
-          "heading": "Why is memory suddenly so valuable?",
-          "headingZh": "存储芯片为何突然这么值钱？",
+          "heading": "AI is driving memory demand",
+          "headingZh": "AI 推高内存需求",
           "paragraphs": [
             "AI servers need more than powerful processors. They also need enormous amounts of memory to move and process data. That demand has contributed to tighter memory supplies and higher prices.",
             "CXMT makes DRAM, which is also used in laptops, smartphones and ordinary servers. The company is becoming a more significant competitor to Samsung, SK hynix and Micron, the three established leaders of the global memory industry."
@@ -106,9 +106,9 @@
           "download": "PDF"
         },
         {
-          "name": "National Business Daily: CXMT shares fall at the open (Chinese)",
-          "nameZh": "每日经济新闻：长鑫科技股价开盘跳水",
-          "url": "https://www.nbd.com.cn/articles/2026-10-19/4608030.html"
+          "name": "Securities Times: CXMT shares close down 7.77%; Q3 profit growth slows sharply from the previous quarter (Chinese)",
+          "nameZh": "证券时报：长鑫科技收跌 7.77%，三季度净利润环比增速大幅放缓",
+          "url": "https://www.stcn.com/article/detail/4226585.html"
         },
         {
           "name": "Counterpoint Research: Q2 2026 DRAM rankings",
@@ -124,16 +124,16 @@
       "headlineZh": "英伟达不只做 GPU 了，它的新 CPU 或能让 AI 智能体完成更多工作",
       "opening": [
         "AI infrastructure company Modal announced on October 19 that it plans to support Nvidia's new Vera CPU. Modal provides cloud computing for developers building AI applications.",
-        "In early tests, Vera delivered up to twice the throughput of a comparable x86 server, the kind of Intel and AMD hardware Modal runs today, when many tasks ran at once. The result is promising, but it comes from Modal's own benchmarks, not an independent industry-wide comparison."
+        "Modal reported up to twice the throughput in its own tests, when many tasks ran at once. Independent benchmarks aren't available yet."
       ],
       "openingZh": [
         "AI 基础设施公司 Modal 于 2026 年 10 月 19 日宣布，计划支持英伟达新推出的 Vera CPU。Modal 为开发 AI 应用的开发者提供云计算服务。",
-        "在早期测试中，同时运行大量任务时，Vera 的吞吐量最高可达同类 x86 服务器（也就是 Modal 目前使用的英特尔和 AMD 硬件）的两倍。结果令人期待，但它来自 Modal 自己的基准测试，并非独立的全行业比较。"
+        "Modal 称，在其自己的测试中，同时运行大量任务时吞吐量最高可达两倍。目前还没有独立的基准测试结果。"
       ],
       "sections": [
         {
-          "heading": "Why do AI agents need CPUs?",
-          "headingZh": "AI 智能体为什么需要 CPU？",
+          "heading": "AI agents need CPUs too",
+          "headingZh": "AI 智能体也需要 CPU",
           "paragraphs": [
             "GPUs do much of the heavy mathematical work behind AI models. But AI agents also run code, search files, install software and manage other tasks. CPUs handle much of that work.",
             "Modal's tests suggest Vera could help when many agents are running simultaneously."
@@ -144,17 +144,17 @@
           ]
         },
         {
-          "heading": "Is Nvidia trying to compete with Intel and AMD?",
-          "headingZh": "英伟达是想和英特尔、AMD 竞争吗？",
+          "heading": "Nvidia takes on Intel and AMD",
+          "headingZh": "英伟达挑战英特尔和 AMD",
           "paragraphs": [
-            "Yes. Nvidia already dominates the AI GPU market. Vera gives it a way into the CPU market, where Intel and AMD have traditionally been strong.",
+            "Nvidia already dominates the AI GPU market. Vera gives it a way into the CPU market, where Intel and AMD have traditionally been strong.",
             "Modal CEO Erik Bernhardsson told Reuters that the company will continue using different processors depending on the workload.",
-            "For Nvidia, the opportunity is to sell more of the hardware needed to run AI systems, not just the chips powering the models themselves."
+            "For Nvidia, the opportunity is to sell more of the hardware needed to run AI systems, beyond the chips powering the models themselves."
           ],
           "paragraphsZh": [
-            "是的。英伟达已经主导 AI GPU 市场，Vera 让它有机会打入英特尔和 AMD 传统上占优势的 CPU 市场。",
+            "英伟达已经主导 AI GPU 市场，Vera 让它有机会打入英特尔和 AMD 传统上占优势的 CPU 市场。",
             "Modal 首席执行官 Erik Bernhardsson 对路透社表示，公司会继续根据工作负载选用不同的处理器。",
-            "对英伟达来说，机会在于卖出更多运行 AI 系统所需的硬件，而不只是驱动模型本身的芯片。"
+            "对英伟达来说，机会在于在驱动模型本身的芯片之外，卖出更多运行 AI 系统所需的硬件。"
           ]
         }
       ],
@@ -194,8 +194,8 @@
         ],
         "sections": [
           {
-            "heading": "Why is enforcement so difficult?",
-            "headingZh": "执法为什么这么难？",
+            "heading": "Cross-border enforcement is hard",
+            "headingZh": "跨境执法难度大",
             "paragraphs": [
               "Singapore's Transboundary Haze Pollution Act allows action against companies responsible for haze reaching Singapore, even when the fires happen overseas. But the companies and their land are in Indonesia. Investigating responsibility and securing cooperation across borders is difficult.",
               "The problem isn't new. NEA sent similar notices to six companies during the 2015 haze crisis, and investigations into four of them are still ongoing."
@@ -206,20 +206,20 @@
             ]
           },
           {
-            "heading": "What's different this time?",
-            "headingZh": "这次有什么不同？",
+            "heading": "Singapore considers tougher measures",
+            "headingZh": "新加坡考虑更严厉的措施",
             "paragraphs": [
               "Senior Minister K. Shanmugam said Singapore is considering legal, regulatory and economic measures, including stronger pressure on companies and their wider business relationships.",
-              "He also raised the possibility of changing existing laws or introducing new ones. No law has been changed yet, and he gave no timeline."
+              "Shanmugam said Singapore could urgently amend existing laws or introduce new ones if necessary. No changes have been announced yet, and no specific timeline has been given."
             ],
             "paragraphsZh": [
               "国务资政尚穆根表示，新加坡正在考虑法律、监管和经济措施，包括对这些公司及其更广泛的商业关系加大施压。",
-              "他也提到可能修改现行法律或制定新法。目前还没有修改任何法律，他也没有给出时间表。"
+              "尚穆根表示，如有必要，新加坡可能紧急修改现行法律或制定新法。目前尚未宣布任何改动，也没有给出具体时间表。"
             ]
           },
           {
-            "heading": "What happens next?",
-            "headingZh": "接下来会怎样？",
+            "heading": "The first seven companies haven't responded",
+            "headingZh": "首批 7 家公司尚未回应",
             "paragraphs": [
               "Minister for Sustainability and the Environment Grace Fu said on October 19 that the first seven companies had not yet responded to Singapore's notices. The government says it will continue gathering evidence and investigating companies potentially responsible."
             ],
@@ -228,8 +228,8 @@
             ]
           }
         ],
-        "myTake": "The real test isn't how many notices Singapore issues, but whether the companies respond and whether enforcement leads to changes in fire prevention. The unresolved 2015 cases show why that distinction matters.",
-        "myTakeZh": "关键不在新加坡发出多少份通知，而在这些公司是否回应、执法能否真正改变防火做法。2015 年的案件至今悬而未决，正说明了这一区别为何重要。",
+        "myTake": "The real test is whether the companies respond and whether enforcement leads to changes in fire prevention. The number of notices matters less, as the unresolved 2015 cases show.",
+        "myTakeZh": "真正的考验在于这些公司是否回应、执法能否真正改变防火做法。通知发了多少份倒在其次，2015 年至今悬而未决的案件就说明了这一点。",
         "sources": [
           {
             "name": "MSE: Grace Fu's Oct 19 media doorstop on the haze (transcript)",
