@@ -34,7 +34,8 @@
 :root{--bg:#fbfbf8;--ink:#0a0a0a;--muted:#5d5d58;--line:#d9d9d4;--soft:#f0efeb;--max:1320px}
 *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;overflow-anchor:none}
 a{color:inherit;text-decoration:none} button{font:inherit}
-.shell{width:min(calc(100% - 56px),var(--max));margin:auto}
+.shell{width:min(calc(100% - 40px),var(--max));margin:auto}
+body.archive-bottom .shell{width:min(calc(100% - 40px),720px)}
 header{min-height:78px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:24px}
 .brand{display:flex;flex-direction:column;gap:2px} .brand strong{font-size:30px;line-height:1;font-weight:900;letter-spacing:-.05em} .tagline{font-size:12px;color:var(--muted)}
 nav{display:flex;align-items:center;gap:26px;font-size:15px} nav a.active{border-bottom:2px solid;padding-bottom:6px} .langs{display:flex;gap:8px;align-items:center} .langs button{border:0;background:transparent;padding:7px 10px;cursor:pointer;border-radius:999px} .langs .active{background:#111;color:#fff}
@@ -46,8 +47,8 @@ nav{display:flex;align-items:center;gap:26px;font-size:15px} nav a.active{border
 .riva-note{font-family:"Bradley Hand","Segoe Print","Comic Sans MS",cursive;font-size:17px;line-height:1.45;font-style:italic;transform:rotate(-2deg);transform-origin:left center;margin:0;color:#171717;white-space:pre-line}
 .riva-farewell{max-width:22em;margin:22px auto 18px;font-family:"Bradley Hand","Segoe Print","Comic Sans MS",cursive;font-size:15px;line-height:1.45;font-style:italic;text-align:center;transform:rotate(-1.5deg);transform-origin:center;color:#171717;white-space:pre-line}
 .section-title{display:flex;justify-content:space-between;align-items:end;border-top:1px solid var(--line);padding-top:22px;margin-top:18px} .section-title h2{font-size:25px;margin:0;letter-spacing:-.03em} .count{font-size:12px;color:var(--muted)}
-.story{display:grid;grid-template-columns:48px 210px minmax(0,1fr);gap:18px;padding:24px 0;border-bottom:1px solid var(--line);min-width:0} .num{font-size:52px;font-weight:900;line-height:1} .thumb{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:5px;background:#ddd} .kicker{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 8px} .story h3{font-size:24px;line-height:1.02;letter-spacing:-.035em;margin:0 0 8px;overflow-wrap:break-word} .summary{font-size:16px;line-height:1.35;color:#3f3f3c;margin:0 0 12px;overflow-wrap:break-word} .why{background:var(--soft);border-radius:8px;padding:11px 12px;font-size:14px;line-height:1.35} .why b{display:block;margin-bottom:3px} .story-copy{min-width:0}
-.intro-card{margin-top:28px;background:#f3f1ea;border:1px solid var(--line);border-radius:16px;padding:22px 22px 18px} .intro-card h3{font-family:Georgia,serif;font-size:26px;font-weight:500;margin:0 0 8px;line-height:1.3;overflow-wrap:anywhere} .intro-card .rec-why{margin:0;font-size:16px;line-height:1.5;color:#1c1c1a} .intro-card .rec-meta{margin:10px 0 0;font-size:14px;line-height:1.55;color:#3f3f3c;overflow-wrap:break-word}
+.story{display:grid;grid-template-columns:48px 210px minmax(0,1fr);gap:18px;padding:24px 0;border-bottom:1px solid var(--line);min-width:0} .num{font-size:52px;font-weight:900;line-height:1} .thumb{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:5px;background:#ddd} .kicker{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 8px} .story h3{font-size:24px;line-height:1.02;letter-spacing:-.035em;margin:0 0 8px;overflow-wrap:break-word} .summary{font-size:17px;line-height:1.6;color:#3f3f3c;margin:0 0 16px;overflow-wrap:break-word} .why{background:var(--soft);border-radius:8px;padding:11px 12px;font-size:14px;line-height:1.35} .why b{display:block;margin-bottom:3px} .story-copy{min-width:0}
+.intro-card{margin-top:28px;background:#f3f1ea;border:1px solid var(--line);border-radius:16px;padding:22px 22px 18px} .intro-card h3{font-size:26px;font-weight:700;margin:0 0 8px;line-height:1.3;overflow-wrap:anywhere} .intro-card .rec-why{margin:0;font-size:16px;line-height:1.5;color:#1c1c1a} .intro-card .rec-meta{margin:10px 0 0;font-size:14px;line-height:1.55;color:#3f3f3c;overflow-wrap:break-word}
 .archive{margin-top:24px;padding-top:24px;border-top:1px solid var(--line)} .archive h3{font-size:26px;margin:0 0 14px} .archive button{display:block;width:100%;text-align:left;border:0;background:transparent;padding:10px 12px;border-radius:8px;cursor:pointer} .archive button[hidden]{display:none} .archive button.active{background:var(--soft)} .archive .view{font-weight:700;margin-top:6px}
 .about-card{margin-top:34px;padding:20px 0 34px;border-top:1px solid var(--line);font-size:13px;line-height:1.5;color:var(--muted)}
 footer{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px 20px;padding:24px 0 40px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
@@ -76,36 +77,37 @@ footer{display:flex;justify-content:space-between;align-items:baseline;flex-wrap
 .update-note{margin:0 0 10px;font-size:14px;line-height:1.45;font-style:italic;color:var(--muted);overflow-wrap:break-word}
 .riva-closing{margin:32px auto 8px;max-width:34em;padding:0 12px;text-align:center;font-size:15px;line-height:1.55;font-style:italic;color:#3f3f3c;overflow-wrap:break-word}
 .riva-closing .sign{display:block;margin-top:2px;font-family:"Bradley Hand","Segoe Print","Comic Sans MS",cursive;font-size:18px;line-height:1.2;font-style:italic;color:#171717}
-.journal{max-width:none;width:100%;margin:40px 0 0}
+.journal{max-width:none;width:100%;margin:36px 0 0}
+.journal + .journal{margin-top:36px;padding-top:32px;border-top:1px solid var(--line)}
 .journal-eye{margin:0 0 4px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.journal-name{margin:0 0 16px;font-size:28px;line-height:1.2;letter-spacing:-.03em;font-weight:700}
+.journal-name{margin:0 0 14px;font-size:20px;line-height:1.3;letter-spacing:-.02em;font-weight:700}
 .journal .kicker{margin:0 0 10px}
 .journal .kicker-row{margin:0 0 10px}
 .journal .kicker-row .kicker{margin:0}
 .journal .update-note{margin:0 0 12px}
-.journal-lead{display:grid;grid-template-columns:minmax(0,1.63fr) minmax(0,1fr);grid-template-areas:"title image" "intro image";column-gap:28px;row-gap:12px;align-items:start;margin:0 0 8px}
-.journal-lead h3{grid-area:title;margin:0;font-family:Georgia,"Times New Roman",serif;font-size:32px;font-weight:500;line-height:1.2;letter-spacing:-.02em;overflow-wrap:break-word}
+.journal-lead{display:grid;grid-template-columns:minmax(0,1.63fr) minmax(0,1fr);grid-template-areas:"title image" "intro image";column-gap:28px;row-gap:16px;align-items:start;margin:0 0 4px}
+.journal-lead h3{grid-area:title;margin:0;font-size:32px;font-weight:700;line-height:1.25;letter-spacing:-.02em;overflow-wrap:break-word}
 .journal-intro{grid-area:intro;min-width:0}
 .journal-intro .summary:last-child{margin-bottom:0}
 .journal-figure{grid-area:image;margin:0;min-width:0}
 .journal-figure img{display:block;width:100%;height:auto;border:1px solid var(--line);background:#fff}
 .journal-credit{margin:6px 0 0;font-size:12px;line-height:1.4;color:var(--muted)}
-.journal .summary{font-size:17px;line-height:1.65;color:#1c1c1a}
-.journal .subhead{margin:22px 0 8px;font-family:Georgia,"Times New Roman",serif;font-size:20px;font-weight:500;line-height:1.35}
-.journal-ending{margin:22px 0 0;font-family:Georgia,"Times New Roman",serif;font-size:17px;line-height:1.55;font-style:italic;color:#3f3f3c}
-.journal .sources{margin-top:22px}
+.journal .summary{font-size:17px;line-height:1.6;color:#1c1c1a;margin:0 0 16px}
+.journal .subhead{margin:28px 0 8px;font-size:20px;font-weight:600;line-height:1.35}
+.journal-ending{margin:20px 0 0;font-size:17px;line-height:1.6;font-weight:500;font-style:italic;color:#3f3f3c}
+.journal .sources{margin-top:20px}
 .journal-lead.no-figure{grid-template-columns:minmax(0,1fr);grid-template-areas:"title" "intro"}
 .masthead .sample-flag{margin:8px 0 0;font-size:13px;line-height:1.4;color:var(--muted)}
-@media(max-width:700px){.journal-lead{grid-template-columns:minmax(0,1fr);grid-template-areas:"title" "image" "intro";row-gap:14px} .journal-lead.no-figure{grid-template-areas:"title" "intro"} .journal-figure{justify-self:center;width:min(100%,320px)} .journal-lead h3{font-size:26px} .journal-name{font-size:24px}}
+@media(max-width:700px){.journal-lead{grid-template-columns:minmax(0,1fr);grid-template-areas:"title" "image" "intro";row-gap:14px} .journal-lead.no-figure{grid-template-areas:"title" "intro"} .journal-figure{justify-self:center;width:min(100%,320px)} .journal-lead h3{font-size:24px;line-height:1.3} .journal-name{font-size:18px} .journal .subhead{font-size:18px}}
 .story h3{line-height:1.2}
 .story.no-thumb{grid-template-columns:48px minmax(0,1fr)}
 .intro-card .rec-label{margin:0 0 10px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;line-height:1.3;color:#3f3f3c}
 .load-note{margin:22px 0 36px;padding:16px 18px;background:var(--soft);border-radius:12px;color:#3f3f3c;font-size:15px;line-height:1.45}
 .archive .note{margin:0;padding:10px 12px;font-size:14px;line-height:1.4;color:var(--muted)}
 @media(max-width:900px){.grid{grid-template-columns:1fr} .main{border-right:0;padding-right:0} .side{padding-left:0} .hero{justify-content:flex-start;min-height:0} .hero-visual{max-width:100%;grid-template-columns:minmax(140px,200px) minmax(0,1fr)} .riva-hero{justify-self:start;max-width:200px} .story{grid-template-columns:40px 120px minmax(0,1fr)} .story.no-thumb{grid-template-columns:40px minmax(0,1fr)} nav a{display:none}}
-@media(max-width:620px){.shell{width:min(calc(100% - 28px),var(--max))} header{min-height:70px} .brand strong{font-size:26px} .tagline{max-width:none} .masthead h2{font-size:22px} .hero{padding:18px 0 16px} .hero-visual{grid-template-columns:112px minmax(0,1fr);align-items:center;gap:12px} .riva-hero{justify-self:start;width:112px;max-width:112px} .riva-note{min-width:0;font-size:13px} .riva-farewell{font-size:14px} .story,.story.no-thumb{grid-template-columns:34px 1fr} .thumb{grid-column:2} .story-copy{grid-column:2} .num{font-size:40px}}
+@media(max-width:620px){.shell,body.archive-bottom .shell{width:min(calc(100% - 40px),720px)} header{min-height:70px} .brand strong{font-size:26px} .tagline{max-width:none} .masthead h2{font-size:22px} .hero{padding:18px 0 16px} .hero-visual{grid-template-columns:112px minmax(0,1fr);align-items:center;gap:12px} .riva-hero{justify-self:start;width:112px;max-width:112px} .riva-note{min-width:0;font-size:12.5px} .riva-farewell{font-size:14px} .story,.story.no-thumb{grid-template-columns:34px 1fr} .thumb{grid-column:2} .story-copy{grid-column:2} .num{font-size:40px}}
 html[lang="zh-CN"] body{font-family:"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif}
-html[lang="zh-CN"] .summary{line-height:1.75;margin-bottom:1em}
+html[lang="zh-CN"] .summary{font-size:16px;line-height:1.8;margin-bottom:1.35em}
 html[lang="zh-CN"] .update-note,html[lang="zh-CN"] .riva-closing{line-height:1.75}
 html[lang="zh-CN"] .why{line-height:1.75}
 html[lang="zh-CN"] .story h3{font-size:22px;line-height:1.4;letter-spacing:0}
@@ -113,7 +115,9 @@ html[lang="zh-CN"] .masthead h2{font-size:22px;line-height:1.45;letter-spacing:0
 html[lang="zh-CN"] .subhead{line-height:1.45;letter-spacing:0}
 html[lang="zh-CN"] .kicker,html[lang="zh-CN"] .sources-heading,html[lang="zh-CN"] .intro-card .rec-label,html[lang="zh-CN"] .journal-eye{letter-spacing:0;text-transform:none}
 html[lang="zh-CN"] .journal-name,html[lang="zh-CN"] .journal-lead h3,html[lang="zh-CN"] .journal .subhead,html[lang="zh-CN"] .journal-ending{font-family:"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif;letter-spacing:0}
-html[lang="zh-CN"] .journal .summary,html[lang="zh-CN"] .journal-ending{line-height:1.75}
+html[lang="zh-CN"] .journal .summary{font-size:16px;line-height:1.8;margin-bottom:1.35em}
+html[lang="zh-CN"] .journal-ending{line-height:1.8}
+html[lang="zh-CN"] .journal .subhead{font-weight:600}
 html[lang="zh-CN"] .journal-name,html[lang="zh-CN"] .journal-lead h3{line-height:1.4;font-weight:700}
 html[lang="zh-CN"] .sources-heading,html[lang="zh-CN"] .intro-card .rec-label{font-size:13px}
 html[lang="zh-CN"] .intro-card h3{font-family:"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif;font-size:22px;line-height:1.4;font-weight:700}
