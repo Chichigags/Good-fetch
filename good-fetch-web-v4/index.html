@@ -32,7 +32,7 @@
 <!-- Daily editions load from news/latest.json. Publishing instructions are in the repository README. Do not paste stories into this file. -->
 <style>
 :root{--bg:#fbfbf8;--ink:#0a0a0a;--muted:#5d5d58;--line:#d9d9d4;--soft:#f0efeb;--max:1320px}
-*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;overflow-anchor:none}
 a{color:inherit;text-decoration:none} button{font:inherit}
 .shell{width:min(calc(100% - 56px),var(--max));margin:auto}
 header{min-height:78px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:24px}
@@ -852,14 +852,22 @@ async function openEdition(date) {
 }
 
 function readingPlace() {
-  const anchors = document.querySelectorAll('[data-anchor]');
-  let chosen = null;
-  anchors.forEach(el => {
-    if (el.getBoundingClientRect().top <= 80) chosen = el;
+  const anchors = [...document.querySelectorAll('[data-anchor]')];
+  if (!anchors.length) return null;
+  const viewH = window.innerHeight || document.documentElement.clientHeight || 800;
+  let best = anchors[0];
+  let bestArea = -1;
+  anchors.forEach((el, i) => {
+    const top = el.getBoundingClientRect().top;
+    const next = anchors[i + 1];
+    const bottom = next ? next.getBoundingClientRect().top : el.getBoundingClientRect().bottom;
+    const visible = Math.min(viewH, bottom) - Math.max(0, top);
+    if (visible > bestArea) {
+      bestArea = visible;
+      best = el;
+    }
   });
-  const el = chosen || anchors[0];
-  if (!el) return null;
-  return { id: el.dataset.anchor, delta: el.getBoundingClientRect().top };
+  return { id: best.dataset.anchor, delta: best.getBoundingClientRect().top };
 }
 
 function restorePlace(place) {
@@ -884,6 +892,10 @@ function setLang(next) {
   renderStories();
   renderArchive();
   restorePlace(place);
+  requestAnimationFrame(() => restorePlace(place));
+  document.querySelectorAll('#stories img').forEach(img => {
+    if (!img.complete) img.addEventListener('load', () => restorePlace(place), { once: true });
+  });
 }
 
 function samplePreview() {
