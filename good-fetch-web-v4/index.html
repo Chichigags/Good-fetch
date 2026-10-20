@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Good Fetch</title>
-<meta name="description" content="Daily news briefing. A dog’s take on AI, from Asia."/>
+<meta name="description" content="Daily news briefing. A little more curious about the world."/>
 <meta name="theme-color" content="#fbfbf8"/>
 <meta name="apple-mobile-web-app-title" content="Good Fetch"/>
 <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -16,7 +16,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
 <link rel="manifest" href="manifest.json"/>
 <meta property="og:title" content="Good Fetch"/>
-<meta property="og:description" content="Daily news briefing. A dog’s take on AI, from Asia."/>
+<meta property="og:description" content="Daily news briefing. A little more curious about the world."/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://good-fetch-riva.vercel.app"/>
 <meta property="og:image" content="https://good-fetch-riva.vercel.app/og-image-v2.png"/>
@@ -26,7 +26,7 @@
 <meta property="og:image:height" content="630"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Good Fetch"/>
-<meta name="twitter:description" content="Daily news briefing. A dog’s take on AI, from Asia."/>
+<meta name="twitter:description" content="Daily news briefing. A little more curious about the world."/>
 <meta name="twitter:image" content="https://good-fetch-riva.vercel.app/og-image-v2.png"/>
 <meta name="twitter:image:alt" content="Riva, a cream Cavapoo, holding a rolled Good Fetch newspaper"/>
 <!-- Daily editions load from news/latest.json. Publishing instructions are in the repository README. Do not paste stories into this file. -->
@@ -105,7 +105,7 @@ body.archive-bottom .archive h3{font-size:18px}
 <body>
 <div class="shell">
 <header>
-  <a class="brand" href="#top"><strong>Good Fetch</strong><span class="tagline" data-i18n="tagline">A dog’s take on AI, from Asia.</span></a>
+  <a class="brand" href="#top"><strong>Good Fetch</strong><span class="tagline" data-i18n="tagline">A little more curious about the world.</span></a>
   <nav>
     <a class="active" href="#top" data-i18n="home">Home</a>
     <div class="langs"><button type="button" class="active" data-lang="en">EN</button><button type="button" data-lang="zh">中文</button></div>
@@ -115,8 +115,8 @@ body.archive-bottom .archive h3{font-size:18px}
 <div class="grid" id="top">
 <main class="main">
   <section class="hero">
-    <div class="hero-visual"><picture class="riva-hero"><source srcset="riva-good-fetch.webp" type="image/webp"><img src="riva-good-fetch.png" alt="Riva, a cream Cavapoo, holding a rolled newspaper that reads Good Fetch, I fetched this for you."></picture><p class="riva-note" data-i18n="rivaNote">Hi, I’m Riva. I fetch your daily news,
-with my human and an AI agent helping out.</p></div>
+    <div class="hero-visual"><picture class="riva-hero"><source srcset="riva-good-fetch.webp" type="image/webp"><img src="riva-good-fetch.png" alt="Riva, a cream Cavapoo, holding a rolled newspaper that reads Good Fetch, I fetched this for you."></picture><p class="riva-note" data-i18n="rivaNote">Hi, I’m Riva. I fetch what’s changing in AI and what’s worth wondering about in life.
+My human and her AI agent help me out.</p></div>
   </section>
   <div id="stories">
     <p class="load-note" data-i18n="loading">Loading today's edition…</p>
@@ -139,12 +139,12 @@ Come back tomorrow.</p>
 <script>
 const ui = {
   en: {
-    tagline: 'A dog’s take on AI, from Asia.',
+    tagline: 'A little more curious about the world.',
     home: 'Home',
     briefing: 'Daily News Briefing',
     myTake: "Riva's Take",
     analysis: 'Analysis',
-    rivaNote: "Hi, I’m Riva. I fetch your daily news,\nwith my human and an AI agent helping out.",
+    rivaNote: "Hi, I’m Riva. I fetch what’s changing in AI and what’s worth wondering about in life.\nMy human and her AI agent help me out.",
     rivaFarewell: "I make mistakes sometimes. I’m a dog, after all.\nCome back tomorrow.",
     archive: 'Archive',
     viewAll: 'View all →',
@@ -162,12 +162,12 @@ const ui = {
     update: 'Update'
   },
   zh: {
-    tagline: '一只狗，在亚洲看 AI',
+    tagline: '保持对世界的好奇。',
     home: '首页',
     briefing: '每日新闻简报',
     myTake: 'Riva 的看法',
     analysis: '分析',
-    rivaNote: 'Hi，我是 Riva。我每天替你搜罗新闻，\n我的铲屎官和她的 AI 智能体会帮我打下手。',
+    rivaNote: 'Hi，我是 Riva！每天带你跟进 AI 圈的新动向，也挖掘生活里有意思的小发现。\n我的铲屎官和她的 AI 助手给我打下手。',
     rivaFarewell: '偶尔会出错，毕竟我只是一只狗。\n明天见。',
     archive: '往期',
     viewAll: '查看全部 →',
