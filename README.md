@@ -41,6 +41,8 @@ There is no "Why it matters" field and no "summary" field. A story is a headline
 
 ## Edition schema
 
+Editions with no `format` field use this schema. From 2026-10-21, a new edition sets `"format": "v2"` and uses [Edition format v2](#edition-format-v2) instead. Do not rewrite an older file into v2.
+
 ```json
 {
   "date": "YYYY-MM-DD",
@@ -244,6 +246,89 @@ This is a shape example, not a story to publish. Replace every sentence before y
 The edition on the homepage is `good-fetch-web-v4/news/latest.json`, dated 19 October 2026. The same file is saved as `good-fetch-web-v4/news/2026-10-19.json`.
 
 If a draft uses `intro` instead of `opening`, `question` instead of `heading`, or `url` instead of `link` on the recommendation, the page still reads it. Save files with the names in the schema above: `opening`, `heading`, and `link`. The `myTake` text is shown in the soft box labelled **Riva's Take**, with the word **Analysis** under that label, so it reads as analysis rather than another news paragraph. Do not start the `myTake` text with "Riva's Take:" or "My Take:".
+
+## Edition format v2
+
+A v2 edition is two full articles, in this order: **01 · What Changed?** (small label **Look Out**) and **02 · Stay Curious** (small label **Look Around**). 中文 is **01 · 有什么变了？** / **向外看** and **02 · 保持好奇** / **看身边**. Those four labels are drawn by the page. They are not fields on the story.
+
+The whole article is on the page. There is no teaser, no truncation, and no "Read more".
+
+```json
+{
+  "format": "v2",
+  "date": "YYYY-MM-DD",
+  "publishedAt": "2026-10-21T05:40:00+08:00",
+  "updatedAt": "2026-10-21T09:10:00+08:00",
+  "whatChanged": { },
+  "stayCurious": { },
+  "closing": "Optional sign-off.",
+  "closingZh": "可选的收尾。"
+}
+```
+
+| Field | Required | Notes |
+| --- | --- | --- |
+| `format` | yes | The string `v2`. Anything else, including a missing field, keeps the earlier layout. |
+| `date` | yes | `YYYY-MM-DD`. Same header rules as before. |
+| `publishedAt`, `updatedAt` | no | Same Singapore-time line as the earlier schema. |
+| `whatChanged` | yes | The first article. |
+| `stayCurious` | yes | The second article. Same shape as `whatChanged`. |
+| `closing`, `closingZh` | no | Same optional sign-off, after both articles. |
+
+Each article:
+
+```json
+{
+  "category": "Sample category",
+  "categoryZh": "示例分类",
+  "update": false,
+  "updateNote": "Optional. Only for a What Changed follow-up.",
+  "updateNoteZh": "可选。",
+  "headline": "The headline",
+  "headlineZh": "标题",
+  "intro": ["Paragraph beside the image.", "Another opening paragraph."],
+  "introZh": ["插图旁的段落。"],
+  "image": {
+    "src": "images/YYYY-MM-DD-what-changed.png",
+    "alt": "What the drawing shows",
+    "altZh": "这幅画的内容",
+    "credit": "Illustration: Good Fetch",
+    "creditZh": "插图：Good Fetch"
+  },
+  "sections": [
+    {
+      "heading": "Who came up with that idea?",
+      "headingZh": "这个说法是谁提出的？",
+      "paragraphs": ["One or more paragraphs."],
+      "paragraphsZh": ["一段或几段。"]
+    }
+  ],
+  "ending": "One quiet closing thought.",
+  "endingZh": "一句安静的收尾。",
+  "sources": [
+    { "name": "Source name", "nameZh": "来源名称", "url": "https://example.com/story", "official": true }
+  ]
+}
+```
+
+| Field | Required | Notes |
+| --- | --- | --- |
+| `category` | no | Small tag under the section label. 中文 uses `categoryZh`. |
+| `update` | no | `true` adds the **Update** tag (中文: **更新**) beside the category. Use it for a What Changed follow-up. |
+| `updateNote` | no | One line under the category tag and before the headline. 中文 uses `updateNoteZh`. |
+| `headline` | yes | The article title. 中文 uses `headlineZh`. |
+| `intro` | no | Opening paragraphs. On a wide screen they sit to the left of the image. On a narrow screen they sit under the image. 中文 uses `introZh`. A single string is also accepted. |
+| `image` | no | One drawing for the article. Omit it and the article is text only. |
+| `image.src` | with an image | A path relative to the `news/` folder: `images/YYYY-MM-DD-what-changed.png` for the first article and `images/YYYY-MM-DD-stay-curious.png` for the second. The file itself lives at `good-fetch-web-v4/news/images/YYYY-MM-DD-what-changed.png` or `good-fetch-web-v4/news/images/YYYY-MM-DD-stay-curious.png`. A full `https://` URL is also accepted. |
+| `image.alt` | no | Alt text. 中文 uses `altZh`. |
+| `image.credit` | no | A small credit under the drawing. 中文 uses `creditZh`. |
+| `sections` | no | Question headings and paragraphs, full width under the opening. Same `heading` / `headingZh` / `paragraphs` / `paragraphsZh` rules as before. |
+| `ending` | no | One italic line after the body, before the sources. 中文 uses `endingZh`. |
+| `sources` | yes | Same link list as before, under the heading **Sources** (中文: **来源**). |
+
+Pictures are simple line drawings on a light background, portrait or near-portrait, about 4:5, under about 400 KB. The page does not crop them.
+
+`news/_sample-v2.json` is a layout sample only. It is not an edition. It is not listed in `news/index.json`. Open `index.html?sample=v2` to preview it. Do not copy it onto `latest.json`.
 
 ## Archive file
 
