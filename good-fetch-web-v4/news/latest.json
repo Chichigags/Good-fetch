@@ -1,147 +1,175 @@
 {
   "format": "v2",
-  "date": "2026-10-20",
-  "publishedAt": "2026-10-20T17:03:00+08:00",
+  "date": "2026-10-21",
+  "publishedAt": "2026-10-21T09:13:00+08:00",
   "whatChanged": {
-    "category": "AI Infrastructure / Chips",
-    "categoryZh": "AI 基础设施 / 芯片",
+    "category": "AI / Business / Marketing Technology",
+    "categoryZh": "AI / 商业 / 营销科技",
     "update": false,
-    "headline": "Amazon Wants AI Developers to Change Chips Without Rewriting Their Code",
-    "headlineZh": "亚马逊想让 AI 开发者换芯片，不必重写代码",
+    "headline": "Salesforce's $5.66 Billion Bet on Marketing That Reacts to You",
+    "headlineZh": "Salesforce 拟以 56.6 亿美元收购 Braze，让营销消息跟着你的行为走",
     "intro": [
-      "Imagine buying a cheaper laptop, only to discover that all your favorite apps need to be rewritten. That's roughly the headache Amazon wants to remove for AI developers."
+      "You look at a pair of shoes in an app. A little later, a message arrives with just the right offer. That timing is the kind of technology Salesforce is paying billions to get."
     ],
     "introZh": [
-      "假如你换了一台更便宜的电脑，却发现所有常用软件都得重新写一遍，你还会换吗？AI 开发者选择芯片时，也有类似的烦恼。"
+      "你在 App 里看了一双鞋，过了一会儿，优惠消息就来了。Salesforce 正准备花几十亿美元，买下让这种消息在恰当时刻出现的技术。"
     ],
     "sections": [
       {
-        "heading": "Why is switching AI chips so hard?",
-        "headingZh": "为什么换一块 AI 芯片这么麻烦？",
+        "heading": "What happened?",
+        "headingZh": "发生了什么？",
         "paragraphs": [
-          "Nvidia's advantage isn't just the chips. Developers have spent years using software tools built around Nvidia hardware. Moving an AI project to another type of chip can mean costly changes and testing."
+          "On October 20, Salesforce announced an agreement to acquire Braze, a customer-engagement software company, for about $5.66 billion in enterprise value. The proposed deal would pay Braze Class A shareholders $47.50 a share in cash. Braze says it serves around 2,770 customers, including Canva, Instacart and Venmo."
         ],
         "paragraphsZh": [
-          "英伟达的优势不只是芯片性能。开发者多年来都在使用围绕其硬件建立的软件工具。把现有 AI 项目搬到另一种芯片上，可能意味着重写代码、重新测试，耗时又费钱。"
+          "10 月 20 日，Salesforce 宣布与客户互动软件公司 Braze 达成收购协议，按企业价值计算，交易金额约 56.6 亿美元。按协议，Braze 的 A 类普通股股东每股可获得 47.50 美元现金。Braze 称自己有约 2,770 家客户，包括 Canva、Instacart 和 Venmo。"
         ]
       },
       {
-        "heading": "What changed?",
-        "headingZh": "这次有什么新变化？",
+        "heading": "What exactly is Salesforce buying?",
+        "headingZh": "Salesforce 到底想买什么？",
         "paragraphs": [
-          "Amazon announced TorchNeuron, a tool that lets developers run existing PyTorch AI code on Amazon's Trainium chips with a configuration change rather than rewriting it. Amazon announced the software as a free, open-source public beta, timed around the PyTorch Conference opening October 20 in San Jose. Its wider rollout remains to be assessed. Amazon's Colin Brace told Reuters that more than 30 early customers were already using the software."
+          "According to Salesforce and Braze, Braze helps brands respond to what customers do in real time: browsing a website, using an app or making a purchase. The companies say its software coordinates messages across email, apps, websites and services such as WhatsApp. They also say BrazeAI adds tools to help choose the message, offer, channel and timing. Salesforce wants to combine that with its customer data and AI-agent products, but the integration has not happened yet."
         ],
         "paragraphsZh": [
-          "亚马逊宣布推出 TorchNeuron。按亚马逊的说法，开发者只需调整配置，就能让原本用 PyTorch 写的 AI 程序运行在自家的 Trainium 芯片上，不必重写代码。亚马逊将这套软件定位为免费开源的公开测试版，并围绕 10 月 20 日在圣何塞开幕的 PyTorch 大会推出。其更广泛的实际应用效果仍待观察。亚马逊旗下 Annapurna Labs 的 Colin Brace 对路透社表示，已有超过 30 家早期客户在使用这套软件。"
+          "据 Salesforce 和 Braze 两家公司介绍，Braze 的软件能根据用户的实时行为调整沟通方式，比如浏览网站、使用 App 或完成购买。两家公司表示，这套软件可以协调邮件、App、网站和 WhatsApp 等渠道上的消息。据两家公司介绍，BrazeAI 进一步帮助企业选择内容、优惠、发送渠道和时机。Salesforce 希望把这些能力与自己的客户数据及 AI Agent 产品结合，但目前还没有完成整合。"
         ]
       },
       {
-        "heading": "Why does it matter?",
-        "headingZh": "为什么值得关注？",
+        "heading": "Why is this an AI story?",
+        "headingZh": "这为什么是一条 AI 新闻？",
         "paragraphs": [
-          "Amazon is trying to compete with Nvidia by removing a reason developers stay with familiar hardware. If changing chips gets easier, more companies could compare price and performance instead of being locked into one software ecosystem."
+          "Generating a marketing message is becoming easier. The harder commercial question is what to say, to whom, and when. Salesforce is betting that software able to act on live customer signals will become more valuable as businesses adopt AI."
         ],
         "paragraphsZh": [
-          "亚马逊想削弱开发者依赖英伟达的一个重要原因：迁移太麻烦。如果切换芯片更简单，企业就能更自由地比较价格和性能，而不必因为软件兼容性被绑在一家供应商身上。"
+          "用 AI 写一条营销消息越来越容易，真正难的是决定发给谁、说什么、什么时候发。Salesforce 赌的是：能根据用户实时行为采取行动的软件，会越来越值钱。"
         ]
       },
       {
-        "heading": "Does that mean Nvidia is in trouble?",
-        "headingZh": "英伟达的优势就没了吗？",
+        "heading": "What happens next?",
+        "headingZh": "接下来呢？",
         "paragraphs": [
-          "Not necessarily. Amazon says switching chips could bring significant cost savings, but independent real-world results are still limited. Compatibility is only the beginning: speed, reliability, support and total cost still matter."
+          "This is an agreement, not a completed takeover. Salesforce expects the transaction to close in its fiscal year 2028, subject to shareholder and regulatory approvals. For consumers, the result could be more useful reminders—or messages that feel a little too well timed."
         ],
         "paragraphsZh": [
-          "未必。亚马逊称，换用其芯片可能显著节省成本，但目前仍缺少充分的独立实测。兼容只是第一步，实际速度、可靠性、技术支持和总成本都很重要。"
+          "这只是已签署的收购协议，交易尚未完成。Salesforce 预计在其 2028 财年完成交易，仍需获得股东及监管批准。对普通人来说，未来可能收到更有用的提醒，也可能觉得广告来得有点过于及时。"
         ]
       }
     ],
-    "ending": "The next AI chip battle may be fought as much in software as in silicon.",
-    "endingZh": "下一场 AI 芯片大战，争的不只是硬件，也是谁能让开发者少折腾。",
+    "ending": "When marketing gets better at reading the moment, will it feel more helpful—or harder to ignore?",
+    "endingZh": "当营销越来越会挑时机，我们会觉得它更贴心，还是更难躲开？",
     "sources": [
       {
-        "name": "Amazon official announcement",
-        "nameZh": "亚马逊官方公告",
-        "url": "https://www.aboutamazon.com/news/innovation-at-amazon/torchneuron-pytorch-aws-trainium-chips-ai",
+        "name": "Salesforce Investor Relations, joint announcement, Oct 20, 2026",
+        "nameZh": "Salesforce 投资者关系网站，双方联合公告，2026 年 10 月 20 日",
+        "url": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Signs-Definitive-Agreement-to-Acquire-Braze/default.aspx",
         "official": true
       },
       {
-        "name": "Reuters, Oct 19, 2026",
-        "nameZh": "路透社，2026 年 10 月 19 日",
-        "url": "https://www.reuters.com/business/retail-consumer/amazon-says-its-ai-chips-will-work-with-popular-coding-language-challenging-2026-10-19/",
-        "official": false
+        "name": "Braze Investor Relations, joint announcement, Oct 20, 2026",
+        "nameZh": "Braze 投资者关系网站，双方联合公告，2026 年 10 月 20 日",
+        "url": "https://investors.braze.com/news/news-details/2026/Salesforce-Signs-Definitive-Agreement-to-Acquire-Braze/default.aspx",
+        "official": true
       },
       {
-        "name": "CNA republication of Reuters",
-        "nameZh": "CNA 转引路透社",
-        "url": "https://www.channelnewsasia.com/business/amazon-says-its-ai-chips-will-work-popular-coding-language-challenging-nvidia-6472191",
+        "name": "U.S. SEC Form 8-K filed Oct 20, 2026",
+        "nameZh": "美国证券交易委员会 8-K 文件，2026 年 10 月 20 日",
+        "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312526425881/d516983d8k.htm",
+        "official": true
+      },
+      {
+        "name": "Reuters, Oct 20, 2026 (independent reporting)",
+        "nameZh": "路透社，2026 年 10 月 20 日（独立报道）",
+        "url": "https://www.reuters.com/business/salesforce-acquire-braze-566-billion-deal-2026-10-20/",
         "official": false
       }
     ]
   },
   "stayCurious": {
-    "category": "Singapore / Cities / Everyday Life",
-    "categoryZh": "新加坡 / 城市 / 日常生活",
-    "headline": "Why Does Singapore Have So Many Covered Walkways?",
-    "headlineZh": "为什么新加坡到处都是有盖走廊？",
+    "category": "Singapore / Urban Life / Public Housing",
+    "categoryZh": "新加坡 / 城市生活 / 公共住房",
+    "headline": "Why Do So Many Singapore HDB Blocks Leave the Ground Floor Open?",
+    "headlineZh": "为什么新加坡很多组屋的一楼都是空的？",
     "intro": [
-      "You leave the MRT station in Singapore. It's pouring. But you make it halfway home without opening your umbrella. That little roof above your head is not an accident."
+      "Land in Singapore is precious. So why do so many HDB blocks stand on pillars, with no apartments on the ground floor? That open space has a name: the void deck."
     ],
     "introZh": [
-      "在新加坡，刚出地铁站就下起暴雨，你却能一路走好远都不用撑伞。头顶这条长长的有盖走廊，可不是碰巧修出来的。"
+      "新加坡土地这么贵，为什么很多组屋的一楼却没有住宅，只留下一排柱子和空地？这种空间有个名字：void deck，组屋底层的公共空间。"
     ],
     "sections": [
       {
-        "heading": "Isn't it just because of the rain?",
-        "headingZh": "不就是为了挡雨吗？",
+        "heading": "Was it designed for the weather?",
+        "headingZh": "是为了适应热带天气吗？",
         "paragraphs": [
-          "Rain is part of it, but so is the relentless sun. Singapore wants more people to walk to public transport, and a journey that leaves you soaked or overheated isn't very inviting."
+          "That's part of the story. Open ground floors allow air to move through buildings, offer shelter from sun and rain, and can help with flood prevention. In 1967, planner Alan Choe described an open transition level in a mixed-use HDB complex in Chinatown as a buffer to improve cross-ventilation and make the building look less bulky. He separately proposed using the space for play and recreation. The idea later spread through public housing."
         ],
         "paragraphsZh": [
-          "挡雨是一方面，还有晒得人发烫的太阳。新加坡希望更多人步行乘坐公共交通，但如果走到车站前就浑身湿透或热得难受，谁还愿意走？"
+          "这是原因之一。开放式底层有利于空气流通，能遮阳挡雨，也有助于防洪。1967 年，规划师 Alan Choe 曾介绍牛车水一个组屋商住综合项目中的开放式过渡楼层：它能促进空气流通，也让建筑看起来不那么厚重。他还另外建议将这片空间用于儿童玩耍和休闲活动。后来，这种设计逐渐在公共住房中普及。"
         ]
       },
       {
-        "heading": "How much shelter are we talking about?",
-        "headingZh": "到底修了多少？",
+        "heading": "What about the children?",
+        "headingZh": "那孩子们呢？",
         "paragraphs": [
-          "Singapore's Land Transport Authority says the Walk2Ride programme added about 200 km of sheltered walkways island-wide by 2018. The network was designed to provide sheltered walking connections within 400 metres of MRT stations, and within 200 metres of bus interchanges, LRT stations and selected busy bus stops."
+          "In 1973, then National Development Minister E. W. Barker decided to keep the ground floors of public housing blocks open, especially for children, because recreational space was scarce. Over time, void decks became places for neighbours to meet, and for events such as Malay weddings and Chinese funeral wakes."
         ],
         "paragraphsZh": [
-          "新加坡陆路交通管理局（LTA）称，Walk2Ride 计划截至 2018 年已在全岛增建约 200 公里有盖步道。这些设施旨在为地铁站周边 400 米内，以及轻轨站、巴士转换站和部分繁忙巴士站周边 200 米内的步行路线提供遮蔽。"
+          "1973 年，时任国家发展部长 E. W. Barker 决定将公共住房的底层保留为开放空间，尤其供孩子们使用，因为当时缺少游乐空间。之后，void deck 逐渐成为邻居碰面、举办马来婚礼或华人丧礼的场所。"
         ]
       },
       {
-        "heading": "So is this actually transport policy?",
-        "headingZh": "原来这也是交通政策？",
+        "heading": "But doesn't leaving a floor empty cost money?",
+        "headingZh": "可是一楼不卖房，不就少赚钱吗？",
         "paragraphs": [
-          "Exactly. A bus or train is only useful if people can comfortably reach it. A roof over a pavement sounds ordinary, but it can make walking a more comfortable and realistic option."
+          "Potentially, yes. Singapore's Urban Redevelopment Authority counts void decks as gross floor area. Where a development has a fixed floor-area limit, open communal space can compete with space for apartments or shops. But that doesn't mean every block could simply add another full floor of homes; the trade-off depends on its design and planning limits."
         ],
         "paragraphsZh": [
-          "没错。地铁和巴士再方便，如果从家走到车站的那一段太难受，大家也未必愿意搭。头顶一条走廊，看似不起眼，却能让走到地铁站或巴士站这件事更舒服，也更容易坚持。"
+          "可能确实有机会成本。新加坡市区重建局（URA）规定，void deck 也计入建筑总楼面面积。如果一个项目的总楼面面积有上限，留给公共空间的面积就可能与住宅或商铺竞争。但这不代表每栋楼都能直接多盖一整层住宅，具体还取决于建筑设计和规划限制。"
+        ]
+      },
+      {
+        "heading": "So what does the space give back?",
+        "headingZh": "那这些空间换来了什么？",
+        "paragraphs": [
+          "One covered area can serve many households in different ways, on different days. It isn't empty in the way an unused apartment is empty."
+        ],
+        "paragraphsZh": [
+          "同一片有遮蔽的空间，可以在不同日子服务很多家庭。它看起来空着，却不是没有用途。"
         ]
       }
     ],
-    "ending": "The next time you walk home through a storm without getting wet, you're experiencing urban planning at work.",
-    "endingZh": "下次下雨走回家却没淋湿时，你正在享受的，其实也是城市规划。",
+    "ending": "In a city where space is expensive, the ground floor may be worth more to residents when nobody owns a flat on it.",
+    "endingZh": "在寸土寸金的城市里，一楼没有住户，反而可能让更多住户用得上它。",
     "sources": [
       {
-        "name": "LTA Walking",
-        "nameZh": "新加坡陆交局：步行基础设施",
-        "url": "https://www.lta.gov.sg/content/ltagov/en/getting_around/active_mobility/walking_cycling_infrastructure/walking.html",
+        "name": "URA, Public Spaces with Love (2025), void-deck history and climate functions",
+        "nameZh": "新加坡市区重建局《Public Spaces with Love》（2025），void deck 历史与气候功能",
+        "url": "https://www.ura.gov.sg/news/publications/public-spaces-with-love-book/",
         "official": true
       },
       {
-        "name": "LTA Land Transport Master Plan 2040",
-        "nameZh": "新加坡陆交局 2040 交通总规划",
-        "url": "https://www.lta.gov.sg/content/dam/ltagov/who_we_are/our_work/land_transport_master_plan_2040/pdf/LTA%20LTMP%202040%20eReport.pdf",
+        "name": "URA, Void Decks: GFA treatment (updated June 6, 2026)",
+        "nameZh": "新加坡市区重建局：void deck 的总楼面面积计算规则（2026 年 6 月 6 日更新）",
+        "url": "https://www.ura.gov.sg/guidelines/development-control/development-control-handbooks/gross-floor-area/void-decks/",
         "official": true
       },
       {
-        "name": "LTA 2014 annual report",
-        "nameZh": "新加坡陆交局 2014 年年报",
-        "url": "https://www.lta.gov.sg/content/dam/ltagov/who_we_are/statistics_and_publications/report/pdf/LTA_AR_2014_web.pdf",
+        "name": "National Heritage Board, Void Decks (2013), historical and community uses",
+        "nameZh": "新加坡国家文物局《Void Decks》（2013），历史与社区用途",
+        "url": "https://www.roots.gov.sg/resources-landing/publications/ebooks/void-decks",
         "official": true
+      },
+      {
+        "name": "HDB, Foster Thriving Communities",
+        "nameZh": "新加坡建屋发展局：促进社区交流",
+        "url": "https://www.hdb.gov.sg/about-us/our-role/foster-thriving-communities",
+        "official": true
+      },
+      {
+        "name": "CNA, The Big Read on void decks (2024), independent reporting",
+        "nameZh": "CNA 深度报道（2024），独立采访与历史补充",
+        "url": "https://www.channelnewsasia.com/cna-insider/big-read/hdb-void-deck-community-spaces-void-decks-town-councils-today-big-read-4045611",
+        "official": false
       }
     ]
   }
