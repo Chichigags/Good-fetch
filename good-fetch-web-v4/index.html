@@ -41,13 +41,13 @@ a{color:inherit;text-decoration:none} button{font:inherit}
 body.archive-bottom .shell{width:min(calc(100% - 40px),720px)}
 header{min-height:78px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:24px}
 .brand{display:flex;flex-direction:column;gap:2px} .brand strong{font-size:30px;line-height:1;font-weight:900;letter-spacing:-.05em} .tagline{font-size:12px;color:var(--muted)}
-nav{display:flex;align-items:center;gap:26px;font-size:15px} nav a.active{border-bottom:2px solid;padding-bottom:6px} .langs{display:flex;gap:8px;align-items:center} .langs button{border:0;background:transparent;min-width:44px;min-height:44px;padding:0 12px;cursor:pointer;border-radius:999px} .langs .active{background:var(--pill);color:var(--pill-ink)}
+header nav{display:flex;align-items:center;gap:26px;font-size:15px;flex-shrink:0} header nav a.active{border-bottom:2px solid;padding-bottom:6px} .langs{display:flex;gap:8px;align-items:center;flex-shrink:0} .langs button{border:0;background:transparent;min-width:44px;min-height:44px;padding:0 12px;cursor:pointer;border-radius:999px;white-space:nowrap;flex-shrink:0} .langs .active{background:var(--pill);color:var(--pill-ink)}
 .grid{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:0}
 .main{padding-right:30px;border-right:1px solid var(--line)} .side{padding-left:26px}
 .hero{display:flex;justify-content:flex-end;align-items:center;padding:34px 0 26px;min-height:250px}
 .hero-visual{display:grid;grid-template-columns:minmax(160px,240px) minmax(0,1fr);align-items:center;gap:18px;width:100%;max-width:720px}
 .riva-hero{display:block;width:100%;max-width:240px;justify-self:end;mix-blend-mode:multiply} .riva-hero img{display:block;width:100%;height:auto}
-.riva-note{font-family:"Bradley Hand","Segoe Print","Comic Sans MS",cursive;font-size:17px;line-height:1.45;font-style:italic;transform:rotate(-2deg);transform-origin:left center;margin:0;color:var(--hand);white-space:pre-line;text-wrap:pretty;text-wrap:balance}
+.riva-note{font-family:"Bradley Hand","Segoe Print","Comic Sans MS",cursive;font-size:17px;line-height:1.45;font-style:italic;transform:rotate(-2deg);transform-origin:left center;margin:0;color:var(--hand);white-space:pre-line;text-wrap:pretty} .riva-keep{white-space:nowrap}
 .riva-farewell{max-width:22em;margin:22px auto 18px;font-family:"Bradley Hand","Segoe Print","Comic Sans MS",cursive;font-size:15px;line-height:1.45;font-style:italic;text-align:center;transform:rotate(-1.5deg);transform-origin:center;color:var(--hand);white-space:pre-line}
 .section-title{display:flex;justify-content:space-between;align-items:end;border-top:1px solid var(--line);padding-top:22px;margin-top:18px} .section-title h2{font-size:25px;margin:0;letter-spacing:-.03em} .count{font-size:12px;color:var(--muted)}
 .story{display:grid;grid-template-columns:48px 210px minmax(0,1fr);gap:18px;padding:24px 0;border-bottom:1px solid var(--line);min-width:0} .num{font-size:52px;font-weight:900;line-height:1} .thumb{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:5px;background:var(--line)} .kicker{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 8px} .story h3{font-size:24px;line-height:1.02;letter-spacing:-.035em;margin:0 0 8px;overflow-wrap:break-word} .summary{font-size:17px;line-height:1.6;color:var(--body);margin:0 0 16px;overflow-wrap:break-word} .why{background:var(--soft);border-radius:8px;padding:11px 12px;font-size:14px;line-height:1.35} .why b{display:block;margin-bottom:3px} .story-copy{min-width:0}
@@ -110,7 +110,7 @@ footer{display:block;padding:24px 0 40px;border-top:1px solid var(--line);font-s
 .intro-card .rec-label{margin:0 0 10px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;line-height:1.3;color:var(--muted)}
 .load-note{margin:22px 0 36px;padding:16px 18px;background:var(--soft);border-radius:12px;color:var(--body);font-size:15px;line-height:1.45}
 .archive .note{margin:0;padding:10px 12px;font-size:14px;line-height:1.4;color:var(--muted)}
-@media(max-width:900px){.grid{grid-template-columns:1fr} .main{border-right:0;padding-right:0} .side{padding-left:0} .hero{justify-content:flex-start;min-height:0} .hero-visual{max-width:100%;grid-template-columns:minmax(140px,200px) minmax(0,1fr)} .riva-hero{justify-self:start;max-width:200px} .story{grid-template-columns:40px 120px minmax(0,1fr)} .story.no-thumb{grid-template-columns:40px minmax(0,1fr)} nav a{display:none}}
+@media(max-width:900px){.grid{grid-template-columns:1fr} .main{border-right:0;padding-right:0} .side{padding-left:0} .hero{justify-content:flex-start;min-height:0} .hero-visual{max-width:100%;grid-template-columns:minmax(140px,200px) minmax(0,1fr)} .riva-hero{justify-self:start;max-width:200px} .story{grid-template-columns:40px 120px minmax(0,1fr)} .story.no-thumb{grid-template-columns:40px minmax(0,1fr)} header nav a{display:none}}
 @media(max-width:620px){.shell,body.archive-bottom .shell{width:min(calc(100% - 40px),720px)} header{min-height:70px} .brand strong{font-size:26px} .tagline{max-width:none} .masthead{padding-top:12px;margin-top:4px} .mast-full{display:none} .masthead h2.mast-line{display:block;font-size:15px} .hero{padding:14px 0 12px} .hero-visual{grid-template-columns:80px minmax(0,1fr);align-items:center;gap:12px} .riva-hero{justify-self:start;width:80px;max-width:80px} .riva-note{min-width:0;font-size:13px} .riva-farewell{font-size:14px} .story,.story.no-thumb{grid-template-columns:34px 1fr} .thumb{grid-column:2} .story-copy{grid-column:2} .num{font-size:40px}}
 html[lang="zh-CN"] body{font-family:"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif}
 html[lang="zh-CN"] .summary{font-size:16px;line-height:1.8;margin-bottom:1.35em}
@@ -137,13 +137,12 @@ body.archive-bottom .side{padding:0}
 body.archive-bottom .hero{justify-content:flex-start}
 body.archive-bottom .archive h3{font-size:18px}
 .journal-kicker{margin:0 0 12px;font-size:12px;font-weight:700;letter-spacing:.06em;line-height:1.45;color:var(--muted)}
-.fetch-box{margin:16px 0 4px;border:1px solid var(--line);border-radius:14px;background:var(--soft);overflow:hidden}
-.fetch-title{margin:0;padding:12px 14px 4px;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
-.fetch-row{display:block;width:100%;min-height:44px;padding:12px 14px;border:0;border-top:1px solid var(--line);background:transparent;color:var(--ink);text-align:left;cursor:pointer;font:inherit;font-size:15px;line-height:1.4;overflow-wrap:anywhere}
+.fetch-box{display:flex;flex-direction:column;align-items:stretch;gap:0;width:100%;margin:16px 0 4px;border:1px solid var(--line);border-radius:14px;background:var(--soft);overflow:hidden}
+.fetch-title{display:block;width:100%;margin:0;padding:12px 14px 4px;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.fetch-row{display:block;width:100%;min-height:44px;padding:12px 14px;border:0;border-top:1px solid var(--line);background:transparent;color:var(--ink);text-align:left;cursor:pointer;font:inherit;font-size:15px;line-height:1.4;overflow-wrap:break-word}
 .fetch-row:hover,.fetch-row:focus-visible{background:var(--bg)}
 .next-story{display:inline-flex;align-items:center;min-height:44px;margin-top:18px;font-size:15px;font-weight:700;text-decoration:underline;text-underline-offset:3px}
 .subscribe-card{display:flex;align-items:center;min-height:44px;margin:28px 0 4px;padding:12px 16px;border:1px solid var(--line);border-radius:14px;background:var(--soft);color:var(--ink);font-size:15px;line-height:1.45;font-weight:600}
-footer .subscribe-card{margin:0 0 16px}
 html.tg-app .subscribe-card{display:none}
 .share{margin:20px 0 8px}
 .share-label{margin:0 0 8px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
@@ -161,16 +160,31 @@ html[data-theme="dark"] .riva-hero{mix-blend-mode:normal;background:#f6f3ec;bord
 html[data-theme="dark"] .riva-hero img{mix-blend-mode:multiply}
 @media(prefers-color-scheme:dark){html:not([data-theme="light"]) .riva-hero{mix-blend-mode:normal;background:#f6f3ec;border-radius:18px;padding:5px} html:not([data-theme="light"]) .riva-hero img{mix-blend-mode:multiply}}
 </style>
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
 <script>
 (function () {
   try {
-    var wa = window.Telegram && window.Telegram.WebApp;
-    var platform = wa && wa.platform;
-    var inside = !!(wa && ((typeof wa.initData === 'string' && wa.initData.length > 0) || (platform && platform !== 'unknown')));
-    var dark = inside ? wa.colorScheme === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var blob = (location.hash || '') + '&' + (location.search || '');
+    var hinted = /(?:^|[?#&])tgWebAppData=/.test(blob) || /(?:^|[?#&])tgWebAppPlatform=/.test(blob);
+    var themeMatch = /(?:^|[?#&])tgWebAppThemeParams=([^&#]*)/.exec(blob);
+    var params = null;
+    if (themeMatch) {
+      var raw = themeMatch[1];
+      try { if (raw.indexOf('%') !== -1) raw = decodeURIComponent(raw); } catch (error) {}
+      try { params = JSON.parse(raw); } catch (error) {}
+    }
+    function darkColor(hex) {
+      if (typeof hex !== 'string') return false;
+      var h = hex.trim().replace('#', '');
+      if (h.length === 3) h = h.charAt(0) + h.charAt(0) + h.charAt(1) + h.charAt(1) + h.charAt(2) + h.charAt(2);
+      if (!/^[0-9a-fA-F]{6}$/.test(h)) return false;
+      var r = parseInt(h.slice(0, 2), 16);
+      var g = parseInt(h.slice(2, 4), 16);
+      var b = parseInt(h.slice(4, 6), 16);
+      return (0.2126 * r + 0.7152 * g + 0.0722 * b) < 140;
+    }
+    var dark = params && params.bg_color ? darkColor(params.bg_color) : window.matchMedia('(prefers-color-scheme: dark)').matches;
     document.documentElement.dataset.theme = dark ? 'dark' : 'light';
-    if (inside) document.documentElement.classList.add('tg-app');
+    if (hinted) document.documentElement.classList.add('tg-app');
     var meta = document.querySelector('meta[name="theme-color"]');
     if (meta) meta.setAttribute('content', dark ? '#1b1a18' : '#fbfbf8');
   } catch (error) {}
@@ -212,7 +226,6 @@ My human and her AI agent help me&nbsp;out.</p></div>
 <p class="riva-farewell" data-i18n="rivaFarewell">I make mistakes sometimes. I’m a dog, after all.
 Come back tomorrow.</p>
 <footer>
-  <a class="subscribe-card" data-i18n="subscribe" href="https://t.me/GoodFetch_bot?start=site">Get Riva’s fetch every morning on Telegram →</a>
   <div class="footer-bar"><span>Good Fetch · 2026</span><span data-i18n="footer">Fetched by Riva &amp; Cassie’s AI agent.</span></div>
 </footer>
 </div>
@@ -267,7 +280,7 @@ const ui = {
     briefing: '每日新闻简报',
     myTake: 'Riva 的看法',
     analysis: '分析',
-    rivaNote: 'Hi，我是 Riva！\n每天带你跟进 AI 圈的新动向，\n也挖掘生活里有意思的小发现。\n我的铲屎官和她的 AI 助手给我打下\u00A0手。',
+    rivaNote: 'Hi，我是 Riva！\n每天带你跟进 AI 圈的新动向，\n也挖掘生活里有意思的小发现。\n我的铲屎官和她的 AI 助手给我打下手。',
     rivaFarewell: '偶尔会出错，毕竟我只是一只狗。\n明天见。',
     archive: '往期',
     viewAll: '查看全部 →',
@@ -312,6 +325,8 @@ const LANG_KEY = 'good-fetch-lang';
 const SHARE_ORIGIN = 'https://good-fetch-riva.vercel.app/';
 const BOT_LINK = 'https://t.me/GoodFetch_bot?start=site';
 let lang = 'en';
+let explicitLang = '';
+let storedLangAtStart = '';
 let editions = [];
 let archiveFailed = false;
 let archiveExpanded = false;
@@ -499,11 +514,11 @@ function applyTheme() {
 
 function initTelegram() {
   const wa = telegramApp();
-  document.documentElement.classList.toggle('tg-app', !!wa);
+  document.documentElement.classList.toggle('tg-app', !!(wa || telegramLaunchHint()));
   if (!wa) {
-    applyTheme();
+    if (!telegramLaunchHint()) applyTheme();
     const mq = window.matchMedia('(prefers-color-scheme: dark)');
-    const onChange = () => { if (!telegramApp()) applyTheme(); };
+    const onChange = () => { if (!telegramApp() && !telegramLaunchHint()) applyTheme(); };
     if (mq.addEventListener) mq.addEventListener('change', onChange);
     else if (mq.addListener) mq.addListener(onChange);
     return;
@@ -520,6 +535,23 @@ function initTelegram() {
     } catch (error) {}
   }
   syncBackButton();
+  if (!explicitLang && !storedLangAtStart) {
+    const next = telegramLang();
+    if (next && next !== lang) setLang(next);
+    else setQuery({ lang: lang });
+  }
+}
+
+function loadTelegramScript() {
+  if (!telegramLaunchHint()) {
+    initTelegram();
+    return;
+  }
+  const script = document.createElement('script');
+  script.src = 'https://telegram.org/js/telegram-web-app.js';
+  script.async = true;
+  script.onload = function () { initTelegram(); };
+  document.head.appendChild(script);
 }
 
 function syncBackButton() {
@@ -558,11 +590,19 @@ function telegramLang() {
   return typeof code === 'string' && code.toLowerCase().startsWith('zh') ? 'zh' : '';
 }
 
-function initialLang() {
+function queryLang() {
   const fromQuery = queryValue('lang');
-  const query = fromQuery === 'zh' || fromQuery === 'en' ? fromQuery : '';
+  return fromQuery === 'zh' || fromQuery === 'en' ? fromQuery : '';
+}
+
+function telegramLaunchHint() {
+  const blob = (window.location.hash || '') + '&' + (window.location.search || '');
+  return /(?:^|[?#&])tgWebAppData=/.test(blob) || /(?:^|[?#&])tgWebAppPlatform=/.test(blob);
+}
+
+function initialLang() {
   const nav = (navigator.language || '').toLowerCase().startsWith('zh') ? 'zh' : '';
-  return savedLang() || query || telegramLang() || nav || 'en';
+  return queryLang() || savedLang() || telegramLang() || nav || 'en';
 }
 
 function setQuery(updates) {
@@ -1019,8 +1059,9 @@ function renderFetchBox(parent, edition) {
     { key: 'whatChanged', anchor: 'what-changed', label: ui[lang].fetchChanged },
     { key: 'stayCurious', anchor: 'stay-curious', label: ui[lang].fetchCurious }
   ];
-  const box = document.createElement('nav');
+  const box = document.createElement('div');
   box.className = 'fetch-box';
+  box.setAttribute('role', 'navigation');
   box.setAttribute('aria-label', ui[lang].todayFetch);
   const title = document.createElement('p');
   title.className = 'fetch-title';
@@ -1327,21 +1368,43 @@ function restorePlace(place) {
   if (shift) window.scrollBy(0, shift);
 }
 
+function fillRivaNote() {
+  const el = document.querySelector('[data-i18n="rivaNote"]');
+  if (!el) return;
+  const text = ui[lang].rivaNote || '';
+  const keep = '打下手。';
+  if (lang !== 'zh' || !text.includes(keep)) {
+    el.textContent = text;
+    return;
+  }
+  const index = text.lastIndexOf(keep);
+  el.replaceChildren();
+  if (index > 0) el.append(document.createTextNode(text.slice(0, index)));
+  const span = document.createElement('span');
+  span.className = 'riva-keep';
+  span.textContent = keep;
+  el.append(span);
+  const rest = text.slice(index + keep.length);
+  if (rest) el.append(document.createTextNode(rest));
+}
+
 function setLang(next, opts) {
   const place = readingPlace();
   lang = next === 'zh' ? 'zh' : 'en';
   document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
-  if (opts && opts.remember) {
+  if (!opts || opts.syncUrl !== false) setQuery({ lang: lang });
+  if (opts && (opts.save || opts.remember)) {
     try { localStorage.setItem(LANG_KEY, lang); } catch (error) {}
-    setQuery({ lang: lang });
   }
   document.querySelectorAll('[data-lang]').forEach(button => {
     button.classList.toggle('active', button.dataset.lang === lang);
   });
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.dataset.i18n;
+    if (key === 'rivaNote') return;
     if (ui[lang][key]) el.textContent = ui[lang][key];
   });
+  fillRivaNote();
   renderStories();
   renderArchive();
   restorePlace(place);
@@ -1388,9 +1451,12 @@ async function boot() {
   await loadEdition('news/latest.json', { asToday: true });
 }
 
-initTelegram();
-setLang(initialLang());
-document.querySelectorAll('footer .subscribe-card').forEach(link => bindExternal(link, 'telegram'));
+explicitLang = queryLang();
+storedLangAtStart = savedLang();
+setLang(initialLang(), {
+  save: !!explicitLang,
+  syncUrl: !!explicitLang || !!storedLangAtStart || !telegramLaunchHint()
+});
 document.querySelectorAll('[data-lang]').forEach(button => {
   button.addEventListener('click', () => setLang(button.dataset.lang, { remember: true }));
 });
@@ -1398,6 +1464,7 @@ document.getElementById('view-all').addEventListener('click', () => {
   archiveExpanded = true;
   renderArchive();
 });
+loadTelegramScript();
 boot();
 </script>
 </body>
