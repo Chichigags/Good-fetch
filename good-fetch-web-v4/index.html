@@ -31,37 +31,43 @@
 <meta name="twitter:image:alt" content="Riva, a cream Cavapoo, holding a rolled Good Fetch newspaper"/>
 <!-- Daily editions load from news/latest.json. Publishing instructions are in the repository README. Do not paste stories into this file. -->
 <style>
-:root{--bg:#fbfbf8;--ink:#0a0a0a;--muted:#5d5d58;--line:#d9d9d4;--soft:#f0efeb;--max:1320px}
-*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;overflow-anchor:none}
+:root{--bg:#fbfbf8;--ink:#0a0a0a;--muted:#5d5d58;--line:#d9d9d4;--soft:#f0efeb;--max:1320px;--body:#3f3f3c;--prose:#1c1c1a;--card:#f3f1ea;--hand:#171717;--pill:#111;--pill-ink:#fff;--paper:#fff}
+html[data-theme="dark"]{color-scheme:dark;--bg:#1b1a18;--ink:#f3efe6;--muted:#c4bfb4;--line:#3d3a36;--soft:#262420;--body:#ddd8ce;--prose:#f3efe6;--card:#262420;--hand:#f6f1e6;--pill:#f3efe6;--pill-ink:#1b1a18;--paper:#f6f3ec}
+html[data-theme="light"]{color-scheme:light}
+@media(prefers-color-scheme:dark){html:not([data-theme="light"]){color-scheme:dark;--bg:#1b1a18;--ink:#f3efe6;--muted:#c4bfb4;--line:#3d3a36;--soft:#262420;--body:#ddd8ce;--prose:#f3efe6;--card:#262420;--hand:#f6f1e6;--pill:#f3efe6;--pill-ink:#1b1a18;--paper:#f6f3ec}}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;overflow-anchor:none;padding-top:calc(max(env(safe-area-inset-top,0px),var(--tg-safe-area-inset-top,0px)) + var(--tg-content-safe-area-inset-top,0px));padding-right:calc(max(env(safe-area-inset-right,0px),var(--tg-safe-area-inset-right,0px)) + var(--tg-content-safe-area-inset-right,0px));padding-bottom:calc(max(env(safe-area-inset-bottom,0px),var(--tg-safe-area-inset-bottom,0px)) + var(--tg-content-safe-area-inset-bottom,0px));padding-left:calc(max(env(safe-area-inset-left,0px),var(--tg-safe-area-inset-left,0px)) + var(--tg-content-safe-area-inset-left,0px))}
 a{color:inherit;text-decoration:none} button{font:inherit}
 .shell{width:min(calc(100% - 40px),var(--max));margin:auto}
 body.archive-bottom .shell{width:min(calc(100% - 40px),720px)}
 header{min-height:78px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:24px}
 .brand{display:flex;flex-direction:column;gap:2px} .brand strong{font-size:30px;line-height:1;font-weight:900;letter-spacing:-.05em} .tagline{font-size:12px;color:var(--muted)}
-nav{display:flex;align-items:center;gap:26px;font-size:15px} nav a.active{border-bottom:2px solid;padding-bottom:6px} .langs{display:flex;gap:8px;align-items:center} .langs button{border:0;background:transparent;padding:7px 10px;cursor:pointer;border-radius:999px} .langs .active{background:#111;color:#fff}
+header nav{display:flex;align-items:center;gap:26px;font-size:15px;flex-shrink:0} header nav a.active{border-bottom:2px solid;padding-bottom:6px} .langs{display:flex;gap:8px;align-items:center;flex-shrink:0} .langs button{border:0;background:transparent;min-width:44px;min-height:44px;padding:0 12px;cursor:pointer;border-radius:999px;white-space:nowrap;flex-shrink:0} .langs .active{background:var(--pill);color:var(--pill-ink)}
 .grid{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:0}
 .main{padding-right:30px;border-right:1px solid var(--line)} .side{padding-left:26px}
 .hero{display:flex;justify-content:flex-end;align-items:center;padding:34px 0 26px;min-height:250px}
 .hero-visual{display:grid;grid-template-columns:minmax(160px,240px) minmax(0,1fr);align-items:center;gap:18px;width:100%;max-width:720px}
 .riva-hero{display:block;width:100%;max-width:240px;justify-self:end;mix-blend-mode:multiply} .riva-hero img{display:block;width:100%;height:auto}
-.riva-note{font-family:"Bradley Hand","Segoe Print","Comic Sans MS",cursive;font-size:17px;line-height:1.45;font-style:italic;transform:rotate(-2deg);transform-origin:left center;margin:0;color:#171717;white-space:pre-line}
-.riva-farewell{max-width:22em;margin:22px auto 18px;font-family:"Bradley Hand","Segoe Print","Comic Sans MS",cursive;font-size:15px;line-height:1.45;font-style:italic;text-align:center;transform:rotate(-1.5deg);transform-origin:center;color:#171717;white-space:pre-line}
+.riva-note{font-family:"Bradley Hand","Segoe Print","Comic Sans MS",cursive;font-size:17px;line-height:1.45;font-style:italic;transform:rotate(-2deg);transform-origin:left center;margin:0;color:var(--hand);white-space:pre-line;text-wrap:pretty} .riva-keep{white-space:nowrap}
+.riva-farewell{max-width:22em;margin:22px auto 18px;font-family:"Bradley Hand","Segoe Print","Comic Sans MS",cursive;font-size:15px;line-height:1.45;font-style:italic;text-align:center;transform:rotate(-1.5deg);transform-origin:center;color:var(--hand);white-space:pre-line}
 .section-title{display:flex;justify-content:space-between;align-items:end;border-top:1px solid var(--line);padding-top:22px;margin-top:18px} .section-title h2{font-size:25px;margin:0;letter-spacing:-.03em} .count{font-size:12px;color:var(--muted)}
-.story{display:grid;grid-template-columns:48px 210px minmax(0,1fr);gap:18px;padding:24px 0;border-bottom:1px solid var(--line);min-width:0} .num{font-size:52px;font-weight:900;line-height:1} .thumb{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:5px;background:#ddd} .kicker{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 8px} .story h3{font-size:24px;line-height:1.02;letter-spacing:-.035em;margin:0 0 8px;overflow-wrap:break-word} .summary{font-size:17px;line-height:1.6;color:#3f3f3c;margin:0 0 16px;overflow-wrap:break-word} .why{background:var(--soft);border-radius:8px;padding:11px 12px;font-size:14px;line-height:1.35} .why b{display:block;margin-bottom:3px} .story-copy{min-width:0}
-.intro-card{margin-top:28px;background:#f3f1ea;border:1px solid var(--line);border-radius:16px;padding:22px 22px 18px} .intro-card h3{font-size:26px;font-weight:700;margin:0 0 8px;line-height:1.3;overflow-wrap:anywhere} .intro-card .rec-why{margin:0;font-size:16px;line-height:1.5;color:#1c1c1a} .intro-card .rec-meta{margin:10px 0 0;font-size:14px;line-height:1.55;color:#3f3f3c;overflow-wrap:break-word}
-.archive{margin-top:24px;padding-top:24px;border-top:1px solid var(--line)} .archive h3{font-size:26px;margin:0 0 14px} .archive button{display:block;width:100%;text-align:left;border:0;background:transparent;padding:10px 12px;border-radius:8px;cursor:pointer} .archive button[hidden]{display:none} .archive button.active{background:var(--soft)} .archive .view{font-weight:700;margin-top:6px}
+.story{display:grid;grid-template-columns:48px 210px minmax(0,1fr);gap:18px;padding:24px 0;border-bottom:1px solid var(--line);min-width:0} .num{font-size:52px;font-weight:900;line-height:1} .thumb{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:5px;background:var(--line)} .kicker{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 8px} .story h3{font-size:24px;line-height:1.02;letter-spacing:-.035em;margin:0 0 8px;overflow-wrap:break-word} .summary{font-size:17px;line-height:1.6;color:var(--body);margin:0 0 16px;overflow-wrap:break-word} .why{background:var(--soft);border-radius:8px;padding:11px 12px;font-size:14px;line-height:1.35} .why b{display:block;margin-bottom:3px} .story-copy{min-width:0}
+.intro-card{margin-top:28px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 22px 18px} .intro-card h3{font-size:26px;font-weight:700;margin:0 0 8px;line-height:1.3;overflow-wrap:anywhere} .intro-card .rec-why{margin:0;font-size:16px;line-height:1.5;color:var(--prose)} .intro-card .rec-meta{margin:10px 0 0;font-size:14px;line-height:1.55;color:var(--body);overflow-wrap:break-word}
+.archive{margin-top:24px;padding-top:24px;border-top:1px solid var(--line)} .archive h3{font-size:26px;margin:0 0 14px} .archive button{display:flex;align-items:center;width:100%;min-height:44px;text-align:left;border:0;background:transparent;padding:10px 12px;border-radius:8px;cursor:pointer} .archive button[hidden]{display:none} .archive button.active{background:var(--soft)} .archive .view{font-weight:700;margin-top:6px}
 .about-card{margin-top:34px;padding:20px 0 34px;border-top:1px solid var(--line);font-size:13px;line-height:1.5;color:var(--muted)}
-footer{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px 20px;padding:24px 0 40px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+footer{display:block;padding:24px 0 40px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+.footer-bar{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px 20px}
 .masthead{border-top:1px solid var(--line);padding-top:22px;margin-top:18px}
 .masthead h2{font-size:25px;margin:0;letter-spacing:-.03em;line-height:1.15}
 .masthead p{margin:8px 0 0;font-size:15px;color:var(--muted)}
 .masthead .published{margin:6px 0 0;font-size:12px;line-height:1.45;color:var(--muted)}
+.masthead h2.mast-line{display:none;margin:0;font-size:15px;font-weight:600;line-height:1.4;letter-spacing:0;color:var(--muted)}
 .subhead{font-size:16px;line-height:1.3;letter-spacing:-.02em;margin:16px 0 6px}
-.sources{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin-top:16px;max-width:100%;min-width:0}
-.sources-heading{margin:0;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;line-height:1.4;color:#3f3f3c}
-.source-row{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px;max-width:100%;min-width:0;margin:0}
-.sources .source{display:inline;margin:0;max-width:100%;font-size:13px;font-weight:600;line-height:1.45;color:#1c1c1a;overflow-wrap:anywhere}
-.source-tag{font-size:12px;font-weight:600;line-height:1.4;color:#3f3f3c}
+.sources{display:flex;flex-direction:column;align-items:stretch;gap:0;margin-top:4px;max-width:100%;min-width:0}
+.sources-heading{margin:0;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;line-height:1.4;color:var(--muted)}
+.source-row{display:flex;flex-wrap:nowrap;align-items:center;gap:8px;width:100%;max-width:100%;min-width:0;min-height:44px;margin:0;padding:8px 0}
+.sources .source{display:flex;margin:0;max-width:100%;font-size:15px;font-weight:600;line-height:1.45;color:var(--ink);overflow-wrap:anywhere;text-decoration:none}
+.source-name{flex:1 1 auto;min-width:0;overflow-wrap:anywhere;text-decoration:underline;text-underline-offset:3px}
+.source-tag{flex:0 0 auto;font-size:12px;font-weight:600;line-height:1.4;color:var(--muted);text-decoration:none}
 .more-details{margin:2px 0 2px}
 .more-details summary{display:inline-flex;align-items:center;gap:6px;max-width:100%;font-size:13px;line-height:1.35;font-weight:500;color:var(--muted);cursor:pointer;list-style:none}
 .more-details summary::-webkit-details-marker{display:none}
@@ -75,8 +81,8 @@ footer{display:flex;justify-content:space-between;align-items:baseline;flex-wrap
 .kicker-row{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 12px;margin:0 0 8px}
 .kicker-row .kicker{margin:0}
 .update-note{margin:0 0 10px;font-size:14px;line-height:1.45;font-style:italic;color:var(--muted);overflow-wrap:break-word}
-.riva-closing{margin:32px auto 8px;max-width:34em;padding:0 12px;text-align:center;font-size:15px;line-height:1.55;font-style:italic;color:#3f3f3c;overflow-wrap:break-word}
-.riva-closing .sign{display:block;margin-top:2px;font-family:"Bradley Hand","Segoe Print","Comic Sans MS",cursive;font-size:18px;line-height:1.2;font-style:italic;color:#171717}
+.riva-closing{margin:32px auto 8px;max-width:34em;padding:0 12px;text-align:center;font-size:15px;line-height:1.55;font-style:italic;color:var(--body);overflow-wrap:break-word}
+.riva-closing .sign{display:block;margin-top:2px;font-family:"Bradley Hand","Segoe Print","Comic Sans MS",cursive;font-size:18px;line-height:1.2;font-style:italic;color:var(--hand)}
 .journal{max-width:none;width:100%;margin:36px 0 0}
 .journal + .journal{margin-top:36px;padding-top:32px;border-top:1px solid var(--line)}
 .journal-eye{margin:0 0 4px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
@@ -90,45 +96,100 @@ footer{display:flex;justify-content:space-between;align-items:baseline;flex-wrap
 .journal-intro{grid-area:intro;min-width:0}
 .journal-intro .summary:last-child{margin-bottom:0}
 .journal-figure{grid-area:image;margin:0;min-width:0}
-.journal-figure img{display:block;width:100%;height:auto;border:1px solid var(--line);background:#fff}
+.journal-figure img{display:block;width:100%;height:auto;border:1px solid var(--line);background:var(--paper)}
 .journal-credit{margin:6px 0 0;font-size:12px;line-height:1.4;color:var(--muted)}
-.journal .summary{font-size:17px;line-height:1.6;color:#1c1c1a;margin:0 0 16px}
+.journal .summary{font-size:17px;line-height:1.6;color:var(--prose);margin:0 0 16px}
 .journal .subhead{margin:28px 0 8px;font-size:20px;font-weight:600;line-height:1.35}
-.journal-ending{margin:20px 0 0;font-size:17px;line-height:1.6;font-weight:500;font-style:italic;color:#3f3f3c}
+.journal-ending{margin:20px 0 0;font-size:17px;line-height:1.6;font-weight:500;font-style:italic;color:var(--body)}
 .journal .sources{margin-top:20px}
 .journal-lead.no-figure{grid-template-columns:minmax(0,1fr);grid-template-areas:"title" "intro"}
 .masthead .sample-flag{margin:8px 0 0;font-size:13px;line-height:1.4;color:var(--muted)}
 @media(max-width:700px){.journal-lead{grid-template-columns:minmax(0,1fr);grid-template-areas:"title" "image" "intro";row-gap:14px} .journal-lead.no-figure{grid-template-areas:"title" "intro"} .journal-figure{justify-self:center;width:min(100%,320px)} .journal-lead h3{font-size:24px;line-height:1.3} .journal-name{font-size:18px} .journal .subhead{font-size:18px}}
 .story h3{line-height:1.2}
 .story.no-thumb{grid-template-columns:48px minmax(0,1fr)}
-.intro-card .rec-label{margin:0 0 10px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;line-height:1.3;color:#3f3f3c}
-.load-note{margin:22px 0 36px;padding:16px 18px;background:var(--soft);border-radius:12px;color:#3f3f3c;font-size:15px;line-height:1.45}
+.intro-card .rec-label{margin:0 0 10px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;line-height:1.3;color:var(--muted)}
+.load-note{margin:22px 0 36px;padding:16px 18px;background:var(--soft);border-radius:12px;color:var(--body);font-size:15px;line-height:1.45}
 .archive .note{margin:0;padding:10px 12px;font-size:14px;line-height:1.4;color:var(--muted)}
-@media(max-width:900px){.grid{grid-template-columns:1fr} .main{border-right:0;padding-right:0} .side{padding-left:0} .hero{justify-content:flex-start;min-height:0} .hero-visual{max-width:100%;grid-template-columns:minmax(140px,200px) minmax(0,1fr)} .riva-hero{justify-self:start;max-width:200px} .story{grid-template-columns:40px 120px minmax(0,1fr)} .story.no-thumb{grid-template-columns:40px minmax(0,1fr)} nav a{display:none}}
-@media(max-width:620px){.shell,body.archive-bottom .shell{width:min(calc(100% - 40px),720px)} header{min-height:70px} .brand strong{font-size:26px} .tagline{max-width:none} .masthead h2{font-size:22px} .hero{padding:18px 0 16px} .hero-visual{grid-template-columns:112px minmax(0,1fr);align-items:center;gap:12px} .riva-hero{justify-self:start;width:112px;max-width:112px} .riva-note{min-width:0;font-size:12.5px} .riva-farewell{font-size:14px} .story,.story.no-thumb{grid-template-columns:34px 1fr} .thumb{grid-column:2} .story-copy{grid-column:2} .num{font-size:40px}}
+@media(max-width:900px){.grid{grid-template-columns:1fr} .main{border-right:0;padding-right:0} .side{padding-left:0} .hero{justify-content:flex-start;min-height:0} .hero-visual{max-width:100%;grid-template-columns:minmax(140px,200px) minmax(0,1fr)} .riva-hero{justify-self:start;max-width:200px} .story{grid-template-columns:40px 120px minmax(0,1fr)} .story.no-thumb{grid-template-columns:40px minmax(0,1fr)} header nav a{display:none}}
+@media(max-width:620px){.shell,body.archive-bottom .shell{width:min(calc(100% - 40px),720px)} header{min-height:70px} .brand strong{font-size:26px} .tagline{max-width:none} .masthead{padding-top:12px;margin-top:4px} .mast-full{display:none} .masthead h2.mast-line{display:block;font-size:15px} .hero{padding:14px 0 12px} .hero-visual{grid-template-columns:80px minmax(0,1fr);align-items:center;gap:12px} .riva-hero{justify-self:start;width:80px;max-width:80px} .riva-note{min-width:0;font-size:13px} .riva-farewell{font-size:14px} .story,.story.no-thumb{grid-template-columns:34px 1fr} .thumb{grid-column:2} .story-copy{grid-column:2} .num{font-size:40px}}
 html[lang="zh-CN"] body{font-family:"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif}
 html[lang="zh-CN"] .summary{font-size:16px;line-height:1.8;margin-bottom:1.35em}
 html[lang="zh-CN"] .update-note,html[lang="zh-CN"] .riva-closing{line-height:1.75}
 html[lang="zh-CN"] .why{line-height:1.75}
 html[lang="zh-CN"] .story h3{font-size:22px;line-height:1.4;letter-spacing:0}
 html[lang="zh-CN"] .masthead h2{font-size:22px;line-height:1.45;letter-spacing:0}
+html[lang="zh-CN"] .masthead h2.mast-line{font-size:15px;line-height:1.4;font-weight:600}
 html[lang="zh-CN"] .subhead{line-height:1.45;letter-spacing:0}
-html[lang="zh-CN"] .kicker,html[lang="zh-CN"] .sources-heading,html[lang="zh-CN"] .intro-card .rec-label,html[lang="zh-CN"] .journal-eye{letter-spacing:0;text-transform:none}
+html[lang="zh-CN"] .kicker,html[lang="zh-CN"] .sources-heading,html[lang="zh-CN"] .intro-card .rec-label,html[lang="zh-CN"] .journal-eye,html[lang="zh-CN"] .journal-kicker,html[lang="zh-CN"] .fetch-title,html[lang="zh-CN"] .share-label{letter-spacing:0;text-transform:none}
 html[lang="zh-CN"] .journal-name,html[lang="zh-CN"] .journal-lead h3,html[lang="zh-CN"] .journal .subhead,html[lang="zh-CN"] .journal-ending{font-family:"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif;letter-spacing:0}
 html[lang="zh-CN"] .journal .summary{font-size:16px;line-height:1.8;margin-bottom:1.35em}
+html[lang="zh-CN"] .journal-intro .summary:last-child{margin-bottom:0}
 html[lang="zh-CN"] .journal-ending{line-height:1.8}
 html[lang="zh-CN"] .journal .subhead{font-weight:600}
 html[lang="zh-CN"] .journal-name,html[lang="zh-CN"] .journal-lead h3{line-height:1.4;font-weight:700}
 html[lang="zh-CN"] .sources-heading,html[lang="zh-CN"] .intro-card .rec-label{font-size:13px}
 html[lang="zh-CN"] .intro-card h3{font-family:"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif;font-size:22px;line-height:1.4;font-weight:700}
 html[lang="zh-CN"] .intro-card .rec-why,html[lang="zh-CN"] .intro-card .rec-meta{line-height:1.75}
-@media(max-width:620px){html[lang="zh-CN"] .story h3{font-size:20px;line-height:1.4} html[lang="zh-CN"] .masthead h2,html[lang="zh-CN"] .intro-card h3{font-size:20px;line-height:1.4}}
+@media(max-width:620px){html[lang="zh-CN"] .story h3{font-size:20px;line-height:1.4} html[lang="zh-CN"] .masthead h2,html[lang="zh-CN"] .intro-card h3{font-size:20px;line-height:1.4} html[lang="zh-CN"] .masthead h2.mast-line{font-size:15px;line-height:1.4;font-weight:600}}
 body.archive-bottom .grid{grid-template-columns:minmax(0,1fr)}
 body.archive-bottom .main{border-right:0;padding-right:0}
 body.archive-bottom .side{padding:0}
 body.archive-bottom .hero{justify-content:flex-start}
 body.archive-bottom .archive h3{font-size:18px}
+.journal-kicker{margin:0 0 12px;font-size:12px;font-weight:700;letter-spacing:.06em;line-height:1.45;color:var(--muted)}
+.fetch-box{display:flex;flex-direction:column;align-items:stretch;gap:0;width:100%;margin:16px 0 4px;border:1px solid var(--line);border-radius:14px;background:var(--soft);overflow:hidden}
+.fetch-title{display:block;width:100%;margin:0;padding:12px 14px 4px;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.fetch-row{display:block;width:100%;min-height:44px;padding:12px 14px;border:0;border-top:1px solid var(--line);background:transparent;color:var(--ink);text-align:left;cursor:pointer;font:inherit;font-size:15px;line-height:1.4;overflow-wrap:break-word}
+.fetch-row:hover,.fetch-row:focus-visible{background:var(--bg)}
+.next-story{display:inline-flex;align-items:center;min-height:44px;margin-top:18px;font-size:15px;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.subscribe-card{display:flex;align-items:center;min-height:44px;margin:28px 0 4px;padding:12px 16px;border:1px solid var(--line);border-radius:14px;background:var(--soft);color:var(--ink);font-size:15px;line-height:1.45;font-weight:600}
+html.tg-app .subscribe-card{display:none}
+.share{margin:20px 0 8px}
+.share-label{margin:0 0 8px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.share-row{display:flex;flex-wrap:wrap;gap:8px}
+.share-row a,.share-row button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 14px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;font:inherit;font-size:14px;font-weight:600}
+.share-row a:hover,.share-row button:hover,.share-row a:focus-visible,.share-row button:focus-visible{border-color:var(--ink)}
+.sources-details{width:100%;margin-top:16px}
+.sources-details summary{display:flex;width:100%;min-height:44px;align-items:center;justify-content:space-between;gap:12px;font-size:14px;font-weight:700;color:var(--ink)}
+.sources-details summary::before{content:none}
+.sources-details .sources{margin-top:0}
+.sources-details .chev{display:inline-block;flex:0 0 auto;color:var(--muted);transform-origin:center}
+.sources-details[open] .chev{transform:rotate(90deg)}
+[data-anchor]{scroll-margin-top:16px}
+html[data-theme="dark"] .riva-hero{mix-blend-mode:normal;background:#f6f3ec;border-radius:18px;padding:5px}
+html[data-theme="dark"] .riva-hero img{mix-blend-mode:multiply}
+@media(prefers-color-scheme:dark){html:not([data-theme="light"]) .riva-hero{mix-blend-mode:normal;background:#f6f3ec;border-radius:18px;padding:5px} html:not([data-theme="light"]) .riva-hero img{mix-blend-mode:multiply}}
 </style>
+<script>
+(function () {
+  try {
+    var blob = (location.hash || '') + '&' + (location.search || '');
+    var hinted = /(?:^|[?#&])tgWebAppData=/.test(blob) || /(?:^|[?#&])tgWebAppPlatform=/.test(blob);
+    var themeMatch = /(?:^|[?#&])tgWebAppThemeParams=([^&#]*)/.exec(blob);
+    var params = null;
+    if (themeMatch) {
+      var raw = themeMatch[1];
+      try { if (raw.indexOf('%') !== -1) raw = decodeURIComponent(raw); } catch (error) {}
+      try { params = JSON.parse(raw); } catch (error) {}
+    }
+    function darkColor(hex) {
+      if (typeof hex !== 'string') return false;
+      var h = hex.trim().replace('#', '');
+      if (h.length === 3) h = h.charAt(0) + h.charAt(0) + h.charAt(1) + h.charAt(1) + h.charAt(2) + h.charAt(2);
+      if (!/^[0-9a-fA-F]{6}$/.test(h)) return false;
+      var r = parseInt(h.slice(0, 2), 16);
+      var g = parseInt(h.slice(2, 4), 16);
+      var b = parseInt(h.slice(4, 6), 16);
+      return (0.2126 * r + 0.7152 * g + 0.0722 * b) < 140;
+    }
+    var dark = params && params.bg_color ? darkColor(params.bg_color) : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+    if (hinted) document.documentElement.classList.add('tg-app');
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', dark ? '#1b1a18' : '#fbfbf8');
+  } catch (error) {}
+})();
+</script>
 </head>
 <body>
 <div class="shell">
@@ -164,7 +225,9 @@ My human and her AI agent help me&nbsp;out.</p></div>
 </div>
 <p class="riva-farewell" data-i18n="rivaFarewell">I make mistakes sometimes. I’m a dog, after all.
 Come back tomorrow.</p>
-<footer><span>Good Fetch · 2026</span><span data-i18n="footer">Fetched by Riva &amp; Cassie’s AI agent.</span></footer>
+<footer>
+  <div class="footer-bar"><span>Good Fetch · 2026</span><span data-i18n="footer">Fetched by Riva &amp; Cassie’s AI agent.</span></div>
+</footer>
 </div>
 <script>
 const ui = {
@@ -194,7 +257,22 @@ const ui = {
     lookOut: 'Look Out',
     stayCurious: '02 · Stay Curious',
     lookAround: 'Look Around',
-    sampleLayout: 'Sample layout. Not an edition.'
+    sampleLayout: 'Sample layout. Not an edition.',
+    todayFetch: 'Today’s fetch',
+    fetchChanged: '01 What Changed',
+    fetchCurious: '02 Stay Curious',
+    minRead: '{n} min read',
+    sectionChanged: '01 \u00B7 WHAT CHANGED',
+    sectionCurious: '02 \u00B7 STAY CURIOUS',
+    sourcesCount: 'Sources ({n})',
+    nextStory: 'Next: 02 Stay Curious \u2193',
+    subscribe: 'Get Riva\u2019s fetch every morning on Telegram \u2192',
+    share: 'Share',
+    shareTelegram: 'Telegram',
+    shareWhatsApp: 'WhatsApp',
+    copyLink: 'Copy link',
+    copied: 'Copied',
+    more: 'More'
   },
   zh: {
     tagline: '保持对世界的好奇。',
@@ -222,20 +300,43 @@ const ui = {
     lookOut: '向外看',
     stayCurious: '02 · 保持好奇',
     lookAround: '看身边',
-    sampleLayout: '示例版式，不是正式内容。'
+    sampleLayout: '示例版式，不是正式内容。',
+    todayFetch: '今日两条',
+    fetchChanged: '01 有什么变了',
+    fetchCurious: '02 保持好奇',
+    minRead: '约 {n} 分钟',
+    sectionChanged: '01 \u00B7 有什么变了',
+    sectionCurious: '02 \u00B7 保持好奇',
+    sourcesCount: '来源（{n}）',
+    nextStory: '下一篇 \u2193',
+    subscribe: '每天早上在 Telegram 收到 Riva 叼回来的新闻 \u2192',
+    share: '分享',
+    shareTelegram: 'Telegram',
+    shareWhatsApp: 'WhatsApp',
+    copyLink: '复制链接',
+    copied: '已复制',
+    more: '更多'
   }
 };
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const MONTHS_LONG = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const LANG_KEY = 'good-fetch-lang';
+const SHARE_ORIGIN = 'https://good-fetch-riva.vercel.app/';
+const BOT_LINK = 'https://t.me/GoodFetch_bot?start=site';
 let lang = 'en';
+let explicitLang = '';
+let storedLangAtStart = '';
 let editions = [];
 let archiveFailed = false;
 let archiveExpanded = false;
 let activeDate = '';
+let latestDate = '';
+let viewingSample = false;
 let currentEdition = null;
 let messageKey = '';
 let requestId = 0;
+let backBound = false;
 
 function isIsoDate(value) {
   return /^\d{4}-\d{2}-\d{2}$/.test(value || '');
@@ -378,40 +479,279 @@ function sourceList(value) {
   return links;
 }
 
+function telegramApp() {
+  const wa = window.Telegram && window.Telegram.WebApp;
+  if (!wa) return null;
+  const platform = wa.platform;
+  const hasData = typeof wa.initData === 'string' && wa.initData.length > 0;
+  const knownPlatform = platform && platform !== 'unknown';
+  if (!hasData && !knownPlatform) return null;
+  return wa;
+}
+
+function applySafeArea(wa) {
+  if (!wa) return;
+  const root = document.documentElement;
+  const device = wa.safeAreaInset || {};
+  const content = wa.contentSafeAreaInset || {};
+  ['top', 'right', 'bottom', 'left'].forEach(side => {
+    if (device[side] != null && device[side] !== '') root.style.setProperty('--tg-safe-area-inset-' + side, Number(device[side]) + 'px');
+    if (content[side] != null && content[side] !== '') root.style.setProperty('--tg-content-safe-area-inset-' + side, Number(content[side]) + 'px');
+  });
+}
+
+function applyTheme() {
+  const wa = telegramApp();
+  const dark = wa ? wa.colorScheme === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+  const bg = dark ? '#1b1a18' : '#fbfbf8';
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.setAttribute('content', bg);
+  if (!wa) return;
+  try { if (typeof wa.setHeaderColor === 'function') wa.setHeaderColor(bg); } catch (error) {}
+  try { if (typeof wa.setBackgroundColor === 'function') wa.setBackgroundColor(bg); } catch (error) {}
+}
+
+function initTelegram() {
+  const wa = telegramApp();
+  document.documentElement.classList.toggle('tg-app', !!(wa || telegramLaunchHint()));
+  if (!wa) {
+    if (!telegramLaunchHint()) applyTheme();
+    const mq = window.matchMedia('(prefers-color-scheme: dark)');
+    const onChange = () => { if (!telegramApp() && !telegramLaunchHint()) applyTheme(); };
+    if (mq.addEventListener) mq.addEventListener('change', onChange);
+    else if (mq.addListener) mq.addListener(onChange);
+    return;
+  }
+  try { if (typeof wa.ready === 'function') wa.ready(); } catch (error) {}
+  try { if (typeof wa.expand === 'function') wa.expand(); } catch (error) {}
+  applySafeArea(wa);
+  applyTheme();
+  if (typeof wa.onEvent === 'function') {
+    try {
+      wa.onEvent('themeChanged', applyTheme);
+      wa.onEvent('safeAreaChanged', () => applySafeArea(wa));
+      wa.onEvent('contentSafeAreaChanged', () => applySafeArea(wa));
+    } catch (error) {}
+  }
+  syncBackButton();
+  if (!explicitLang && !storedLangAtStart) {
+    const next = telegramLang();
+    if (next && next !== lang) setLang(next);
+    else setQuery({ lang: lang });
+  }
+}
+
+function loadTelegramScript() {
+  if (!telegramLaunchHint()) {
+    initTelegram();
+    return;
+  }
+  const script = document.createElement('script');
+  script.src = 'https://telegram.org/js/telegram-web-app.js';
+  script.async = true;
+  script.onload = function () { initTelegram(); };
+  document.head.appendChild(script);
+}
+
+function syncBackButton() {
+  const wa = telegramApp();
+  const button = wa && wa.BackButton;
+  if (!button) return;
+  const archived = !viewingSample && activeDate && latestDate && activeDate !== latestDate;
+  if (!backBound && typeof button.onClick === 'function') {
+    try { button.onClick(returnToToday); backBound = true; } catch (error) {}
+  }
+  try {
+    if (archived && typeof button.show === 'function') button.show();
+    else if (typeof button.hide === 'function') button.hide();
+  } catch (error) {}
+}
+
+function savedLang() {
+  try {
+    const value = localStorage.getItem(LANG_KEY);
+    if (value === 'zh' || value === 'en') return value;
+  } catch (error) {}
+  return '';
+}
+
+function queryValue(key) {
+  try {
+    return new URLSearchParams(window.location.search).get(key) || '';
+  } catch (error) {
+    return '';
+  }
+}
+
+function telegramLang() {
+  const wa = window.Telegram && window.Telegram.WebApp;
+  const code = wa && wa.initDataUnsafe && wa.initDataUnsafe.user && wa.initDataUnsafe.user.language_code;
+  return typeof code === 'string' && code.toLowerCase().startsWith('zh') ? 'zh' : '';
+}
+
+function queryLang() {
+  const fromQuery = queryValue('lang');
+  return fromQuery === 'zh' || fromQuery === 'en' ? fromQuery : '';
+}
+
+function telegramLaunchHint() {
+  const blob = (window.location.hash || '') + '&' + (window.location.search || '');
+  return /(?:^|[?#&])tgWebAppData=/.test(blob) || /(?:^|[?#&])tgWebAppPlatform=/.test(blob);
+}
+
+function initialLang() {
+  const nav = (navigator.language || '').toLowerCase().startsWith('zh') ? 'zh' : '';
+  return queryLang() || savedLang() || telegramLang() || nav || 'en';
+}
+
+function setQuery(updates) {
+  let params;
+  try { params = new URLSearchParams(window.location.search); } catch (error) { return; }
+  Object.keys(updates).forEach(key => {
+    const value = updates[key];
+    if (value == null || value === '') params.delete(key);
+    else params.set(key, value);
+  });
+  const qs = params.toString();
+  const next = window.location.pathname + (qs ? '?' + qs : '') + window.location.hash;
+  const current = window.location.pathname + window.location.search + window.location.hash;
+  if (next !== current) history.replaceState(null, '', next);
+}
+
+function openExternal(url, method) {
+  const wa = telegramApp();
+  if (wa && method === 'telegram' && typeof wa.openTelegramLink === 'function') {
+    try { wa.openTelegramLink(url); return true; } catch (error) {}
+  }
+  if (wa && method === 'link' && typeof wa.openLink === 'function') {
+    try { wa.openLink(url); return true; } catch (error) {}
+  }
+  return false;
+}
+
+function bindExternal(anchor, method) {
+  anchor.addEventListener('click', event => {
+    if (openExternal(anchor.href, method)) event.preventDefault();
+  });
+}
+
+function readingMinutes(text) {
+  const raw = String(text || '');
+  let minutes;
+  if (lang === 'zh') {
+    const chars = raw.replace(/\s+/g, '').length;
+    minutes = Math.ceil(chars / 300);
+  } else {
+    const words = raw.trim() ? raw.trim().split(/\s+/).length : 0;
+    minutes = Math.ceil(words / 230);
+  }
+  if (!Number.isFinite(minutes) || minutes < 1) return 1;
+  return minutes;
+}
+
+function readLabel(minutes) {
+  return ui[lang].minRead.replace('{n}', String(minutes));
+}
+
+function v2Plain(item) {
+  if (!item || typeof item !== 'object') return '';
+  const parts = [];
+  const headline = localizedString(item, 'headline');
+  if (headline) parts.push(headline);
+  localizedParagraphs(item, 'intro').forEach(text => parts.push(text));
+  const sections = Array.isArray(item.sections) ? item.sections : [];
+  sections.forEach(section => {
+    if (!section || typeof section !== 'object') return;
+    const heading = localizedString(section, 'heading');
+    if (heading) parts.push(heading);
+    localizedParagraphs(section, 'paragraphs').forEach(text => parts.push(text));
+  });
+  const ending = localizedString(item, 'ending');
+  if (ending) parts.push(ending);
+  return parts.join('\n');
+}
+
+function editionHeadline(edition) {
+  if (edition && edition.format === 'v2' && edition.whatChanged) {
+    const headline = localizedString(edition.whatChanged, 'headline');
+    if (headline) return headline;
+  }
+  const stories = [];
+  if (edition && Array.isArray(edition.stories)) stories.push.apply(stories, edition.stories);
+  if (edition && edition.region && Array.isArray(edition.region.stories)) stories.push.apply(stories, edition.region.stories);
+  for (let i = 0; i < stories.length; i += 1) {
+    const headline = localizedString(stories[i], 'headline');
+    if (headline) return headline;
+  }
+  return 'Good Fetch';
+}
+
+function canonicalUrl(edition) {
+  const params = new URLSearchParams();
+  const date = edition && isIsoDate(edition.date) ? edition.date : (isIsoDate(activeDate) ? activeDate : '');
+  if (date) params.set('date', date);
+  params.set('lang', lang === 'zh' ? 'zh' : 'en');
+  return SHARE_ORIGIN + '?' + params.toString();
+}
+
+function compactDateLine(edition) {
+  const date = lang === 'zh' ? formatChineseDate(edition.date) : formatDate(edition.date);
+  if (!date) return '';
+  const clock = singaporeClock(edition && edition.publishedAt);
+  if (!clock) return date;
+  return lang === 'zh' ? date + ' \u00B7 ' + clock : date + ' \u00B7 ' + clock + ' SGT';
+}
+
+function scrollToAnchor(anchor) {
+  const target = document.querySelector('[data-anchor="' + anchor + '"]');
+  if (!target) return;
+  target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
 function renderSources(parent, sources) {
   const links = sourceList(sources);
   if (!links.length) return;
+  const details = document.createElement('details');
+  details.className = 'more-details sources-details';
+  const summary = document.createElement('summary');
+  const label = document.createElement('span');
+  label.textContent = ui[lang].sourcesCount.replace('{n}', String(links.length));
+  const chev = document.createElement('span');
+  chev.className = 'chev';
+  chev.setAttribute('aria-hidden', 'true');
+  chev.textContent = '\u25B8';
+  summary.append(label, chev);
+  details.append(summary);
   const wrap = document.createElement('div');
   wrap.className = 'sources';
-  const heading = document.createElement('p');
-  heading.className = 'sources-heading';
-  heading.textContent = ui[lang].sourcesHeading;
-  wrap.append(heading);
   links.forEach(link => {
-    const row = document.createElement('p');
-    row.className = 'source-row';
     const a = document.createElement('a');
-    a.className = 'source';
+    a.className = 'source source-row';
     a.href = link.url;
     a.target = '_blank';
     a.rel = 'noopener noreferrer';
-    a.textContent = (link.name || ui[lang].sourceFallback) + ' →';
-    row.append(a);
+    const name = document.createElement('span');
+    name.className = 'source-name';
+    name.textContent = (link.name || ui[lang].sourceFallback) + ' \u2192';
+    a.append(name);
     if (link.official) {
       const tag = document.createElement('span');
       tag.className = 'source-tag';
       tag.textContent = ui[lang].official;
-      row.append(tag);
+      a.append(tag);
     }
     if (link.download) {
       const file = document.createElement('span');
       file.className = 'source-tag';
       file.textContent = ui[lang].downloadFile.replace('{type}', link.download);
-      row.append(file);
+      a.append(file);
     }
-    wrap.append(row);
+    bindExternal(a, 'link');
+    wrap.append(a);
   });
-  parent.append(wrap);
+  details.append(wrap);
+  parent.append(details);
 }
 
 function paragraph(text) {
@@ -583,7 +923,7 @@ function renderRecommendation(parent, rec) {
   return true;
 }
 
-function renderV2Story(parent, item, anchor, eyeKey, nameKey) {
+function renderV2Story(parent, item, anchor, sectionKey, showNext) {
   if (!item || typeof item !== 'object') return false;
   const headline = localizedString(item, 'headline');
   const category = localizedString(item, 'category');
@@ -602,36 +942,16 @@ function renderV2Story(parent, item, anchor, eyeKey, nameKey) {
 
   const article = document.createElement('article');
   article.className = 'journal';
+  article.id = anchor;
   article.dataset.anchor = anchor;
 
-  const eye = document.createElement('p');
-  eye.className = 'journal-eye';
-  eye.textContent = ui[lang][eyeKey];
-  const name = document.createElement('h2');
-  name.className = 'journal-name';
-  name.textContent = ui[lang][nameKey];
-  article.append(eye, name);
-
-  if (item.update === true) {
-    const row = document.createElement('div');
-    row.className = 'kicker-row';
-    if (category) {
-      const kicker = document.createElement('p');
-      kicker.className = 'kicker';
-      kicker.textContent = category;
-      row.append(kicker);
-    }
-    const tag = document.createElement('p');
-    tag.className = 'kicker update-tag';
-    tag.textContent = ui[lang].update;
-    row.append(tag);
-    article.append(row);
-  } else if (category) {
-    const kicker = document.createElement('p');
-    kicker.className = 'kicker';
-    kicker.textContent = category;
-    article.append(kicker);
-  }
+  const bits = [ui[lang][sectionKey]];
+  if (category) bits.push(category);
+  if (item.update === true) bits.push(ui[lang].update);
+  const kicker = document.createElement('p');
+  kicker.className = 'journal-kicker';
+  kicker.textContent = bits.join(' \u00B7 ');
+  article.append(kicker);
   if (updateNote) {
     const note = document.createElement('p');
     note.className = 'update-note';
@@ -692,13 +1012,25 @@ function renderV2Story(parent, item, anchor, eyeKey, nameKey) {
     article.append(line);
   }
   renderSources(article, item.sources);
+  if (showNext) {
+    const next = document.createElement('a');
+    next.className = 'next-story';
+    next.href = '#stay-curious';
+    next.textContent = ui[lang].nextStory;
+    next.addEventListener('click', event => {
+      if (!document.querySelector('[data-anchor="stay-curious"]')) return;
+      event.preventDefault();
+      scrollToAnchor('stay-curious');
+    });
+    article.append(next);
+  }
   parent.append(article);
   return true;
 }
 
 function renderV2Edition(parent, edition) {
-  const changed = renderV2Story(parent, edition.whatChanged, 'what-changed', 'lookOut', 'whatChanged');
-  const curious = renderV2Story(parent, edition.stayCurious, 'stay-curious', 'lookAround', 'stayCurious');
+  const changed = renderV2Story(parent, edition.whatChanged, 'what-changed', 'sectionChanged', true);
+  const curious = renderV2Story(parent, edition.stayCurious, 'stay-curious', 'sectionCurious', false);
   if (!changed && !curious) {
     const note = document.createElement('p');
     note.className = 'load-note';
@@ -721,6 +1053,127 @@ function renderClosing(parent, edition) {
   parent.append(line);
 }
 
+function renderFetchBox(parent, edition) {
+  if (!edition || edition.format !== 'v2') return;
+  const rows = [
+    { key: 'whatChanged', anchor: 'what-changed', label: ui[lang].fetchChanged },
+    { key: 'stayCurious', anchor: 'stay-curious', label: ui[lang].fetchCurious }
+  ];
+  const box = document.createElement('div');
+  box.className = 'fetch-box';
+  box.setAttribute('role', 'navigation');
+  box.setAttribute('aria-label', ui[lang].todayFetch);
+  const title = document.createElement('p');
+  title.className = 'fetch-title';
+  title.textContent = ui[lang].todayFetch;
+  box.append(title);
+  let count = 0;
+  rows.forEach(row => {
+    const item = edition[row.key];
+    if (!item || typeof item !== 'object') return;
+    const headline = localizedString(item, 'headline');
+    if (!headline) return;
+    count += 1;
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'fetch-row';
+    button.textContent = row.label + ' \u00B7 ' + headline + ' \u00B7 ' + readLabel(readingMinutes(v2Plain(item)));
+    button.addEventListener('click', () => scrollToAnchor(row.anchor));
+    box.append(button);
+  });
+  if (!count) return;
+  parent.append(box);
+}
+
+function renderSubscribe(parent) {
+  const link = document.createElement('a');
+  link.className = 'subscribe-card';
+  link.href = BOT_LINK;
+  link.textContent = ui[lang].subscribe;
+  bindExternal(link, 'telegram');
+  parent.append(link);
+}
+
+function renderShare(parent, edition) {
+  const url = canonicalUrl(edition);
+  const headline = editionHeadline(edition);
+  const block = document.createElement('section');
+  block.className = 'share';
+  const label = document.createElement('p');
+  label.className = 'share-label';
+  label.textContent = ui[lang].share;
+  const row = document.createElement('div');
+  row.className = 'share-row';
+
+  const telegram = document.createElement('a');
+  telegram.href = 'https://t.me/share/url?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(headline);
+  telegram.target = '_blank';
+  telegram.rel = 'noopener noreferrer';
+  telegram.textContent = ui[lang].shareTelegram;
+  bindExternal(telegram, 'telegram');
+
+  const whatsapp = document.createElement('a');
+  whatsapp.href = 'https://wa.me/?text=' + encodeURIComponent(headline + '\n' + url);
+  whatsapp.target = '_blank';
+  whatsapp.rel = 'noopener noreferrer';
+  whatsapp.textContent = ui[lang].shareWhatsApp;
+  bindExternal(whatsapp, 'link');
+
+  const copy = document.createElement('button');
+  copy.type = 'button';
+  copy.textContent = ui[lang].copyLink;
+  copy.addEventListener('click', async () => {
+    const shareLink = canonicalUrl(edition);
+    let ok = false;
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(shareLink);
+        ok = true;
+      }
+    } catch (error) {}
+    if (!ok) {
+      try {
+        const input = document.createElement('textarea');
+        input.value = shareLink;
+        input.setAttribute('readonly', '');
+        input.style.position = 'fixed';
+        input.style.left = '-9999px';
+        document.body.append(input);
+        input.select();
+        ok = document.execCommand('copy');
+        input.remove();
+      } catch (error) {}
+    }
+    if (!ok) return;
+    copy.textContent = ui[lang].copied;
+    window.setTimeout(() => {
+      if (copy.isConnected) copy.textContent = ui[lang].copyLink;
+    }, 1600);
+  });
+
+  row.append(telegram, whatsapp, copy);
+  const narrow = window.matchMedia('(max-width: 700px)').matches;
+  if (narrow && navigator.share) {
+    const more = document.createElement('button');
+    more.type = 'button';
+    more.textContent = ui[lang].more;
+    more.addEventListener('click', async () => {
+      try {
+        await navigator.share({ title: 'Good Fetch', text: headline, url: canonicalUrl(edition) });
+      } catch (error) {}
+    });
+    row.append(more);
+  }
+  block.append(label, row);
+  parent.append(block);
+}
+
+function renderEditionEnd(parent, edition) {
+  renderClosing(parent, edition);
+  renderSubscribe(parent);
+  renderShare(parent, edition);
+}
+
 function renderEdition(edition) {
   currentEdition = edition;
   messageKey = '';
@@ -731,19 +1184,26 @@ function renderEdition(edition) {
   const mast = document.createElement('div');
   mast.className = 'masthead';
   mast.dataset.anchor = 'mast';
+  const compact = document.createElement('h2');
+  compact.className = 'mast-line';
+  compact.textContent = compactDateLine(edition);
+  mast.append(compact);
+  const full = document.createElement('div');
+  full.className = 'mast-full';
   const h2 = document.createElement('h2');
   h2.textContent = editionHeader(edition.date);
-  mast.append(h2);
+  full.append(h2);
   const published = publicationLine(edition);
   if (published) {
     const stamp = document.createElement('p');
     stamp.className = 'published';
     stamp.textContent = published;
-    mast.append(stamp);
+    full.append(stamp);
   }
   const sub = document.createElement('p');
   sub.textContent = ui[lang].briefing;
-  mast.append(sub);
+  full.append(sub);
+  mast.append(full);
   if (edition.sample === true) {
     const flag = document.createElement('p');
     flag.className = 'sample-flag';
@@ -751,10 +1211,11 @@ function renderEdition(edition) {
     mast.append(flag);
   }
   root.append(mast);
+  renderFetchBox(root, edition);
 
   if (edition.format === 'v2') {
     renderV2Edition(root, edition);
-    renderClosing(root, edition);
+    renderEditionEnd(root, edition);
     return;
   }
 
@@ -769,7 +1230,7 @@ function renderEdition(edition) {
     note.textContent = ui[lang].empty;
     root.append(note);
   }
-  renderClosing(root, edition);
+  renderEditionEnd(root, edition);
 }
 
 function showMessage(key) {
@@ -839,20 +1300,45 @@ async function fetchJson(path) {
   return response.json();
 }
 
-async function openEdition(date) {
-  if (!isIsoDate(date)) return;
+function returnToToday() {
+  setQuery({ date: null });
+  viewingSample = false;
+  window.scrollTo(0, 0);
+  return loadEdition('news/latest.json', { asToday: true });
+}
+
+async function loadEdition(path, opts) {
   const myId = ++requestId;
-  activeDate = date;
-  renderArchive();
+  const missing = opts && opts.missing;
   try {
-    const edition = await fetchJson('news/' + date + '.json');
+    const edition = await fetchJson(path);
     if (myId !== requestId) return;
     if (!edition || typeof edition !== 'object' || Array.isArray(edition)) throw new Error('bad edition');
+    if (isIsoDate(edition.date)) activeDate = edition.date;
+    if (opts && opts.asToday) {
+      if (!latestDate && activeDate) latestDate = activeDate;
+      viewingSample = false;
+    }
     renderEdition(edition);
+    renderArchive();
+    syncBackButton();
   } catch (error) {
     if (myId !== requestId) return;
-    showMessage(error.status === 404 ? 'missingEdition' : 'loadError');
+    showMessage(error.status === 404 && missing ? 'missingEdition' : 'loadError');
+    syncBackButton();
   }
+}
+
+async function openEdition(date, opts) {
+  if (!isIsoDate(date)) return;
+  if (latestDate && date === latestDate) return returnToToday();
+  viewingSample = false;
+  activeDate = date;
+  setQuery({ date: date });
+  renderArchive();
+  syncBackButton();
+  if (!opts || opts.scroll !== false) window.scrollTo(0, 0);
+  return loadEdition('news/' + date + '.json', { missing: true });
 }
 
 function readingPlace() {
@@ -882,17 +1368,43 @@ function restorePlace(place) {
   if (shift) window.scrollBy(0, shift);
 }
 
-function setLang(next) {
+function fillRivaNote() {
+  const el = document.querySelector('[data-i18n="rivaNote"]');
+  if (!el) return;
+  const text = ui[lang].rivaNote || '';
+  const keep = '打下手。';
+  if (lang !== 'zh' || !text.includes(keep)) {
+    el.textContent = text;
+    return;
+  }
+  const index = text.lastIndexOf(keep);
+  el.replaceChildren();
+  if (index > 0) el.append(document.createTextNode(text.slice(0, index)));
+  const span = document.createElement('span');
+  span.className = 'riva-keep';
+  span.textContent = keep;
+  el.append(span);
+  const rest = text.slice(index + keep.length);
+  if (rest) el.append(document.createTextNode(rest));
+}
+
+function setLang(next, opts) {
   const place = readingPlace();
   lang = next === 'zh' ? 'zh' : 'en';
   document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+  if (!opts || opts.syncUrl !== false) setQuery({ lang: lang });
+  if (opts && (opts.save || opts.remember)) {
+    try { localStorage.setItem(LANG_KEY, lang); } catch (error) {}
+  }
   document.querySelectorAll('[data-lang]').forEach(button => {
     button.classList.toggle('active', button.dataset.lang === lang);
   });
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.dataset.i18n;
+    if (key === 'rivaNote') return;
     if (ui[lang][key]) el.textContent = ui[lang][key];
   });
+  fillRivaNote();
   renderStories();
   renderArchive();
   restorePlace(place);
@@ -911,37 +1423,48 @@ function samplePreview() {
 }
 
 async function boot() {
-  const myId = ++requestId;
   try {
     const index = await fetchJson('news/index.json');
     const list = index && Array.isArray(index.editions) ? index.editions : [];
     editions = list.filter(item => item && isIsoDate(item.date));
     archiveFailed = false;
+    latestDate = editions.length ? editions[0].date : '';
   } catch (error) {
     editions = [];
     archiveFailed = true;
+    latestDate = '';
   }
   renderArchive();
-  try {
-    const edition = await fetchJson(samplePreview() ? 'news/_sample-v2.json' : 'news/latest.json');
-    if (myId !== requestId) return;
-    if (!edition || typeof edition !== 'object' || Array.isArray(edition)) throw new Error('bad edition');
-    activeDate = isIsoDate(edition.date) ? edition.date : '';
-    renderEdition(edition);
-    renderArchive();
-  } catch (error) {
-    if (myId !== requestId) return;
-    showMessage('loadError');
+  if (samplePreview()) {
+    viewingSample = true;
+    await loadEdition('news/_sample-v2.json');
+    viewingSample = true;
+    syncBackButton();
+    return;
   }
+  const requested = queryValue('date');
+  if (isIsoDate(requested) && requested !== latestDate) {
+    await openEdition(requested, { scroll: false });
+    return;
+  }
+  if (requested) setQuery({ date: null });
+  await loadEdition('news/latest.json', { asToday: true });
 }
 
+explicitLang = queryLang();
+storedLangAtStart = savedLang();
+setLang(initialLang(), {
+  save: !!explicitLang,
+  syncUrl: !!explicitLang || !!storedLangAtStart || !telegramLaunchHint()
+});
 document.querySelectorAll('[data-lang]').forEach(button => {
-  button.addEventListener('click', () => setLang(button.dataset.lang));
+  button.addEventListener('click', () => setLang(button.dataset.lang, { remember: true }));
 });
 document.getElementById('view-all').addEventListener('click', () => {
   archiveExpanded = true;
   renderArchive();
 });
+loadTelegramScript();
 boot();
 </script>
 </body>
