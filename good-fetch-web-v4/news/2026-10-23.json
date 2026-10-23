@@ -1,0 +1,158 @@
+{
+  "format": "v2",
+  "date": "2026-10-23",
+  "publishedAt": "2026-10-23T08:10:00+08:00",
+  "whatChanged": {
+    "category": "AI / Infrastructure / Finance",
+    "categoryZh": "AI / 基础设施 / 融资",
+    "update": false,
+    "headline": "Nebius Secures $3.5 Billion for AI Data Centers. Why Borrow for Just One Year?",
+    "headlineZh": "Nebius 获得 35 亿美元融资额度，建 AI 数据中心为什么要借短期贷款？",
+    "intro": [
+      "AI computing power is in demand. But chips and data centers must be paid for before they start earning money. On October 22, AI cloud provider Nebius announced a $3.5 billion financing facility from Citi. One surprising detail: it lasts just 364 days."
+    ],
+    "introZh": [
+      "AI 算力需求旺盛，但芯片和数据中心要先花钱建设，之后才能开始赚钱。10 月 22 日，AI 云服务商 Nebius 宣布获得 Citi 提供的 35 亿美元融资额度。值得注意的是，期限只有 364 天。"
+    ],
+    "sections": [
+      {
+        "heading": "What happened?",
+        "headingZh": "发生了什么？",
+        "paragraphs": [
+          "Amsterdam-headquartered Nebius said it had secured a $3.5 billion senior secured credit facility provided by Citi. It plans to use the borrowing capacity for data-center development, GPU purchases and general corporate purposes. A credit facility is access to financing, not a grant or proof that all the money has already been borrowed."
+        ],
+        "paragraphsZh": [
+          "总部位于阿姆斯特丹的 Nebius 表示，已获得 Citi 提供的 35 亿美元高级担保信贷额度，计划用于建设数据中心、采购 GPU，以及一般企业用途。需要区分的是：获得信贷额度不等于拿到一笔无需偿还的资金，也不代表 35 亿美元已经全部借出。"
+        ]
+      },
+      {
+        "heading": "Why only 364 days?",
+        "headingZh": "为什么只借 364 天？",
+        "paragraphs": [
+          "Building an AI data center means paying for construction and equipment before the machines generate revenue. Nebius says this facility gives it flexibility over when and how to raise longer-term capital for projects in 2027 and beyond. It initially carries interest at Term SOFR plus 2.75 percentage points, with the margin potentially rising to 3.50 points, subject to adjustments. That is not a fixed total interest rate of 2.75%."
+        ],
+        "paragraphsZh": [
+          "建 AI 数据中心需要先支付昂贵的芯片和建设费用，设备投入运营后才可能产生收入。Nebius 表示，这笔短期融资能让它更灵活地安排 2027 年及之后的长期融资。初始利率为 Term SOFR 加 2.75 个百分点，利差可能升至 3.50 个百分点，另有调整条款。也就是说，2.75% 并不是这笔贷款的固定总利率。"
+        ]
+      },
+      {
+        "heading": "Does it already have customers?",
+        "headingZh": "已经有客户了吗？",
+        "paragraphs": [
+          "The company says it has more than $40 billion in long-term customer commitments, including from Microsoft and Meta. Those are contractual commitments, not cash already received. In July, Nebius also announced approximately $775 million in secured debt financing."
+        ],
+        "paragraphsZh": [
+          "Nebius 称，来自微软、Meta 等客户的长期合同承诺总额超过 400 亿美元。但合同承诺不等于已经收到的现金。今年 7 月，它还宣布获得约 7.75 亿美元的担保债务融资。这次的新额度，是支持扩建的另一种资金来源。"
+        ]
+      },
+      {
+        "heading": "What's the risk?",
+        "headingZh": "风险在哪里？",
+        "paragraphs": [
+          "Lenders and investors still have to judge whether today's enormous AI infrastructure spending will produce dependable future cash flow. A short-term facility helps with timing, but does not eliminate refinancing or execution risk. Reuters reported the deal amid wider pressure on some AI-infrastructure debt."
+        ],
+        "paragraphsZh": [
+          "贷款机构和投资者仍要判断：今天巨额的 AI 基础设施投入，未来能否转化为稳定现金流。短期融资可以缓解资金安排压力，却不能消除未来再融资和项目交付的风险。路透社指出，这次交易发生在部分 AI 基础设施债券遭遇抛售的背景下。"
+        ]
+      }
+    ],
+    "ending": "The AI race is also a financing race: getting the chips is one problem; paying for them at the right time is another.",
+    "endingZh": "AI 竞赛也是一场融资竞赛：买到芯片是一回事，能否在合适的时间筹到钱，是另一回事。",
+    "sources": [
+      {
+        "name": "Nebius company announcement",
+        "nameZh": "Nebius 公司公告",
+        "url": "https://w.marketminute.com/article/bizwire-2026-10-22-nebius-secures-35-billion-financing-facility-with-citi",
+        "official": true
+      },
+      {
+        "name": "Nebius prior financing",
+        "nameZh": "Nebius 前次融资公告",
+        "url": "https://nebius.com/newsroom/nebius-raises-775-million-in-first-secured-debt-financing-to-accelerate-global-buildout",
+        "official": true
+      },
+      {
+        "name": "Reuters",
+        "nameZh": "路透社",
+        "url": "https://www.reuters.com/technology/nebius-gets-35-billion-citi-facility-data-center-growth-2026-10-22/",
+        "official": false
+      }
+    ]
+  },
+  "stayCurious": {
+    "category": "Singapore / Nature / Everyday Life",
+    "categoryZh": "新加坡 / 自然 / 日常生活",
+    "headline": "Why Do Singapore's Rain Trees Close Their Leaves Before Dark?",
+    "headlineZh": "新加坡的雨树，为什么天还没黑就把叶子合起来？",
+    "intro": [
+      "The giant, umbrella-shaped trees along Singapore's roads seem perfectly still. Look closer in the late afternoon, though, and their tiny leaflets may already be folding. Locals have a name for this tree: Pukul Lima, or “five o'clock.”"
+    ],
+    "introZh": [
+      "新加坡路边常见一种树冠像大伞的大树。下午晚些时候仔细看，你可能会发现它的小叶片已经开始合拢。它还有个马来语名字：Pukul Lima，意思是“五点钟”。"
+    ],
+    "sections": [
+      {
+        "heading": "Is the tree going to sleep?",
+        "headingZh": "它是在睡觉吗？",
+        "paragraphs": [
+          "In a way, yes. The Rain Tree (Samanea saman) is known for leaflets that fold in the early evening and open again after daylight returns. Botanists call this kind of daily leaf movement nyctinasty. The whole tree isn't closing; the small leaflets are changing position."
+        ],
+        "paragraphsZh": [
+          "某种程度上，可以这样理解。雨树（学名 Samanea saman）的小叶片会在傍晚合拢，天亮后再展开。植物学把这种随昼夜节律发生的叶片运动称为感夜运动（nyctinasty）。并不是整棵树收起来，而是细小的叶片改变了位置。"
+        ]
+      },
+      {
+        "heading": "Why “five o'clock”?",
+        "headingZh": "为什么叫“五点钟”？",
+        "paragraphs": [
+          "Singapore's National Parks Board (NParks) explains that the Malay nickname Pukul Lima comes from the tree's evening habit. Before Singapore and Malaysia changed standard time in 1982, 5 pm was closer to sunset. NParks' heritage-tree records say the leaflets begin closing around one and a half hours before sunset, so the name is a historical observation, not a precise timer for today's clock."
+        ],
+        "paragraphsZh": [
+          "新加坡国家公园局（NParks）解释，马来语名称 Pukul Lima 来自雨树傍晚合叶的习惯。1982 年新加坡和马来西亚调整标准时间之前，下午五点更接近日落时分。NParks 的古树资料提到，雨树的小叶片大约在日落前一个半小时开始合拢。因此，“五点钟”是历史上留下的观察，并不表示今天一定准时五点合叶。"
+        ]
+      },
+      {
+        "heading": "Does it really predict rain?",
+        "headingZh": "它真的能预测下雨吗？",
+        "paragraphs": [
+          "The leaves can also fold during overcast weather, which helps explain the English name Rain Tree. But that doesn't make it a reliable personal weather forecast. A folded leaf in the afternoon might simply reflect changing light conditions, not proof that a storm is coming."
+        ],
+        "paragraphsZh": [
+          "阴天时，雨树的叶片也可能合拢，这也是英文名称 Rain Tree 的由来之一。但不能因此把它当作可靠的天气预报。下午看到叶子收起来，可能只是光照变化，不一定意味着马上下雨。"
+        ]
+      },
+      {
+        "heading": "Where did these trees come from?",
+        "headingZh": "这种树原本就生长在新加坡吗？",
+        "paragraphs": [
+          "Despite being familiar across Singapore, the species is native to tropical America. NParks records its introduction to Singapore in 1876. Its broad crown provides generous shade, one reason it became a popular roadside tree."
+        ],
+        "paragraphsZh": [
+          "不是。虽然新加坡到处能见到雨树，但它原产于热带美洲。NParks 记录，它在 1876 年被引入新加坡。宽大的树冠能提供大片树荫，因此后来成为常见的行道树。"
+        ]
+      }
+    ],
+    "ending": "Next time you pass a Rain Tree in the afternoon, check its leaves. The tree may be keeping time in a way your phone never will.",
+    "endingZh": "下次下午经过雨树，不妨看看它的叶子。它用自己的方式记着时间，虽然和手机上的时钟不完全一样。",
+    "sources": [
+      {
+        "name": "NParks Flora & Fauna Web",
+        "nameZh": "新加坡国家公园局植物资料库",
+        "url": "https://www.nparks.gov.sg/florafaunaweb/flora/3/1/3106",
+        "official": true
+      },
+      {
+        "name": "NParks Heritage Trees",
+        "nameZh": "新加坡国家公园局古树名录",
+        "url": "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2003-109/",
+        "official": true
+      },
+      {
+        "name": "NParks educational sheet",
+        "nameZh": "新加坡国家公园局科普资料",
+        "url": "https://www.nparks.gov.sg/-/media/nparks-real-content/activities/family-time-with-nature/know-10-trees/1-rain-tree/raintree.ashx",
+        "official": true
+      }
+    ]
+  }
+}
