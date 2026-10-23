@@ -1,175 +1,157 @@
 {
   "format": "v2",
-  "date": "2026-10-21",
-  "publishedAt": "2026-10-21T09:13:00+08:00",
+  "date": "2026-10-23",
+  "publishedAt": "2026-10-23T08:10:00+08:00",
   "whatChanged": {
-    "category": "AI / Business / Marketing Technology",
-    "categoryZh": "AI / 商业 / 营销科技",
+    "category": "AI / Infrastructure / Finance",
+    "categoryZh": "AI / 基础设施 / 融资",
     "update": false,
-    "headline": "Salesforce's $5.66 Billion Bet on Marketing That Reacts to You",
-    "headlineZh": "Salesforce 拟以 56.6 亿美元收购 Braze，让营销消息跟着你的行为走",
+    "headline": "Nebius Secures $3.5 Billion for AI Data Centers. Why Borrow for Just One Year?",
+    "headlineZh": "Nebius 获得 35 亿美元融资额度，建 AI 数据中心为什么要借短期贷款？",
     "intro": [
-      "You look at a pair of shoes in an app. A little later, a message arrives with just the right offer. That timing is the kind of technology Salesforce is paying billions to get."
+      "AI computing power is in demand. But chips and data centers must be paid for before they start earning money. On October 22, AI cloud provider Nebius announced a $3.5 billion financing facility from Citi. One surprising detail: it lasts just 364 days."
     ],
     "introZh": [
-      "你在 App 里看了一双鞋，过了一会儿，优惠消息就来了。Salesforce 正准备花几十亿美元，买下让这种消息在恰当时刻出现的技术。"
+      "AI 算力需求旺盛，但芯片和数据中心要先花钱建设，之后才能开始赚钱。10 月 22 日，AI 云服务商 Nebius 宣布获得 Citi 提供的 35 亿美元融资额度。值得注意的是，期限只有 364 天。"
     ],
     "sections": [
       {
         "heading": "What happened?",
         "headingZh": "发生了什么？",
         "paragraphs": [
-          "On October 20, Salesforce announced an agreement to acquire Braze, a customer-engagement software company, for about $5.66 billion in enterprise value. The proposed deal would pay Braze Class A shareholders $47.50 a share in cash. Braze says it serves around 2,770 customers, including Canva, Instacart and Venmo."
+          "Amsterdam-headquartered Nebius said it had secured a $3.5 billion senior secured credit facility provided by Citi. It plans to use the borrowing capacity for data-center development, GPU purchases and general corporate purposes. A credit facility is access to financing, not a grant or proof that all the money has already been borrowed."
         ],
         "paragraphsZh": [
-          "10 月 20 日，Salesforce 宣布与客户互动软件公司 Braze 达成收购协议，按企业价值计算，交易金额约 56.6 亿美元。按协议，Braze 的 A 类普通股股东每股可获得 47.50 美元现金。Braze 称自己有约 2,770 家客户，包括 Canva、Instacart 和 Venmo。"
+          "总部位于阿姆斯特丹的 Nebius 表示，已获得 Citi 提供的 35 亿美元高级担保信贷额度，计划用于建设数据中心、采购 GPU，以及一般企业用途。需要区分的是：获得信贷额度不等于拿到一笔无需偿还的资金，也不代表 35 亿美元已经全部借出。"
         ]
       },
       {
-        "heading": "What exactly is Salesforce buying?",
-        "headingZh": "Salesforce 到底想买什么？",
+        "heading": "Why only 364 days?",
+        "headingZh": "为什么只借 364 天？",
         "paragraphs": [
-          "According to Salesforce and Braze, Braze helps brands respond to what customers do in real time: browsing a website, using an app or making a purchase. The companies say its software coordinates messages across email, apps, websites and services such as WhatsApp. They also say BrazeAI adds tools to help choose the message, offer, channel and timing. Salesforce wants to combine that with its customer data and AI-agent products, but the integration has not happened yet."
+          "Building an AI data center means paying for construction and equipment before the machines generate revenue. Nebius says this facility gives it flexibility over when and how to raise longer-term capital for projects in 2027 and beyond. It initially carries interest at Term SOFR plus 2.75 percentage points, with the margin potentially rising to 3.50 points, subject to adjustments. That is not a fixed total interest rate of 2.75%."
         ],
         "paragraphsZh": [
-          "据 Salesforce 和 Braze 两家公司介绍，Braze 的软件能根据用户的实时行为调整沟通方式，比如浏览网站、使用 App 或完成购买。两家公司表示，这套软件可以协调邮件、App、网站和 WhatsApp 等渠道上的消息。据两家公司介绍，BrazeAI 进一步帮助企业选择内容、优惠、发送渠道和时机。Salesforce 希望把这些能力与自己的客户数据及 AI Agent 产品结合，但目前还没有完成整合。"
+          "建 AI 数据中心需要先支付昂贵的芯片和建设费用，设备投入运营后才可能产生收入。Nebius 表示，这笔短期融资能让它更灵活地安排 2027 年及之后的长期融资。初始利率为 Term SOFR 加 2.75 个百分点，利差可能升至 3.50 个百分点，另有调整条款。也就是说，2.75% 并不是这笔贷款的固定总利率。"
         ]
       },
       {
-        "heading": "Why is this an AI story?",
-        "headingZh": "这为什么是一条 AI 新闻？",
+        "heading": "Does it already have customers?",
+        "headingZh": "已经有客户了吗？",
         "paragraphs": [
-          "Generating a marketing message is becoming easier. The harder commercial question is what to say, to whom, and when. Salesforce is betting that software able to act on live customer signals will become more valuable as businesses adopt AI."
+          "The company says it has more than $40 billion in long-term customer commitments, including from Microsoft and Meta. Those are contractual commitments, not cash already received. In July, Nebius also announced approximately $775 million in secured debt financing."
         ],
         "paragraphsZh": [
-          "用 AI 写一条营销消息越来越容易，真正难的是决定发给谁、说什么、什么时候发。Salesforce 赌的是：能根据用户实时行为采取行动的软件，会越来越值钱。"
+          "Nebius 称，来自微软、Meta 等客户的长期合同承诺总额超过 400 亿美元。但合同承诺不等于已经收到的现金。今年 7 月，它还宣布获得约 7.75 亿美元的担保债务融资。这次的新额度，是支持扩建的另一种资金来源。"
         ]
       },
       {
-        "heading": "What happens next?",
-        "headingZh": "接下来呢？",
+        "heading": "What's the risk?",
+        "headingZh": "风险在哪里？",
         "paragraphs": [
-          "This is an agreement, not a completed takeover. Salesforce expects the transaction to close in its fiscal year 2028, subject to shareholder and regulatory approvals. For consumers, the result could be more useful reminders—or messages that feel a little too well timed."
+          "Lenders and investors still have to judge whether today's enormous AI infrastructure spending will produce dependable future cash flow. A short-term facility helps with timing, but does not eliminate refinancing or execution risk. Reuters reported the deal amid wider pressure on some AI-infrastructure debt."
         ],
         "paragraphsZh": [
-          "这只是已签署的收购协议，交易尚未完成。Salesforce 预计在其 2028 财年完成交易，仍需获得股东及监管批准。对普通人来说，未来可能收到更有用的提醒，也可能觉得广告来得有点过于及时。"
+          "贷款机构和投资者仍要判断：今天巨额的 AI 基础设施投入，未来能否转化为稳定现金流。短期融资可以缓解资金安排压力，却不能消除未来再融资和项目交付的风险。路透社指出，这次交易发生在部分 AI 基础设施债券遭遇抛售的背景下。"
         ]
       }
     ],
-    "ending": "When marketing gets better at reading the moment, will it feel more helpful—or harder to ignore?",
-    "endingZh": "当营销越来越会挑时机，我们会觉得它更贴心，还是更难躲开？",
+    "ending": "The AI race is also a financing race: getting the chips is one problem; paying for them at the right time is another.",
+    "endingZh": "AI 竞赛也是一场融资竞赛：买到芯片是一回事，能否在合适的时间筹到钱，是另一回事。",
     "sources": [
       {
-        "name": "Salesforce Investor Relations, joint announcement, Oct 20, 2026",
-        "nameZh": "Salesforce 投资者关系网站，双方联合公告，2026 年 10 月 20 日",
-        "url": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Signs-Definitive-Agreement-to-Acquire-Braze/default.aspx",
+        "name": "Nebius company announcement",
+        "nameZh": "Nebius 公司公告",
+        "url": "https://w.marketminute.com/article/bizwire-2026-10-22-nebius-secures-35-billion-financing-facility-with-citi",
         "official": true
       },
       {
-        "name": "Braze Investor Relations, joint announcement, Oct 20, 2026",
-        "nameZh": "Braze 投资者关系网站，双方联合公告，2026 年 10 月 20 日",
-        "url": "https://investors.braze.com/news/news-details/2026/Salesforce-Signs-Definitive-Agreement-to-Acquire-Braze/default.aspx",
+        "name": "Nebius prior financing",
+        "nameZh": "Nebius 前次融资公告",
+        "url": "https://nebius.com/newsroom/nebius-raises-775-million-in-first-secured-debt-financing-to-accelerate-global-buildout",
         "official": true
       },
       {
-        "name": "U.S. SEC Form 8-K filed Oct 20, 2026",
-        "nameZh": "美国证券交易委员会 8-K 文件，2026 年 10 月 20 日",
-        "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312526425881/d516983d8k.htm",
-        "official": true
-      },
-      {
-        "name": "Reuters, Oct 20, 2026 (independent reporting)",
-        "nameZh": "路透社，2026 年 10 月 20 日（独立报道）",
-        "url": "https://www.reuters.com/business/salesforce-acquire-braze-566-billion-deal-2026-10-20/",
+        "name": "Reuters",
+        "nameZh": "路透社",
+        "url": "https://www.reuters.com/technology/nebius-gets-35-billion-citi-facility-data-center-growth-2026-10-22/",
         "official": false
       }
     ]
   },
   "stayCurious": {
-    "category": "Singapore / Urban Life / Public Housing",
-    "categoryZh": "新加坡 / 城市生活 / 公共住房",
-    "headline": "Why Do So Many Singapore HDB Blocks Leave the Ground Floor Open?",
-    "headlineZh": "为什么新加坡很多组屋的一楼都是空的？",
+    "category": "Singapore / Nature / Everyday Life",
+    "categoryZh": "新加坡 / 自然 / 日常生活",
+    "headline": "Why Do Singapore's Rain Trees Close Their Leaves Before Dark?",
+    "headlineZh": "新加坡的雨树，为什么天还没黑就把叶子合起来？",
     "intro": [
-      "Land in Singapore is precious. So why do so many HDB blocks stand on pillars, with no apartments on the ground floor? That open space has a name: the void deck."
+      "The giant, umbrella-shaped trees along Singapore's roads seem perfectly still. Look closer in the late afternoon, though, and their tiny leaflets may already be folding. Locals have a name for this tree: Pukul Lima, or “five o'clock.”"
     ],
     "introZh": [
-      "新加坡土地这么贵，为什么很多组屋的一楼却没有住宅，只留下一排柱子和空地？这种空间有个名字：void deck，组屋底层的公共空间。"
+      "新加坡路边常见一种树冠像大伞的大树。下午晚些时候仔细看，你可能会发现它的小叶片已经开始合拢。它还有个马来语名字：Pukul Lima，意思是“五点钟”。"
     ],
     "sections": [
       {
-        "heading": "Was it designed for the weather?",
-        "headingZh": "是为了适应热带天气吗？",
+        "heading": "Is the tree going to sleep?",
+        "headingZh": "它是在睡觉吗？",
         "paragraphs": [
-          "That's part of the story. Open ground floors allow air to move through buildings, offer shelter from sun and rain, and can help with flood prevention. In 1967, planner Alan Choe described an open transition level in a mixed-use HDB complex in Chinatown as a buffer to improve cross-ventilation and make the building look less bulky. He separately proposed using the space for play and recreation. The idea later spread through public housing."
+          "In a way, yes. The Rain Tree (Samanea saman) is known for leaflets that fold in the early evening and open again after daylight returns. Botanists call this kind of daily leaf movement nyctinasty. The whole tree isn't closing; the small leaflets are changing position."
         ],
         "paragraphsZh": [
-          "这是原因之一。开放式底层有利于空气流通，能遮阳挡雨，也有助于防洪。1967 年，规划师 Alan Choe 曾介绍牛车水一个组屋商住综合项目中的开放式过渡楼层：它能促进空气流通，也让建筑看起来不那么厚重。他还另外建议将这片空间用于儿童玩耍和休闲活动。后来，这种设计逐渐在公共住房中普及。"
+          "某种程度上，可以这样理解。雨树（学名 Samanea saman）的小叶片会在傍晚合拢，天亮后再展开。植物学把这种随昼夜节律发生的叶片运动称为感夜运动（nyctinasty）。并不是整棵树收起来，而是细小的叶片改变了位置。"
         ]
       },
       {
-        "heading": "What about the children?",
-        "headingZh": "那孩子们呢？",
+        "heading": "Why “five o'clock”?",
+        "headingZh": "为什么叫“五点钟”？",
         "paragraphs": [
-          "In 1973, then National Development Minister E. W. Barker decided to keep the ground floors of public housing blocks open, primarily for children, because recreational space was scarce. Over time, void decks became places for neighbours to meet, as well as venues for Malay weddings and Chinese funeral wakes. Today, many Malay couples choose dedicated wedding venues, although void deck weddings haven't disappeared."
+          "Singapore's National Parks Board (NParks) explains that the Malay nickname Pukul Lima comes from the tree's evening habit. Before Singapore and Malaysia changed standard time in 1982, 5 pm was closer to sunset. NParks' heritage-tree records say the leaflets begin closing around one and a half hours before sunset, so the name is a historical observation, not a precise timer for today's clock."
         ],
         "paragraphsZh": [
-          "1973 年，时任国家发展部长 E. W. Barker 决定将公共住房的底层保留为开放空间，主要供孩子们使用，因为当时缺少游乐空间。后来，这里也成了邻居碰面、举办马来婚礼和华人丧礼的场所。如今，许多马来新人转向专门的婚宴场地，但在组屋楼下办婚礼的传统并没有完全消失。"
+          "新加坡国家公园局（NParks）解释，马来语名称 Pukul Lima 来自雨树傍晚合叶的习惯。1982 年新加坡和马来西亚调整标准时间之前，下午五点更接近日落时分。NParks 的古树资料提到，雨树的小叶片大约在日落前一个半小时开始合拢。因此，“五点钟”是历史上留下的观察，并不表示今天一定准时五点合叶。"
         ]
       },
       {
-        "heading": "But doesn't leaving a floor empty cost money?",
-        "headingZh": "可是一楼不卖房，不就少赚钱吗？",
+        "heading": "Does it really predict rain?",
+        "headingZh": "它真的能预测下雨吗？",
         "paragraphs": [
-          "Potentially, yes. Singapore's Urban Redevelopment Authority counts void decks as gross floor area. Where a development has a fixed floor-area limit, open communal space can compete with space for apartments or shops. But that doesn't mean every block could simply add another full floor of homes; the trade-off depends on its design and planning limits."
+          "The leaves can also fold during overcast weather, which helps explain the English name Rain Tree. But that doesn't make it a reliable personal weather forecast. A folded leaf in the afternoon might simply reflect changing light conditions, not proof that a storm is coming."
         ],
         "paragraphsZh": [
-          "可能确实有机会成本。新加坡市区重建局（URA）规定，void deck 也计入建筑总楼面面积。如果一个项目的总楼面面积有上限，留给公共空间的面积就可能与住宅或商铺竞争。但这不代表每栋楼都能直接多盖一整层住宅，具体还取决于建筑设计和规划限制。"
+          "阴天时，雨树的叶片也可能合拢，这也是英文名称 Rain Tree 的由来之一。但不能因此把它当作可靠的天气预报。下午看到叶子收起来，可能只是光照变化，不一定意味着马上下雨。"
         ]
       },
       {
-        "heading": "So what does the space give back?",
-        "headingZh": "那这些空间换来了什么？",
+        "heading": "Where did these trees come from?",
+        "headingZh": "这种树原本就生长在新加坡吗？",
         "paragraphs": [
-          "One covered area can serve many households in different ways, on different days. It isn't empty in the way an unused apartment is empty."
+          "Despite being familiar across Singapore, the species is native to tropical America. NParks records its introduction to Singapore in 1876. Its broad crown provides generous shade, one reason it became a popular roadside tree."
         ],
         "paragraphsZh": [
-          "同一片有遮蔽的空间，可以在不同日子服务很多家庭。它看起来空着，却不是没有用途。"
+          "不是。虽然新加坡到处能见到雨树，但它原产于热带美洲。NParks 记录，它在 1876 年被引入新加坡。宽大的树冠能提供大片树荫，因此后来成为常见的行道树。"
         ]
       }
     ],
-    "ending": "In a city where space is expensive, the ground floor may be worth more to residents when nobody owns a flat on it.",
-    "endingZh": "在寸土寸金的城市里，一楼没有住户，反而可能让更多住户用得上它。",
+    "ending": "Next time you pass a Rain Tree in the afternoon, check its leaves. The tree may be keeping time in a way your phone never will.",
+    "endingZh": "下次下午经过雨树，不妨看看它的叶子。它用自己的方式记着时间，虽然和手机上的时钟不完全一样。",
     "sources": [
       {
-        "name": "URA, Public Spaces with Love (2025), void-deck history and climate functions",
-        "nameZh": "新加坡市区重建局《Public Spaces with Love》（2025），void deck 历史与气候功能",
-        "url": "https://www.ura.gov.sg/news/publications/public-spaces-with-love-book/",
+        "name": "NParks Flora & Fauna Web",
+        "nameZh": "新加坡国家公园局植物资料库",
+        "url": "https://www.nparks.gov.sg/florafaunaweb/flora/3/1/3106",
         "official": true
       },
       {
-        "name": "URA, Void Decks: GFA treatment (updated June 6, 2026)",
-        "nameZh": "新加坡市区重建局：void deck 的总楼面面积计算规则（2026 年 6 月 6 日更新）",
-        "url": "https://www.ura.gov.sg/guidelines/development-control/development-control-handbooks/gross-floor-area/void-decks/",
+        "name": "NParks Heritage Trees",
+        "nameZh": "新加坡国家公园局古树名录",
+        "url": "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2003-109/",
         "official": true
       },
       {
-        "name": "National Heritage Board, Void Decks (2013), historical and community uses",
-        "nameZh": "新加坡国家文物局《Void Decks》（2013），历史与社区用途",
-        "url": "https://www.roots.gov.sg/resources-landing/publications/ebooks/void-decks",
+        "name": "NParks educational sheet",
+        "nameZh": "新加坡国家公园局科普资料",
+        "url": "https://www.nparks.gov.sg/-/media/nparks-real-content/activities/family-time-with-nature/know-10-trees/1-rain-tree/raintree.ashx",
         "official": true
-      },
-      {
-        "name": "HDB, Foster Thriving Communities",
-        "nameZh": "新加坡建屋发展局：促进社区交流",
-        "url": "https://www.hdb.gov.sg/about-us/our-role/foster-thriving-communities",
-        "official": true
-      },
-      {
-        "name": "CNA, The Big Read on void decks (2024), independent reporting",
-        "nameZh": "CNA 深度报道（2024），独立采访与历史补充",
-        "url": "https://www.channelnewsasia.com/cna-insider/big-read/hdb-void-deck-community-spaces-void-decks-town-councils-today-big-read-4045611",
-        "official": false
       }
     ]
   }
