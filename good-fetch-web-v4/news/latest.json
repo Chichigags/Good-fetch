@@ -1,156 +1,136 @@
 {
   "format": "v2",
-  "date": "2026-10-23",
-  "publishedAt": "2026-10-23T08:10:00+08:00",
+  "date": "2026-10-24",
+  "publishedAt": "2026-10-24T08:15:00+08:00",
   "whatChanged": {
-    "category": "AI / Infrastructure / Finance",
-    "categoryZh": "AI / 基础设施 / 融资",
+    "category": "AI / Shopping / Agentic Commerce",
+    "categoryZh": "AI / 零售 / 智能体购物",
     "update": false,
-    "headline": "Nebius Secures $3.5 Billion for AI Data Centers. Why Borrow for Just One Year?",
-    "headlineZh": "Nebius 获得 35 亿美元融资额度，建 AI 数据中心为什么要借短期贷款？",
+    "headline": "Walmart Wants AI Agents to Shop for You. Who Controls the Checkout?",
+    "headlineZh": "沃尔玛欢迎 AI 替你购物，但谁有权按下付款键？",
     "intro": [
-      "AI computing power is in demand. But chips and data centers must be paid for before they start earning money. On October 22, AI cloud provider Nebius announced a $3.5 billion financing facility from Citi. One surprising detail: it lasts just 364 days."
+      "Imagine asking an AI assistant to restock your kitchen. It finds your usual milk and bread, then places the order. Convenient—until it buys something you never asked for. On October 21, Walmart announced a new way for outside AI agents to shop at Walmart and Sam’s Club, with separate permissions for each agent."
     ],
     "introZh": [
-      "AI 算力需求旺盛，但芯片和数据中心要先花钱建设，之后才能开始赚钱。10 月 22 日，AI 云服务商 Nebius 宣布获得 Citi 提供的 35 亿美元融资额度。值得注意的是，期限只有 364 天。"
+      "想象一下：你让 AI 助手补货，它找到你常买的牛奶和面包，顺手下单。方便是方便，但如果它买了你没让它买的东西呢？10 月 21 日，沃尔玛宣布一套让外部 AI 智能体在 Walmart 和 Sam’s Club 购物的新机制，重点是给每个智能体单独设置权限。"
     ],
     "sections": [
       {
-        "heading": "What happened?",
-        "headingZh": "发生了什么？",
+        "heading": "How can shoppers control each AI agent?",
+        "headingZh": "用户怎么管理每个购物 AI？",
         "paragraphs": [
-          "Amsterdam-headquartered Nebius said it had secured a $3.5 billion senior secured credit facility provided by Citi. It plans to use the borrowing capacity for data-center development, GPU purchases and general corporate purposes. A credit facility is access to financing, not a grant or proof that all the money has already been borrowed."
+          "Walmart's planned Agent Profiles will show which purchases an AI agent made, separately from the customer's own orders. Shoppers will be able to require approval for each purchase or set a spending limit, and revoke an agent's access. Walmart says its rules require approval by default, and it may request extra approval even within a limit. Under Walmart's terms, agents cannot add or change payment methods or receive customers' payment-card details."
         ],
         "paragraphsZh": [
-          "总部位于阿姆斯特丹的 Nebius 表示，已获得 Citi 提供的 35 亿美元高级担保信贷额度，计划用于建设数据中心、采购 GPU，以及一般企业用途。需要区分的是：获得信贷额度不等于拿到一笔无需偿还的资金，也不代表 35 亿美元已经全部借出。"
+          "沃尔玛计划推出 Agent Profiles，让用户分清哪些订单是自己下的，哪些是 AI 智能体下的。用户可以要求每笔订单都先确认，也可以设定消费上限，并随时撤销授权。沃尔玛表示，默认规则是购买前需要用户批准；即使订单在限额内，平台也可能要求额外确认。按照沃尔玛公布的条款，智能体不能添加或修改付款方式，也不会收到用户的银行卡资料。"
         ]
       },
       {
-        "heading": "Why only 364 days?",
-        "headingZh": "为什么只借 364 天？",
+        "heading": "How can agents shop without clicking through a website?",
+        "headingZh": "AI 不用点网页，怎么直接购物？",
         "paragraphs": [
-          "Building an AI data center means paying for construction and equipment before the machines generate revenue. Nebius says this facility gives it flexibility over when and how to raise longer-term capital for projects in 2027 and beyond. It initially carries interest at Term SOFR plus 2.75 percentage points, with the margin potentially rising to 3.50 points, subject to adjustments. That is not a fixed total interest rate of 2.75%."
+          "The Walmart Agent Gateway is intended to connect approved AI assistants directly to shopping systems, rather than making them navigate a website designed for people. Walmart describes it as an MCP-based connection—a standard way for software assistants to use outside tools. The company says the gateway could help an agent find a customer's usual products without revealing the full shopping history to the agent. That is Walmart's design claim, not an independently tested privacy guarantee."
         ],
         "paragraphsZh": [
-          "建 AI 数据中心需要先支付昂贵的芯片和建设费用，设备投入运营后才可能产生收入。Nebius 表示，这笔短期融资能让它更灵活地安排 2027 年及之后的长期融资。初始利率为 Term SOFR 加 2.75 个百分点，利差可能升至 3.50 个百分点，另有调整条款。也就是说，2.75% 并不是这笔贷款的固定总利率。"
+          "另一个工具叫 Walmart Agent Gateway。它计划让获准接入的 AI 助手通过 MCP 连接购物系统。简单说，MCP 是让 AI 调用外部工具的一种标准接口，不必像人一样逐页点击网站。沃尔玛称，系统还可以帮 AI 找到用户常买的商品，而不把完整购物记录交给 AI。这是沃尔玛对产品设计的说明，不能直接当成已经过独立验证的隐私保障。"
         ]
       },
       {
-        "heading": "Does it already have customers?",
-        "headingZh": "已经有客户了吗？",
+        "heading": "What works today—and what is still coming?",
+        "headingZh": "哪些已经能用，哪些还要等？",
         "paragraphs": [
-          "The company says it has more than $40 billion in long-term customer commitments, including from Microsoft and Meta. Those are contractual commitments, not cash already received. In July, Nebius also announced approximately $775 million in secured debt financing."
+          "Walmart announced the tools on October 21, 2026. Its Agent Gateway is an early, invitation-only beta for developers and companies; Walmart says Agent Profiles are planned for the coming month, but has not given a firm launch date. This is not yet a service that every shopper can use in full. Walmart also says its ordinary returns process applies if an agent acts unexpectedly. TechCrunch reports that Amazon has restricted some third-party shopping agents, in contrast to Walmart's approach."
         ],
         "paragraphsZh": [
-          "Nebius 称，来自微软、Meta 等客户的长期合同承诺总额超过 400 亿美元。但合同承诺不等于已经收到的现金。今年 7 月，它还宣布获得约 7.75 亿美元的担保债务融资。这次的新额度，是支持扩建的另一种资金来源。"
-        ]
-      },
-      {
-        "heading": "What's the risk?",
-        "headingZh": "风险在哪里？",
-        "paragraphs": [
-          "Lenders and investors still have to judge whether today's enormous AI infrastructure spending will produce dependable future cash flow. A short-term facility helps with timing, but does not eliminate refinancing or execution risk. Reuters reported the deal amid wider pressure on some AI-infrastructure debt."
-        ],
-        "paragraphsZh": [
-          "贷款机构和投资者仍要判断：今天巨额的 AI 基础设施投入，未来能否转化为稳定现金流。短期融资可以缓解资金安排压力，却不能消除未来再融资和项目交付的风险。路透社指出，这次交易发生在部分 AI 基础设施债券遭遇抛售的背景下。"
+          "这些功能于 2026 年 10 月 21 日公布。Agent Gateway 目前是面向企业和开发者、需要邀请的早期测试；沃尔玛表示，Agent Profiles 计划在接下来一个月推出，但尚未公布确切日期。普通用户还不能把整套功能当成已经全面上线。沃尔玛还表示，如果 AI 买错东西，仍适用其通常的退货流程。与此同时，据 TechCrunch 报道，亚马逊对部分第三方购物智能体采取了限制措施，两家零售商选择了不同的开放程度。"
         ]
       }
     ],
-    "ending": "The AI race is also a financing race: getting the chips is one problem; paying for them at the right time is another.",
-    "endingZh": "AI 竞赛也是一场融资竞赛：买到芯片是一回事，能否在合适的时间筹到钱，是另一回事。",
+    "ending": "A useful shopping agent needs more than a good recommendation. It needs permission to act—and limits on that permission.",
+    "endingZh": "能帮你挑东西的 AI 不难想象；真正关键的是，它什么时候可以替你付款，又在哪里必须停下来问你。",
     "sources": [
       {
-        "name": "Nebius company announcement",
-        "nameZh": "Nebius 公司公告",
-        "url": "https://w.marketminute.com/article/bizwire-2026-10-22-nebius-secures-35-billion-financing-facility-with-citi",
+        "name": "Walmart corporate announcement",
+        "nameZh": "沃尔玛官方公告",
+        "url": "https://corporate.walmart.com/news/2026/10/Making-It-Possible-for-Agents-to-Shop-on-Behalf-of-Customers",
         "official": true
       },
       {
-        "name": "Nebius prior financing",
-        "nameZh": "Nebius 前次融资公告",
-        "url": "https://nebius.com/newsroom/nebius-raises-775-million-in-first-secured-debt-financing-to-accelerate-global-buildout",
+        "name": "Walmart Agent Gateway beta page",
+        "nameZh": "沃尔玛 Agent Gateway 测试页面",
+        "url": "https://www.walmart.com/cp/walmart-agent-gateway/1280482",
         "official": true
       },
       {
-        "name": "Reuters",
-        "nameZh": "路透社",
-        "url": "https://www.reuters.com/technology/nebius-gets-35-billion-citi-facility-data-center-growth-2026-10-22/",
+        "name": "TechCrunch reporting",
+        "nameZh": "TechCrunch 独立报道",
+        "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
         "official": false
       }
     ]
   },
   "stayCurious": {
-    "category": "Singapore / Nature / Everyday Life",
-    "categoryZh": "新加坡 / 自然 / 日常生活",
-    "headline": "Why Do Singapore's Rain Trees Close Their Leaves Before Dark?",
-    "headlineZh": "新加坡的雨树，为什么天还没黑就把叶子合起来？",
+    "category": "Singapore / Wildlife / Science",
+    "categoryZh": "新加坡 / 野生动物 / 科学",
+    "headline": "Singapore Has a “Crab” With Blue Blood. Why Does Medicine Care?",
+    "headlineZh": "新加坡海边有种蓝血“螃蟹”，为什么医药行业需要它？",
     "intro": [
-      "The giant, umbrella-shaped trees along Singapore's roads seem perfectly still. Look closer in the late afternoon, though, and their tiny leaflets may already be folding. Locals have a name for this tree: Pukul Lima, or “five o'clock.”"
+      "On Singapore's sandy and muddy shores lives an animal that looks like a small armoured spaceship: the coastal horseshoe crab. It isn't a true crab, and its blood is blue. Even more surprising, a defence system in horseshoe-crab blood helped inspire a safety test used in medicine."
     ],
     "introZh": [
-      "新加坡路边常见一种树冠像大伞的大树。下午晚些时候仔细看，你可能会发现它的小叶片已经开始合拢。它还有个马来语名字：Pukul Lima，意思是“五点钟”。"
+      "在新加坡的沙滩和泥滩上，生活着一种长得像小型装甲飞船的动物：海滨鲎。它虽然叫“蟹”，却不是真正的螃蟹，血液还是蓝色的。更有意思的是，鲎血中的一种防御机制，后来成了医药安全检测的重要工具。"
     ],
     "sections": [
       {
-        "heading": "Is the tree going to sleep?",
-        "headingZh": "它是在睡觉吗？",
+        "heading": "Why is its blood blue?",
+        "headingZh": "为什么它的血是蓝色的？",
         "paragraphs": [
-          "In a way, yes. The Rain Tree (Samanea saman) is known for leaflets that fold in the early evening and open again after daylight returns. Botanists call this kind of daily leaf movement nyctinasty. The whole tree isn't closing; the small leaflets are changing position."
+          "Singapore's National Parks Board identifies the local coastal horseshoe crab as Tachypleus gigas. Horseshoe crabs are more closely related to spiders than to true crabs, and their lineage stretches back hundreds of millions of years. Their blood looks blue because it uses a copper-containing oxygen-carrying protein called hemocyanin. Our red blood, by contrast, gets its colour from iron-containing haemoglobin."
         ],
         "paragraphsZh": [
-          "某种程度上，可以这样理解。雨树（学名 Samanea saman）的小叶片会在傍晚合拢，天亮后再展开。植物学把这种随昼夜节律发生的叶片运动称为感夜运动（nyctinasty）。并不是整棵树收起来，而是细小的叶片改变了位置。"
+          "新加坡国家公园局（NParks）介绍，本地的海滨鲎学名是 Tachypleus gigas。鲎和蜘蛛的亲缘关系，比它与真正螃蟹的关系更近；这一类动物的演化历史可追溯到数亿年前。它们的血液之所以呈蓝色，是因为负责运送氧气的血蓝蛋白含有铜。人类的血液则依靠含铁的血红蛋白运氧，所以呈红色。"
         ]
       },
       {
-        "heading": "Why “five o'clock”?",
-        "headingZh": "为什么叫“五点钟”？",
+        "heading": "What makes its blood cells useful to medicine?",
+        "headingZh": "医药检测为什么需要它的血细胞？",
         "paragraphs": [
-          "Singapore's National Parks Board (NParks) explains that the Malay nickname Pukul Lima comes from the tree's evening habit. Before Singapore and Malaysia changed standard time in 1982, 5 pm was closer to sunset. NParks' heritage-tree records say the leaflets begin closing around one and a half hours before sunset, so the name is a historical observation, not a precise timer for today's clock."
+          "The blue pigment is not what detects contamination. Certain horseshoe-crab blood cells react to bacterial endotoxins—substances associated with some bacteria—by triggering a clotting response. Scientists developed the Limulus Amebocyte Lysate (LAL) test from this response, based on research on the Atlantic horseshoe crab (Limulus polyphemus). The test's name comes from the animal's genus, Limulus. The test helps manufacturers check medicines and medical products for bacterial endotoxins. That does not mean every blue-blooded horseshoe crab on a Singapore beach is used in that test."
         ],
         "paragraphsZh": [
-          "新加坡国家公园局（NParks）解释，马来语名称 Pukul Lima 来自雨树傍晚合叶的习惯。1982 年新加坡和马来西亚调整标准时间之前，下午五点更接近日落时分。NParks 的古树资料提到，雨树的小叶片大约在日落前一个半小时开始合拢。因此，“五点钟”是历史上留下的观察，并不表示今天一定准时五点合叶。"
+          "这里有个容易误会的地方：血液是蓝色的，和能检测污染，不是同一个原理。某些鲎的血细胞遇到细菌内毒素，会触发凝结反应。科学家基于对大西洋鲎（Limulus polyphemus）的研究，利用这种反应开发出 LAL 检测法；名称中的 Limulus 就是它所属的属名。这种检测法帮助药品和医疗产品生产商检查细菌内毒素。这不意味着新加坡海边每一只海滨鲎都被拿去做这种检测。"
         ]
       },
       {
-        "heading": "Does it really predict rain?",
-        "headingZh": "它真的能预测下雨吗？",
+        "heading": "What threatens this ancient animal?",
+        "headingZh": "这种古老动物如今面临什么问题？",
         "paragraphs": [
-          "The leaves can also fold during overcast weather, which helps explain the English name Rain Tree. But that doesn't make it a reliable personal weather forecast. A folded leaf in the afternoon might simply reflect changing light conditions, not proof that a storm is coming."
+          "NParks lists Singapore's coastal horseshoe crab as nationally Endangered, citing habitat loss. The animals also matter to shore ecosystems: their eggs feed birds, fish and other wildlife. In August 2026, the US Food and Drug Administration described a collaborative assessment of a recombinant endotoxin test that does not require horseshoe-crab-derived material. The assessment concerned a manufacturing-change protocol approved in June 2026; it did not mean all pharmaceutical testing had already switched."
         ],
         "paragraphsZh": [
-          "阴天时，雨树的叶片也可能合拢，这也是英文名称 Rain Tree 的由来之一。但不能因此把它当作可靠的天气预报。下午看到叶子收起来，可能只是光照变化，不一定意味着马上下雨。"
-        ]
-      },
-      {
-        "heading": "Where did these trees come from?",
-        "headingZh": "这种树原本就生长在新加坡吗？",
-        "paragraphs": [
-          "Despite being familiar across Singapore, the species is native to tropical America. NParks records its introduction to Singapore in 1876. Its broad crown provides generous shade, one reason it became a popular roadside tree."
-        ],
-        "paragraphsZh": [
-          "不是。虽然新加坡到处能见到雨树，但它原产于热带美洲。NParks 记录，它在 1876 年被引入新加坡。宽大的树冠能提供大片树荫，因此后来成为常见的行道树。"
+          "NParks 将新加坡的海滨鲎列为本地濒危物种，栖息地减少是原因之一。它们的卵还是岸鸟、鱼类等动物的食物。另一方面，医药行业也在寻找不依赖鲎血的替代检测方法。美国食品药品监督管理局（FDA）在 2026 年 8 月介绍了一项国际合作评估：一种使用重组试剂的内毒素检测方案，不需要鲎来源的材料。相关生产变更方案已于同年 6 月获批，但这并不等于所有药品检测已经改用新方法。"
         ]
       }
     ],
-    "ending": "Next time you pass a Rain Tree in the afternoon, check its leaves. The tree may be keeping time in a way your phone never will.",
-    "endingZh": "下次下午经过雨树，不妨看看它的叶子。它用自己的方式记着时间，虽然和手机上的时钟不完全一样。",
+    "ending": "The next time you see a horseshoe crab on a Singapore shore, you're looking at an ancient animal with a surprisingly modern connection to medicine.",
+    "endingZh": "下次在新加坡海边看到鲎，可以多看一眼：它身上藏着一段连接古老生命和现代医药的故事。",
     "sources": [
       {
-        "name": "NParks Flora & Fauna Web",
-        "nameZh": "新加坡国家公园局植物资料库",
-        "url": "https://www.nparks.gov.sg/florafaunaweb/flora/3/1/3106",
+        "name": "NParks BiodiversitySG: Coastal Horseshoe Crab",
+        "nameZh": "新加坡国家公园局海滨鲎资料",
+        "url": "https://biodiversitysg.nparks.gov.sg/our-biodiversity/marine-invertebrates/marine-arthropods/coastal-horseshoe-crab/",
         "official": true
       },
       {
-        "name": "NParks Heritage Trees",
-        "nameZh": "新加坡国家公园局古树名录",
-        "url": "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2003-109/",
+        "name": "US FDA: Of Bacteria and Bad Actors",
+        "nameZh": "美国 FDA 鲎血检测原理介绍",
+        "url": "https://www.fda.gov/about-fda/regulatory-news-stories-and-features/bacteria-and-bad-actors",
         "official": true
       },
       {
-        "name": "NParks educational sheet",
-        "nameZh": "新加坡国家公园局科普资料",
-        "url": "https://www.nparks.gov.sg/-/media/nparks-real-content/activities/family-time-with-nature/know-10-trees/1-rain-tree/raintree.ashx",
+        "name": "US FDA: International Collaboration on Recombinant Testing",
+        "nameZh": "美国 FDA 2026 年替代检测进展",
+        "url": "https://www.fda.gov/drugs/drug-alerts-and-statements/international-collaboration-advance-new-testing-methods-reduce-reliance-horseshoe-crab-blood",
         "official": true
       }
     ]
