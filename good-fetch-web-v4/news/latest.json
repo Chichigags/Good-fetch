@@ -1,160 +1,148 @@
 {
   "format": "v2",
-  "date": "2026-10-26",
-  "publishedAt": "2026-10-26T08:10:00+08:00",
+  "date": "2026-10-27",
+  "publishedAt": "2026-10-27T08:09:00+08:00",
   "whatChanged": {
-    "category": "AI / Voice / Research",
-    "categoryZh": "AI / 语音 / 研究",
+    "category": "AI / Business / IPO",
+    "categoryZh": "AI / 商业 / 上市",
     "update": false,
-    "headline": "Block Says Its Voice AI Learned Without Text. What Did It Learn?",
-    "headlineZh": "Block 称 AI 只靠听人说话学会聊天。它究竟学会了什么？",
+    "headline": "Anthropic Files for an IPO: $16.3 Billion in Half-Year Revenue, but an $80.7 Billion Loss?",
+    "headlineZh": "Anthropic 申请上市：半年收入 163 亿美元，亏损却达 807 亿美元？",
     "intro": [
-      "When someone says “I'm fine,” the words alone don't tell you whether they're cheerful, annoyed or close to tears. Block's research lab is trying a different way to build voice AI: teach a model from recorded conversations, without first turning speech into text.",
-      "On October 23, Block introduced Dessa, a speech-to-speech research model. In the company's demonstrations, it interrupts, laughs mid-conversation and responds with different tones of voice. Those are demonstrations, not yet independently established performance results."
+      "Anthropic publicly filed to go public on October 26, officially disclosing detailed financial figures to investors. Its preliminary prospectus reports $16.286 billion in revenue for the first half of 2026, but also an $80.748 billion net loss. Those figures describe very different things. Most of the headline loss came from an accounting revaluation of financing instruments, not from the cost of operating Claude."
     ],
     "introZh": [
-      "有人说“我没事”，光看这三个字，很难判断对方是在开心、赌气，还是快哭了。Block 的研究团队尝试换一种方法训练语音 AI：让模型直接听人类对话，不先把声音变成文字。",
-      "2026 年 10 月 23 日，Block 公布了语音研究模型 Dessa。公司展示的对话里，它会插话、在说话途中笑出声，也会改变语气。不过，这些还是公司提供的演示，并非已经得到独立验证的性能结论。"
+      "2026 年 10 月 26 日，Anthropic 正式公开提交上市申请，首次正式披露详细财务数据。招股书显示，2026 年上半年收入为 162.86 亿美元，净亏损却高达 807.48 亿美元。两个数字看似矛盾，关键在于：巨额净亏损主要来自融资工具的会计估值调整，并非 Claude 业务日常运营花掉了这么多钱。"
     ],
     "sections": [
       {
-        "heading": "How does a model learn without reading?",
-        "headingZh": "不看文字，AI 怎么学会聊天？",
+        "heading": "What did Anthropic file on October 26?",
+        "headingZh": "10 月 26 日，Anthropic 提交了什么文件？",
         "paragraphs": [
-          "Block says Dessa was trained from scratch on recordings of human conversation, with no text data and no pretrained models. It takes speech as input and produces speech directly. The aim is to preserve information a transcript can lose: pauses, emphasis, timing and changes in tone. A sentence can mean something quite different depending on which word the speaker stresses.",
-          "The team calls Dessa “full-duplex.” That means it can listen while talking, rather than waiting for one person to finish every sentence. In the published clips, it sometimes reacts with a laugh or a short acknowledgment before the speaker has finished."
+          "Anthropic filed a Form S-1 registration statement with the US Securities and Exchange Commission. It intends to list Class A shares on Nasdaq under the symbol ANT. This is a proposed initial public offering, not a completed listing: the company has not yet set the number of shares or price range, and the registration statement is not yet effective."
         ],
         "paragraphsZh": [
-          "Block 表示，Dessa 从零开始训练，学习材料只有人类对话录音，没有文字数据，也没有使用预训练模型。它直接接收声音、生成声音，试图保留转写成文字时容易丢失的信息：停顿、重音、说话节奏和语气变化。同一句话，强调不同的词，意思就可能不同。",
-          "团队把 Dessa 称为“全双工”语音模型，意思是它能边听边说，不必每次都等对方把一句话说完。公司公布的片段里，它有时会在对方说话途中笑出来，或用简短的回应表示自己在听。"
+          "Anthropic 向美国证券交易委员会（SEC）公开提交了 S-1 上市注册文件，计划以 ANT 为股票代码在纳斯达克挂牌。这仍是拟议中的首次公开募股（IPO），并非已经上市。发行股数和价格区间尚未确定，注册文件也还没有生效。"
         ]
       },
       {
-        "heading": "Does it need a huge data centre to talk?",
-        "headingZh": "这样的 AI 需要大型数据中心才能运行吗？",
+        "heading": "Why is the net loss so much bigger than the operating loss?",
+        "headingZh": "为什么净亏损远高于营业亏损？",
         "paragraphs": [
-          "Block says it trained Dessa using one NVIDIA GB200 NVL72 system—a rack-scale machine, not one ordinary graphics card. The company also says the finished model can run locally on a MacBook Pro with an M4 Max chip or better. Training hardware and the hardware needed to run a trained model are two different things.",
-          "That local-running claim is interesting because it points to voice interfaces that may not need to send every exchange to a remote server. But Block has not publicly demonstrated a consumer product or published the independent tests needed to judge cost, reliability or privacy in real-world use."
+          "The filing shows first-half revenue of $16.286 billion, up from $1.163 billion in the same six months of 2025. Anthropic's operating loss—the result more closely tied to revenue and operating expenses—was $693 million, compared with an operating loss of about $2.1 billion a year earlier. The company was still loss-making on that measure, despite the much higher revenue.",
+          "The much larger $80.748 billion net loss includes roughly $72.4 billion in non-cash fair-value charges related to convertible notes and other financing instruments. Another $8.8 billion in net other expenses came largely from the accounting valuation of financing agreements. As Anthropic's estimated value rose, the accounting value of certain obligations to investors rose too, creating large charges on the income statement. These are real accounting losses, but they do not mean the company paid those amounts in cash during the six months."
         ],
         "paragraphsZh": [
-          "Block 称，训练 Dessa 使用了一套 NVIDIA GB200 NVL72 系统。这是一整套机架级设备，不能理解成一张普通显卡。公司还表示，训练完成的模型可以在配备 M4 Max 芯片或更高配置的 MacBook Pro 上本地运行。训练模型需要的硬件，与日常运行模型的硬件，是两回事。",
-          "如果本地运行能真正普及，语音助手就未必每次都要把对话送到远端服务器。但目前 Block 没有推出可供大众使用的产品，也没有公开足够的独立测试，让外界判断它在真实环境里的成本、稳定性和隐私表现。"
+          "招股书披露，2026 年上半年收入为 162.86 亿美元，去年同期为 11.63 亿美元。更接近日常经营情况的指标是营业亏损：今年上半年约 6.93 亿美元，去年同期约 21 亿美元。也就是说，收入增长很快，经营层面仍未实现盈利，但亏损幅度已经收窄。",
+          "那 807.48 亿美元净亏损又是怎么来的？其中约 724 亿美元是可转换票据等融资工具的公允价值变动带来的非现金会计费用；另有约 88 亿美元的其他净费用，主要也与融资协议的会计估值有关。简单说，随着公司估值上升，某些对投资者的融资义务在账面上也变得更值钱，因此产生了巨额损失。这些确实计入净亏损，但不代表公司在这半年真的支付了相应金额的现金。"
         ]
       },
       {
-        "heading": "Can people try it now?",
-        "headingZh": "现在能用到 Dessa 吗？",
+        "heading": "What the filing still cannot tell us",
+        "headingZh": "还有哪些问题没答案",
         "paragraphs": [
-          "Not yet for the general public. Block is inviting a small group of AI safety researchers to request early access, but there is no public model to test. The Verge also noted awkward moments and off-topic replies in the released clips.",
-          "The bigger question is whether sounding sensitive to emotion means the system reliably understands it. Dessa's recordings make that worth investigating; they do not settle it."
+          "Revenue is not profit, and a non-cash charge does not make the company's computing bills disappear. The prospectus gives investors more evidence about growth and costs, but future profitability remains uncertain. It also does not tell us the final IPO valuation: the offer price and share count are still blank."
         ],
         "paragraphsZh": [
-          "普通用户目前还不能试用。Block 邀请少量 AI 安全研究人员联系申请提前体验，但尚未开放公众使用渠道。The Verge 听过演示后也指出，有些对话仍然尴尬，甚至会突然跑题。",
-          "还有一个值得继续观察的问题：AI 能把情绪表现得很像人，是否就代表它真的能可靠地理解人的情绪？现有演示还不足以回答。"
+          "会计上的非现金损失，不等于经营没有成本；训练和运行 AI 模型依然需要大量算力支出。招股书让外界更清楚地看到增长和费用，但无法保证未来盈利。最终上市估值也还不能确定，因为发行价格和股数仍未公布。"
         ]
       }
     ],
-    "ending": "A convincing voice is easy to notice; dependable understanding will be harder to prove.",
-    "endingZh": "声音像不像人，很容易听出来；它能否真正可靠地理解人，还需要更多证据。",
+    "ending": "The most useful number isn't always the biggest one. Here, the operating result tells a different story from the headline net loss.",
+    "endingZh": "最大的数字未必最能说明经营情况。读这份招股书，营业亏损和净亏损必须分开看。",
     "sources": [
       {
-        "name": "Block — Dessa research preview",
-        "nameZh": "Block — Dessa 官方研究介绍",
-        "url": "https://block.xyz/dessa",
+        "name": "US SEC Form S-1",
+        "nameZh": "美国证券交易委员会 S-1 招股文件",
+        "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
         "official": true
       },
       {
-        "name": "The Verge — Dessa demonstrations and limitations",
-        "nameZh": "The Verge — Dessa 演示及局限报道",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
-        "official": false
+        "name": "Anthropic IPO announcement",
+        "nameZh": "Anthropic 上市申请公告",
+        "url": "https://www.anthropic.com/news/s1-sec",
+        "official": true
       },
       {
-        "name": "TechCrunch — Block's new voice model",
-        "nameZh": "TechCrunch — Block 语音模型报道",
-        "url": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+        "name": "TechCrunch report",
+        "nameZh": "TechCrunch 报道",
+        "url": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
         "official": false
       }
     ]
   },
   "stayCurious": {
-    "category": "Singapore / Weather / Everyday Life",
-    "categoryZh": "新加坡 / 天气 / 日常生活",
-    "headline": "Singapore Has Lightning on 176 Days a Year. Why So Often?",
-    "headlineZh": "新加坡平均一年有 176 天出现闪电，为什么这么频繁？",
+    "category": "Singapore / Wildlife / Everyday Life",
+    "categoryZh": "新加坡 / 野生动物 / 生活观察",
+    "headline": "Singapore's Most Common Bird Is a Newcomer—and Globally Vulnerable. How Can Both Be True?",
+    "headlineZh": "新加坡最常见的鸟，竟然是外来物种，全球还被列为易危？",
     "intro": [
-      "A sunny Singapore afternoon can turn into a thunderstorm quickly. Singapore's Meteorological Service says the Changi climate station records lightning on about 176 days a year—nearly every other day.",
-      "A “lightning day” means at least one detection at that station, not a strike in every neighbourhood."
+      "You have probably seen Javan Mynas hopping around a hawker centre, eyeing the ground for scraps. They're so familiar that it's easy to assume they have always lived here. Yet Singapore's most common bird arrived through the cage-bird trade, and the same species is classified as globally Vulnerable."
     ],
     "introZh": [
-      "新加坡的晴朗午后，有时转眼就变成雷雨天。气象署数据显示，樟宜气候观测站平均一年约有 176 天记录到闪电，接近每两天就有一天。",
-      "这里的“闪电日”是指观测站当天至少探测到一次闪电，不代表全岛每个地区都发生闪电。"
+      "在新加坡的小贩中心，你一定见过那种灰黑色、黄嘴黄脚、在地上蹦来蹦去的八哥。它们多到让人以为是本地老住户。其实，新加坡最常见的鸟是经笼养鸟贸易来到这里的外来物种，而且同一个物种在全球范围内被列为“易危”。"
     ],
     "sections": [
       {
-        "heading": "Why does Singapore get so many thunderstorms?",
-        "headingZh": "为什么新加坡这么容易形成雷雨？",
+        "heading": "When did this bird arrive in Singapore?",
+        "headingZh": "它是什么时候来到新加坡的？",
         "paragraphs": [
-          "Singapore's equatorial sunshine heats the ground, sending warm, humid air upwards. As it cools, clouds can grow into towering cumulonimbus clouds that produce lightning.",
-          "The sea helps too. Land heats faster than water, so afternoon sea breezes move inland and converge with other winds, helping thunderstorms form."
+          "The Javan Myna (Acridotheres javanicus) is native to Java and Bali in Indonesia. According to Singapore's National Parks Board (NParks), it was introduced here in the 1920s through the caged-bird trade. It adapted extremely well to city life: open spaces, accessible food and nesting holes in urban structures all suit it. NParks now calls it Singapore's most common bird."
         ],
         "paragraphsZh": [
-          "新加坡靠近赤道，阳光让地面升温，暖湿空气随之上升、冷却，形成云层。云层不断向上发展成高大的积雨云，就可能带来雷雨和闪电。",
-          "海风也很重要。陆地比海水升温快，午后海风向内陆流动，与其他气流汇合，容易形成雷雨云。"
+          "爪哇八哥（Javan Myna，学名 Acridotheres javanicus）原产于印尼的爪哇岛和巴厘岛。新加坡国家公园局（NParks）记载，它在 1920 年代通过笼养鸟贸易被引入新加坡。城市里的开阔地、容易找到的食物，以及适合筑巢的洞穴空间，让它迅速适应。如今，NParks 称它是新加坡数量最多的鸟。"
         ]
       },
       {
-        "heading": "Why are April and November especially active?",
-        "headingZh": "为什么 4 月和 11 月特别容易打雷？",
+        "heading": "Why is it vulnerable if it's everywhere here?",
+        "headingZh": "为什么这里到处都是，全球却“易危”？",
         "paragraphs": [
-          "Singapore's inter-monsoon periods fall around April–May and October–November. Lighter, variable winds favour afternoon storms. The Meteorological Service says lightning is typically most active in November, followed by April and May. Together, these months account for over half the year's lightning strokes.",
-          "The service separately reports about 167 thunderstorm days a year, a different measure from lightning days."
+          "The IUCN's latest published global assessment for this species, made in 2020, classifies the Javan Myna as Vulnerable and its overall population trend as decreasing. Heavy trapping for the bird trade in its native range is a major threat. A species can be abundant in an introduced location while declining where it originally evolved. Singapore's thriving population does not cancel out that wider conservation concern."
         ],
         "paragraphsZh": [
-          "新加坡的两段季风转换期大致在 4 月至 5 月、10 月至 11 月。此时风力较弱、风向多变，容易在午后形成局部雷雨。气象署指出，闪电活动通常以 11 月最多，其次是 4 月和 5 月；这些月份贡献了全年超过一半的闪电放电次数。",
-          "气象署还统计平均每年约 167 个“雷雨日”，与“闪电日”是不同指标。"
+          "国际自然保护联盟（IUCN）目前公布的该物种最新全球评估作于 2020 年，等级为“易危”（Vulnerable），总体数量趋势为下降。在原生分布地，为笼养鸟市场而进行的大量捕捉是主要威胁之一。同一个物种完全可能在被引入的城市大量繁殖，却在原本的家乡持续减少。新加坡的常见，不代表全球都安全。"
         ]
       },
       {
-        "heading": "Why can a lightning warning appear when it isn't raining?",
-        "headingZh": "没下雨，为什么也会收到闪电警报？",
+        "heading": "How to tell the two mynas apart",
+        "headingZh": "你看到的是哪一种八哥",
         "paragraphs": [
-          "Lightning can strike more than 10 km from a storm cloud, even when nearby skies seem clear.",
-          "In an August 2026 parliamentary reply, Singapore's Ministry of Sustainability and the Environment said myENV can alert users when cloud-to-ground lightning is detected, or thundery showers are forecast within two hours, inside a 6 km radius of a chosen location. It does not predict a strike at that exact spot.",
-          "If you hear thunder, seek shelter in a substantial building or enclosed vehicle—not under a tree or in a swimming pool. NEA advises waiting at least 30 minutes after the last thunder before resuming outdoor activities."
+          "Singapore also has the Common Myna, a native species. NParks says the introduced Javan Myna has dark grey plumage, while the Common Myna is brown with a conspicuous yellow patch of bare skin around its eyes. NParks attributes the Common Myna's local population decline to competition with the introduced Javan Myna."
         ],
         "paragraphsZh": [
-          "雷雨云不在头顶，也可能有危险。气象署指出，闪电有时可以落在距离雷雨云超过 10 公里的地方。",
-          "新加坡永续发展与环境部在 2026 年 8 月的国会答复中说明，如果用户选定位置周围 6 公里内探测到云对地闪电，或预报未来两小时会有雷阵雨，myENV 就可能发出提醒。这不代表闪电一定会击中该地点。",
-          "听到雷声，应进入稳固建筑物或封闭车辆，不要躲在树下或留在泳池里。国家环境局建议最后一次听到雷声后至少等待 30 分钟，再恢复户外活动。"
+          "新加坡还有本地原生的 Common Myna。NParks 提供了简单辨认方法：爪哇八哥全身偏深灰色；Common Myna 的身体更棕，眼睛周围有明显的黄色裸露皮肤。NParks 指出，本地 Common Myna 数量下降是因为受到外来爪哇八哥的竞争。"
+        ]
+      },
+      {
+        "heading": "Why the birds gather near food",
+        "headingZh": "为什么它们总在小贩中心附近",
+        "paragraphs": [
+          "Javan Mynas forage close to people and gather in large groups to roost. Food waste makes urban areas attractive. Singapore's Animal & Veterinary Service says feeding wildlife is prohibited under Singapore's Wildlife Act. Managing food waste and returning trays helps reduce the easy food supply. The bird is interesting to watch, but feeding it makes the urban wildlife problem harder to manage."
+        ],
+        "paragraphsZh": [
+          "爪哇八哥善于在人的生活环境里找食物，也会成群栖息。随手丢弃的食物残渣，对它们很有吸引力。新加坡动物与兽医事务组（AVS）指出，《野生动物法》禁止在新加坡喂食野生动物。妥善处理厨余、用餐后归还托盘，都是减少额外食物来源的方法。下次看到它们，可以观察，但别顺手分一口饭。"
         ]
       }
     ],
-    "ending": "In Singapore, the most useful weather question is sometimes not “Will it rain here?” but “Is there lightning nearby?”",
-    "endingZh": "在新加坡，有时比“这里会不会下雨”更值得先问的是：“附近有没有闪电？”",
+    "ending": "Next time a myna walks past your table, look at its eye patch. One small detail tells a much bigger story about how wildlife moves with people.",
+    "endingZh": "下次有八哥经过你的餐桌，不妨看看它眼睛周围的颜色。一点小差别，背后藏着物种随人类迁移的故事。",
     "sources": [
       {
-        "name": "Meteorological Service Singapore — Weather Systems",
-        "nameZh": "新加坡气象署 — 天气系统科普",
-        "url": "https://www.weather.gov.sg/learn_weather_systems/",
+        "name": "NParks BiodiversitySG Javan Myna",
+        "nameZh": "新加坡国家公园局爪哇八哥介绍",
+        "url": "https://biodiversitysg.nparks.gov.sg/our-biodiversity/birds/crows-starlings-mynas/javan-myna/",
         "official": true
       },
       {
-        "name": "Meteorological Service Singapore — Winds",
-        "nameZh": "新加坡气象署 — 风与海风效应",
-        "url": "https://www.weather.gov.sg/learn_winds/",
+        "name": "AVS Javan Mynas in Singapore",
+        "nameZh": "新加坡动物与兽医事务组八哥管理说明",
+        "url": "https://avs.nparks.gov.sg/wildlife/encountering-wildlife/house-crows-pigeons-javan-mynas/javan-mynas/",
         "official": true
       },
       {
-        "name": "Ministry of Sustainability and the Environment — Parliamentary reply, 4 Aug 2026",
-        "nameZh": "新加坡永续发展与环境部 — 2026 年 8 月 4 日国会书面答复",
-        "url": "https://www.mse.gov.sg/latest-news/written-reply-to-pq-on-lightning-alert-system/",
-        "official": true
-      },
-      {
-        "name": "National Environment Agency — Lightning safety poster",
-        "nameZh": "新加坡国家环境局 — 闪电安全指引",
-        "url": "https://www.nea.gov.sg/docs/default-source/resource/lightning-poster1%28school%29.pdf",
+        "name": "IUCN Red List 2020 assessment",
+        "nameZh": "IUCN 2020 年全球物种评估",
+        "url": "https://doi.org/10.2305/IUCN.UK.2020-3.RLTS.T103871334A176499647.en",
         "official": true
       }
     ]
