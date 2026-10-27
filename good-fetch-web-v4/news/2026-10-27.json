@@ -1,0 +1,150 @@
+{
+  "format": "v2",
+  "date": "2026-10-27",
+  "publishedAt": "2026-10-27T08:09:00+08:00",
+  "whatChanged": {
+    "category": "AI / Business / IPO",
+    "categoryZh": "AI / 商业 / 上市",
+    "update": false,
+    "headline": "Anthropic Files for an IPO: $16.3 Billion in Half-Year Revenue, but an $80.7 Billion Loss?",
+    "headlineZh": "Anthropic 申请上市：半年收入 163 亿美元，亏损却达 807 亿美元？",
+    "intro": [
+      "Anthropic publicly filed to go public on October 26, officially disclosing detailed financial figures to investors. Its preliminary prospectus reports $16.286 billion in revenue for the first half of 2026, but also an $80.748 billion net loss. Those figures describe very different things. Most of the headline loss came from an accounting revaluation of financing instruments, not from the cost of operating Claude."
+    ],
+    "introZh": [
+      "2026 年 10 月 26 日，Anthropic 正式公开提交上市申请，首次正式披露详细财务数据。招股书显示，2026 年上半年收入为 162.86 亿美元，净亏损却高达 807.48 亿美元。两个数字看似矛盾，关键在于：巨额净亏损主要来自融资工具的会计估值调整，并非 Claude 业务日常运营花掉了这么多钱。"
+    ],
+    "sections": [
+      {
+        "heading": "What did Anthropic file on October 26?",
+        "headingZh": "10 月 26 日，Anthropic 提交了什么文件？",
+        "paragraphs": [
+          "Anthropic filed a Form S-1 registration statement with the US Securities and Exchange Commission. It intends to list Class A shares on Nasdaq under the symbol ANT. This is a proposed initial public offering, not a completed listing: the company has not yet set the number of shares or price range, and the registration statement is not yet effective."
+        ],
+        "paragraphsZh": [
+          "Anthropic 向美国证券交易委员会（SEC）公开提交了 S-1 上市注册文件，计划以 ANT 为股票代码在纳斯达克挂牌。这仍是拟议中的首次公开募股（IPO），并非已经上市。发行股数和价格区间尚未确定，注册文件也还没有生效。"
+        ]
+      },
+      {
+        "heading": "Why is the net loss so much bigger than the operating loss?",
+        "headingZh": "为什么净亏损远高于营业亏损？",
+        "paragraphs": [
+          "The filing shows first-half revenue of $16.286 billion, up from $1.163 billion in the same six months of 2025. Anthropic's operating loss—the result more closely tied to revenue and operating expenses—was $693 million, compared with an operating loss of about $2.1 billion a year earlier. The company was still loss-making on that measure, despite the much higher revenue.",
+          "The much larger $80.748 billion net loss includes roughly $72.4 billion in non-cash fair-value charges related to convertible notes and other financing instruments. Another $8.8 billion in net other expenses came largely from the accounting valuation of financing agreements. As Anthropic's estimated value rose, the accounting value of certain obligations to investors rose too, creating large charges on the income statement. These are real accounting losses, but they do not mean the company paid those amounts in cash during the six months."
+        ],
+        "paragraphsZh": [
+          "招股书披露，2026 年上半年收入为 162.86 亿美元，去年同期为 11.63 亿美元。更接近日常经营情况的指标是营业亏损：今年上半年约 6.93 亿美元，去年同期约 21 亿美元。也就是说，收入增长很快，经营层面仍未实现盈利，但亏损幅度已经收窄。",
+          "那 807.48 亿美元净亏损又是怎么来的？其中约 724 亿美元是可转换票据等融资工具的公允价值变动带来的非现金会计费用；另有约 88 亿美元的其他净费用，主要也与融资协议的会计估值有关。简单说，随着公司估值上升，某些对投资者的融资义务在账面上也变得更值钱，因此产生了巨额损失。这些确实计入净亏损，但不代表公司在这半年真的支付了相应金额的现金。"
+        ]
+      },
+      {
+        "heading": "What the filing still cannot tell us",
+        "headingZh": "还有哪些问题没答案",
+        "paragraphs": [
+          "Revenue is not profit, and a non-cash charge does not make the company's computing bills disappear. The prospectus gives investors more evidence about growth and costs, but future profitability remains uncertain. It also does not tell us the final IPO valuation: the offer price and share count are still blank."
+        ],
+        "paragraphsZh": [
+          "会计上的非现金损失，不等于经营没有成本；训练和运行 AI 模型依然需要大量算力支出。招股书让外界更清楚地看到增长和费用，但无法保证未来盈利。最终上市估值也还不能确定，因为发行价格和股数仍未公布。"
+        ]
+      }
+    ],
+    "ending": "The most useful number isn't always the biggest one. Here, the operating result tells a different story from the headline net loss.",
+    "endingZh": "最大的数字未必最能说明经营情况。读这份招股书，营业亏损和净亏损必须分开看。",
+    "sources": [
+      {
+        "name": "US SEC Form S-1",
+        "nameZh": "美国证券交易委员会 S-1 招股文件",
+        "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+        "official": true
+      },
+      {
+        "name": "Anthropic IPO announcement",
+        "nameZh": "Anthropic 上市申请公告",
+        "url": "https://www.anthropic.com/news/s1-sec",
+        "official": true
+      },
+      {
+        "name": "TechCrunch report",
+        "nameZh": "TechCrunch 报道",
+        "url": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
+        "official": false
+      }
+    ]
+  },
+  "stayCurious": {
+    "category": "Singapore / Wildlife / Everyday Life",
+    "categoryZh": "新加坡 / 野生动物 / 生活观察",
+    "headline": "Singapore's Most Common Bird Is a Newcomer—and Globally Vulnerable. How Can Both Be True?",
+    "headlineZh": "新加坡最常见的鸟，竟然是外来物种，全球还被列为易危？",
+    "intro": [
+      "You have probably seen Javan Mynas hopping around a hawker centre, eyeing the ground for scraps. They're so familiar that it's easy to assume they have always lived here. Yet Singapore's most common bird arrived through the cage-bird trade, and the same species is classified as globally Vulnerable."
+    ],
+    "introZh": [
+      "在新加坡的小贩中心，你一定见过那种灰黑色、黄嘴黄脚、在地上蹦来蹦去的八哥。它们多到让人以为是本地老住户。其实，新加坡最常见的鸟是经笼养鸟贸易来到这里的外来物种，而且同一个物种在全球范围内被列为“易危”。"
+    ],
+    "sections": [
+      {
+        "heading": "When did this bird arrive in Singapore?",
+        "headingZh": "它是什么时候来到新加坡的？",
+        "paragraphs": [
+          "The Javan Myna (Acridotheres javanicus) is native to Java and Bali in Indonesia. According to Singapore's National Parks Board (NParks), it was introduced here in the 1920s through the caged-bird trade. It adapted extremely well to city life: open spaces, accessible food and nesting holes in urban structures all suit it. NParks now calls it Singapore's most common bird."
+        ],
+        "paragraphsZh": [
+          "爪哇八哥（Javan Myna，学名 Acridotheres javanicus）原产于印尼的爪哇岛和巴厘岛。新加坡国家公园局（NParks）记载，它在 1920 年代通过笼养鸟贸易被引入新加坡。城市里的开阔地、容易找到的食物，以及适合筑巢的洞穴空间，让它迅速适应。如今，NParks 称它是新加坡数量最多的鸟。"
+        ]
+      },
+      {
+        "heading": "Why is it vulnerable if it's everywhere here?",
+        "headingZh": "为什么这里到处都是，全球却“易危”？",
+        "paragraphs": [
+          "The IUCN's latest published global assessment for this species, made in 2020, classifies the Javan Myna as Vulnerable and its overall population trend as decreasing. Heavy trapping for the bird trade in its native range is a major threat. A species can be abundant in an introduced location while declining where it originally evolved. Singapore's thriving population does not cancel out that wider conservation concern."
+        ],
+        "paragraphsZh": [
+          "国际自然保护联盟（IUCN）目前公布的该物种最新全球评估作于 2020 年，等级为“易危”（Vulnerable），总体数量趋势为下降。在原生分布地，为笼养鸟市场而进行的大量捕捉是主要威胁之一。同一个物种完全可能在被引入的城市大量繁殖，却在原本的家乡持续减少。新加坡的常见，不代表全球都安全。"
+        ]
+      },
+      {
+        "heading": "How to tell the two mynas apart",
+        "headingZh": "你看到的是哪一种八哥",
+        "paragraphs": [
+          "Singapore also has the Common Myna, a native species. NParks says the introduced Javan Myna has dark grey plumage, while the Common Myna is brown with a conspicuous yellow patch of bare skin around its eyes. NParks attributes the Common Myna's local population decline to competition with the introduced Javan Myna."
+        ],
+        "paragraphsZh": [
+          "新加坡还有本地原生的 Common Myna。NParks 提供了简单辨认方法：爪哇八哥全身偏深灰色；Common Myna 的身体更棕，眼睛周围有明显的黄色裸露皮肤。NParks 指出，本地 Common Myna 数量下降是因为受到外来爪哇八哥的竞争。"
+        ]
+      },
+      {
+        "heading": "Why the birds gather near food",
+        "headingZh": "为什么它们总在小贩中心附近",
+        "paragraphs": [
+          "Javan Mynas forage close to people and gather in large groups to roost. Food waste makes urban areas attractive. Singapore's Animal & Veterinary Service says feeding wildlife is prohibited under Singapore's Wildlife Act. Managing food waste and returning trays helps reduce the easy food supply. The bird is interesting to watch, but feeding it makes the urban wildlife problem harder to manage."
+        ],
+        "paragraphsZh": [
+          "爪哇八哥善于在人的生活环境里找食物，也会成群栖息。随手丢弃的食物残渣，对它们很有吸引力。新加坡动物与兽医事务组（AVS）指出，《野生动物法》禁止在新加坡喂食野生动物。妥善处理厨余、用餐后归还托盘，都是减少额外食物来源的方法。下次看到它们，可以观察，但别顺手分一口饭。"
+        ]
+      }
+    ],
+    "ending": "Next time a myna walks past your table, look at its eye patch. One small detail tells a much bigger story about how wildlife moves with people.",
+    "endingZh": "下次有八哥经过你的餐桌，不妨看看它眼睛周围的颜色。一点小差别，背后藏着物种随人类迁移的故事。",
+    "sources": [
+      {
+        "name": "NParks BiodiversitySG Javan Myna",
+        "nameZh": "新加坡国家公园局爪哇八哥介绍",
+        "url": "https://biodiversitysg.nparks.gov.sg/our-biodiversity/birds/crows-starlings-mynas/javan-myna/",
+        "official": true
+      },
+      {
+        "name": "AVS Javan Mynas in Singapore",
+        "nameZh": "新加坡动物与兽医事务组八哥管理说明",
+        "url": "https://avs.nparks.gov.sg/wildlife/encountering-wildlife/house-crows-pigeons-javan-mynas/javan-mynas/",
+        "official": true
+      },
+      {
+        "name": "IUCN Red List 2020 assessment",
+        "nameZh": "IUCN 2020 年全球物种评估",
+        "url": "https://doi.org/10.2305/IUCN.UK.2020-3.RLTS.T103871334A176499647.en",
+        "official": true
+      }
+    ]
+  }
+}
