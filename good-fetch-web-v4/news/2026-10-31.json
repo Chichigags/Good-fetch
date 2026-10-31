@@ -1,0 +1,144 @@
+{
+  "format": "v2",
+  "date": "2026-10-31",
+  "publishedAt": "2026-10-31T08:15:00+08:00",
+  "whatChanged": {
+    "category": "AI / Web / Publishing",
+    "categoryZh": "AI / 互联网 / 内容创作",
+    "update": false,
+    "headline": "OpenAI, Google and Microsoft Back a Shared AI-Training Opt-Out for Websites",
+    "headlineZh": "OpenAI、Google 等支持统一的 AI 训练拒绝信号，网站以后可以少设几道规则",
+    "intro": [
+      "A publisher who doesn't want AI companies to train on its website currently has to manage different crawler instructions. On October 30, OpenAI, Google and Microsoft announced support for a common signal that could make that choice easier to express. None of the three companies says it has implemented the new shared signal yet."
+    ],
+    "introZh": [
+      "网站不想让 AI 公司拿自己的内容训练模型，通常得分别设置各家的爬虫规则。2026 年 10 月 30 日，OpenAI、Google 和微软宣布支持一种通用信号，让网站更方便地向多家 AI 公司表达同一个选择。不过，三家公司目前都尚未宣布正式执行这条新信号。"
+    ],
+    "sections": [
+      {
+        "heading": "What should a website put in robots.txt?",
+        "headingZh": "网站需要在 robots.txt 里写什么？",
+        "paragraphs": [
+          "The proposal uses robots.txt, a small file that websites already publish for web crawlers. A site could add a group headed `User-Agent: __usage_ai-training` with `Disallow: /` to express a preference against using its content for generative-AI training. The draft also allows exceptions for specific paths. It was submitted to the IETF on October 30, but remains an individual Internet-Draft, not an approved internet standard."
+        ],
+        "paragraphsZh": [
+          "新方案利用网站已有的 robots.txt 文件。网站可以加入 `User-Agent: __usage_ai-training` 和 `Disallow: /`，表达不希望自己的内容被用于生成式 AI 训练的意愿；也可以为特定页面路径设置例外。相关草案于 2026 年 10 月 30 日提交 IETF，但目前只是个人提交的互联网草案，还不是正式通过的标准。"
+        ]
+      },
+      {
+        "heading": "Does opting out of training keep pages out of AI answers?",
+        "headingZh": "拒绝训练，就能阻止网页出现在 AI 回答中吗？",
+        "paragraphs": [
+          "The proposed signal concerns training: using content to change a generative model's learned parameters. It does not, by itself, prohibit crawling, stop a page from appearing in search, or control every use of content in an AI-generated answer. Microsoft is separately introducing page-level controls for AI grounding, which uses web information to inform generated responses. Google says that, unless a site explicitly sets Google-Extended, it plans to treat the shared training opt-out as a Google-Extended disallow; that existing Google control also affects some Gemini grounding uses."
+        ],
+        "paragraphsZh": [
+          "这里的“训练”，指用网站内容改变生成式 AI 模型学到的参数。这条信号本身不负责阻止爬虫访问，也不能直接决定网页是否出现在搜索结果，或是否被 AI 回答引用。微软另行提出了针对 AI grounding 的页面级设置，用于管理网页内容能否为 AI 回答提供依据。Google 则表示，如果网站没有单独设置 Google-Extended，它计划把这条通用拒绝信号视为拒绝 Google-Extended；后者也涉及部分 Gemini 回答引用网页的用途。"
+        ]
+      },
+      {
+        "heading": "When will companies start honoring the signal?",
+        "headingZh": "各家公司什么时候开始执行？",
+        "paragraphs": [
+          "OpenAI says it aims to implement the shared signal in the coming months. Google targets 2027. Microsoft says its new training and grounding preferences will begin taking effect as it crawls from February 1, 2027. Existing provider-specific rules continue to matter in the meantime. This is a voluntary preference signal, not a technical lock against every scraper; the draft also says private agreements may override it."
+        ],
+        "paragraphsZh": [
+          "OpenAI 计划在未来几个月落实；Google 的目标是 2027 年；微软表示将从 2027 年 2 月 1 日起，在重新抓取网页时开始执行新设置。现有的各家公司专属规则仍然有效。这是一套自愿遵守的内容使用偏好，并非能挡住所有爬虫的技术锁；草案也允许私人协议优先于网站表达的偏好。"
+        ]
+      }
+    ],
+    "ending": "For publishers, the immediate change is a clearer common language for saying no. Whether it is respected still depends on each provider's implementation.",
+    "endingZh": "对内容创作者来说，新进展是多了一种统一表达选择的方式。能否真正生效，仍取决于各家公司的落实情况。",
+    "sources": [
+      {
+        "name": "IETF Internet-Draft",
+        "nameZh": "IETF 互联网草案",
+        "url": "https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/",
+        "official": true
+      },
+      {
+        "name": "OpenAI announcement",
+        "nameZh": "OpenAI 官方公告",
+        "url": "https://openai.com/index/helping-websites-express-ai-training-preferences/",
+        "official": true
+      },
+      {
+        "name": "Google Search Central",
+        "nameZh": "Google 搜索中心公告",
+        "url": "https://developers.google.com/search/blog/2026/10/ai-training-control",
+        "official": true
+      },
+      {
+        "name": "Microsoft Bing announcement",
+        "nameZh": "微软 Bing 官方公告",
+        "url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+        "official": true
+      }
+    ]
+  },
+  "stayCurious": {
+    "category": "Singapore / City / History",
+    "categoryZh": "新加坡 / 城市 / 历史",
+    "headline": "East Coast Park Was Built on Land That Used to Be Sea",
+    "headlineZh": "东海岸公园脚下的土地，原来是一片海",
+    "intro": [
+      "Cycling by the beach at East Coast Park feels like a very natural part of Singapore. Yet much of the land beneath the park—and nearby Marine Parade—was created by pushing the shoreline out into the sea. Some of the earth came from hills farther inland."
+    ],
+    "introZh": [
+      "在东海岸公园骑车、看海，很容易觉得这里的海岸线一直如此。其实，公园和附近的马林百列有大片土地是填海造出来的。用来填海的部分土石，甚至来自新加坡内陆被削平的山丘。"
+    ],
+    "sections": [
+      {
+        "heading": "How did Singapore move the coastline?",
+        "headingZh": "新加坡是怎么把海岸线向外推的？",
+        "paragraphs": [
+          "Singapore's National Library Board records that the East Coast Reclamation began in 1966. Across seven phases over roughly 30 years, the wider project added about 1,525 hectares along the southeastern coast. Land that had been sea became space for homes, roads and recreation. East Coast Park itself began development in 1972, alongside the reclamation works, according to the National Heritage Board."
+        ],
+        "paragraphsZh": [
+          "新加坡国家图书馆管理局记载，东海岸填海工程于 1966 年正式启动，前后分七期、历时约 30 年，在东南沿海新增约 1,525 公顷土地。原本是海的地方，逐渐变成住宅、道路和休闲空间。国家文物局资料显示，东海岸公园本身则从 1972 年开始配合填海工程建设。"
+        ]
+      },
+      {
+        "heading": "Where did the fill material come from?",
+        "headingZh": "填海的土石从哪里来？",
+        "paragraphs": [
+          "The fill came from several places, including Siglap Plain and hills in Bedok and Tampines. Workers used large excavators to cut earth from the hills, conveyor belts to move it towards a jetty, and barges to carry it to the reclamation site. The project also created a new beach. Not every grain of sand on today's beach came from those hills, but inland earth was an important part of making the new land."
+        ],
+        "paragraphsZh": [
+          "填海材料来自多个地方，包括实乞纳平原，以及勿洛和淡滨尼的山丘。工人用大型挖掘机削取土石，再通过输送带运到码头，装上驳船送往填海地点。工程还造出了新的沙滩。当然，不能说今天沙滩上的每一粒沙都来自那些山丘，但内陆的土石确实参与了这片新土地的形成。"
+        ]
+      },
+      {
+        "heading": "What was the seaside like before reclamation?",
+        "headingZh": "填海前的海边是什么样的？",
+        "paragraphs": [
+          "Before reclamation, the old East Coast had its own beachfront communities and leisure spots. The National Heritage Board records beach outings, boat races and dancing along the former Bedok coast. The new land helped create Marine Parade housing, East Coast Parkway and the long public park."
+        ],
+        "paragraphsZh": [
+          "填海以前，旧东海岸已有自己的海边社区和休闲生活。国家文物局记录过勿洛旧海岸的野餐、划船比赛和海边舞会。后来，新土地承载了马林百列住宅区、东海岸快速公路和公共海滨公园。"
+        ]
+      }
+    ],
+    "ending": "The next time you cross East Coast Parkway towards the sea, remember: Singapore deliberately pushed this coastline farther out.",
+    "endingZh": "下次穿过东海岸快速公路走向海边，不妨想想：这条海岸线是新加坡有意向海推进的。",
+    "sources": [
+      {
+        "name": "National Library Board, BiblioAsia",
+        "nameZh": "国家图书馆管理局《从沙土到陆地》",
+        "url": "https://biblioasia.nlb.gov.sg/all-sections/vol-13-issue-1-apr-jun-2017-land-from-sand/",
+        "official": true
+      },
+      {
+        "name": "National Heritage Board, Bedok Heritage Trail",
+        "nameZh": "国家文物局《勿洛文化遗产路线》",
+        "url": "https://www.roots.gov.sg/stories-landing/stories/bedok-heritage-trail/story",
+        "official": true
+      },
+      {
+        "name": "National Heritage Board, East Coast Park collection",
+        "nameZh": "国家文物局东海岸公园馆藏说明",
+        "url": "https://www.roots.gov.sg/Collection-Landing/listing/1188926",
+        "official": true
+      }
+    ]
+  }
+}

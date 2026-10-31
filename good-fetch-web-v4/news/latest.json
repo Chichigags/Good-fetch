@@ -1,160 +1,142 @@
 {
   "format": "v2",
-  "date": "2026-10-29",
-  "publishedAt": "2026-10-29T08:14:00+08:00",
+  "date": "2026-10-31",
+  "publishedAt": "2026-10-31T08:15:00+08:00",
   "whatChanged": {
-    "category": "AI / Infrastructure / Agents",
-    "categoryZh": "AI / 基础设施 / 智能体",
+    "category": "AI / Web / Publishing",
+    "categoryZh": "AI / 互联网 / 内容创作",
     "update": false,
-    "headline": "OpenAI Says It Is Bringing Nvidia CPUs Into Production. Why Do AI Agents Need Them?",
-    "headlineZh": "OpenAI 称正将英伟达 CPU 投入生产环境：AI 智能体为什么需要它？",
+    "headline": "OpenAI, Google and Microsoft Back a Shared AI-Training Opt-Out for Websites",
+    "headlineZh": "OpenAI、Google 等支持统一的 AI 训练拒绝信号，网站以后可以少设几道规则",
     "intro": [
-      "On October 27, 2026, Oracle and Nvidia announced that Nvidia's Vera CPUs and Vera Rubin NVL72 systems were generally available through Oracle Cloud Infrastructure (OCI). OpenAI, an early Vera customer, said it was bringing the CPUs into production for the sandboxes where its AI agents run code and tools.",
-      "The interesting part is the type of chip. AI spending usually centres on GPUs. But when an agent searches files, runs a script or checks a result, other processors also determine how quickly the job finishes."
+      "A publisher who doesn't want AI companies to train on its website currently has to manage different crawler instructions. On October 30, OpenAI, Google and Microsoft announced support for a common signal that could make that choice easier to express. None of the three companies says it has implemented the new shared signal yet."
     ],
     "introZh": [
-      "2026 年 10 月 27 日，Oracle 和英伟达宣布，Oracle Cloud Infrastructure（OCI）开始提供 Vera CPU 和 Vera Rubin NVL72 系统。作为早期使用者，OpenAI 表示，正把 Vera CPU 投入生产环境，用来支持 AI 智能体运行代码和工具的沙盒。",
-      "这次值得注意的是 CPU。AI 算力投资通常围绕 GPU 展开，但当智能体查找文件、执行脚本、检查结果时，CPU 的速度同样会影响任务完成时间。"
+      "网站不想让 AI 公司拿自己的内容训练模型，通常得分别设置各家的爬虫规则。2026 年 10 月 30 日，OpenAI、Google 和微软宣布支持一种通用信号，让网站更方便地向多家 AI 公司表达同一个选择。不过，三家公司目前都尚未宣布正式执行这条新信号。"
     ],
     "sections": [
       {
-        "heading": "What happens between two AI answers?",
-        "headingZh": "AI 两次回答之间，还发生了什么？",
+        "heading": "What should a website put in robots.txt?",
+        "headingZh": "网站需要在 robots.txt 里写什么？",
         "paragraphs": [
-          "A GPU is particularly good at the large parallel calculations used to train and run AI models. An agent, however, often works in a loop: ask the model what to do, call a tool, run code or retrieve information, then send the result back to the model.",
-          "Those intermediate steps can be CPU-intensive. If a tool call takes too long, the GPU may have to wait before it can process the next model request. A faster model alone cannot remove every delay in that workflow."
+          "The proposal uses robots.txt, a small file that websites already publish for web crawlers. A site could add a group headed `User-Agent: __usage_ai-training` with `Disallow: /` to express a preference against using its content for generative-AI training. The draft also allows exceptions for specific paths. It was submitted to the IETF on October 30, but remains an individual Internet-Draft, not an approved internet standard."
         ],
         "paragraphsZh": [
-          "GPU 擅长训练和运行 AI 模型所需的大规模并行计算。但智能体完成一项任务时，往往要反复循环：先让模型决定下一步，再调用工具、执行代码或查找资料，然后把结果送回模型。",
-          "这些中间步骤很多都依赖 CPU。如果工具执行得慢，GPU 可能只能等着下一次模型调用。模型本身再快，也无法消除整个流程里的所有等待。"
+          "新方案利用网站已有的 robots.txt 文件。网站可以加入 `User-Agent: __usage_ai-training` 和 `Disallow: /`，表达不希望自己的内容被用于生成式 AI 训练的意愿；也可以为特定页面路径设置例外。相关草案于 2026 年 10 月 30 日提交 IETF，但目前只是个人提交的互联网草案，还不是正式通过的标准。"
         ]
       },
       {
-        "heading": "Who is already using Vera CPUs?",
-        "headingZh": "谁已经开始使用 Vera CPU？",
+        "heading": "Does opting out of training keep pages out of AI answers?",
+        "headingZh": "拒绝训练，就能阻止网页出现在 AI 回答中吗？",
         "paragraphs": [
-          "Oracle says its new OCI Compute offering uses Nvidia Vera CPUs designed for these tasks. It also says customers can scale CPU and GPU resources separately, rather than adding more of both whenever one becomes a bottleneck. Oracle's Acceleron technology is intended to isolate workloads, including environments running untrusted AI-generated code.",
-          "The joint announcement quotes OpenAI's compute CTO, Uday Ruddarraju, saying the company is bringing Vera into production on OCI to support agent sandboxes at scale. This is a concrete reported use, although the release provides no independent before-and-after measurement of OpenAI's speed or costs."
+          "The proposed signal concerns training: using content to change a generative model's learned parameters. It does not, by itself, prohibit crawling, stop a page from appearing in search, or control every use of content in an AI-generated answer. Microsoft is separately introducing page-level controls for AI grounding, which uses web information to inform generated responses. Google says that, unless a site explicitly sets Google-Extended, it plans to treat the shared training opt-out as a Google-Extended disallow; that existing Google control also affects some Gemini grounding uses."
         ],
         "paragraphsZh": [
-          "Oracle 表示，OCI 新推出的 Vera CPU 计算服务专门支持这类任务，并允许客户分别扩展 CPU 和 GPU 资源，避免某一环节需要更多算力时，另一环节也被迫跟着扩容。Oracle 还表示，Acceleron 可为运行不受信任的 AI 生成代码的工作负载提供硬件级隔离。",
-          "在联合公告中，OpenAI 计算业务首席技术官 Uday Ruddarraju 表示，公司正将 Vera CPU 用于 OCI 上的生产环境，以支持大规模智能体沙盒。不过，公告没有提供经过独立验证的 OpenAI 实际提速或成本节省数据。"
+          "这里的“训练”，指用网站内容改变生成式 AI 模型学到的参数。这条信号本身不负责阻止爬虫访问，也不能直接决定网页是否出现在搜索结果，或是否被 AI 回答引用。微软另行提出了针对 AI grounding 的页面级设置，用于管理网页内容能否为 AI 回答提供依据。Google 则表示，如果网站没有单独设置 Google-Extended，它计划把这条通用拒绝信号视为拒绝 Google-Extended；后者也涉及部分 Gemini 回答引用网页的用途。"
         ]
       },
       {
-        "heading": "Can customers use Vera CPUs everywhere yet?",
-        "headingZh": "所有地区都能立刻使用 Vera CPU 吗？",
+        "heading": "When will companies start honoring the signal?",
+        "headingZh": "各家公司什么时候开始执行？",
         "paragraphs": [
-          "The companies describe Vera CPUs as generally available on OCI. Oracle's separate product announcement adds an important practical detail: Vera CPU instances will be available in selected regions during this quarter. The much larger, multi-gigawatt Vera Rubin expansion is a plan, not capacity already delivered."
+          "OpenAI says it aims to implement the shared signal in the coming months. Google targets 2027. Microsoft says its new training and grounding preferences will begin taking effect as it crawls from February 1, 2027. Existing provider-specific rules continue to matter in the meantime. This is a voluntary preference signal, not a technical lock against every scraper; the draft also says private agreements may override it."
         ],
         "paragraphsZh": [
-          "Oracle 和英伟达将 Vera CPU 描述为已正式提供的产品。但 Oracle 的另一篇产品公告补充说，相关实例会在本季度陆续于部分地区开放。至于更大规模、以吉瓦为单位的 Vera Rubin 扩建，目前仍属于计划，不能算作已经交付的算力。"
+          "OpenAI 计划在未来几个月落实；Google 的目标是 2027 年；微软表示将从 2027 年 2 月 1 日起，在重新抓取网页时开始执行新设置。现有的各家公司专属规则仍然有效。这是一套自愿遵守的内容使用偏好，并非能挡住所有爬虫的技术锁；草案也允许私人协议优先于网站表达的偏好。"
         ]
       }
     ],
-    "ending": "The next AI bottleneck may be the time an agent spends doing work between model calls.",
-    "endingZh": "未来影响 AI 任务速度的瓶颈，可能藏在两次模型调用之间。",
+    "ending": "For publishers, the immediate change is a clearer common language for saying no. Whether it is respected still depends on each provider's implementation.",
+    "endingZh": "对内容创作者来说，新进展是多了一种统一表达选择的方式。能否真正生效，仍取决于各家公司的落实情况。",
     "sources": [
       {
-        "name": "Oracle and NVIDIA joint announcement (27 Oct 2026)",
-        "nameZh": "Oracle 与英伟达联合公告",
-        "url": "https://www.oracle.com/ca-en/news/announcement/ai-world-nvidia-and-oracle-expand-nvidia-vera-rubin-to-multi-gigawatt-scale-2026-10-27/",
+        "name": "IETF Internet-Draft",
+        "nameZh": "IETF 互联网草案",
+        "url": "https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/",
         "official": true
       },
       {
-        "name": "Oracle OCI product announcement (27 Oct 2026)",
-        "nameZh": "Oracle OCI 产品公告",
-        "url": "https://blogs.oracle.com/cloud-infrastructure/nvidia-vera-cpus-oci",
+        "name": "OpenAI announcement",
+        "nameZh": "OpenAI 官方公告",
+        "url": "https://openai.com/index/helping-websites-express-ai-training-preferences/",
         "official": true
       },
       {
-        "name": "Reuters reporting (27 Oct 2026)",
-        "nameZh": "路透社独立报道",
-        "url": "https://www.reuters.com/business/oracle-expands-chip-supply-deal-with-nvidia-adds-google-cerebras-offerings-2026-10-27/",
-        "official": false
+        "name": "Google Search Central",
+        "nameZh": "Google 搜索中心公告",
+        "url": "https://developers.google.com/search/blog/2026/10/ai-training-control",
+        "official": true
+      },
+      {
+        "name": "Microsoft Bing announcement",
+        "nameZh": "微软 Bing 官方公告",
+        "url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+        "official": true
       }
     ]
   },
   "stayCurious": {
-    "category": "Singapore / Architecture / Heritage",
-    "categoryZh": "新加坡 / 建筑 / 历史",
-    "headline": "Why Are Singapore's Black-and-White Houses Painted Black and White?",
-    "headlineZh": "新加坡的黑白洋房，为什么偏偏刷成黑白两色？",
+    "category": "Singapore / City / History",
+    "categoryZh": "新加坡 / 城市 / 历史",
+    "headline": "East Coast Park Was Built on Land That Used to Be Sea",
+    "headlineZh": "东海岸公园脚下的土地，原来是一片海",
     "intro": [
-      "Among Singapore's greenery, you can still find old bungalows with bright white walls and dark timber frames. They look carefully colour-coordinated, but the original contrast had a practical explanation.",
-      "According to the Urban Redevelopment Authority's conservation handbook, the black coating helped protect exposed wood, while the white came from limewashed walls."
+      "Cycling by the beach at East Coast Park feels like a very natural part of Singapore. Yet much of the land beneath the park—and nearby Marine Parade—was created by pushing the shoreline out into the sea. Some of the earth came from hills farther inland."
     ],
     "introZh": [
-      "新加坡的绿树间，还藏着不少白墙、黑色木框的老洋房。它们看起来像精心搭配过颜色，但最初的黑白对比有实际用途。",
-      "新加坡市区重建局（URA）的建筑保护手册解释：黑色涂层用于保护外露木材，白色则来自墙面的石灰涂料。"
+      "在东海岸公园骑车、看海，很容易觉得这里的海岸线一直如此。其实，公园和附近的马林百列有大片土地是填海造出来的。用来填海的部分土石，甚至来自新加坡内陆被削平的山丘。"
     ],
     "sections": [
       {
-        "heading": "Why were the timber frames painted black?",
-        "headingZh": "为什么木框要刷成黑色？",
+        "heading": "How did Singapore move the coastline?",
+        "headingZh": "新加坡是怎么把海岸线向外推的？",
         "paragraphs": [
-          "URA's Conservation Technical Handbook, Volume 7, explains that many early black-and-white bungalows used exposed timber frames with plastered masonry panels between them. Builders coated the timber in black tar-based paint, also described as bituminous or creosote paint. It was used for preservation, resistance to pests and waterproofing. The infill walls were finished in white limewash. Together, the materials produced the striking two-tone appearance.",
-          "This describes historical construction methods, not a recommendation to apply old tar or creosote coatings to buildings today."
+          "Singapore's National Library Board records that the East Coast Reclamation began in 1966. Across seven phases over roughly 30 years, the wider project added about 1,525 hectares along the southeastern coast. Land that had been sea became space for homes, roads and recreation. East Coast Park itself began development in 1972, alongside the reclamation works, according to the National Heritage Board."
         ],
         "paragraphsZh": [
-          "URA 的《建筑保护技术手册》第七册解释，许多早期黑白洋房采用外露木框架，框架之间填上砖石墙体，再抹灰处理。工匠会在木材上涂黑色焦油类涂料，也称沥青漆或杂酚油漆，用于防腐、防虫和防水。墙体则刷白色石灰涂料，于是形成了醒目的黑白对比。",
-          "这是对当时建筑工艺的说明，并不意味着今天修缮房屋也应该使用旧式焦油或杂酚油涂料。"
+          "新加坡国家图书馆管理局记载，东海岸填海工程于 1966 年正式启动，前后分七期、历时约 30 年，在东南沿海新增约 1,525 公顷土地。原本是海的地方，逐渐变成住宅、道路和休闲空间。国家文物局资料显示，东海岸公园本身则从 1972 年开始配合填海工程建设。"
         ]
       },
       {
-        "heading": "How did these houses cope with tropical weather?",
-        "headingZh": "这些房子怎样适应热带天气？",
+        "heading": "Where did the fill material come from?",
+        "headingZh": "填海的土石从哪里来？",
         "paragraphs": [
-          "The architecture also tells a story of adaptation. The style drew on Anglo-Indian bungalows and incorporated features of local Malay kampong houses, including raised floors. Raised floors, generous roof overhangs, deep verandahs and shutters helped deal with heat, heavy rain and airflow before modern air-conditioning.",
-          "In Wessex Estate, for example, the National Heritage Board says British-built black-and-white buildings from the 1930s housed personnel working at nearby military installations. Elsewhere, these homes accommodated colonial officials and company staff. Their history is tied to colonial privilege as well as architectural ingenuity."
+          "The fill came from several places, including Siglap Plain and hills in Bedok and Tampines. Workers used large excavators to cut earth from the hills, conveyor belts to move it towards a jetty, and barges to carry it to the reclamation site. The project also created a new beach. Not every grain of sand on today's beach came from those hills, but inland earth was an important part of making the new land."
         ],
         "paragraphsZh": [
-          "这种洋房借鉴了英属印度的平房风格，也吸收了本地马来甘榜住宅的特点，例如架高地板。架高的地板、宽大的屋檐、深阳台和百叶窗，都有助于应对炎热、暴雨与通风需求。在空调普及前，这些设计尤其重要。",
-          "例如，国家文物局资料记载，Wessex Estate 的一批黑白建筑从 1930 年代开始兴建，用来安置附近军事设施的英国人员。其他地区的洋房则曾供殖民地官员或企业职员居住。它们既体现了热带建筑的巧思，也留下了殖民时期的社会印记。"
+          "填海材料来自多个地方，包括实乞纳平原，以及勿洛和淡滨尼的山丘。工人用大型挖掘机削取土石，再通过输送带运到码头，装上驳船送往填海地点。工程还造出了新的沙滩。当然，不能说今天沙滩上的每一粒沙都来自那些山丘，但内陆的土石确实参与了这片新土地的形成。"
         ]
       },
       {
-        "heading": "Should every old bungalow be painted black and white?",
-        "headingZh": "每栋老洋房都应该刷成黑白色吗？",
+        "heading": "What was the seaside like before reclamation?",
+        "headingZh": "填海前的海边是什么样的？",
         "paragraphs": [
-          "URA warns that the colour scheme has sometimes been applied to historic buildings that never originally had it. Even some government-designed colonial bungalows used other colours or construction methods. Conservators therefore examine historic paint layers rather than assuming that every old house should be repainted in the familiar palette."
+          "Before reclamation, the old East Coast had its own beachfront communities and leisure spots. The National Heritage Board records beach outings, boat races and dancing along the former Bedok coast. The new land helped create Marine Parade housing, East Coast Parkway and the long public park."
         ],
         "paragraphsZh": [
-          "URA 特别提醒：后来有人把黑白配色用到原本没有这种设计的历史建筑上，反而掩盖了真实风貌。即使是殖民政府兴建的洋房，也并非每栋都采用黑白色。因此，修复建筑时需要研究原有的涂料层和建造方式，不能只照着大家熟悉的外观重刷。"
+          "填海以前，旧东海岸已有自己的海边社区和休闲生活。国家文物局记录过勿洛旧海岸的野餐、划船比赛和海边舞会。后来，新土地承载了马林百列住宅区、东海岸快速公路和公共海滨公园。"
         ]
       }
     ],
-    "ending": "The colours tell you something about how the house was built, and the climate it was built to live in.",
-    "endingZh": "这两种颜色，记录着一栋房子当初怎样建造，又怎样适应新加坡的天气。",
+    "ending": "The next time you cross East Coast Parkway towards the sea, remember: Singapore deliberately pushed this coastline farther out.",
+    "endingZh": "下次穿过东海岸快速公路走向海边，不妨想想：这条海岸线是新加坡有意向海推进的。",
     "sources": [
       {
-        "name": "URA Conservation Technical Handbook, Vol. 7, Paints and Coatings, p. 54",
-        "nameZh": "URA 建筑保护技术手册第七册，第 54 页",
-        "url": "https://isomer-user-content.by.gov.sg/467/3b31ad6a-e794-45e6-b2f4-79ea90482f0c/Volume-7-Paints-and-Coatings.pdf",
+        "name": "National Library Board, BiblioAsia",
+        "nameZh": "国家图书馆管理局《从沙土到陆地》",
+        "url": "https://biblioasia.nlb.gov.sg/all-sections/vol-13-issue-1-apr-jun-2017-land-from-sand/",
         "official": true
       },
       {
-        "name": "URA Conservation Technical Handbooks index",
-        "nameZh": "URA 建筑保护手册入口",
-        "url": "https://www.ura.gov.sg/conservation/conservation-resources/conservation-technical-handbooks/",
+        "name": "National Heritage Board, Bedok Heritage Trail",
+        "nameZh": "国家文物局《勿洛文化遗产路线》",
+        "url": "https://www.roots.gov.sg/stories-landing/stories/bedok-heritage-trail/story",
         "official": true
       },
       {
-        "name": "URA Understanding the Bungalow",
-        "nameZh": "URA 洋房建筑风格与马来甘榜住宅影响",
-        "url": "https://www.ura.gov.sg/conservation/conservation-resources/understanding-the-bungalow/",
-        "official": true
-      },
-      {
-        "name": "National Heritage Board, Black & White Bungalows in Wessex Estate",
-        "nameZh": "国家文物局：Wessex 黑白洋房",
-        "url": "https://www.roots.gov.sg/places/places-landing/Places/landmarks/my-queenstown-heritage-trail/black-white-bungalows",
-        "official": true
-      },
-      {
-        "name": "URA Chatsworth Park Conservation Area",
-        "nameZh": "URA Chatsworth Park 保护区历史",
-        "url": "https://www.ura.gov.sg/conservation/find-a-building/conservation-portal/chpk/",
+        "name": "National Heritage Board, East Coast Park collection",
+        "nameZh": "国家文物局东海岸公园馆藏说明",
+        "url": "https://www.roots.gov.sg/Collection-Landing/listing/1188926",
         "official": true
       }
     ]
