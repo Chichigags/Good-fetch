@@ -1,0 +1,126 @@
+{
+  "format": "v2",
+  "date": "2026-10-30",
+  "publishedAt": "2026-10-30T08:09:00+08:00",
+  "whatChanged": {
+    "category": "AI / Open Weights / Cybersecurity",
+    "categoryZh": "AI / 开放权重 / 网络安全",
+    "update": false,
+    "headline": "Mistral Releases Large 4 Weights. Security Teams Can Now Run the Model Themselves.",
+    "headlineZh": "Mistral 开放下载 Large 4 模型权重，安全团队可以自己部署",
+    "intro": [
+      "Mistral introduced Large 4 through an online preview on October 6. On October 29, it released the improved model's downloadable weights. That changes who controls where the AI runs, especially for organisations investigating sensitive security incidents."
+    ],
+    "introZh": [
+      "2026 年 10 月 6 日，Mistral 先开放了 Large 4 的在线预览。10 月 29 日，它又公开了经过改进的模型权重，供用户下载部署。对处理敏感安全事件的机构来说，重要的变化是：现在可以自己决定 AI 在哪里运行。"
+    ],
+    "sections": [
+      {
+        "heading": "What changes when organisations can download the model?",
+        "headingZh": "模型权重可以下载，会带来什么变化？",
+        "paragraphs": [
+          "A hosted AI service processes requests on infrastructure operated by a provider. With downloadable weights, a sufficiently equipped organisation can instead run Large 4 on its own servers, keep investigation material within its chosen environment, and adapt the model to its workflows. The official checkpoint is available on Hugging Face; Mistral's own deployment instructions use multiple GPUs. Downloadable does not mean it will run comfortably on an ordinary laptop.",
+          "This is an open-weight release, not a promise that the full training dataset or every part of the training process is public. Its Mistral Ecosystem Open-Weight License permits many uses, including commercial applications, but a business offering the model itself as a paid model-as-a-service must obtain a separate commercial licence."
+        ],
+        "paragraphsZh": [
+          "使用云端 AI 服务时，请求通常由服务商的基础设施处理。开放权重后，有足够算力的机构可以把 Large 4 部署在自己的服务器上，让安全调查资料留在自己选择的环境中，也能按内部工作流程调整模型。官方权重已经上架 Hugging Face；Mistral 提供的部署示例需要多张 GPU，并不意味着普通笔记本电脑就能轻松运行。",
+          "这里的“开放权重”，指模型参数可下载，不等于训练数据和完整训练过程都公开。它采用 Mistral Ecosystem Open-Weight License，允许多种商业用途，但如果企业要把这个模型本身作为收费的模型服务对外提供，仍需另行取得商业许可。"
+        ]
+      },
+      {
+        "heading": "Why does this matter for cybersecurity?",
+        "headingZh": "为什么网络安全团队在意这一步？",
+        "paragraphs": [
+          "Defenders may need an AI system to inspect suspicious code, reproduce a software vulnerability in a controlled setting, and test whether a patch works. Mistral says Large 4 scored 51% on the Artificial Analysis Cyber Index, which assesses such tasks. That figure is a reported benchmark result, not proof that the model can safely fix half of real-world incidents.",
+          "The same skills have a dual-use problem: finding a weakness can help someone repair it or exploit it. Mistral says it monitored live cybersecurity-related use and saw the model refuse attacks against live targets. It nevertheless sees a risk that the model could help conduct real attacks, so it is adjusting safeguards. It also says a specialised variant for advanced security testing is available in preview only to vetted enterprise partners, with testing restricted to systems they own or are authorised to assess. The general model's weights, meanwhile, are downloadable."
+        ],
+        "paragraphsZh": [
+          "安全团队可能需要让 AI 检查可疑代码，在受控环境中复现软件漏洞，再测试修复是否有效。Mistral 称，Large 4 在 Artificial Analysis Cyber Index 上得分 51%。这是一项特定测试的成绩，不能理解成它能安全解决现实中 51% 的安全事件。",
+          "问题在于，同一种寻找漏洞的能力，既能帮助防守方修补系统，也可能被攻击者利用。Mistral 表示，预览期间监测实际使用情况时，模型拒绝了针对真实目标的攻击请求，但公司认为它仍可能被用来协助真实攻击，因此正在调整防护措施。面向高级安全测试的专用版本目前只向经过审核的企业合作伙伴提供预览，测试仅限于自有或明确获授权的系统；公开下载的则是通用模型权重。"
+        ]
+      }
+    ],
+    "ending": "The release gives organisations more control over the model, while leaving them with more of the work of operating it safely.",
+    "endingZh": "这次发布让机构更能掌控模型，也意味着安全运行模型的责任更多地落到自己手里。",
+    "sources": [
+      {
+        "name": "Mistral — Large 4 open-weight release",
+        "nameZh": "Mistral 官方发布说明",
+        "url": "https://mistral.ai/news/mistral-large-4-oss/",
+        "official": true
+      },
+      {
+        "name": "Mistral — Large 4 public preview, October 6",
+        "nameZh": "Mistral 10 月 6 日预览公告",
+        "url": "https://mistral.ai/news/mistral-large-4/",
+        "official": true
+      },
+      {
+        "name": "Mistral official model card on Hugging Face",
+        "nameZh": "Hugging Face 上的 Mistral 官方模型卡",
+        "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+        "official": true
+      },
+      {
+        "name": "Reuters — Mistral releases Large 4, October 29",
+        "nameZh": "路透社 10 月 29 日报道",
+        "url": "https://www.reuters.com/legal/litigation/mistral-ai-publicly-releases-large-4-targets-cybersecurity-users-2026-10-29/",
+        "official": false
+      }
+    ]
+  },
+  "stayCurious": {
+    "category": "Singapore / Wildlife / Nature",
+    "categoryZh": "新加坡 / 野生动物 / 自然",
+    "headline": "Singapore Has a “Flying Lemur” That Neither Flies Nor Is a Lemur",
+    "headlineZh": "新加坡有一种“飞狐猴”，其实既不会飞，也不是狐猴",
+    "intro": [
+      "If you spot a mottled, flat-looking animal clinging to a tree trunk in a Singapore forest, it might be a Sunda colugo. Its other name, “flying lemur,” gets two things wrong about this remarkably good glider."
+    ],
+    "introZh": [
+      "如果你在新加坡的树林里看到一只灰褐色、紧贴树干的动物，它可能是巽他鼯猴（Sunda colugo），也常被叫作“飞狐猴”。但这个名字有点误导：它既不会真正飞行，也不是狐猴。"
+    ],
+    "sections": [
+      {
+        "heading": "How does it glide from tree to tree?",
+        "headingZh": "它是怎么在树与树之间滑翔的？",
+        "paragraphs": [
+          "The colugo cannot flap wings or power itself through the air like a bird. Instead, it spreads a large skin membrane called a patagium, stretching from its neck along its limbs and around its tail. After launching from a tree, the membrane helps it glide to another trunk. That lets it move through the canopy without regularly descending to the forest floor.",
+          "The name is misleading in another way. A colugo is a mammal, but it is not a lemur. The Singapore government’s biodiversity portal identifies the local animal as the Sunda colugo, Galeopterus variegatus."
+        ],
+        "paragraphsZh": [
+          "鼯猴没有鸟那样可以拍动的翅膀。它的颈部、四肢到尾巴周围连着一大片皮膜，叫作 patagium。它从树上跃出后，展开皮膜，就能滑翔到另一棵树上，减少下到地面的需要。",
+          "名字里的“狐猴”也不准确。鼯猴是哺乳动物，但并不是狐猴。新加坡政府生物多样性资料库把本地这种动物列为巽他鼯猴，学名 Galeopterus variegatus。"
+        ]
+      },
+      {
+        "heading": "Why is it so hard to spot?",
+        "headingZh": "为什么我们很难发现它？",
+        "paragraphs": [
+          "Colugos are nocturnal. During the day, their grey or brown mottled fur helps them blend into bark; at night they feed on leaves, young shoots, and flower buds. NParks also records that mothers carry their young, sometimes wrapped in the same gliding membrane.",
+          "In Singapore, NParks lists the Central Nature Reserves and Bukit Batok Nature Park among their habitats."
+        ],
+        "paragraphsZh": [
+          "鼯猴主要在夜间活动。白天，灰褐色的斑驳毛色让它几乎融进树皮；晚上则吃树叶、嫩芽和花蕾。NParks 还记录，母鼯猴会带着幼崽活动，有时会用滑翔皮膜把幼崽裹住。",
+          "在新加坡，中央自然保护区和武吉巴督自然公园都有它们的踪迹。"
+        ]
+      }
+    ],
+    "ending": "A tree trunk that looks empty in daylight may be hiding an animal built for travelling through the forest at night.",
+    "endingZh": "白天看起来空荡荡的树干，可能藏着一位夜间穿梭树林的滑翔高手。",
+    "sources": [
+      {
+        "name": "BiodiversitySG — Sunda Colugo",
+        "nameZh": "新加坡政府生物多样性资料库：巽他鼯猴",
+        "url": "https://biodiversitysg.nparks.gov.sg/our-biodiversity/mammals/other-mammals/sunda-colugo/",
+        "official": true
+      },
+      {
+        "name": "NParks Flora & Fauna Web — Galeopterus variegatus",
+        "nameZh": "NParks 动植物资料库：巽他鼯猴",
+        "url": "https://www.nparks.gov.sg/florafaunaweb/fauna/4/7/478",
+        "official": true
+      }
+    ]
+  }
+}
