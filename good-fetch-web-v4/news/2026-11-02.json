@@ -1,0 +1,160 @@
+{
+  "format": "v2",
+  "date": "2026-11-02",
+  "publishedAt": "2026-11-02T08:12:00+08:00",
+  "whatChanged": {
+    "category": "AI / Infrastructure / Space",
+    "categoryZh": "AI / 基础设施 / 太空",
+    "update": false,
+    "headline": "Google's AI Chip Answered From Orbit. Is a Space Data Center Any Closer?",
+    "headlineZh": "Google 的 AI 芯片在太空写了首诗，离太空数据中心还有多远？",
+    "intro": [
+      "Google sent a prompt to a satellite and got a poem back. In an update on 30 October, the company said its Project Suncatcher prototype had run the Gemma 4 model on a data-centre-class TPU in orbit and returned an answer to Earth. The achievement is real but narrow: it shows a working request-and-response chain, not a functioning space data centre."
+    ],
+    "introZh": [
+      "Google 把一道写诗的指令发到太空，真的收到了回复。2026 年 10 月 30 日，Google 公布 Project Suncatcher 的新进展：一颗在轨试验卫星用 TPU 芯片运行 Gemma 4 模型，把生成的俳句传回地面。整套流程跑通了，但这还不是一座真正投入使用的太空数据中心。"
+    ],
+    "sections": [
+      {
+        "heading": "How did an AI request travel to orbit and back?",
+        "headingZh": "一道指令怎样在天地之间走了个来回？",
+        "paragraphs": [
+          "The prototype launched on 1 October. Google says engineers spent the following weeks switching on its computing equipment and running early tests. During a ground-station contact window, they uploaded a request for a haiku about space. The model ran aboard the satellite; the result was transmitted back as it passed Svalbard, Norway.",
+          "Google calls it the first response from a data-centre-class TPU in orbit. That is a specific company claim about its chip category, not a claim that no AI model has ever operated in space. The important demonstration is that the satellite could receive a request, execute the model and return the output."
+        ],
+        "paragraphsZh": [
+          "这颗试验卫星在 2026 年 10 月 1 日发射。Google 说，工程师随后花了数周启动机载计算设备并完成初步测试。等卫星进入地面站的通信窗口，团队上传了一道指令，让 Gemma 4 写一首关于太空的俳句。模型在卫星上完成运算，卫星经过挪威斯瓦尔巴群岛附近时，把结果传回地球。",
+          "Google 将其称为首个在轨数据中心级 TPU 返回的 AI 回答。这是公司针对特定芯片类型的说法，并不意味着此前从未有 AI 在太空运行。真正值得关注的是，指令上传、模型运算、结果回传三个环节已经连起来了。"
+        ]
+      },
+      {
+        "heading": "Why does a poem matter to data centres?",
+        "headingZh": "写首诗，为什么与数据中心有关？",
+        "paragraphs": [
+          "TPUs are Google's specialised chips for AI workloads. Running one in orbit tests whether hardware designed for data centres on Earth can function after launch and in space. Google's longer-term idea is to use solar-powered satellites for computing, but a short poem is a tiny workload compared with running a commercial AI service continuously.",
+          "TechCrunch reported that the prototype carries four TPUs and produces up to 1 kilowatt of power, but can run only one TPU at a time for roughly 20 minutes because of power constraints. Those figures come from TechCrunch's reporting, not from Google's short 30 October announcement. They help explain why an orbital demonstration is far from a scalable service."
+        ],
+        "paragraphsZh": [
+          "TPU 是 Google 为 AI 计算设计的专用芯片。这次试验要验证：原本在地面数据中心工作的芯片，经历发射后能否在太空继续运行。Google 长远设想利用太阳能卫星提供算力，但生成一首短诗的负载，和全天候提供商业 AI 服务相差很远。",
+          "TechCrunch 报道称，这颗卫星装有四块 TPU，发电能力最高约 1 千瓦；受电力限制，一次只能运行一块芯片，持续约 20 分钟。这些是媒体报道的数据，并非 Google 2026 年 10 月 30 日简短公告中的数字，也说明眼下的系统还谈不上大规模供给算力。"
+        ]
+      },
+      {
+        "heading": "What has not been proved?",
+        "headingZh": "距离真正投入使用，还缺什么？",
+        "paragraphs": [
+          "Google says the next tests will examine how the chips perform under heat stress and radiation in orbit. Reliable cooling, power supply and communication between satellites are still engineering challenges. The company identifies a pair of interconnected satellites as its next research milestone in 2027; that is a plan, not an operating network or a confirmed commercial launch.",
+          "For now, Suncatcher has shown that an AI chip can answer a prompt from orbit. Whether space-based computing will ever be economical at scale remains an open question."
+        ],
+        "paragraphsZh": [
+          "Google 表示，接下来要在轨测试芯片承受温度变化和辐射的能力。如何稳定供电、散热，以及让卫星之间高速通信，仍有待验证。公司计划在 2027 年测试两颗互联卫星；这是下一步研发目标，并非已建成的网络或确定的商业服务。",
+          "目前得到证实的进展，是 AI 芯片在轨完成了一次问答。太空算力能否长期稳定、经济地运行，还需要更多实验。"
+        ]
+      }
+    ],
+    "ending": "The next meaningful result will be sustained, reliable computing in orbit—not a longer poem.",
+    "endingZh": "下一次更值得看的进展，不是它能写多长的诗，而是能否在太空持续、稳定地运算。",
+    "sources": [
+      {
+        "name": "Google Research, 30 October 2026 update",
+        "nameZh": "Google Research 2026 年 10 月 30 日官方公告",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+        "official": true
+      },
+      {
+        "name": "TechCrunch, 30 October 2026 reporting",
+        "nameZh": "TechCrunch 2026 年 10 月 30 日独立报道",
+        "url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
+        "official": false
+      },
+      {
+        "name": "The Verge, 30 October 2026 report",
+        "nameZh": "The Verge 2026 年 10 月 30 日报道",
+        "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
+        "official": false
+      }
+    ]
+  },
+  "stayCurious": {
+    "category": "Singapore / Heritage / Design",
+    "categoryZh": "新加坡 / 历史 / 设计",
+    "headline": "What Does the Sand Beneath Singapore's Dragon Playground Preserve?",
+    "headlineZh": "大巴窑龙形游乐场脚下的沙坑，留下了什么？",
+    "intro": [
+      "Most modern playgrounds in Singapore have rubber flooring and modular plastic equipment. But at Lorong 6 in Toa Payoh, a brightly coloured dragon still rises from a sandpit. Built in 1979, it is a reminder of a time when playgrounds were designed to tell local stories."
+    ],
+    "introZh": [
+      "现在新加坡的儿童游乐场，大多铺着橡胶地垫，配上塑料滑梯。但在大巴窑 Lorong 6，一条彩色的龙仍然立在沙坑里。这座建于 1979 年的游乐场，留下了一个曾经很流行的想法：游乐设施也可以讲本地故事。"
+    ],
+    "sections": [
+      {
+        "heading": "How was the dragon designed for children to play?",
+        "headingZh": "这条龙当初是怎样设计给孩子玩的？",
+        "paragraphs": [
+          "HDB designer Khor Ean Ghee created the dragon as part of a series of locally inspired playgrounds. Children climbed up its tail, passed through coloured metal rings along its body and slid down from its head. According to the National Heritage Board's historical account, HDB drew on local culture and heritage to help residents build stronger community ties. Khor designed more than 30 playground concepts, drawing on familiar animals, stories and cultural symbols.",
+          "The Lorong 6 version was built in 1979. National Heritage Board records explain that it developed from an earlier dragon at Toa Payoh Town Garden, whose metal design was difficult to fabricate. The revised dragon used a larger tiled head and a ring-shaped body, and variations later appeared in other estates."
+        ],
+        "paragraphsZh": [
+          "龙形游乐场出自建屋发展局设计师 Khor Ean Ghee 之手。孩子可以从龙尾爬上去，穿过龙身上一圈圈彩色金属环，再从龙头滑下来。新加坡国家文物局的历史资料提到，HDB 当年希望通过本地文化元素设计游乐场，让新住宅区的居民更有社区归属感。Khor 设计了三十多种游乐场方案，灵感来自动物、民间故事和熟悉的文化符号。",
+          "大巴窑 Lorong 6 的版本建于 1979 年。国家文物局记载，它参考了此前设在大巴窑市镇花园的一条龙。早期金属结构制作困难，于是设计被修改，换成更大的彩色水磨石饰面龙头和可供攀爬的环状龙身，后来其他组屋区也出现了不同版本。"
+        ]
+      },
+      {
+        "heading": "Why did the sand disappear elsewhere?",
+        "headingZh": "为什么别处的沙坑慢慢消失？",
+        "paragraphs": [
+          "Sandpits and hard concrete or metal structures were common in older playgrounds. From the 1990s, safety and hygiene concerns helped drive a shift towards modular equipment and rubber surfacing, as the National Heritage Board's museum collection explains. Singapore's government heritage portal SG101 says the old dragon design was phased out from 1993. Its 2023 account describes the Lorong 6 dragon as the only remaining example standing in sand, while the other examples it lists had padded ground. This is a historical source's count, not a new island-wide survey."
+        ],
+        "paragraphsZh": [
+          "过去，沙地、混凝土和金属结构在游乐场很常见。到了 1990 年代，出于安全和卫生考虑，游乐设施逐渐改用模块化设备和橡胶地面。国家文物局的博物馆专题资料也记录了这一变化。新加坡政府的 SG101 历史文章记载，旧式龙形设计从 1993 年起逐步淘汰；它在 2023 年将 Lorong 6 称为唯一仍保留沙坑的龙形游乐场，其他列出的例子则铺了软垫。这是当年的资料记录，并非 2026 年的全岛最新盘点。"
+        ]
+      },
+      {
+        "heading": "What is being preserved?",
+        "headingZh": "为什么值得留下？",
+        "paragraphs": [
+          "The available heritage records do not explain the specific decision to retain this sandpit. What remains, though, is a fuller picture of the original play experience: coloured rings, a terrazzo-clad head, a slide and sand underfoot. Seen together, they show how HDB once used locally inspired design to give neighbourhood playgrounds their own character.",
+          "The dragon is not a template for rebuilding every playground exactly as it was. Modern safety expectations have changed. Its value lies in showing what children once climbed, touched and shared in their own housing estate."
+        ],
+        "paragraphsZh": [
+          "现有历史资料没有解释，当年究竟为什么决定保留这片沙坑。但沙坑、彩色金属环、水磨石饰面龙头和滑梯，让人仍能看到一套较完整的旧式游玩体验。这也记录了 HDB 曾怎样用本地文化设计公共空间，让不同组屋区有自己的特色。",
+          "今天的安全标准已经不同，保留老龙并不意味着所有游乐场都应该恢复旧式设计。它让人看见，上一代孩子曾在怎样的地方玩耍、交朋友。"
+        ]
+      }
+    ],
+    "ending": "The dragon preserves a piece of Singapore's everyday design history—right down to the sand under its feet.",
+    "endingZh": "这条龙保存的是一段日常设计史，连脚下的沙子也是故事的一部分。",
+    "sources": [
+      {
+        "name": "National Heritage Board, Toa Payoh Dragon Playground",
+        "nameZh": "国家文物局大巴窑龙形游乐场资料",
+        "url": "https://www.roots.gov.sg/places/places-landing/Places/landmarks/Toa-Payoh-Heritage-Trail/Toa-Payoh-Dragon-Playground",
+        "official": true
+      },
+      {
+        "name": "National Heritage Board, Playgrounds of the Past",
+        "nameZh": "国家文物局《昔日游乐场》",
+        "url": "https://www.roots.gov.sg/stories-landing/stories/playground-paradise/story",
+        "official": true
+      },
+      {
+        "name": "National Heritage Board / National Museum of Singapore, Top of the Worlds (playgrounds)",
+        "nameZh": "国家文物局／国家博物馆游乐场专题",
+        "url": "https://www.roots.gov.sg/stories-landing/stories/Top-of-the-worlds",
+        "official": true
+      },
+      {
+        "name": "experience.sg, Toa Payoh's Lorong 6 Dragon and Shuang Lin, 3 October 2026 (recent visitor guide, not official inventory)",
+        "nameZh": "2026 年 10 月 3 日本地步行指南，作为近期沙地现状辅助来源",
+        "url": "https://experience.sg/guides/toa-payoh-lorong-6-dragon",
+        "official": false
+      },
+      {
+        "name": "Singapore Government SG101, Dragon Playgrounds, 23 February 2023",
+        "nameZh": "新加坡政府 SG101 龙形游乐场历史资料，2023 年 2 月 23 日",
+        "url": "https://www.sg101.gov.sg/resources/archives/heritage-dragon-playgrounds-in-singapore/",
+        "official": true
+      }
+    ]
+  }
+}
