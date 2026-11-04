@@ -1,168 +1,164 @@
 {
   "format": "v2",
-  "date": "2026-11-03",
-  "publishedAt": "2026-11-03T08:10:00+08:00",
+  "date": "2026-11-04",
+  "publishedAt": "2026-11-04T08:17:00+08:00",
   "whatChanged": {
-    "category": "AI / Infrastructure / Finance",
-    "categoryZh": "AI / 基础设施 / 融资",
+    "category": "AI / Education / Product Policy",
+    "categoryZh": "AI / 教育 / 产品政策",
     "update": false,
-    "headline": "Oracle Seeks $20 Billion for AI. Why Sell Shares and Bonds Together?",
-    "headlineZh": "甲骨文为 AI 再筹 200 亿美元，为什么发债还要卖股票？",
+    "headline": "Schools Can Switch Off Google's AI. Why Does Search Go Off Too?",
+    "headlineZh": "学校可以关闭 Google AI，为什么连搜索也要一起关？",
     "intro": [
-      "Oracle is asking investors for another $20 billion. Filings made on 2 November 2026 outline roughly $10 billion in bonds and a separate $10 billion common-stock offering, as the company expands its AI cloud infrastructure. The headline number is a financing plan, not proof that all the cash has already arrived.",
-      "The interesting question is why a company with large AI contracts needs to raise money in two different ways at once."
+      "Google says it will disable Gemini and related AI features by default for K–12 student accounts until school administrators choose to enable them. But there is a catch: a school that does not allow Google's AI-powered features cannot keep ordinary Google Search switched on for those accounts either.",
+      "The announcement on 3 November 2026 turns a familiar classroom debate into a practical product question: how much choice do schools really have when AI is built into search?"
     ],
     "introZh": [
-      "甲骨文（Oracle）又要向资本市场筹钱了。2026 年 11 月 2 日的发行文件显示，公司计划发行约 100 亿美元债券，同时另行发行 100 亿美元普通股，为 AI 云基础设施扩张等企业需求提供资金。这是融资安排，不代表 200 亿美元已经全部到账。",
-      "既然 AI 订单需求很大，为什么还要同时借钱、卖股票？"
+      "Google 2026 年 11 月 3 日宣布，将默认关闭中小学学生账号里的 Gemini 等 AI 功能，是否启用由学校管理员决定。可问题是：如果学校不接受 Google 搜索中的 AI 功能，就不能只保留传统的 Google Search。",
+      "学校想控制学生怎么使用 AI，却发现搜索和 AI 已经被绑在一起。这次调整究竟给了学校多少选择权？"
     ],
     "sections": [
       {
-        "heading": "What does each half of the financing do?",
-        "headingZh": "发债和卖股票，区别在哪里？",
+        "heading": "What exactly changes for student accounts?",
+        "headingZh": "学生账号具体会发生什么变化？",
         "paragraphs": [
-          "Selling bonds is borrowing: investors provide cash now, and Oracle must pay interest and eventually repay principal. Selling common shares brings in equity capital without a fixed repayment date, but spreads ownership across more shares and can dilute existing shareholders.",
-          "The two offerings are legally separate. Oracle's preliminary bond prospectus says one can close without the other, and the company cannot guarantee that the stock offering will complete as proposed. Bond terms in that preliminary document still contained blanks, so the final coupon and proceeds should not be inferred from it."
+          "According to reporting by the Associated Press and The Guardian on 3 November, Google is moving to an opt-in approach for AI features on K–12 school accounts. Administrators, rather than individual students, decide whether to enable them. The affected products include Gemini and AI features integrated into Google Search. This is about managed school accounts, not a claim that Google Search is being switched off for everyone.",
+          "Google presents the change as a way to give schools control after concerns about children's use of AI. Its new Guided Learning approach is designed to walk students through a problem rather than simply provide an answer. That educational design, however, does not resolve the separate issue of whether schools can choose search without generative AI."
         ],
         "paragraphsZh": [
-          "发债相当于借钱。投资者现在把钱交给 Oracle，公司之后要付利息、还本金。发行普通股则是引入股本，不需要按债券的方式定期还本付息，但原有股东的持股比例可能被摊薄。",
-          "这两笔发行是独立的。Oracle 的初步债券招股文件明确表示，债券与股票不必同时完成，公司也无法保证股票发行一定按计划完成。初步文件中部分债券利率等条款仍留空，不能把它当作已经完成定价的交易。"
+          "据美联社和《卫报》2026 年 11 月 3 日报道，Google 将中小学学生账号的 AI 功能改为默认关闭，由学校管理员决定是否开启，涉及 Gemini 及整合进 Google Search 的 AI 功能。这里说的是学校管理的学生账号，不是所有人的 Google 搜索都会被关闭。",
+          "Google 的解释是，这样可以回应家长和教育工作者对学生使用 AI 的担忧。它还推出 Guided Learning，希望 AI 遇到学习题目时引导学生一步步思考，而不是直接给答案。但这和学校能否单独关闭搜索里的 AI，是两回事。"
         ]
       },
       {
-        "heading": "Why is the timing important?",
-        "headingZh": "为什么现在筹钱值得关注？",
+        "heading": "Why can't schools simply turn off AI in Search?",
+        "headingZh": "为什么不能只保留传统搜索？",
         "paragraphs": [
-          "In its June 2026 results, Oracle said it did not expect to issue more debt during calendar 2026. The 2 November proposed bond sale therefore marks a change from that earlier expectation. At its 28 October 2026 Investor Day, Oracle committed to limiting additional capital-market fundraising through fiscal 2030 to $20 billion, excluding refinancing of existing debt. It expects roughly $10 billion in equity and $10 billion in gross debt. The proposed November offerings match that expected split, bringing the immediate cost of building capacity into focus.",
-          "Oracle's November prospectus lists $125.3 billion in senior unsecured borrowings as of 31 August 2026. That figure is outstanding borrowing, not this week's new funding. The company expects AI cloud demand to support future growth, but contracted demand and revenue forecasts do not themselves pay today's construction bills."
+          "Google says AI has become integral to its search product. AI Overviews and conversational search are no longer treated as an entirely separate service that an administrator can always disable while retaining the rest of Search. Under the announced arrangement, refusing those AI features also means losing Google Search access for the relevant school accounts.",
+          "That matters because searching the web and asking a chatbot to generate an answer are not identical learning activities. Teachers may want students to compare sources, check claims and read original pages while restricting generated responses. A single combined switch makes that distinction harder to enforce through Google's own settings."
         ],
         "paragraphsZh": [
-          "Oracle 在 2026 年 6 月公布业绩时曾表示，预计 2026 自然年内不会再发行债券。2026 年 11 月 2 日的新债券发行计划，说明融资安排已与当时的预期不同。Oracle 在 2026 年 10 月 28 日投资者日表示，计划将截至 2030 财年的新增资本市场融资限制在 200 亿美元以内，不包括现有债务再融资；目前预计其中约 100 亿美元来自股权融资，另约 100 亿美元来自债务融资。11 月提出的两项发行计划与这一拆分预期一致，也让建设算力设施的眼前资金需求更受关注。",
-          "根据 Oracle 11 月的发行文件，截至 2026 年 8 月 31 日，公司已有约 1,253 亿美元高级无担保借款。这是此前累积的借款余额，不是本周新借的钱。AI 客户合同和未来收入预期可以支持扩张计划，却不能自动变成今天建设数据中心的现金。"
+          "Google 认为 AI 已经成为搜索产品的一部分。AI Overviews 等功能与搜索深度整合，学校不能简单地在自己的管理设置里关闭所有生成式 AI，同时继续使用同一套 Google Search。",
+          "可对老师来说，“让学生自己查资料”和“让 AI 直接生成答案”并不是同一种学习方式。老师可能希望学生比较不同网页、追查来源，却暂时不使用生成式回答。把两者放在同一个开关里，学校就很难按照自己的教学方式做区分。"
         ]
       },
       {
-        "heading": "Where will the money go?",
-        "headingZh": "200 亿美元都会用来买 AI 芯片吗？",
+        "heading": "Who objects, and what remains uncertain?",
+        "headingZh": "争议到底在哪里？",
         "paragraphs": [
-          "The filing permits broad corporate uses: capital spending, repayment of debt, investments or acquisitions, dividends and share repurchases. It would be inaccurate to say that every dollar is earmarked for new AI chips. Reuters connects the fundraising to Oracle's data-centre expansion, while the legal document allows a wider set of uses.",
-          "The useful distinction is between a company expecting future AI revenue and a company having enough cash today to build the facilities needed to earn it."
+          "Critics cited by AP, including the child-advocacy organisation Fairplay and former US Federal Trade Commission chair Lina Khan, argue that tying search access to AI choices puts pressure on schools. Google says the approach gives school administrators control over whether to enable the affected products.",
+          "The precise implementation schedule and options may vary by product and school configuration. This report does not establish that all schools worldwide have already lost search access, or that a school cannot use other search services. The change is a Google account-control decision, not a law requiring AI in classrooms."
         ],
         "paragraphsZh": [
-          "不能这样说。文件列出的用途很宽，包括资本开支、偿还旧债、投资或收购、派息和股票回购。路透社将融资与 AI 云基础设施扩张联系起来，但法律文件没有规定所有资金必须投向新芯片。",
-          "关键区别在于：未来可能获得的 AI 收入，并不等于今天就有足够的现金去建设兑现这些收入所需的设施。"
+          "美联社引述的儿童权益组织 Fairplay 及美国联邦贸易委员会前主席 Lina Khan 等批评者认为，这种捆绑可能迫使学校在搜索和 AI 之间做不必要的选择。Google 则强调，最终是否启用相关功能仍由学校管理员决定。",
+          "需要注意：这不意味着全球所有学校现在都无法搜索，也不意味着学校不能选择其他搜索服务。不同产品及学校配置的具体实施时间和控制选项，仍应以 Google 后续正式说明为准。这是 Google 的产品政策，不是政府强制学校使用 AI 的法律。"
         ]
       }
     ],
-    "ending": "AI capacity can be sold years ahead; the money to build it is needed much sooner.",
-    "endingZh": "AI 算力可以提前签下多年订单，建造它所需的钱却要现在拿出来。",
+    "ending": "For schools, the important question may be less whether AI is useful than whether they can decide where it belongs.",
+    "endingZh": "学校要决定的，不只是 AI 有没有用，还有它应该在哪些学习环节出现。",
     "sources": [
       {
-        "name": "US SEC, Oracle preliminary common-stock prospectus, filed 2 November 2026",
-        "nameZh": "美国证券交易委员会，Oracle 2026 年 11 月 2 日普通股发行文件",
-        "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526442729/0001193125-26-442729-index.htm",
-        "official": true
-      },
-      {
-        "name": "US SEC, Oracle preliminary bond prospectus, 2 November 2026 (terms subject to change)",
-        "nameZh": "美国证券交易委员会，Oracle 2026 年 11 月 2 日初步债券招股文件，条款待定",
-        "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526442722/d181336d424b2.htm",
-        "official": true
-      },
-      {
-        "name": "Reuters, 2 November 2026",
-        "nameZh": "路透社 2026 年 11 月 2 日报道",
-        "url": "https://www.reuters.com/business/oracle-offer-10-billion-bonds-2026-11-02/",
+        "name": "Associated Press, 3 November 2026, Google school AI and Search controls",
+        "nameZh": "美联社，2026 年 11 月 3 日，Google 学校账号 AI 与搜索控制",
+        "url": "https://apnews.com/article/ai-schools-classroom-students-google-7ba4219e505db1c11d672f6eefe7155a",
         "official": false
       },
       {
-        "name": "Oracle FY2026 results, 10 June 2026",
-        "nameZh": "Oracle 2026 年 6 月 10 日业绩公告",
-        "url": "https://www.oracle.com/news/announcement/q4fy26-earnings-release-2026-06-10/",
-        "official": true
+        "name": "The Guardian, 3 November 2026, Google Search and AI in schools",
+        "nameZh": "《卫报》，2026 年 11 月 3 日，学校搜索与 AI",
+        "url": "https://www.theguardian.com/technology/2026/nov/03/google-search-artificial-intelligence",
+        "official": false
       },
       {
-        "name": "Oracle Investor Day, 28 October 2026 (fundraising cap excludes refinancing)",
-        "nameZh": "Oracle 2026 年 10 月 28 日投资者日公告（融资上限不含旧债再融资）",
-        "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Investor-Day-2026-Accelerating-Value-Creation/default.aspx",
-        "official": true
+        "name": "The Washington Post, 3 November 2026, school administrator controls",
+        "nameZh": "《华盛顿邮报》，2026 年 11 月 3 日，学校管理员控制",
+        "url": "https://www.washingtonpost.com/education/2026/11/03/google-turn-off-search-schools-that-dont-want-students-using-ai/",
+        "official": false
       }
     ]
   },
   "stayCurious": {
-    "category": "Singapore / Places / Language",
-    "categoryZh": "新加坡 / 地名 / 语言",
-    "headline": "Bukit Timah Means “Tin Hill”. So Where Was the Tin?",
-    "headlineZh": "武吉知马的意思是“锡山”，可这里真的有锡吗？",
+    "category": "Singapore / Heritage / Architecture",
+    "categoryZh": "新加坡 / 历史 / 建筑",
+    "headline": "Why Is Singapore's Oldest Surviving Fire Station Called “Blood and Bandage”?",
+    "headlineZh": "新加坡最古老的现存消防局，为什么叫“血与绷带”？",
     "intro": [
-      "Bukit Timah is one of Singapore's best-known place names. In Malay, bukit means hill and timah means tin. But the National Heritage Board says no tin was ever discovered in the area. So why does a hill with no known tin deposits carry that name?"
+      "On Hill Street in Singapore stands a fire station with striking red-and-white walls. The building is nicknamed “Blood and Bandage”. The name sounds dramatic, but it comes from the colours of the building, not a particular emergency.",
+      "Completed in 1908, Central Fire Station is still a working station. Its walls tell a story about how a growing city learned to fight fires."
     ],
     "introZh": [
-      "武吉知马（Bukit Timah）这个名字，按马来语直译是“锡山”：bukit 是山丘，timah 是锡。可新加坡国家文物局说，这一带从未发现过锡。一个没有锡的地方，怎么会叫“锡山”？"
+      "新加坡 Hill Street 上有一栋红白相间的老建筑，外号竟然叫“Blood and Bandage”，血与绷带。",
+      "名字听起来有点吓人，其实说的是外墙的颜色。这座 1908 年建成的中央消防局至今仍在使用，也是新加坡现存最古老的消防局。"
     ],
     "sections": [
       {
-        "heading": "Could the name have come from a tree?",
-        "headingZh": "名字可能来自一棵树吗？",
+        "heading": "Where did the strange nickname come from?",
+        "headingZh": "“血与绷带”这个外号从哪儿来？",
         "paragraphs": [
-          "The National Heritage Board's Bukit Timah Heritage Trail booklet offers a possible explanation: local people may once have called the hill Bukit Temak, after trees growing there. When the name was written down in English, Temak may have become Timah.",
-          "The booklet is careful about the uncertainty. Historians have not conclusively identified which tree the word temak referred to, although Shorea curtisii, also called Seraya, is considered a likely candidate. Early British maps recorded variants including Bukit Tima and Bukit Teemar. These spellings show how a spoken place name could change as it passed between languages and maps; they do not prove exactly who changed it."
+          "The National Heritage Board explains that the building's red-and-white brickwork inspired the nickname. Its architecture reflects a style popular in Edwardian England in the early twentieth century. There is a small visual trick: the white sections were not white bricks. They were bricks covered in plaster and painted white.",
+          "The distinctive façade makes the station easy to recognise today. It was designated a national monument in 1998, preserving an important part of Singapore's early civic infrastructure."
         ],
         "paragraphsZh": [
-          "新加坡国家文物局的《武吉知马文化遗产步道》手册提出一种可能：当地人原本把山丘叫作 Bukit Temak，指这里生长的 Temak 树。后来这个名字被用英文记录时，Temak 可能逐渐变成了 Timah。",
-          "但这不是已经坐实的定论。手册说，Temak 究竟对应哪种树还不明确，常见的 Seraya 树（学名 Shorea curtisii）是一个可能的答案。19 世纪的英国地图还出现过 Bukit Tima、Bukit Teemar 等不同拼法。它们让人看到地名在口语、地图和不同语言之间流转的痕迹，却不能证明具体是谁把名字改成了今天这样。"
+          "新加坡国家文物局介绍，这个外号来自建筑红白相间的外墙。它采用了 20 世纪初英国爱德华时代流行的建筑风格。还有个容易看错的细节：白色部分并不是白砖，而是在砖墙外抹灰，再刷上白漆。",
+          "1998 年，中央消防局被列为新加坡国家古迹。这栋建筑不只是好看，也保存了城市早期公共安全设施的一段历史。"
         ]
       },
       {
-        "heading": "Was the hill important for a different kind of rock?",
-        "headingZh": "那么，这里以前挖过什么？",
+        "heading": "Was it Singapore's very first fire station?",
+        "headingZh": "它是新加坡第一座消防局吗？",
         "paragraphs": [
-          "Yes. Granite quarrying was part of Bukit Timah's history. A 2019 National Heritage Board magazine article describes granite quarrying around Bukit Timah, noting that quarries including Hindhede expanded as demand grew for stone used in projects such as the Causeway. Granite is not tin, and quarrying is not evidence of tin mining.",
-          "The area's history also includes forest, plantations, transport and industry. Its name, however, may preserve an older reference to vegetation rather than a mineral deposit."
+          "No. “Oldest surviving” is different from “first ever”. The Singapore Civil Defence Force's historical publication records that Cross Street Station was built in 1891. The Hill Street station was completed in 1908, during a period when firefighting was becoming more organised and better equipped.",
+          "The National Heritage Board's Civic District Heritage Trail describes how Superintendent Montague William Pett, who arrived in 1904, helped modernise the service with motorised fire engines, better communications and more street hydrants. A purpose-built central station was part of that transformation."
         ],
         "paragraphsZh": [
-          "这里确实有采石历史，不过开采的是花岗岩，不是锡。国家文物局 2019 年的《MUSE SG》文章介绍了武吉知马的花岗岩采石业，并指出包括 Hindhede Quarry 在内的采石场随着工程用石需求增长而发展，相关工程包括新柔长堤。",
-          "武吉知马后来还经历过种植园、交通建设和工业发展。今天这个听起来与矿产有关的名字，可能反而保留了更早的森林记忆。"
+          "不是。“现存最古老”和“历史上第一座”要分开。新加坡民防部队的历史资料记载，Cross Street 早在 1891 年就建有消防局。Hill Street 的中央消防局则于 1908 年建成。",
+          "那时，新加坡的消防工作正在现代化。国家文物局的市政区文化遗产步道介绍，1904 年来到新加坡的消防主管 Montague William Pett 推动了机动消防车、通信系统和街道消防栓的发展。新的中央消防局也是这一变化的一部分。"
         ]
       },
       {
-        "heading": "Do historians agree on one origin?",
-        "headingZh": "地名的来历已经确定了吗？",
+        "heading": "Is it a museum or a working fire station?",
+        "headingZh": "现在这里是博物馆，还是消防局？",
         "paragraphs": [
-          "Not entirely. The tree explanation is supported as a possibility by the official heritage trail booklet. An older National Heritage Board magazine also records an alternative suggestion that Timah may relate to the name Fatimah. Neither account establishes an undisputed origin.",
-          "That is the interesting part: a literal translation can be certain while the historical reason for a name remains unresolved."
+          "Both, in different parts of the compound. SCDF identifies Central Fire Station as an operational station serving the city centre. The Civil Defence Heritage Gallery opened within its grounds in November 2001, displaying historic firefighting equipment and the evolution of civil defence. Visitors can learn how the service moved from older firefighting methods to modern rescue work.",
+          "The building therefore is not simply a preserved façade. It connects an active emergency service with the city's memory of how that service developed."
         ],
         "paragraphsZh": [
-          "还没有。官方文化遗产步道将 Temak 树的说法列为可能解释；国家文物局较早的刊物还记录了另一种猜测：Timah 也可能与人名 Fatimah 有关。这些都不是经过最终证实的唯一答案。",
-          "我们可以确定 Bukit Timah 的字面意思，却仍无法完全确定当初为什么这样叫它。"
+          "两者都是。中央消防局仍然承担市中心的消防救援任务。2001 年 11 月，民防历史展览馆（Civil Defence Heritage Gallery）在消防局内开放，展示老式消防设备、历史文物，以及消防和民防工作如何逐渐演变。",
+          "所以这不是一栋只剩外观的老建筑。里面仍有人值勤，也有人来了解一百多年前的新加坡如何应对火灾。"
         ]
       }
     ],
-    "ending": "Sometimes the most familiar name on a map is the one that still has a question mark beside it.",
-    "endingZh": "每天路过的熟悉地名，可能恰好藏着一个还没有标准答案的问题。",
+    "ending": "Sometimes a city's history is still on duty.",
+    "endingZh": "有些城市历史没有退役，今天还在继续值班。",
     "sources": [
       {
-        "name": "National Heritage Board, Bukit Timah Heritage Trail booklet (2018 refresh), Early History",
-        "nameZh": "新加坡国家文物局《武吉知马文化遗产步道》手册，早期历史部分",
-        "url": "https://www.roots.gov.sg/-/media/Roots/Files/bukit-timah-heritage-trail/2018-refresh/nhb_bukittimah_trail-booklet_web.pdf",
+        "name": "National Heritage Board, Central Fire Station collection description",
+        "nameZh": "新加坡国家文物局，中央消防局历史资料",
+        "url": "https://www.roots.gov.sg/Collection-Landing/listing/1194003",
         "official": true
       },
       {
-        "name": "National Heritage Board, MUSE SG, 2019, “Bukit Timah: Histories Beyond the Hill”, p. 66",
-        "nameZh": "国家文物局《MUSE SG》2019 年《Bukit Timah: Histories Beyond the Hill》，第 66 页",
-        "url": "https://www.roots.gov.sg/~/media/Roots/Images/resources/muse/issues/010719_muse-magazine_vol12_issue1.pdf?la=en",
+        "name": "Singapore Civil Defence Force, Departments and Units, Central Fire Station",
+        "nameZh": "新加坡民防部队，中央消防局介绍",
+        "url": "https://www.scdf.gov.sg/home/about-scdf/our-organisation/departments-and-units",
         "official": true
       },
       {
-        "name": "National Heritage Board, beMUSE July–September 2010 (alternative etymologies)",
-        "nameZh": "国家文物局 beMUSE 2010 年第三季度刊物，地名其他解释",
-        "url": "https://www.roots.gov.sg/-/media/Roots/Images/resources/muse/issues/013-bemuse-v3-issue3-heritage_in_our_backyards.pdf",
+        "name": "Singapore Civil Defence Force, Civil Defence Heritage Gallery 20th anniversary",
+        "nameZh": "新加坡民防部队，民防历史展览馆二十周年",
+        "url": "https://www.scdf.gov.sg/home/about-scdf/media-room/our-stories/storyarticledetail/commemorating-the-20th-anniversary-of-the-civil-defence-heritage-gallery",
         "official": true
       },
       {
-        "name": "SG101, Bukit Timah, 3 September 2024 (simplified government summary)",
-        "nameZh": "新加坡政府 SG101 2024 年 9 月 3 日介绍",
-        "url": "https://www.sg101.gov.sg/resources/archives/bukit-timah/",
+        "name": "National Heritage Board, Civic District Heritage Trail booklet",
+        "nameZh": "国家文物局，市政区文化遗产步道手册",
+        "url": "https://www.roots.gov.sg/-/media/Roots/Files/Civic-District-Heritage-Trail/Civic-District-Trail_Booklet.pdf",
+        "official": true
+      },
+      {
+        "name": "Singapore Civil Defence Force, Everyday Guardians historical booklet",
+        "nameZh": "新加坡民防部队《Everyday Guardians》历史手册",
+        "url": "https://www.scdf.gov.sg/docs/default-source/media-room-%28publications%29/posters--leaflets--booklets/publications-%28docs%29/everyday-guardians.pdf?sfvrsn=b45c89a6_1",
         "official": true
       }
     ]
