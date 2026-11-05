@@ -1,0 +1,154 @@
+{
+  "format": "v2",
+  "date": "2026-11-05",
+  "publishedAt": "2026-11-05T08:14:00+08:00",
+  "whatChanged": {
+    "category": "Technology / Work / AI",
+    "categoryZh": "科技 / 职场 / AI",
+    "update": false,
+    "headline": "Canva's Shake-up Affects 22% of Staff. Are They All Losing Their Jobs?",
+    "headlineZh": "Canva 重组影响 22% 员工，他们都会失业吗？",
+    "intro": [
+      "Canva announced a major restructuring on 4 November, affecting 1,271 people, or about 22% of its workforce. That figure is striking. But it does not mean 1,271 confirmed layoffs.",
+      "The changes cover job losses, altered roles and relocation. Behind the headline is a question facing software companies as AI changes their products: how do you reorganise the teams that build them?"
+    ],
+    "introZh": [
+      "2026 年 11 月 4 日，设计平台 Canva 宣布大规模重组，涉及 1,271 名员工，约占全公司人数的 22%。这个数字很大，但不能直接理解为 1,271 人全部被裁。",
+      "受影响的人包括离职、岗位调整和被要求搬迁的员工。比裁员数字更值得看的是：当 AI 正在改变软件产品，Canva 准备怎样重新组织开发这些产品的人？"
+    ],
+    "sections": [
+      {
+        "heading": "What does “affected” actually mean?",
+        "headingZh": "“受影响”到底包括哪些人？",
+        "paragraphs": [
+          "CEO Melanie Perkins told employees that Canva's growth had slowed this year for the first time in a decade. According to ABC News and Reuters reporting on 4 November, the company plans to reduce headcount, change some jobs and consolidate more work in central hubs. It has not disclosed a final breakdown of how many of the 1,271 people will actually leave.",
+          "That distinction matters. An employee asked to relocate, one assigned a different role and one made redundant face very different outcomes. Headlines that treat all 1,271 as confirmed layoffs overstate what has been established."
+        ],
+        "paragraphsZh": [
+          "Canva 联合创始人兼 CEO Melanie Perkins 表示，公司今年的增长速度出现十年来首次放缓。据澳大利亚 ABC 和路透社 2026 年 11 月 4 日报道，这次调整包括裁撤部分职位、改变部分员工的工作，以及把更多团队集中到主要办公地点。但 Canva 尚未公布 1,271 人中究竟有多少人会离职。",
+          "这几个结果不能混为一谈。被要求搬到集中办公地点、换一个岗位和真正失去工作，影响完全不同。直接把 1,271 人写成“已裁员人数”，会夸大目前已确认的事实。"
+        ]
+      },
+      {
+        "heading": "What is Canva changing inside the company?",
+        "headingZh": "公司内部准备怎么改？",
+        "paragraphs": [
+          "Canva is combining its product, growth and platform teams into one product organisation, with fewer management layers. Sydney will become the primary base for more product teams. Reuters reports that most hybrid employees will be expected in the office two or three days a week from January.",
+          "The stated aim is to reduce handovers and let teams take more responsibility for results. In a software business, splitting product decisions, user growth and the underlying technology across separate groups can create extra coordination. Merging them might speed decisions, though the announcement alone cannot prove that it will."
+        ],
+        "paragraphsZh": [
+          "Canva 将产品、增长和平台团队合并成一个产品组织，同时减少管理层级。悉尼将成为更多产品团队的主要办公地点。路透社报道，从明年 1 月起，多数混合办公员工预计每周到办公室两到三天。",
+          "公司的理由是减少部门之间的交接，让团队对结果承担更完整的责任。产品设计、用户增长和底层技术分属不同部门时，沟通和决策可能变慢。合并团队有机会减少这些环节，但是否真的提高效率，还需要看后续结果。"
+        ]
+      },
+      {
+        "heading": "Is AI responsible for the cuts?",
+        "headingZh": "是 AI 取代了这些员工吗？",
+        "paragraphs": [
+          "AI is changing the software market, but Canva did not explicitly cite AI as a reason for this restructuring. But its announcement cited slower growth and the need for a simpler organisation; it did not establish that an AI system directly replaced a particular number of employees. The Guardian also noted that Canva did not explicitly cite AI as the cause of the restructure.",
+          "For departing employees, reports describe at least six months' salary as part of the exit package and additional support, subject to applicable arrangements. The human cost is real even when the headline figure needs careful interpretation."
+        ],
+        "paragraphsZh": [
+          "AI 正在改变设计软件行业，但 Canva 并未明确将这次重组归因于 AI。但公司此次明确提到的是增长放缓及组织需要简化，并没有证明某个 AI 系统直接替代了多少员工。《卫报》也指出，Canva 并未明确把这次重组归因于 AI。",
+          "对于需要离职的人，报道提到的补偿包括至少六个月薪资及其他支持，具体仍取决于适用安排。不能夸大裁员数字，也不应因此忽略真实的个人影响。"
+        ]
+      }
+    ],
+    "ending": "A restructuring figure can describe the scale of change without telling us how many people have lost their jobs.",
+    "endingZh": "一个重组数字能说明变化有多大，却不一定能告诉我们究竟有多少人失去了工作。",
+    "sources": [
+      {
+        "name": "ABC News, 4 November 2026, Canva restructure",
+        "nameZh": "澳大利亚广播公司，2026 年 11 月 4 日，Canva 重组",
+        "url": "https://www.abc.net.au/news/2026-11-04/canva-restructure-job-losses/107344304",
+        "official": false
+      },
+      {
+        "name": "Reuters, via WHBL, 4 November 2026, Canva restructuring",
+        "nameZh": "路透社，经 WHBL 转载，2026 年 11 月 4 日，Canva 重组",
+        "url": "https://whbl.com/2026/11/03/australias-canva-to-cut-about-22-of-staff-as-growth-slowdown-triggers-restructuring/",
+        "official": false
+      },
+      {
+        "name": "The Guardian, 4 November 2026, Canva layoffs and relocation",
+        "nameZh": "《卫报》，2026 年 11 月 4 日，Canva 裁员与搬迁",
+        "url": "https://www.theguardian.com/australia-news/2026/nov/04/canva-layoffs-job-cuts-restructure",
+        "official": false
+      }
+    ]
+  },
+  "stayCurious": {
+    "category": "Singapore / Wildlife / City",
+    "categoryZh": "新加坡 / 野生动物 / 城市",
+    "headline": "Why Do Singapore's Otters Walk Across Roads Instead of Staying in the Water?",
+    "headlineZh": "新加坡的水獭为什么总要过马路，不待在水里？",
+    "intro": [
+      "A family of otters trots across a road in Singapore, pups following closely behind the adults. It looks like an unlikely place for an animal so comfortable in water.",
+      "Yet smooth-coated otters do not live exclusively in rivers. Their territories include banks, parks, ponds and the urban spaces between waterways."
+    ],
+    "introZh": [
+      "在新加坡，有时会看到一群水獭排着队穿过马路，小水獭紧紧跟在大水獭后面。明明这么会游泳，它们为什么要跑到车来车往的地方？",
+      "因为水獭的生活范围不只有水。河岸、公园、池塘，甚至两条水道之间的城市空间，都可能是它们活动的地方。"
+    ],
+    "sections": [
+      {
+        "heading": "Why leave the water at all?",
+        "headingZh": "为什么要离开水面？",
+        "paragraphs": [
+          "Singapore's Animal and Veterinary Service (AVS) says smooth-coated otters regularly move over land through park connectors, parks and housing estates near waterways. They hunt mainly for fish, but also need places to rest, raise young and move between feeding areas. An urban canal does not always connect directly to the next pond or river.",
+          "Otters are social animals, living in pairs or family groups. They communicate with calls and scent marks. NParks notes that groups mark and defend territories. When families move, they may travel together across land rather than remain in one stretch of water."
+        ],
+        "paragraphsZh": [
+          "新加坡动物与兽医事务组（AVS）介绍，滑毛水獭经常沿着公园连道、公园，以及水道附近的住宅区在陆地上移动。它们主要吃鱼，但也需要休息、育幼，并在不同觅食地点之间往来。城市里的河道和池塘不一定处处相连，水獭有时只能从陆地过去。",
+          "水獭还是群居动物，通常成对或以家庭为单位生活。它们会用叫声和气味交流，也会标记、守卫自己的地盘。因此我们看到的整队水獭，可能正在沿着家族的活动路线移动，而不只是出来“散步”。"
+        ]
+      },
+      {
+        "heading": "How did otters return to the city?",
+        "headingZh": "它们为什么又回到了新加坡？",
+        "paragraphs": [
+          "Their presence is part of a larger environmental story. AVS says otters disappeared from Singapore's waterways during decades when pollution and degraded shorelines reduced suitable habitat. Cleaner waterways and enough fish helped them return. NParks' biodiversity website describes smooth-coated otters reappearing on mainland Singapore in the 1990s and establishing breeding populations later.",
+          "This does not mean every city canal is pristine, or that otters never cause conflict. They sometimes enter private ponds for fish, and different families can fight over territory. Their return is evidence that parts of the urban aquatic ecosystem can support a large predator again."
+        ],
+        "paragraphsZh": [
+          "水獭回归和水环境改善有关。AVS 指出，过去因为水道污染和海岸环境退化，水獭曾从新加坡的水域消失。后来水质改善，鱼类资源足以支撑它们生存，水獭才逐渐重新出现。NParks 的生物多样性资料记载，滑毛水獭在 1990 年代重返新加坡本岛，之后逐步建立繁殖种群。",
+          "当然，看到水獭不代表每一条河都毫无污染。它们有时会进入私人鱼池觅食，不同家族之间也可能发生争斗。但这种大型水生捕食者重新出现，至少说明部分城市水域已经能够重新支持它们生活。"
+        ]
+      },
+      {
+        "heading": "What should you do when a family approaches?",
+        "headingZh": "遇到过马路的水獭怎么办？",
+        "paragraphs": [
+          "Give them room. AVS advises people not to touch, chase, corner or feed otters, especially when pups are present. Keep pets close on a short leash and avoid flash photography. If an otter is injured or trapped, contact the Animal Response Centre rather than trying to handle it yourself.",
+          "The next time you see otters crossing a road, the crossing may be one small section of a much larger route through the city."
+        ],
+        "paragraphsZh": [
+          "最重要的是留出距离。AVS 建议不要摸、追赶、围堵或喂食水獭，尤其是有幼崽的时候。带狗散步要牵紧牵绳，不要用闪光灯拍照。遇到受伤或被困的水獭，应联系 Animal Response Centre，而不是自己抓它。",
+          "下次再看到水獭排队过马路，你看到的可能只是它们穿越整座城市的一小段路。"
+        ]
+      }
+    ],
+    "ending": "For an otter, the city is not divided neatly into roads, parks and rivers. It is one connected habitat, with some dangerous gaps.",
+    "endingZh": "在人类的地图上，马路、公园和河流分得很清楚。对水獭来说，它们却是一片相连的家园，只是有些路段格外危险。",
+    "sources": [
+      {
+        "name": "Animal & Veterinary Service, Otters in Singapore, updated 31 October 2025",
+        "nameZh": "新加坡动物与兽医事务组，水獭指南",
+        "url": "https://avs.nparks.gov.sg/wildlife/encountering-wildlife/otters/",
+        "official": true
+      },
+      {
+        "name": "NParks BiodiversitySG, Smooth-coated Otter, updated 3 June 2026",
+        "nameZh": "新加坡国家公园局，滑毛水獭物种资料",
+        "url": "https://biodiversitysg.nparks.gov.sg/our-biodiversity/mammals/other-mammals/smooth-coated-otter/",
+        "official": true
+      },
+      {
+        "name": "NParks Flora & Fauna Web, Lutrogale perspicillata",
+        "nameZh": "国家公园局，滑毛水獭物种档案",
+        "url": "https://www.nparks.gov.sg/florafaunaweb/fauna/1/3/13",
+        "official": true
+      }
+    ]
+  }
+}

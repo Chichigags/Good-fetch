@@ -1,164 +1,152 @@
 {
   "format": "v2",
-  "date": "2026-11-04",
-  "publishedAt": "2026-11-04T08:17:00+08:00",
+  "date": "2026-11-05",
+  "publishedAt": "2026-11-05T08:14:00+08:00",
   "whatChanged": {
-    "category": "AI / Education / Product Policy",
-    "categoryZh": "AI / 教育 / 产品政策",
+    "category": "Technology / Work / AI",
+    "categoryZh": "科技 / 职场 / AI",
     "update": false,
-    "headline": "Schools Can Switch Off Google's AI. Why Does Search Go Off Too?",
-    "headlineZh": "学校可以关闭 Google AI，为什么连搜索也要一起关？",
+    "headline": "Canva's Shake-up Affects 22% of Staff. Are They All Losing Their Jobs?",
+    "headlineZh": "Canva 重组影响 22% 员工，他们都会失业吗？",
     "intro": [
-      "Google says it will disable Gemini and related AI features by default for K–12 student accounts until school administrators choose to enable them. But there is a catch: a school that does not allow Google's AI-powered features cannot keep ordinary Google Search switched on for those accounts either.",
-      "The announcement on 3 November 2026 turns a familiar classroom debate into a practical product question: how much choice do schools really have when AI is built into search?"
+      "Canva announced a major restructuring on 4 November, affecting 1,271 people, or about 22% of its workforce. That figure is striking. But it does not mean 1,271 confirmed layoffs.",
+      "The changes cover job losses, altered roles and relocation. Behind the headline is a question facing software companies as AI changes their products: how do you reorganise the teams that build them?"
     ],
     "introZh": [
-      "Google 2026 年 11 月 3 日宣布，将默认关闭中小学学生账号里的 Gemini 等 AI 功能，是否启用由学校管理员决定。可问题是：如果学校不接受 Google 搜索中的 AI 功能，就不能只保留传统的 Google Search。",
-      "学校想控制学生怎么使用 AI，却发现搜索和 AI 已经被绑在一起。这次调整究竟给了学校多少选择权？"
+      "2026 年 11 月 4 日，设计平台 Canva 宣布大规模重组，涉及 1,271 名员工，约占全公司人数的 22%。这个数字很大，但不能直接理解为 1,271 人全部被裁。",
+      "受影响的人包括离职、岗位调整和被要求搬迁的员工。比裁员数字更值得看的是：当 AI 正在改变软件产品，Canva 准备怎样重新组织开发这些产品的人？"
     ],
     "sections": [
       {
-        "heading": "What exactly changes for student accounts?",
-        "headingZh": "学生账号具体会发生什么变化？",
+        "heading": "What does “affected” actually mean?",
+        "headingZh": "“受影响”到底包括哪些人？",
         "paragraphs": [
-          "According to reporting by the Associated Press and The Guardian on 3 November, Google is moving to an opt-in approach for AI features on K–12 school accounts. Administrators, rather than individual students, decide whether to enable them. The affected products include Gemini and AI features integrated into Google Search. This is about managed school accounts, not a claim that Google Search is being switched off for everyone.",
-          "Google presents the change as a way to give schools control after concerns about children's use of AI. Its new Guided Learning approach is designed to walk students through a problem rather than simply provide an answer. That educational design, however, does not resolve the separate issue of whether schools can choose search without generative AI."
+          "CEO Melanie Perkins told employees that Canva's growth had slowed this year for the first time in a decade. According to ABC News and Reuters reporting on 4 November, the company plans to reduce headcount, change some jobs and consolidate more work in central hubs. It has not disclosed a final breakdown of how many of the 1,271 people will actually leave.",
+          "That distinction matters. An employee asked to relocate, one assigned a different role and one made redundant face very different outcomes. Headlines that treat all 1,271 as confirmed layoffs overstate what has been established."
         ],
         "paragraphsZh": [
-          "据美联社和《卫报》2026 年 11 月 3 日报道，Google 将中小学学生账号的 AI 功能改为默认关闭，由学校管理员决定是否开启，涉及 Gemini 及整合进 Google Search 的 AI 功能。这里说的是学校管理的学生账号，不是所有人的 Google 搜索都会被关闭。",
-          "Google 的解释是，这样可以回应家长和教育工作者对学生使用 AI 的担忧。它还推出 Guided Learning，希望 AI 遇到学习题目时引导学生一步步思考，而不是直接给答案。但这和学校能否单独关闭搜索里的 AI，是两回事。"
+          "Canva 联合创始人兼 CEO Melanie Perkins 表示，公司今年的增长速度出现十年来首次放缓。据澳大利亚 ABC 和路透社 2026 年 11 月 4 日报道，这次调整包括裁撤部分职位、改变部分员工的工作，以及把更多团队集中到主要办公地点。但 Canva 尚未公布 1,271 人中究竟有多少人会离职。",
+          "这几个结果不能混为一谈。被要求搬到集中办公地点、换一个岗位和真正失去工作，影响完全不同。直接把 1,271 人写成“已裁员人数”，会夸大目前已确认的事实。"
         ]
       },
       {
-        "heading": "Why can't schools simply turn off AI in Search?",
-        "headingZh": "为什么不能只保留传统搜索？",
+        "heading": "What is Canva changing inside the company?",
+        "headingZh": "公司内部准备怎么改？",
         "paragraphs": [
-          "Google says AI has become integral to its search product. AI Overviews and conversational search are no longer treated as an entirely separate service that an administrator can always disable while retaining the rest of Search. Under the announced arrangement, refusing those AI features also means losing Google Search access for the relevant school accounts.",
-          "That matters because searching the web and asking a chatbot to generate an answer are not identical learning activities. Teachers may want students to compare sources, check claims and read original pages while restricting generated responses. A single combined switch makes that distinction harder to enforce through Google's own settings."
+          "Canva is combining its product, growth and platform teams into one product organisation, with fewer management layers. Sydney will become the primary base for more product teams. Reuters reports that most hybrid employees will be expected in the office two or three days a week from January.",
+          "The stated aim is to reduce handovers and let teams take more responsibility for results. In a software business, splitting product decisions, user growth and the underlying technology across separate groups can create extra coordination. Merging them might speed decisions, though the announcement alone cannot prove that it will."
         ],
         "paragraphsZh": [
-          "Google 认为 AI 已经成为搜索产品的一部分。AI Overviews 等功能与搜索深度整合，学校不能简单地在自己的管理设置里关闭所有生成式 AI，同时继续使用同一套 Google Search。",
-          "可对老师来说，“让学生自己查资料”和“让 AI 直接生成答案”并不是同一种学习方式。老师可能希望学生比较不同网页、追查来源，却暂时不使用生成式回答。把两者放在同一个开关里，学校就很难按照自己的教学方式做区分。"
+          "Canva 将产品、增长和平台团队合并成一个产品组织，同时减少管理层级。悉尼将成为更多产品团队的主要办公地点。路透社报道，从明年 1 月起，多数混合办公员工预计每周到办公室两到三天。",
+          "公司的理由是减少部门之间的交接，让团队对结果承担更完整的责任。产品设计、用户增长和底层技术分属不同部门时，沟通和决策可能变慢。合并团队有机会减少这些环节，但是否真的提高效率，还需要看后续结果。"
         ]
       },
       {
-        "heading": "Who objects, and what remains uncertain?",
-        "headingZh": "争议到底在哪里？",
+        "heading": "Is AI responsible for the cuts?",
+        "headingZh": "是 AI 取代了这些员工吗？",
         "paragraphs": [
-          "Critics cited by AP, including the child-advocacy organisation Fairplay and former US Federal Trade Commission chair Lina Khan, argue that tying search access to AI choices puts pressure on schools. Google says the approach gives school administrators control over whether to enable the affected products.",
-          "The precise implementation schedule and options may vary by product and school configuration. This report does not establish that all schools worldwide have already lost search access, or that a school cannot use other search services. The change is a Google account-control decision, not a law requiring AI in classrooms."
+          "AI is changing the software market, but Canva did not explicitly cite AI as a reason for this restructuring. But its announcement cited slower growth and the need for a simpler organisation; it did not establish that an AI system directly replaced a particular number of employees. The Guardian also noted that Canva did not explicitly cite AI as the cause of the restructure.",
+          "For departing employees, reports describe at least six months' salary as part of the exit package and additional support, subject to applicable arrangements. The human cost is real even when the headline figure needs careful interpretation."
         ],
         "paragraphsZh": [
-          "美联社引述的儿童权益组织 Fairplay 及美国联邦贸易委员会前主席 Lina Khan 等批评者认为，这种捆绑可能迫使学校在搜索和 AI 之间做不必要的选择。Google 则强调，最终是否启用相关功能仍由学校管理员决定。",
-          "需要注意：这不意味着全球所有学校现在都无法搜索，也不意味着学校不能选择其他搜索服务。不同产品及学校配置的具体实施时间和控制选项，仍应以 Google 后续正式说明为准。这是 Google 的产品政策，不是政府强制学校使用 AI 的法律。"
+          "AI 正在改变设计软件行业，但 Canva 并未明确将这次重组归因于 AI。但公司此次明确提到的是增长放缓及组织需要简化，并没有证明某个 AI 系统直接替代了多少员工。《卫报》也指出，Canva 并未明确把这次重组归因于 AI。",
+          "对于需要离职的人，报道提到的补偿包括至少六个月薪资及其他支持，具体仍取决于适用安排。不能夸大裁员数字，也不应因此忽略真实的个人影响。"
         ]
       }
     ],
-    "ending": "For schools, the important question may be less whether AI is useful than whether they can decide where it belongs.",
-    "endingZh": "学校要决定的，不只是 AI 有没有用，还有它应该在哪些学习环节出现。",
+    "ending": "A restructuring figure can describe the scale of change without telling us how many people have lost their jobs.",
+    "endingZh": "一个重组数字能说明变化有多大，却不一定能告诉我们究竟有多少人失去了工作。",
     "sources": [
       {
-        "name": "Associated Press, 3 November 2026, Google school AI and Search controls",
-        "nameZh": "美联社，2026 年 11 月 3 日，Google 学校账号 AI 与搜索控制",
-        "url": "https://apnews.com/article/ai-schools-classroom-students-google-7ba4219e505db1c11d672f6eefe7155a",
+        "name": "ABC News, 4 November 2026, Canva restructure",
+        "nameZh": "澳大利亚广播公司，2026 年 11 月 4 日，Canva 重组",
+        "url": "https://www.abc.net.au/news/2026-11-04/canva-restructure-job-losses/107344304",
         "official": false
       },
       {
-        "name": "The Guardian, 3 November 2026, Google Search and AI in schools",
-        "nameZh": "《卫报》，2026 年 11 月 3 日，学校搜索与 AI",
-        "url": "https://www.theguardian.com/technology/2026/nov/03/google-search-artificial-intelligence",
+        "name": "Reuters, via WHBL, 4 November 2026, Canva restructuring",
+        "nameZh": "路透社，经 WHBL 转载，2026 年 11 月 4 日，Canva 重组",
+        "url": "https://whbl.com/2026/11/03/australias-canva-to-cut-about-22-of-staff-as-growth-slowdown-triggers-restructuring/",
         "official": false
       },
       {
-        "name": "The Washington Post, 3 November 2026, school administrator controls",
-        "nameZh": "《华盛顿邮报》，2026 年 11 月 3 日，学校管理员控制",
-        "url": "https://www.washingtonpost.com/education/2026/11/03/google-turn-off-search-schools-that-dont-want-students-using-ai/",
+        "name": "The Guardian, 4 November 2026, Canva layoffs and relocation",
+        "nameZh": "《卫报》，2026 年 11 月 4 日，Canva 裁员与搬迁",
+        "url": "https://www.theguardian.com/australia-news/2026/nov/04/canva-layoffs-job-cuts-restructure",
         "official": false
       }
     ]
   },
   "stayCurious": {
-    "category": "Singapore / Heritage / Architecture",
-    "categoryZh": "新加坡 / 历史 / 建筑",
-    "headline": "Why Is Singapore's Oldest Surviving Fire Station Called “Blood and Bandage”?",
-    "headlineZh": "新加坡最古老的现存消防局，为什么叫“血与绷带”？",
+    "category": "Singapore / Wildlife / City",
+    "categoryZh": "新加坡 / 野生动物 / 城市",
+    "headline": "Why Do Singapore's Otters Walk Across Roads Instead of Staying in the Water?",
+    "headlineZh": "新加坡的水獭为什么总要过马路，不待在水里？",
     "intro": [
-      "On Hill Street in Singapore stands a fire station with striking red-and-white walls. The building is nicknamed “Blood and Bandage”. The name sounds dramatic, but it comes from the colours of the building, not a particular emergency.",
-      "Completed in 1908, Central Fire Station is still a working station. Its walls tell a story about how a growing city learned to fight fires."
+      "A family of otters trots across a road in Singapore, pups following closely behind the adults. It looks like an unlikely place for an animal so comfortable in water.",
+      "Yet smooth-coated otters do not live exclusively in rivers. Their territories include banks, parks, ponds and the urban spaces between waterways."
     ],
     "introZh": [
-      "新加坡 Hill Street 上有一栋红白相间的老建筑，外号竟然叫“Blood and Bandage”，血与绷带。",
-      "名字听起来有点吓人，其实说的是外墙的颜色。这座 1908 年建成的中央消防局至今仍在使用，也是新加坡现存最古老的消防局。"
+      "在新加坡，有时会看到一群水獭排着队穿过马路，小水獭紧紧跟在大水獭后面。明明这么会游泳，它们为什么要跑到车来车往的地方？",
+      "因为水獭的生活范围不只有水。河岸、公园、池塘，甚至两条水道之间的城市空间，都可能是它们活动的地方。"
     ],
     "sections": [
       {
-        "heading": "Where did the strange nickname come from?",
-        "headingZh": "“血与绷带”这个外号从哪儿来？",
+        "heading": "Why leave the water at all?",
+        "headingZh": "为什么要离开水面？",
         "paragraphs": [
-          "The National Heritage Board explains that the building's red-and-white brickwork inspired the nickname. Its architecture reflects a style popular in Edwardian England in the early twentieth century. There is a small visual trick: the white sections were not white bricks. They were bricks covered in plaster and painted white.",
-          "The distinctive façade makes the station easy to recognise today. It was designated a national monument in 1998, preserving an important part of Singapore's early civic infrastructure."
+          "Singapore's Animal and Veterinary Service (AVS) says smooth-coated otters regularly move over land through park connectors, parks and housing estates near waterways. They hunt mainly for fish, but also need places to rest, raise young and move between feeding areas. An urban canal does not always connect directly to the next pond or river.",
+          "Otters are social animals, living in pairs or family groups. They communicate with calls and scent marks. NParks notes that groups mark and defend territories. When families move, they may travel together across land rather than remain in one stretch of water."
         ],
         "paragraphsZh": [
-          "新加坡国家文物局介绍，这个外号来自建筑红白相间的外墙。它采用了 20 世纪初英国爱德华时代流行的建筑风格。还有个容易看错的细节：白色部分并不是白砖，而是在砖墙外抹灰，再刷上白漆。",
-          "1998 年，中央消防局被列为新加坡国家古迹。这栋建筑不只是好看，也保存了城市早期公共安全设施的一段历史。"
+          "新加坡动物与兽医事务组（AVS）介绍，滑毛水獭经常沿着公园连道、公园，以及水道附近的住宅区在陆地上移动。它们主要吃鱼，但也需要休息、育幼，并在不同觅食地点之间往来。城市里的河道和池塘不一定处处相连，水獭有时只能从陆地过去。",
+          "水獭还是群居动物，通常成对或以家庭为单位生活。它们会用叫声和气味交流，也会标记、守卫自己的地盘。因此我们看到的整队水獭，可能正在沿着家族的活动路线移动，而不只是出来“散步”。"
         ]
       },
       {
-        "heading": "Was it Singapore's very first fire station?",
-        "headingZh": "它是新加坡第一座消防局吗？",
+        "heading": "How did otters return to the city?",
+        "headingZh": "它们为什么又回到了新加坡？",
         "paragraphs": [
-          "No. “Oldest surviving” is different from “first ever”. The Singapore Civil Defence Force's historical publication records that Cross Street Station was built in 1891. The Hill Street station was completed in 1908, during a period when firefighting was becoming more organised and better equipped.",
-          "The National Heritage Board's Civic District Heritage Trail describes how Superintendent Montague William Pett, who arrived in 1904, helped modernise the service with motorised fire engines, better communications and more street hydrants. A purpose-built central station was part of that transformation."
+          "Their presence is part of a larger environmental story. AVS says otters disappeared from Singapore's waterways during decades when pollution and degraded shorelines reduced suitable habitat. Cleaner waterways and enough fish helped them return. NParks' biodiversity website describes smooth-coated otters reappearing on mainland Singapore in the 1990s and establishing breeding populations later.",
+          "This does not mean every city canal is pristine, or that otters never cause conflict. They sometimes enter private ponds for fish, and different families can fight over territory. Their return is evidence that parts of the urban aquatic ecosystem can support a large predator again."
         ],
         "paragraphsZh": [
-          "不是。“现存最古老”和“历史上第一座”要分开。新加坡民防部队的历史资料记载，Cross Street 早在 1891 年就建有消防局。Hill Street 的中央消防局则于 1908 年建成。",
-          "那时，新加坡的消防工作正在现代化。国家文物局的市政区文化遗产步道介绍，1904 年来到新加坡的消防主管 Montague William Pett 推动了机动消防车、通信系统和街道消防栓的发展。新的中央消防局也是这一变化的一部分。"
+          "水獭回归和水环境改善有关。AVS 指出，过去因为水道污染和海岸环境退化，水獭曾从新加坡的水域消失。后来水质改善，鱼类资源足以支撑它们生存，水獭才逐渐重新出现。NParks 的生物多样性资料记载，滑毛水獭在 1990 年代重返新加坡本岛，之后逐步建立繁殖种群。",
+          "当然，看到水獭不代表每一条河都毫无污染。它们有时会进入私人鱼池觅食，不同家族之间也可能发生争斗。但这种大型水生捕食者重新出现，至少说明部分城市水域已经能够重新支持它们生活。"
         ]
       },
       {
-        "heading": "Is it a museum or a working fire station?",
-        "headingZh": "现在这里是博物馆，还是消防局？",
+        "heading": "What should you do when a family approaches?",
+        "headingZh": "遇到过马路的水獭怎么办？",
         "paragraphs": [
-          "Both, in different parts of the compound. SCDF identifies Central Fire Station as an operational station serving the city centre. The Civil Defence Heritage Gallery opened within its grounds in November 2001, displaying historic firefighting equipment and the evolution of civil defence. Visitors can learn how the service moved from older firefighting methods to modern rescue work.",
-          "The building therefore is not simply a preserved façade. It connects an active emergency service with the city's memory of how that service developed."
+          "Give them room. AVS advises people not to touch, chase, corner or feed otters, especially when pups are present. Keep pets close on a short leash and avoid flash photography. If an otter is injured or trapped, contact the Animal Response Centre rather than trying to handle it yourself.",
+          "The next time you see otters crossing a road, the crossing may be one small section of a much larger route through the city."
         ],
         "paragraphsZh": [
-          "两者都是。中央消防局仍然承担市中心的消防救援任务。2001 年 11 月，民防历史展览馆（Civil Defence Heritage Gallery）在消防局内开放，展示老式消防设备、历史文物，以及消防和民防工作如何逐渐演变。",
-          "所以这不是一栋只剩外观的老建筑。里面仍有人值勤，也有人来了解一百多年前的新加坡如何应对火灾。"
+          "最重要的是留出距离。AVS 建议不要摸、追赶、围堵或喂食水獭，尤其是有幼崽的时候。带狗散步要牵紧牵绳，不要用闪光灯拍照。遇到受伤或被困的水獭，应联系 Animal Response Centre，而不是自己抓它。",
+          "下次再看到水獭排队过马路，你看到的可能只是它们穿越整座城市的一小段路。"
         ]
       }
     ],
-    "ending": "Sometimes a city's history is still on duty.",
-    "endingZh": "有些城市历史没有退役，今天还在继续值班。",
+    "ending": "For an otter, the city is not divided neatly into roads, parks and rivers. It is one connected habitat, with some dangerous gaps.",
+    "endingZh": "在人类的地图上，马路、公园和河流分得很清楚。对水獭来说，它们却是一片相连的家园，只是有些路段格外危险。",
     "sources": [
       {
-        "name": "National Heritage Board, Central Fire Station collection description",
-        "nameZh": "新加坡国家文物局，中央消防局历史资料",
-        "url": "https://www.roots.gov.sg/Collection-Landing/listing/1194003",
+        "name": "Animal & Veterinary Service, Otters in Singapore, updated 31 October 2025",
+        "nameZh": "新加坡动物与兽医事务组，水獭指南",
+        "url": "https://avs.nparks.gov.sg/wildlife/encountering-wildlife/otters/",
         "official": true
       },
       {
-        "name": "Singapore Civil Defence Force, Departments and Units, Central Fire Station",
-        "nameZh": "新加坡民防部队，中央消防局介绍",
-        "url": "https://www.scdf.gov.sg/home/about-scdf/our-organisation/departments-and-units",
+        "name": "NParks BiodiversitySG, Smooth-coated Otter, updated 3 June 2026",
+        "nameZh": "新加坡国家公园局，滑毛水獭物种资料",
+        "url": "https://biodiversitysg.nparks.gov.sg/our-biodiversity/mammals/other-mammals/smooth-coated-otter/",
         "official": true
       },
       {
-        "name": "Singapore Civil Defence Force, Civil Defence Heritage Gallery 20th anniversary",
-        "nameZh": "新加坡民防部队，民防历史展览馆二十周年",
-        "url": "https://www.scdf.gov.sg/home/about-scdf/media-room/our-stories/storyarticledetail/commemorating-the-20th-anniversary-of-the-civil-defence-heritage-gallery",
-        "official": true
-      },
-      {
-        "name": "National Heritage Board, Civic District Heritage Trail booklet",
-        "nameZh": "国家文物局，市政区文化遗产步道手册",
-        "url": "https://www.roots.gov.sg/-/media/Roots/Files/Civic-District-Heritage-Trail/Civic-District-Trail_Booklet.pdf",
-        "official": true
-      },
-      {
-        "name": "Singapore Civil Defence Force, Everyday Guardians historical booklet",
-        "nameZh": "新加坡民防部队《Everyday Guardians》历史手册",
-        "url": "https://www.scdf.gov.sg/docs/default-source/media-room-%28publications%29/posters--leaflets--booklets/publications-%28docs%29/everyday-guardians.pdf?sfvrsn=b45c89a6_1",
+        "name": "NParks Flora & Fauna Web, Lutrogale perspicillata",
+        "nameZh": "国家公园局，滑毛水獭物种档案",
+        "url": "https://www.nparks.gov.sg/florafaunaweb/fauna/1/3/13",
         "official": true
       }
     ]
