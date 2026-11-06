@@ -1,152 +1,143 @@
 {
   "format": "v2",
-  "date": "2026-11-05",
-  "publishedAt": "2026-11-05T08:14:00+08:00",
+  "date": "2026-11-06",
+  "publishedAt": "2026-11-06T08:12:04+08:00",
   "whatChanged": {
-    "category": "Technology / Work / AI",
-    "categoryZh": "科技 / 职场 / AI",
+    "category": "AI / Cybersecurity",
+    "categoryZh": "人工智能 / 网络安全",
     "update": false,
-    "headline": "Canva's Shake-up Affects 22% of Staff. Are They All Losing Their Jobs?",
-    "headlineZh": "Canva 重组影响 22% 员工，他们都会失业吗？",
+    "headline": "OpenAI's New Cybersecurity AI Can Find Exploits. Who Gets to Use It?",
+    "headlineZh": "OpenAI 新模型能找出可利用的漏洞，谁可以使用？",
     "intro": [
-      "Canva announced a major restructuring on 4 November, affecting 1,271 people, or about 22% of its workforce. That figure is striking. But it does not mean 1,271 confirmed layoffs.",
-      "The changes cover job losses, altered roles and relocation. Behind the headline is a question facing software companies as AI changes their products: how do you reorganise the teams that build them?"
+      "OpenAI introduced GPT-6 Cyber on 5 November, a specialist model that can investigate software vulnerabilities and develop working exploits. That ability is useful to defenders who need to test and fix weaknesses, but it could also help attackers.",
+      "OpenAI rates the model \"Critical\" for cybersecurity under its own Preparedness Framework. For now, access is restricted to selected, approved Daybreak Red customers rather than everyone using ChatGPT."
     ],
     "introZh": [
-      "2026 年 11 月 4 日，设计平台 Canva 宣布大规模重组，涉及 1,271 名员工，约占全公司人数的 22%。这个数字很大，但不能直接理解为 1,271 人全部被裁。",
-      "受影响的人包括离职、岗位调整和被要求搬迁的员工。比裁员数字更值得看的是：当 AI 正在改变软件产品，Canva 准备怎样重新组织开发这些产品的人？"
+      "2026 年 11 月 5 日，OpenAI 发布专门研究网络安全的 GPT-6 Cyber。它可以分析软件漏洞，并尝试开发真正能利用这些漏洞的攻击程序。安全团队可以借此验证问题、修复系统，但同样的能力也可能被攻击者滥用。",
+      "OpenAI 按自己的安全评估框架，将它的网络安全能力评为“Critical”（关键级）。目前仅向经过批准的部分 Daybreak Red 客户开放，并非普通 ChatGPT 用户都能使用。"
     ],
     "sections": [
       {
-        "heading": "What does “affected” actually mean?",
-        "headingZh": "“受影响”到底包括哪些人？",
+        "heading": "What can the model actually do?",
+        "headingZh": "它究竟能做到什么？",
         "paragraphs": [
-          "CEO Melanie Perkins told employees that Canva's growth had slowed this year for the first time in a decade. According to ABC News and Reuters reporting on 4 November, the company plans to reduce headcount, change some jobs and consolidate more work in central hubs. It has not disclosed a final breakdown of how many of the 1,271 people will actually leave.",
-          "That distinction matters. An employee asked to relocate, one assigned a different role and one made redundant face very different outcomes. Headlines that treat all 1,271 as confirmed layoffs overstate what has been established."
+          "On OpenAI's ExploitGym benchmark, GPT-6 Cyber scored 48.5%, versus 32.1% for GPT-5.6 Cyber. The test measures whether a model can exploit specified vulnerabilities in controlled targets; it does not measure success against arbitrary websites.",
+          "OpenAI also says its researchers used the model to identify 81 previously unknown high-severity Firefox vulnerabilities and develop 948 privilege-escalation exploits targeting Linux. Mozilla has already released fixes for many of the reported Firefox issues, according to OpenAI. These are company-reported research results, not proof that the model can reliably break into any system."
         ],
         "paragraphsZh": [
-          "Canva 联合创始人兼 CEO Melanie Perkins 表示，公司今年的增长速度出现十年来首次放缓。据澳大利亚 ABC 和路透社 2026 年 11 月 4 日报道，这次调整包括裁撤部分职位、改变部分员工的工作，以及把更多团队集中到主要办公地点。但 Canva 尚未公布 1,271 人中究竟有多少人会离职。",
-          "这几个结果不能混为一谈。被要求搬到集中办公地点、换一个岗位和真正失去工作，影响完全不同。直接把 1,271 人写成“已裁员人数”，会夸大目前已确认的事实。"
+          "在 OpenAI 的 ExploitGym 测试中，GPT-6 Cyber 得分为 48.5%，上一代 GPT-5.6 Cyber 为 32.1%。测试考察的是模型能否在受控环境中利用指定漏洞，并不意味着它可以随意攻破真实网站。",
+          "OpenAI 还称，研究人员借助该模型发现了 Firefox 中 81 个此前未知的高危漏洞，并开发出 948 个针对 Linux 的提权漏洞利用程序。该公司表示，Mozilla 已发布其中许多 Firefox 漏洞的修复程序。这些是公司公布的研究成果，不能推导出模型对任何系统都能成功入侵。"
         ]
       },
       {
-        "heading": "What is Canva changing inside the company?",
-        "headingZh": "公司内部准备怎么改？",
+        "heading": "Can it respect the limits of an authorized test?",
+        "headingZh": "它会遵守测试范围吗？",
         "paragraphs": [
-          "Canva is combining its product, growth and platform teams into one product organisation, with fewer management layers. Sydney will become the primary base for more product teams. Reuters reports that most hybrid employees will be expected in the office two or three days a week from January.",
-          "The stated aim is to reduce handovers and let teams take more responsibility for results. In a software business, splitting product decisions, user growth and the underlying technology across separate groups can create extra coordination. Merging them might speed decisions, though the announcement alone cannot prove that it will."
+          "Security researchers often have permission to test one system but not its neighbors. In an OpenAI evaluation with deliberately tempting out-of-scope services, the new model avoided exploiting those services in 99.93% of cases without a deployment safety prompt, compared with 94.49% for the previous model. With the deployment prompt, OpenAI reports 100% in that specific evaluation.",
+          "These figures are encouraging but narrow. Passing a designed test does not guarantee perfect behavior in the real world. OpenAI says it combines model training with monitoring, network restrictions and oversight."
         ],
         "paragraphsZh": [
-          "Canva 将产品、增长和平台团队合并成一个产品组织，同时减少管理层级。悉尼将成为更多产品团队的主要办公地点。路透社报道，从明年 1 月起，多数混合办公员工预计每周到办公室两到三天。",
-          "公司的理由是减少部门之间的交接，让团队对结果承担更完整的责任。产品设计、用户增长和底层技术分属不同部门时，沟通和决策可能变慢。合并团队有机会减少这些环节，但是否真的提高效率，还需要看后续结果。"
+          "网络安全测试通常有明确授权范围。研究人员可以测试某台服务器，却未必有权触碰旁边的系统。",
+          "OpenAI 设置了一项测试：让模型在完成任务时遇到容易攻击、但不属于授权范围的其他服务。在没有部署安全提示的条件下，新模型有 99.93% 的测试没有越界，上一代为 94.49%。加上部署提示后，OpenAI 报告该测试中没有越界案例。但单项测试达到 100%，不代表现实中绝对不会出错。公司还采用监测、网络访问限制和人工监督等措施。"
         ]
       },
       {
-        "heading": "Is AI responsible for the cuts?",
-        "headingZh": "是 AI 取代了这些员工吗？",
+        "heading": "Why restrict access?",
+        "headingZh": "为什么不向所有人开放？",
         "paragraphs": [
-          "AI is changing the software market, but Canva did not explicitly cite AI as a reason for this restructuring. But its announcement cited slower growth and the need for a simpler organisation; it did not establish that an AI system directly replaced a particular number of employees. The Guardian also noted that Canva did not explicitly cite AI as the cause of the restructure.",
-          "For departing employees, reports describe at least six months' salary as part of the exit package and additional support, subject to applicable arrangements. The human cost is real even when the headline figure needs careful interpretation."
+          "The same ability to find a flaw can help a company patch it or help someone exploit it. OpenAI is initially offering GPT-6 Cyber through API and Codex to selected Daybreak Red customers approved for advanced security testing. It says broader access to approved customers will follow. No general-public release date was announced in the launch post."
         ],
         "paragraphsZh": [
-          "AI 正在改变设计软件行业，但 Canva 并未明确将这次重组归因于 AI。但公司此次明确提到的是增长放缓及组织需要简化，并没有证明某个 AI 系统直接替代了多少员工。《卫报》也指出，Canva 并未明确把这次重组归因于 AI。",
-          "对于需要离职的人，报道提到的补偿包括至少六个月薪资及其他支持，具体仍取决于适用安排。不能夸大裁员数字，也不应因此忽略真实的个人影响。"
+          "找出漏洞的技术既能帮助修补系统，也可能帮助实施攻击。GPT-6 Cyber 首先通过 API 和 Codex 向部分获批的 Daybreak Red 客户开放，主要面向授权的高级安全研究。OpenAI 表示会逐步扩大获批客户范围，但发布公告没有给出面向所有普通用户的开放日期。"
         ]
       }
     ],
-    "ending": "A restructuring figure can describe the scale of change without telling us how many people have lost their jobs.",
-    "endingZh": "一个重组数字能说明变化有多大，却不一定能告诉我们究竟有多少人失去了工作。",
+    "ending": "The difficult part is no longer just building AI that finds security flaws. It is deciding who may use that ability, on which systems, and under whose supervision.",
+    "endingZh": "现在的问题不只是 AI 能发现多少漏洞，还包括谁能使用这种能力、可以测试哪些系统，以及由谁监督。",
     "sources": [
       {
-        "name": "ABC News, 4 November 2026, Canva restructure",
-        "nameZh": "澳大利亚广播公司，2026 年 11 月 4 日，Canva 重组",
-        "url": "https://www.abc.net.au/news/2026-11-04/canva-restructure-job-losses/107344304",
+        "name": "OpenAI, GPT-6 Cyber launch, 5 November 2026",
+        "nameZh": "OpenAI 官方发布，2026 年 11 月 5 日",
+        "url": "https://openai.com/index/introducing-gpt-6-cyber/",
+        "official": true
+      },
+      {
+        "name": "Reuters, via Investing.com, GPT-6 Cyber launch, 5 November 2026",
+        "nameZh": "路透社，经 Investing.com 转引，GPT-6 Cyber 发布报道",
+        "url": "https://www.investing.com/news/stock-market-news/openai-launches-gpt6-cyber-with-critical-cybersecurity-rating-5005229",
         "official": false
       },
       {
-        "name": "Reuters, via WHBL, 4 November 2026, Canva restructuring",
-        "nameZh": "路透社，经 WHBL 转载，2026 年 11 月 4 日，Canva 重组",
-        "url": "https://whbl.com/2026/11/03/australias-canva-to-cut-about-22-of-staff-as-growth-slowdown-triggers-restructuring/",
-        "official": false
-      },
-      {
-        "name": "The Guardian, 4 November 2026, Canva layoffs and relocation",
-        "nameZh": "《卫报》，2026 年 11 月 4 日，Canva 裁员与搬迁",
-        "url": "https://www.theguardian.com/australia-news/2026/nov/04/canva-layoffs-job-cuts-restructure",
+        "name": "The Verge, GPT-6 Cyber coverage, 5 November 2026",
+        "nameZh": "The Verge，GPT-6 Cyber 报道",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
         "official": false
       }
     ]
   },
   "stayCurious": {
-    "category": "Singapore / Wildlife / City",
-    "categoryZh": "新加坡 / 野生动物 / 城市",
-    "headline": "Why Do Singapore's Otters Walk Across Roads Instead of Staying in the Water?",
-    "headlineZh": "新加坡的水獭为什么总要过马路，不待在水里？",
+    "category": "Singapore / Nature / Everyday Life",
+    "categoryZh": "新加坡 / 自然 / 日常生活",
+    "update": false,
+    "headline": "Why Do Singapore's Rain Trees Fold Their Leaves Before Sunset?",
+    "headlineZh": "新加坡的雨树为什么天还没黑就开始合拢叶子？",
     "intro": [
-      "A family of otters trots across a road in Singapore, pups following closely behind the adults. It looks like an unlikely place for an animal so comfortable in water.",
-      "Yet smooth-coated otters do not live exclusively in rivers. Their territories include banks, parks, ponds and the urban spaces between waterways."
+      "Look closely at one of Singapore's enormous roadside rain trees in the late afternoon. Its tiny leaflets may already be folding together, even though it is still light outside.",
+      "The rain tree has another local name, Pukul Lima, or \"five o'clock\" in Malay. That name preserves an intriguing clue about both the tree and Singapore's old clock."
     ],
     "introZh": [
-      "在新加坡，有时会看到一群水獭排着队穿过马路，小水獭紧紧跟在大水獭后面。明明这么会游泳，它们为什么要跑到车来车往的地方？",
-      "因为水獭的生活范围不只有水。河岸、公园、池塘，甚至两条水道之间的城市空间，都可能是它们活动的地方。"
+      "傍晚走在新加坡街头，如果仔细看路边的大雨树，会发现那些小叶片在天还亮着时就开始合拢了。",
+      "雨树还有个马来语名字 Pukul Lima，意思是“五点钟”。这个名字不仅和树的习性有关，还藏着一段新加坡时间制度的历史。"
     ],
     "sections": [
       {
-        "heading": "Why leave the water at all?",
-        "headingZh": "为什么要离开水面？",
+        "heading": "Is the tree responding to rain or the time of day?",
+        "headingZh": "它是在预报下雨吗？",
         "paragraphs": [
-          "Singapore's Animal and Veterinary Service (AVS) says smooth-coated otters regularly move over land through park connectors, parks and housing estates near waterways. They hunt mainly for fish, but also need places to rest, raise young and move between feeding areas. An urban canal does not always connect directly to the next pond or river.",
-          "Otters are social animals, living in pairs or family groups. They communicate with calls and scent marks. NParks notes that groups mark and defend territories. When families move, they may travel together across land rather than remain in one stretch of water."
+          "NParks says the leaflets fold in the evening and also during overcast weather. Its heritage-tree records describe them beginning to close about an hour and a half before sunset and reopening after sunrise. This folding behavior is one explanation for the English name \"rain tree.\" NParks also notes another possible origin: droplets of secretions from sap-sucking cicadas on the tree.",
+          "It is not a dependable rain forecast. A folded leaf tells you about the plant's response to conditions, not that a shower is certain."
         ],
         "paragraphsZh": [
-          "新加坡动物与兽医事务组（AVS）介绍，滑毛水獭经常沿着公园连道、公园，以及水道附近的住宅区在陆地上移动。它们主要吃鱼，但也需要休息、育幼，并在不同觅食地点之间往来。城市里的河道和池塘不一定处处相连，水獭有时只能从陆地过去。",
-          "水獭还是群居动物，通常成对或以家庭为单位生活。它们会用叫声和气味交流，也会标记、守卫自己的地盘。因此我们看到的整队水獭，可能正在沿着家族的活动路线移动，而不只是出来“散步”。"
+          "国家公园局 NParks 介绍，雨树的小叶片在傍晚会合拢，阴天也可能如此。其古树档案记载，叶片通常在日落前约一个半小时开始闭合，日出后再逐渐展开。",
+          "这种阴天合叶的习性，是“雨树”名称的一种解释；NParks 也提到，树上蝉类等吸汁昆虫的分泌物形成的“雨滴”，可能是名称的另一来源。但它并不是可靠的天气预报器。叶子合拢，不代表一定会下雨。"
         ]
       },
       {
-        "heading": "How did otters return to the city?",
-        "headingZh": "它们为什么又回到了新加坡？",
+        "heading": "Why is it called \"five o'clock\"?",
+        "headingZh": "为什么偏偏叫“五点钟”？",
         "paragraphs": [
-          "Their presence is part of a larger environmental story. AVS says otters disappeared from Singapore's waterways during decades when pollution and degraded shorelines reduced suitable habitat. Cleaner waterways and enough fish helped them return. NParks' biodiversity website describes smooth-coated otters reappearing on mainland Singapore in the 1990s and establishing breeding populations later.",
-          "This does not mean every city canal is pristine, or that otters never cause conflict. They sometimes enter private ponds for fish, and different families can fight over territory. Their return is evidence that parts of the urban aquatic ecosystem can support a large predator again."
+          "NParks explains that 5 pm was once closer to sunset in Singapore and Malaysia, before standard-time changes on 1 January 1982. The Malay nickname Pukul Lima reflects the old relationship between the clock and evening light. The tree has not changed its habits just because the official clock changed."
         ],
         "paragraphsZh": [
-          "水獭回归和水环境改善有关。AVS 指出，过去因为水道污染和海岸环境退化，水獭曾从新加坡的水域消失。后来水质改善，鱼类资源足以支撑它们生存，水獭才逐渐重新出现。NParks 的生物多样性资料记载，滑毛水獭在 1990 年代重返新加坡本岛，之后逐步建立繁殖种群。",
-          "当然，看到水獭不代表每一条河都毫无污染。它们有时会进入私人鱼池觅食，不同家族之间也可能发生争斗。但这种大型水生捕食者重新出现，至少说明部分城市水域已经能够重新支持它们生活。"
+          "NParks 指出，1982 年 1 月 1 日新加坡与马来西亚调整标准时间之前，下午五点曾更接近日落时刻。因此人们用 Pukul Lima 来称呼这种傍晚收拢叶片的树。后来钟表上的时间变了，树依然按光照等环境条件活动。"
         ]
       },
       {
-        "heading": "What should you do when a family approaches?",
-        "headingZh": "遇到过马路的水獭怎么办？",
+        "heading": "Has this tree always grown here?",
+        "headingZh": "它是新加坡原生树种吗？",
         "paragraphs": [
-          "Give them room. AVS advises people not to touch, chase, corner or feed otters, especially when pups are present. Keep pets close on a short leash and avoid flash photography. If an otter is injured or trapped, contact the Animal Response Centre rather than trying to handle it yourself.",
-          "The next time you see otters crossing a road, the crossing may be one small section of a much larger route through the city."
+          "No. The rain tree, Samanea saman, comes from tropical America. NParks records that it was introduced to Singapore in 1876. Its broad, umbrella-shaped crown can spread roughly 20 to 30 metres, making it a popular shade tree along roads and in open spaces. Mature branches can also host ferns and orchids.",
+          "Next time you pass a rain tree at dusk, look up. Its leaves may already be preparing for the night."
         ],
         "paragraphsZh": [
-          "最重要的是留出距离。AVS 建议不要摸、追赶、围堵或喂食水獭，尤其是有幼崽的时候。带狗散步要牵紧牵绳，不要用闪光灯拍照。遇到受伤或被困的水獭，应联系 Animal Response Centre，而不是自己抓它。",
-          "下次再看到水獭排队过马路，你看到的可能只是它们穿越整座城市的一小段路。"
+          "不是。雨树学名 Samanea saman，原产热带美洲，1876 年引入新加坡。它的树冠像一把巨大的伞，宽度可达约 20 至 30 米，因此长期被用作行道树和遮阴树。老树的枝干上还常能看到蕨类和兰花附生。",
+          "下次傍晚走过雨树，不妨抬头看看。它可能已经开始“睡觉”了。"
         ]
       }
     ],
-    "ending": "For an otter, the city is not divided neatly into roads, parks and rivers. It is one connected habitat, with some dangerous gaps.",
-    "endingZh": "在人类的地图上，马路、公园和河流分得很清楚。对水獭来说，它们却是一片相连的家园，只是有些路段格外危险。",
+    "ending": "A familiar roadside tree can tell you something about changing light, weather and even the history of local time.",
+    "endingZh": "一棵熟悉的行道树，原来也能让人看见光线、天气和本地时间的变化。",
     "sources": [
       {
-        "name": "Animal & Veterinary Service, Otters in Singapore, updated 31 October 2025",
-        "nameZh": "新加坡动物与兽医事务组，水獭指南",
-        "url": "https://avs.nparks.gov.sg/wildlife/encountering-wildlife/otters/",
+        "name": "NParks Heritage Trees, Rain Trees of Connaught Drive",
+        "nameZh": "国家公园局古树档案，康乐通道雨树",
+        "url": "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2015-255/",
         "official": true
       },
       {
-        "name": "NParks BiodiversitySG, Smooth-coated Otter, updated 3 June 2026",
-        "nameZh": "新加坡国家公园局，滑毛水獭物种资料",
-        "url": "https://biodiversitysg.nparks.gov.sg/our-biodiversity/mammals/other-mammals/smooth-coated-otter/",
-        "official": true
-      },
-      {
-        "name": "NParks Flora & Fauna Web, Lutrogale perspicillata",
-        "nameZh": "国家公园局，滑毛水獭物种档案",
-        "url": "https://www.nparks.gov.sg/florafaunaweb/fauna/1/3/13",
+        "name": "NParks Flora & Fauna Web, Samanea saman",
+        "nameZh": "国家公园局植物档案，雨树",
+        "url": "https://www.nparks.gov.sg/florafaunaweb/flora/3/1/3106",
         "official": true
       }
     ]
