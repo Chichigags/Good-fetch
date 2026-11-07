@@ -1,143 +1,140 @@
 {
   "format": "v2",
-  "date": "2026-11-06",
-  "publishedAt": "2026-11-06T08:12:04+08:00",
+  "date": "2026-11-07",
+  "publishedAt": "2026-11-07T08:14:24+08:00",
   "whatChanged": {
-    "category": "AI / Cybersecurity",
-    "categoryZh": "人工智能 / 网络安全",
+    "category": "AI / Personal assistants",
+    "categoryZh": "人工智能 / 个人助手",
     "update": false,
-    "headline": "OpenAI's New Cybersecurity AI Can Find Exploits. Who Gets to Use It?",
-    "headlineZh": "OpenAI 新模型能找出可利用的漏洞，谁可以使用？",
+    "headline": "Meta Says Its AI Is Getting Better at Remembering You. What Does That Mean?",
+    "headlineZh": "Meta 让 AI 更会记住你，这意味着什么？",
     "intro": [
-      "OpenAI introduced GPT-6 Cyber on 5 November, a specialist model that can investigate software vulnerabilities and develop working exploits. That ability is useful to defenders who need to test and fix weaknesses, but it could also help attackers.",
-      "OpenAI rates the model \"Critical\" for cybersecurity under its own Preparedness Framework. For now, access is restricted to selected, approved Daybreak Red customers rather than everyone using ChatGPT."
+      "On 6 November, Meta said it was rolling out specialized versions of its existing models, trained using Muse Wonder, to Muse and Meta AI. The company highlighted two features: Active Memory, which identifies useful details from earlier conversations, and Active Focus, designed to help an assistant stay on track with a user's goals.",
+      "The announcement is about a shift in how assistants work, not just a bigger model. A chatbot that remembers yesterday's constraints may be more useful today. But it also raises a practical question: which details should an AI keep?"
     ],
     "introZh": [
-      "2026 年 11 月 5 日，OpenAI 发布专门研究网络安全的 GPT-6 Cyber。它可以分析软件漏洞，并尝试开发真正能利用这些漏洞的攻击程序。安全团队可以借此验证问题、修复系统，但同样的能力也可能被攻击者滥用。",
-      "OpenAI 按自己的安全评估框架，将它的网络安全能力评为“Critical”（关键级）。目前仅向经过批准的部分 Daybreak Red 客户开放，并非普通 ChatGPT 用户都能使用。"
+      "2026 年 11 月 6 日，Meta 宣布将基于 Muse Wonder 训练的专门模型逐步引入 Muse 和 Meta AI。它重点介绍两项能力：Active Memory 可以识别过去对话中值得记住的信息；Active Focus 则帮助助手围绕用户的目标持续开展工作。",
+      "这不只是一次模型升级。过去的聊天机器人往往需要你反复解释背景；更有记忆力的助手可以接着上次的事情往下做。但一个新问题也随之出现：什么值得 AI 记住，什么应该被放下？"
     ],
     "sections": [
       {
-        "heading": "What can the model actually do?",
-        "headingZh": "它究竟能做到什么？",
+        "heading": "What is actually changing?",
+        "headingZh": "这次究竟升级了什么？",
         "paragraphs": [
-          "On OpenAI's ExploitGym benchmark, GPT-6 Cyber scored 48.5%, versus 32.1% for GPT-5.6 Cyber. The test measures whether a model can exploit specified vulnerabilities in controlled targets; it does not measure success against arbitrary websites.",
-          "OpenAI also says its researchers used the model to identify 81 previously unknown high-severity Firefox vulnerabilities and develop 948 privilege-escalation exploits targeting Linux. Mozilla has already released fixes for many of the reported Firefox issues, according to OpenAI. These are company-reported research results, not proof that the model can reliably break into any system."
+          "Meta says the specialized models are trained using its larger Muse Wonder system and are being rolled out to users of Muse and Meta AI. The company describes Active Memory as distinguishing temporary details from durable ones, recognizing when old context becomes relevant, and noticing when information is stale. Active Focus is meant to support longer tasks and changing instructions.",
+          "Think of planning a trip. A helpful assistant might remember that you prefer trains over flights, while treating last Tuesday's restaurant booking as temporary. The useful part is not retaining everything. It is knowing which context matters for the next decision."
         ],
         "paragraphsZh": [
-          "在 OpenAI 的 ExploitGym 测试中，GPT-6 Cyber 得分为 48.5%，上一代 GPT-5.6 Cyber 为 32.1%。测试考察的是模型能否在受控环境中利用指定漏洞，并不意味着它可以随意攻破真实网站。",
-          "OpenAI 还称，研究人员借助该模型发现了 Firefox 中 81 个此前未知的高危漏洞，并开发出 948 个针对 Linux 的提权漏洞利用程序。该公司表示，Mozilla 已发布其中许多 Firefox 漏洞的修复程序。这些是公司公布的研究成果，不能推导出模型对任何系统都能成功入侵。"
+          "Meta 表示，新模型由 Muse Wonder 的能力训练而来，正逐步应用于 Muse 和 Meta AI。按照公司的介绍，Active Memory 不只是保存聊天记录，还要判断哪些信息是临时的、哪些可能长期有用，以及旧信息什么时候已经过时。Active Focus 则帮助助手处理持续性任务，并适应用户中途改变的要求。",
+          "比如规划旅行。一个真正有用的助手可以记住你更喜欢坐火车，而不是每次重新问；但上周二订过哪家餐厅，不一定需要长期保存。关键不在于记住所有事情，而在于知道下一次决策需要哪些背景。"
         ]
       },
       {
-        "heading": "Can it respect the limits of an authorized test?",
-        "headingZh": "它会遵守测试范围吗？",
+        "heading": "How much better does Meta say it is?",
+        "headingZh": "Meta 公布的成绩提升了多少？",
         "paragraphs": [
-          "Security researchers often have permission to test one system but not its neighbors. In an OpenAI evaluation with deliberately tempting out-of-scope services, the new model avoided exploiting those services in 99.93% of cases without a deployment safety prompt, compared with 94.49% for the previous model. With the deployment prompt, OpenAI reports 100% in that specific evaluation.",
-          "These figures are encouraging but narrow. Passing a designed test does not guarantee perfect behavior in the real world. OpenAI says it combines model training with monitoring, network restrictions and oversight."
+          "Meta reports a score of 47% for its current Muse model on its Personal Superintelligence Index, compared with 38% for the previous model. On an Active Memory evaluation, it reports 90% of tasks correctly using critical context, versus 76% previously. It also says the improved models in Muse show a 2.4-times reduction in forgetting critical information.",
+          "Those numbers come from Meta's own evaluations. They do not establish that an assistant will remember 90% of everything you tell it, or that all users already have access to every feature. The announcement does not provide enough independent testing to judge how reliably the system handles sensitive or outdated personal details."
         ],
         "paragraphsZh": [
-          "网络安全测试通常有明确授权范围。研究人员可以测试某台服务器，却未必有权触碰旁边的系统。",
-          "OpenAI 设置了一项测试：让模型在完成任务时遇到容易攻击、但不属于授权范围的其他服务。在没有部署安全提示的条件下，新模型有 99.93% 的测试没有越界，上一代为 94.49%。加上部署提示后，OpenAI 报告该测试中没有越界案例。但单项测试达到 100%，不代表现实中绝对不会出错。公司还采用监测、网络访问限制和人工监督等措施。"
+          "在 Meta 自己的 Personal Superintelligence Index 评估中，当前 Muse 模型得分为 47%，上一版本为 38%。在 Active Memory 测试中，正确使用关键上下文的任务比例由 76% 升至 90%。Meta 还称，Muse 中的新模型遗忘重要信息的情况减少了约 2.4 倍。",
+          "这些都是 Meta 公布的内部评估，不代表 AI 能记住用户说过的 90% 的事情，也不能据此判断每个人已经用上所有功能。对于敏感信息、过期信息究竟处理得如何，目前还缺少充分的独立测试。"
         ]
       },
       {
-        "heading": "Why restrict access?",
-        "headingZh": "为什么不向所有人开放？",
+        "heading": "Why does memory matter more than another clever answer?",
+        "headingZh": "为什么记忆可能比更聪明的回答重要？",
         "paragraphs": [
-          "The same ability to find a flaw can help a company patch it or help someone exploit it. OpenAI is initially offering GPT-6 Cyber through API and Codex to selected Daybreak Red customers approved for advanced security testing. It says broader access to approved customers will follow. No general-public release date was announced in the launch post."
+          "For many everyday tasks, the frustrating part of AI is not a lack of intelligence. It is the need to restate preferences, explain earlier decisions and correct forgotten constraints. Better continuity could make assistants useful for projects that last weeks rather than minutes.",
+          "The trade-off is that a remembered detail can become wrong. A food preference, job search or travel plan may change. An assistant needs a way to use context without turning an old statement into a permanent label. Users should check the available memory and privacy controls in the products they use rather than assume all assistants work the same way."
         ],
         "paragraphsZh": [
-          "找出漏洞的技术既能帮助修补系统，也可能帮助实施攻击。GPT-6 Cyber 首先通过 API 和 Codex 向部分获批的 Daybreak Red 客户开放，主要面向授权的高级安全研究。OpenAI 表示会逐步扩大获批客户范围，但发布公告没有给出面向所有普通用户的开放日期。"
+          "很多人使用 AI 的麻烦，不是它答不出问题，而是每次都要重新交代背景：我不喜欢什么、之前决定了什么、项目进行到哪一步。更好的连续性，可能让 AI 从回答单个问题，变成真正协助完成几周甚至几个月的工作。",
+          "但记忆也有风险。一个人以前的饮食习惯、求职方向或者旅行计划，都可能改变。如果 AI 把过去一句话当成永久标签，就会越帮越错。使用这类产品时，最好查看它实际提供哪些记忆和隐私控制，而不是假设所有助手都采用相同规则。"
         ]
       }
     ],
-    "ending": "The difficult part is no longer just building AI that finds security flaws. It is deciding who may use that ability, on which systems, and under whose supervision.",
-    "endingZh": "现在的问题不只是 AI 能发现多少漏洞，还包括谁能使用这种能力、可以测试哪些系统，以及由谁监督。",
+    "ending": "The next test for personal AI may be not how much it can remember, but how well it knows when to forget.",
+    "endingZh": "个人 AI 的下一场考试，或许不是能记住多少，而是懂不懂什么时候该忘记。",
     "sources": [
       {
-        "name": "OpenAI, GPT-6 Cyber launch, 5 November 2026",
-        "nameZh": "OpenAI 官方发布，2026 年 11 月 5 日",
-        "url": "https://openai.com/index/introducing-gpt-6-cyber/",
+        "name": "Meta AI Research",
+        "nameZh": "Meta AI 研究博客",
+        "url": "https://research.meta.ai/blog/specialized-models-for-muse-and-metaai",
         "official": true
-      },
-      {
-        "name": "Reuters, via Investing.com, GPT-6 Cyber launch, 5 November 2026",
-        "nameZh": "路透社，经 Investing.com 转引，GPT-6 Cyber 发布报道",
-        "url": "https://www.investing.com/news/stock-market-news/openai-launches-gpt6-cyber-with-critical-cybersecurity-rating-5005229",
-        "official": false
-      },
-      {
-        "name": "The Verge, GPT-6 Cyber coverage, 5 November 2026",
-        "nameZh": "The Verge，GPT-6 Cyber 报道",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
-        "official": false
       }
     ]
   },
   "stayCurious": {
-    "category": "Singapore / Nature / Everyday Life",
-    "categoryZh": "新加坡 / 自然 / 日常生活",
-    "update": false,
-    "headline": "Why Do Singapore's Rain Trees Fold Their Leaves Before Sunset?",
-    "headlineZh": "新加坡的雨树为什么天还没黑就开始合拢叶子？",
+    "category": "Singapore / Urban history",
+    "categoryZh": "新加坡 / 城市历史",
+    "headline": "Why Does Singapore Have a Walkway Called the Five-Foot Way?",
+    "headlineZh": "新加坡的“五脚基”，为什么叫这个名字？",
     "intro": [
-      "Look closely at one of Singapore's enormous roadside rain trees in the late afternoon. Its tiny leaflets may already be folding together, even though it is still light outside.",
-      "The rain tree has another local name, Pukul Lima, or \"five o'clock\" in Malay. That name preserves an intriguing clue about both the tree and Singapore's old clock."
+      "Walk past a row of old shophouses in Singapore and you may notice a narrow covered corridor running from one storefront to the next. It is called the five-foot way, or wu jiao ji in Chinese.",
+      "This small detail reveals how colonial planning made space for public passage."
     ],
     "introZh": [
-      "傍晚走在新加坡街头，如果仔细看路边的大雨树，会发现那些小叶片在天还亮着时就开始合拢了。",
-      "雨树还有个马来语名字 Pukul Lima，意思是“五点钟”。这个名字不仅和树的习性有关，还藏着一段新加坡时间制度的历史。"
+      "走过新加坡的老店屋，你会发现一条有屋顶的走廊，从一家店门口延伸到下一家。华人通常叫它“五脚基”，英文是 five-foot way。",
+      "这条小走廊，体现了早期城市规划如何为公众留出通道。"
     ],
     "sections": [
       {
-        "heading": "Is the tree responding to rain or the time of day?",
-        "headingZh": "它是在预报下雨吗？",
+        "heading": "Where did the idea come from?",
+        "headingZh": "五脚基最早是怎么来的？",
         "paragraphs": [
-          "NParks says the leaflets fold in the evening and also during overcast weather. Its heritage-tree records describe them beginning to close about an hour and a half before sunset and reopening after sunrise. This folding behavior is one explanation for the English name \"rain tree.\" NParks also notes another possible origin: droplets of secretions from sap-sucking cicadas on the tree.",
-          "It is not a dependable rain forecast. A folded leaf tells you about the plant's response to conditions, not that a shower is certain."
+          "Singapore's National Heritage Board traces the covered verandah requirement to Stamford Raffles. On 4 November 1822, he issued building stipulations calling for a verandah of a certain depth that would remain open as a continuous covered passage along the street.",
+          "The five-foot way became a shophouse hallmark. Shophouses appeared in the town centre in the 1840s and later spread elsewhere. The name describes a traditional dimension, but it should not be taken as a guarantee that every surviving corridor measures exactly five feet today."
         ],
         "paragraphsZh": [
-          "国家公园局 NParks 介绍，雨树的小叶片在傍晚会合拢，阴天也可能如此。其古树档案记载，叶片通常在日落前约一个半小时开始闭合，日出后再逐渐展开。",
-          "这种阴天合叶的习性，是“雨树”名称的一种解释；NParks 也提到，树上蝉类等吸汁昆虫的分泌物形成的“雨滴”，可能是名称的另一来源。但它并不是可靠的天气预报器。叶子合拢，不代表一定会下雨。"
+          "新加坡国家文物局的资料将这种连续骑楼走廊的规定追溯到莱佛士。1822 年 11 月 4 日，他提出建筑要求：房屋沿街必须留出一定深度的走廊，并保持相连、供行人通行。",
+          "五脚基后来成为店屋的典型特征。店屋从 1840 年代起出现在市中心，随后扩展到其他街区。虽然英文名字直译是“五英尺走道”，但不能据此认为今天每一条老走廊都精确宽五英尺。"
         ]
       },
       {
-        "heading": "Why is it called \"five o'clock\"?",
-        "headingZh": "为什么偏偏叫“五点钟”？",
+        "heading": "Why build a corridor under someone else's upstairs room?",
+        "headingZh": "为什么要把走廊建在别人家的楼下？",
         "paragraphs": [
-          "NParks explains that 5 pm was once closer to sunset in Singapore and Malaysia, before standard-time changes on 1 January 1982. The Malay nickname Pukul Lima reflects the old relationship between the clock and evening light. The tree has not changed its habits just because the official clock changed."
+          "The column-supported upper floor shelters a continuous pedestrian route from sun and rain.",
+          "The Urban Redevelopment Authority describes the five-foot way as a continuous colonnaded walkway and an important part of the experience of historic conservation areas. Tiles, columns, shopfronts and ceilings also shape its character."
         ],
         "paragraphsZh": [
-          "NParks 指出，1982 年 1 月 1 日新加坡与马来西亚调整标准时间之前，下午五点曾更接近日落时刻。因此人们用 Pukul Lima 来称呼这种傍晚收拢叶片的树。后来钟表上的时间变了，树依然按光照等环境条件活动。"
+          "店屋二楼向街道伸出，由柱子支撑，下面形成连续的遮阳挡雨通道。",
+          "市区重建局 URA 将五脚基视为历史保护区的重要组成部分。值得保留的不只是屋檐，还有地砖、柱廊、店面和天花板。这些细节共同构成了老街的步行体验。"
         ]
       },
       {
-        "heading": "Has this tree always grown here?",
-        "headingZh": "它是新加坡原生树种吗？",
+        "heading": "Can owners change it however they like?",
+        "headingZh": "店主可以随意装修五脚基吗？",
         "paragraphs": [
-          "No. The rain tree, Samanea saman, comes from tropical America. NParks records that it was introduced to Singapore in 1876. Its broad, umbrella-shaped crown can spread roughly 20 to 30 metres, making it a popular shade tree along roads and in open spaces. Mature branches can also host ferns and orchids.",
-          "Next time you pass a rain tree at dusk, look up. Its leaves may already be preparing for the night."
+          "Not in conserved areas. URA's conservation guidance requires retaining original granite edging and encourages traditional floor finishes. It also addresses mismatched floor levels between neighbouring units, recommending appropriate ramps in certain circumstances.",
+          "Different tiles and floor levels reflect buildings owned and restored separately."
         ],
         "paragraphsZh": [
-          "不是。雨树学名 Samanea saman，原产热带美洲，1876 年引入新加坡。它的树冠像一把巨大的伞，宽度可达约 20 至 30 米，因此长期被用作行道树和遮阴树。老树的枝干上还常能看到蕨类和兰花附生。",
-          "下次傍晚走过雨树，不妨抬头看看。它可能已经开始“睡觉”了。"
+          "在受保护的历史街区，不可以完全随意。URA 的修复指引要求保留原有花岗岩边条，并鼓励保留传统地面饰材；相邻店屋地面高低不一致时，也有相应的坡道和修复要求。",
+          "因此，连成一体的走廊也会有不同地砖和高差，反映各店屋不同的业主与修复历史。"
         ]
       }
     ],
-    "ending": "A familiar roadside tree can tell you something about changing light, weather and even the history of local time.",
-    "endingZh": "一棵熟悉的行道树，原来也能让人看见光线、天气和本地时间的变化。",
+    "ending": "The next time rain sends you under a shophouse arcade, notice how a small planning rule from two centuries ago still shapes an ordinary walk.",
+    "endingZh": "下次下雨躲进五脚基时，不妨想想：两百多年前的一条建筑规定，今天仍在影响我们怎么走路。",
     "sources": [
       {
-        "name": "NParks Heritage Trees, Rain Trees of Connaught Drive",
-        "nameZh": "国家公园局古树档案，康乐通道雨树",
-        "url": "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2015-255/",
+        "name": "National Heritage Board, The Singapore Shophouses",
+        "nameZh": "国家文物局《新加坡店屋》",
+        "url": "https://www.roots.gov.sg/stories-landing/stories/singapore-shophouses/story",
         "official": true
       },
       {
-        "name": "NParks Flora & Fauna Web, Samanea saman",
-        "nameZh": "国家公园局植物档案，雨树",
-        "url": "https://www.nparks.gov.sg/florafaunaweb/flora/3/1/3106",
+        "name": "URA, Understanding the Shophouse",
+        "nameZh": "市区重建局《认识店屋》",
+        "url": "https://www.ura.gov.sg/conservation/conservation-resources/understanding-the-shophouse/",
+        "official": true
+      },
+      {
+        "name": "URA, Conservation Guidelines for Historic Districts",
+        "nameZh": "市区重建局历史街区保护指引",
+        "url": "https://www.ura.gov.sg/guidelines/conservation/historic-districts/",
         "official": true
       }
     ]
