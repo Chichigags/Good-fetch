@@ -1,160 +1,153 @@
 {
   "format": "v2",
-  "date": "2026-11-09",
-  "publishedAt": "2026-11-09T08:17:00+08:00",
+  "date": "2026-11-10",
+  "publishedAt": "2026-11-10T08:15:00+08:00",
   "whatChanged": {
-    "category": "AI / Agents / Work",
-    "categoryZh": "人工智能 / 智能体 / 工作",
+    "category": "AI / Subscriptions / Consumer rights",
+    "categoryZh": "人工智能 / 订阅服务 / 消费者权益",
     "update": false,
-    "headline": "Perplexity Wants AI “Teammates” to Keep Working. Who Checks Their Work?",
-    "headlineZh": "Perplexity 推出不等指令的 AI“同事”，谁来检查它们的工作？",
+    "headline": "Claude Max Promised “20x More Usage.” What Did Subscribers Actually Buy?",
+    "headlineZh": "Claude Max 宣传“20 倍用量”，用户买到的究竟是什么？",
     "intro": [
-      "Most AI chatbots wait for a question. Perplexity wants its new “Teammates” to keep track of a job after the conversation ends. Perplexity announced the feature in a blog dated 4 November 2026. It is now available on the web as a research preview for individual Max subscribers.",
-      "It is a small but important shift in the promise of AI: from answering a request to looking after an ongoing responsibility. The question is how much supervision that responsibility still needs."
+      "When an AI subscription promises 20 times more usage, does that mean 20 times as much work over a month? A US federal judge says customers could reasonably read it that way, allowing part of a lawsuit against Anthropic to proceed.",
+      "The decision was issued on 6 November and reported by Reuters on 9 November. It is not a finding that Anthropic broke the law. It asks whether the limits behind a headline multiplier were clear enough when customers paid."
     ],
     "introZh": [
-      "大多数 AI 聊天机器人等你提问，回答完就停下来。Perplexity 新推出的 Teammates 则希望像“同事”一样，接过一项长期任务，持续关注进展，不必每次都等你重新发指令。",
-      "Perplexity 于 2026 年 11 月 4 日在官方博客宣布这项功能，目前以研究预览版形式向个人 Max 订阅用户开放网页端使用。AI 从“回答问题”走向“负责工作”，听起来很方便，但谁来检查它有没有做对？"
+      "AI 订阅套餐写着“20 倍用量”，你会理解成一个月能用 20 倍，还是每五小时能用 20 倍？美国一名联邦法官认为，消费者把它理解成整月用量是合理的，因此允许针对 Anthropic 的部分诉讼继续进行。",
+      "裁定于 2026 年 11 月 6 日作出，路透社于 2026 年 11 月 9 日报道。这并不意味着 Anthropic 已被认定违法。争议在于，用户付钱时是否真正看懂了用量限制。"
     ],
     "sections": [
       {
-        "heading": "What does an AI teammate actually do?",
-        "headingZh": "AI“同事”究竟能做什么？",
+        "heading": "Two limits, two different promises",
+        "headingZh": "五小时的额度，不等于一个月的额度",
         "paragraphs": [
-          "Perplexity describes Teammates as agents that can plan a project, coordinate tasks and adjust their approach when priorities change. They draw on projects, tools, skills and memory already available in Perplexity Computer. A user can assign different jobs to different teammates and follow their progress in separate threads.",
-          "The company also says Teammates can work with one another and send messages through Slack. In its product description, an agent can monitor a task and respond to changes without waiting for a fresh prompt. These are vendor-described capabilities, not independent evidence that every job will be completed correctly."
+          "Anthropic's Claude Max plans cost US$100 or US$200 a month. Their 5x and 20x labels compare usage with the cheaper Pro tier. According to the lawsuit, those multiples apply within a five-hour session. Max accounts also face weekly caps. In the plaintiffs' calculations for Sonnet 4, Max 5x offered about 3.5 times Pro's weekly usage, while Max 20x offered about 6 times. These are disputed allegations, not figures independently established by the court.",
+          "That distinction matters for someone who codes or researches intensively. A larger allowance during a single work session does not necessarily mean the same multiple of total work across a week or month. The plaintiffs argue the sales language gave a broader impression than the actual restrictions."
         ],
         "paragraphsZh": [
-          "Perplexity 介绍，Teammates 可以规划项目、协调任务，并在优先事项改变时调整做法。它会使用 Perplexity Computer 中已有的项目资料、工具、技能和记忆。用户可以把不同工作交给不同的 Teammate，再通过各自的对话线程查看进度。",
-          "公司还表示，这些 AI 可以相互协作，通过 Slack 与同事沟通，并在任务发生变化时主动采取下一步行动。这些是产品方描述的功能，不等于每项任务都已被独立证明可以准确完成。"
+          "Claude Max 有每月 100 美元和 200 美元两档，宣传用量分别为较低价 Pro 套餐的 5 倍和 20 倍。根据原告的说法，这个倍数指的是每五小时使用时段内的额度。Max 同时设有每周上限。原告以 Sonnet 4 模型计算，Max 5x 的每周用量约为 Pro 的 3.5 倍，Max 20x 则约为 6 倍。这些是原告提出的争议性计算，并非法院独立核实的结果。",
+          "对集中写代码、做研究的人来说，这个区别很实际。一次工作时段能用得更多，不代表整周或整月也能多用相同倍数。原告认为，销售页面传递的整体印象与实际限制不一致。"
         ]
       },
       {
-        "heading": "Is this the same as a chatbot with a reminder?",
-        "headingZh": "这不就是一个会提醒你的聊天机器人吗？",
+        "heading": "Why didn't the judge dismiss the case?",
+        "headingZh": "法官为什么让案件继续？",
         "paragraphs": [
-          "Not quite. A reminder tells someone that a task is due. A persistent agent aims to notice a relevant change, retrieve context, use permitted tools and take the next step. For example, a team might ask an agent to watch a project for missing information, prepare a summary and flag an item that needs a decision.",
-          "That makes permissions and review more important. An agent with access to files or work software may see sensitive information. If it sends the wrong message, changes a document incorrectly or misreads a signal, its activity could create work rather than save it. Perplexity says agents operate in isolated environments under existing tool and project permissions, and users can inspect or redirect their work. These safeguards still require testing in real workflows."
+          "Anthropic argued that reasonable customers would understand the comparison as session-based and that its website disclosed the limits. US Magistrate Judge Alex Tse found the plaintiffs' interpretation plausible at this early stage. The court considered the relevant disclosures too far from the main sales pages to settle the dispute without further proceedings.",
+          "The judge allowed claims including negligent misrepresentation, breach of contract and one California consumer-protection claim to continue. Other claims were dismissed, with an opportunity to amend. The proposed class has not been certified, and the disputed weekly multipliers remain allegations rather than judicially verified measurements."
         ],
         "paragraphsZh": [
-          "区别在于，提醒工具只告诉你“该做了”，持续工作的 AI 智能体则尝试发现变化、读取上下文、使用获准的工具并推进任务。",
-          "例如，一家公司可以让 AI 关注项目资料是否缺失，整理最新情况，并把需要人决定的问题提出来。但能力越多，权限也越值得关注。它可能接触内部文件、工作软件和敏感信息。如果误读数据、发错消息或改错文档，省下的时间反而会变成返工。",
-          "Perplexity 表示，每个 Teammate 在独立环境运行，遵循既有项目和工具权限，用户可以检查、接管或调整工作。不过这些保护措施在真实工作场景中的效果，仍需要检验。"
+          "Anthropic 的解释是，合理的消费者应理解这是单次使用时段的比较，而且网站其他位置有说明。法官 Alex Tse 认为，现阶段不能因此排除消费者被误导的可能性：相关说明距离主要销售页面较远，需要进入后续程序进一步查明。",
+          "法官允许包括过失性虚假陈述、违约以及一项加州消费者保护主张在内的部分诉求继续审理；其他诉求被驳回，但原告有机会修改起诉材料。法院尚未批准集体诉讼资格，也没有确认原告计算的每周用量倍数准确。"
         ]
       },
       {
-        "heading": "Who can try it, and what remains unknown?",
-        "headingZh": "现在谁能用？还有什么不知道？",
+        "heading": "What does the ruling change today?",
+        "headingZh": "这意味着订阅费要退了吗？",
         "paragraphs": [
-          "The web research preview is for individual Perplexity Max subscribers, not Enterprise plans by default. Perplexity says the feature is still in development and may change. The Verge reported a US$200 monthly subscription price, although annual billing can change the effective monthly cost. Perplexity says an iOS version is coming; its product page also mentions Android.",
-          "Public announcements do not establish a measured success rate for complex jobs or the amount of human review saved. Nor should “always-on” be read as a guarantee that every task runs continuously without interruption. Before handing an agent important work, teams need to test what triggers it, what it may change, how approvals work and whether its actions can be reversed."
+          "The court has not ordered Anthropic to refund every Max subscriber or declared its advertising unlawful. The plaintiffs have until 2 December 2026 to amend their complaint; if they do not, Anthropic must respond by 16 December 2026. Anthropic did not immediately respond to Reuters' request for comment.",
+          "For AI subscriptions, the useful question is no longer just how large the headline multiplier looks. Customers need to know the measuring window, weekly caps and conditions before they can compare plans meaningfully."
         ],
         "paragraphsZh": [
-          "目前网页端仅向个人 Perplexity Max 订阅用户提供研究预览版，企业套餐默认不包含在内。官方提醒，功能仍在开发，表现可能变化。The Verge 报道 Max 月付价格为 200 美元；年付折算月费可能不同。官方表示 iOS 版本即将推出，产品页也提到 Android。",
-          "目前的公开资料也没有给出复杂任务的独立成功率，或能减少多少人工审核时间。“持续工作”不等于永远在线、绝不会中断。真正交出重要任务前，需要确认它在什么情况下启动、可以修改什么、何时必须申请批准，以及出错后能否撤回。"
+          "目前没有。裁定只是说部分诉求足以继续审理，不代表 Anthropic 已经败诉，更不代表所有订阅者都会获得退款。原告须在 2026 年 12 月 2 日前修改起诉书；若不修改，Anthropic 须在 2026 年 12 月 16 日前答辩。路透社称，Anthropic 未立即回应其置评请求。",
+          "对于 AI 订阅产品，单看“几倍用量”已经不够。还要看这个倍数按五小时、按周还是按月计算，以及有没有另一层上限。"
         ]
       }
     ],
-    "ending": "The useful measure of an AI teammate may not be how long it works alone, but how reliably a person can understand, correct and trust what it has done.",
-    "endingZh": "衡量一个 AI“同事”是否有用，也许不是看它能独自工作多久，而是看人能不能清楚地检查、纠正并信任它完成的事。",
+    "ending": "A bigger number on a pricing page is useful only when the unit behind it is equally visible.",
+    "endingZh": "订阅页面上的数字再醒目，也应该让用户一眼看清它究竟按什么单位计算。",
     "sources": [
       {
-        "name": "Perplexity, Teammates are agents for complex, ongoing work",
-        "nameZh": "Perplexity 官方产品说明",
-        "url": "https://www.perplexity.ai/hub/blog/teammates-are-agents-for-complex-ongoing-work",
-        "official": true
-      },
-      {
-        "name": "Perplexity, Teammates product announcement on X",
-        "nameZh": "Perplexity 官方发布帖",
-        "url": "https://x.com/perplexity_ai/status/2118389326459670825",
-        "official": true
-      },
-      {
-        "name": "The Verge, Perplexity launches its own take on AI agents for work",
-        "nameZh": "The Verge：Perplexity 推出工作智能体",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
+        "name": "Reuters, Anthropic must face lawsuit over Claude subscription marketing",
+        "nameZh": "路透社：Anthropic 订阅营销诉讼继续",
+        "url": "https://www.reuters.com/legal/government/anthropic-must-face-lawsuit-over-claude-subscription-marketing-2026-11-09/",
         "official": false
       },
       {
-        "name": "Perplexity Changelog",
-        "nameZh": "Perplexity 更新日志",
-        "url": "https://www.perplexity.ai/changelog/teammates-fully-local-computer-on-mac-and-voice-mode",
+        "name": "US District Court, order linked by Reuters",
+        "nameZh": "美国联邦法院裁定书（路透社链接）",
+        "url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-3_26-cv-05763/pdf/USCOURTS-cand-3_26-cv-05763-1.pdf",
         "official": true
       }
     ]
   },
   "stayCurious": {
-    "category": "Singapore / Wildlife",
-    "categoryZh": "新加坡 / 野生动物",
-    "headline": "How Can a Fish Walk Around Singapore’s Mudflats?",
-    "headlineZh": "新加坡的泥滩上，为什么有鱼会“走路”？",
+    "category": "Singapore / Wildlife / City",
+    "categoryZh": "新加坡 / 野生动物 / 城市",
+    "headline": "Why Is Singapore's Most Common Bird an Outsider?",
+    "headlineZh": "新加坡最常见的鸟，为什么其实是“外来户”？",
     "intro": [
-      "Look carefully at the muddy edges of a Singapore mangrove at low tide. A fish might be moving across the ground, propping itself up on its fins and watching the world with raised eyes.",
-      "It is a mudskipper. Despite spending time out of water, it is still a fish, with unusual adaptations for life between land and sea."
+      "The dark bird with a yellow beak that hops around Singapore's hawker centres may look like a lifelong local. But the Javan myna, now described by NParks as Singapore's most abundant bird, arrived from elsewhere.",
+      "Its story begins with the caged-bird trade, not with the city's parks. And it helps explain why a familiar animal can still be classified as invasive."
     ],
     "introZh": [
-      "退潮时走到新加坡红树林附近，仔细看泥滩，可能会发现一种奇怪的小动物：它用鱼鳍撑着身体，在泥地上蹦来蹦去，眼睛还高高凸起。",
-      "这不是长了腿的青蛙，而是一种真正的鱼，叫弹涂鱼。它怎么能离开水，还能在岸上活动？"
+      "在新加坡小贩中心和组屋楼下，经常能看到一种深灰色、黄嘴黄脚的小鸟，走几步、跳几下，还会盯着地上的食物看。它是爪哇八哥（Javan Myna）。",
+      "国家公园局称，它已经是新加坡数量最多的鸟。但这个城市里最常见的身影，原来并不是本地原生物种。"
     ],
     "sections": [
       {
-        "heading": "How does a fish move without legs?",
-        "headingZh": "没有腿，它怎么在地上移动？",
+        "heading": "How did it get here?",
+        "headingZh": "它们是怎么来到新加坡的？",
         "paragraphs": [
-          "Mudskippers have strong, fleshy pectoral fins that help support and propel their bodies over wet mud. Their movement looks more like a series of skips than walking with legs. The giant mudskipper, Periophthalmodon schlosseri, is the largest mudskipper species found in Singapore, according to NParks.",
-          "Its identifying marks include an iridescent blue-white sheen on the cheeks, a broad dark stripe along its side and a dorsal fin it can raise. These details matter because Singapore has more than one kind of mudskipper."
+          "The Javan myna, Acridotheres javanicus, was originally associated with Java and Bali in Indonesia. Singapore's Animal and Veterinary Service says it was introduced through the caged-bird trade in the 1920s. It later established breeding populations outside captivity.",
+          "The bird's success is easy to understand in a dense city. It can eat insects and other small animals as well as discarded human food. It nests in cavities, and the urban environment offers many suitable nesting sites and opportunities to find food."
         ],
         "paragraphsZh": [
-          "弹涂鱼的胸鳍粗壮有力，可以撑起身体，推动它在湿泥上前进。它的动作更像一跳一跳地挪动，而不是真的像人一样迈步。",
-          "新加坡国家公园局介绍，大弹涂鱼（Giant Mudskipper，学名 Periophthalmodon schlosseri）是本地体型最大的弹涂鱼。它的脸颊有蓝白色的反光，身体侧面有一道宽宽的黑色条纹，背鳍还能竖起来。新加坡并不只有这一种弹涂鱼，所以不能把所有泥滩上蹦跳的鱼都当成大弹涂鱼。"
+          "爪哇八哥的学名是 Acridotheres javanicus，原生地包括印尼爪哇和巴厘岛。新加坡动物与兽医事务组（AVS）介绍，这种鸟在 1920 年代通过笼养鸟贸易被带到新加坡，后来在野外繁殖、定居。",
+          "城市生活对它很友好。它能吃昆虫、小动物，也会捡人类丢弃的食物；它会在洞穴中筑巢，城市环境提供了许多适合筑巢和觅食的地方。"
         ]
       },
       {
-        "heading": "How can it breathe outside the water?",
-        "headingZh": "离开水以后，它怎么呼吸？",
+        "heading": "Is every myna the same?",
+        "headingZh": "看到的八哥都是同一种吗？",
         "paragraphs": [
-          "Fish usually rely on water passing over their gills. Giant mudskippers keep water in modified gill chambers while on land and can also take in oxygen through their moist skin. This is not the same as having human-style lungs. They remain closely tied to wet, tidal habitats and cannot simply live on dry pavement.",
-          "Mudflats and mangroves offer a changing landscape. Water covers the ground at high tide and recedes at low tide, leaving small pools, channels and exposed mud. For an animal adapted to both settings, that boundary is a place to find food rather than merely a barrier."
+          "No. The Javan myna has dark grey plumage, a yellow bill and legs, and a short crest. The common myna has a warmer brown body, black head and conspicuous bare yellow skin behind the eye. Both may show white wing patches in flight.",
+          "NParks says the introduced Javan myna is more numerous than the common myna. NParks lists the Javan myna among Singapore's invasive species and says competition with the introduced Javan myna has contributed to a decline in common myna numbers."
         ],
         "paragraphsZh": [
-          "一般鱼类靠水流经过鱼鳃获取氧气。大弹涂鱼的鳃腔经过特殊适应，能在上岸时保留海水，同时通过保持湿润的皮肤吸收氧气。这并不代表它长出了和人一样的肺，更不代表它可以长期待在干燥的地面。",
-          "红树林和泥滩每天都在随潮汐变化。涨潮时水漫过泥地，退潮后留下水坑、浅沟和露出的泥面。对弹涂鱼来说，水陆交界不是障碍，反而是它寻找食物的地方。"
+          "不是。爪哇八哥全身偏深灰，嘴和脚是黄色，额头有一小撮冠羽。另一种 Common Myna 则是棕色身体、黑色头部，眼睛后面有一块明显的黄色裸露皮肤。两种鸟飞起来都可能露出白色翼斑。",
+          "国家公园局指出，爪哇八哥的数量已经超过 Common Myna，并将它列入本地入侵物种名单。国家公园局指出，普通八哥（Common Myna）的数量因与引入的爪哇八哥竞争而下降。"
         ]
       },
       {
-        "heading": "Why does one mudskipper threaten another?",
-        "headingZh": "为什么弹涂鱼还会互相“吵架”？",
+        "heading": "Why do so many gather in trees?",
+        "headingZh": "为什么一棵树上会挤满八哥？",
         "paragraphs": [
-          "NParks describes giant mudskippers as territorial hunters that feed on crustaceans and smaller fish. When another mudskipper comes too close, one may raise its dorsal fin and open its mouth to look larger. Herons and kingfishers, in turn, may prey on mudskippers.",
-          "These fish are also a reminder that an apparently empty mudflat is a busy habitat. NParks lists the giant mudskipper as threatened in Singapore, largely because suitable habitat is shrinking. Mangroves protect coastlines and support many other animals. According to NParks, less than 5% of Singapore's mangrove habitat from the 1800s remains, largely because of urbanisation and population growth."
+          "Javan mynas roost communally, gathering in large groups in trees. That can make a roadside tree surprisingly noisy and leave droppings around nearby homes. The Animal and Veterinary Service says agencies combine population management with better food-waste control and measures that discourage birds from perching in some food centres.",
+          "Feeding them is not a kindness that helps the city. It can increase their dependence on human food and encourage unusually large populations. AVS advises people not to feed, chase or corner the birds; feeding wildlife in Singapore is prohibited under the Wildlife Act."
         ],
         "paragraphsZh": [
-          "国家公园局指出，大弹涂鱼有很强的领地意识，会捕食甲壳类动物和较小的鱼。如果遇到竞争者，它可能竖起背鳍、张大嘴巴，让自己看起来更大。苍鹭和翠鸟则可能反过来捕食它。",
-          "看似空荡荡的泥滩，其实有一整套忙碌的生态关系。大弹涂鱼在新加坡被列为受威胁物种，主要原因是适合生存的栖息地不断减少。红树林不仅保护海岸，也是许多生物的家。国家公园局指出，受城市化和人口增长影响，新加坡如今保留的红树林面积不到 19 世纪原有面积的 5%。"
+          "爪哇八哥喜欢成群在树上栖息，有时会大量聚集。对住在附近的人来说，叫声和鸟粪都可能造成困扰。AVS 表示，相关部门会管理鸟群，同时改善厨余处理，并在部分小贩中心设置防止停栖的设施。",
+          "看到八哥靠近餐桌，不必喂它。人类食物会让它们更加依赖城市环境，也可能推动数量异常增长。AVS 建议不要投喂、追赶或围堵野生鸟类；新加坡《野生动物法》也禁止投喂野生动物。"
         ]
       }
     ],
-    "ending": "A mudflat may look empty at first glance. Wait a moment, and you might see a fish defending its tiny piece of land.",
-    "endingZh": "下次经过泥滩，别急着说那里什么都没有。仔细等一会儿，也许会看见一条鱼正在守护自己的小小领地。",
+    "ending": "The bird that seems most at home in a city can tell a surprising story about how that city changed.",
+    "endingZh": "一种鸟看起来越像城市的老住户，它的来历反而可能越值得追问。",
     "sources": [
       {
-        "name": "NParks BiodiversitySG, Giant Mudskipper",
-        "nameZh": "国家公园局：大弹涂鱼",
-        "url": "https://biodiversitysg.nparks.gov.sg/our-biodiversity/marine-fishes/giant-mudskipper/",
+        "name": "AVS, Javan Mynas in Singapore",
+        "nameZh": "新加坡动物与兽医事务组：爪哇八哥",
+        "url": "https://avs.nparks.gov.sg/wildlife/encountering-wildlife/house-crows-pigeons-javan-mynas/javan-mynas/",
         "official": true
       },
       {
-        "name": "NParks, Coastal and marine ecosystems",
-        "nameZh": "国家公园局：海岸与海洋生态系统",
-        "url": "https://www.nparks.gov.sg/nature/ecosystems/coastal-marine",
+        "name": "NParks BiodiversitySG, Javan Myna",
+        "nameZh": "国家公园局：爪哇八哥",
+        "url": "https://biodiversitysg.nparks.gov.sg/our-biodiversity/birds/crows-starlings-mynas/javan-myna/",
         "official": true
       },
       {
-        "name": "Singapore Oceanarium, Barred Mudskipper",
-        "nameZh": "新加坡海洋馆：条纹弹涂鱼",
-        "url": "https://www.singaporeoceanarium.com/en/animals-habitats/animals-a-z/barred-mudskipper.html",
-        "official": false
+        "name": "NParks, Invasive species in Singapore",
+        "nameZh": "国家公园局：新加坡入侵物种",
+        "url": "https://www.nparks.gov.sg/nature/invasive-species-singapore",
+        "official": true
+      },
+      {
+        "name": "NParks BiodiversitySG, Common Myna",
+        "nameZh": "国家公园局：Common Myna",
+        "url": "https://biodiversitysg.nparks.gov.sg/our-biodiversity/birds/crows-starlings-mynas/common-myna/",
+        "official": true
       }
     ]
   }
