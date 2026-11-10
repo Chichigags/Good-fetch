@@ -1,0 +1,154 @@
+{
+  "format": "v2",
+  "date": "2026-11-10",
+  "publishedAt": "2026-11-10T08:15:00+08:00",
+  "whatChanged": {
+    "category": "AI / Subscriptions / Consumer rights",
+    "categoryZh": "人工智能 / 订阅服务 / 消费者权益",
+    "update": false,
+    "headline": "Claude Max Promised “20x More Usage.” What Did Subscribers Actually Buy?",
+    "headlineZh": "Claude Max 宣传“20 倍用量”，用户买到的究竟是什么？",
+    "intro": [
+      "When an AI subscription promises 20 times more usage, does that mean 20 times as much work over a month? A US federal judge says customers could reasonably read it that way, allowing part of a lawsuit against Anthropic to proceed.",
+      "The decision was issued on 6 November and reported by Reuters on 9 November. It is not a finding that Anthropic broke the law. It asks whether the limits behind a headline multiplier were clear enough when customers paid."
+    ],
+    "introZh": [
+      "AI 订阅套餐写着“20 倍用量”，你会理解成一个月能用 20 倍，还是每五小时能用 20 倍？美国一名联邦法官认为，消费者把它理解成整月用量是合理的，因此允许针对 Anthropic 的部分诉讼继续进行。",
+      "裁定于 2026 年 11 月 6 日作出，路透社于 2026 年 11 月 9 日报道。这并不意味着 Anthropic 已被认定违法。争议在于，用户付钱时是否真正看懂了用量限制。"
+    ],
+    "sections": [
+      {
+        "heading": "Two limits, two different promises",
+        "headingZh": "五小时的额度，不等于一个月的额度",
+        "paragraphs": [
+          "Anthropic's Claude Max plans cost US$100 or US$200 a month. Their 5x and 20x labels compare usage with the cheaper Pro tier. According to the lawsuit, those multiples apply within a five-hour session. Max accounts also face weekly caps. In the plaintiffs' calculations for Sonnet 4, Max 5x offered about 3.5 times Pro's weekly usage, while Max 20x offered about 6 times. These are disputed allegations, not figures independently established by the court.",
+          "That distinction matters for someone who codes or researches intensively. A larger allowance during a single work session does not necessarily mean the same multiple of total work across a week or month. The plaintiffs argue the sales language gave a broader impression than the actual restrictions."
+        ],
+        "paragraphsZh": [
+          "Claude Max 有每月 100 美元和 200 美元两档，宣传用量分别为较低价 Pro 套餐的 5 倍和 20 倍。根据原告的说法，这个倍数指的是每五小时使用时段内的额度。Max 同时设有每周上限。原告以 Sonnet 4 模型计算，Max 5x 的每周用量约为 Pro 的 3.5 倍，Max 20x 则约为 6 倍。这些是原告提出的争议性计算，并非法院独立核实的结果。",
+          "对集中写代码、做研究的人来说，这个区别很实际。一次工作时段能用得更多，不代表整周或整月也能多用相同倍数。原告认为，销售页面传递的整体印象与实际限制不一致。"
+        ]
+      },
+      {
+        "heading": "Why didn't the judge dismiss the case?",
+        "headingZh": "法官为什么让案件继续？",
+        "paragraphs": [
+          "Anthropic argued that reasonable customers would understand the comparison as session-based and that its website disclosed the limits. US Magistrate Judge Alex Tse found the plaintiffs' interpretation plausible at this early stage. The court considered the relevant disclosures too far from the main sales pages to settle the dispute without further proceedings.",
+          "The judge allowed claims including negligent misrepresentation, breach of contract and one California consumer-protection claim to continue. Other claims were dismissed, with an opportunity to amend. The proposed class has not been certified, and the disputed weekly multipliers remain allegations rather than judicially verified measurements."
+        ],
+        "paragraphsZh": [
+          "Anthropic 的解释是，合理的消费者应理解这是单次使用时段的比较，而且网站其他位置有说明。法官 Alex Tse 认为，现阶段不能因此排除消费者被误导的可能性：相关说明距离主要销售页面较远，需要进入后续程序进一步查明。",
+          "法官允许包括过失性虚假陈述、违约以及一项加州消费者保护主张在内的部分诉求继续审理；其他诉求被驳回，但原告有机会修改起诉材料。法院尚未批准集体诉讼资格，也没有确认原告计算的每周用量倍数准确。"
+        ]
+      },
+      {
+        "heading": "What does the ruling change today?",
+        "headingZh": "这意味着订阅费要退了吗？",
+        "paragraphs": [
+          "The court has not ordered Anthropic to refund every Max subscriber or declared its advertising unlawful. The plaintiffs have until 2 December 2026 to amend their complaint; if they do not, Anthropic must respond by 16 December 2026. Anthropic did not immediately respond to Reuters' request for comment.",
+          "For AI subscriptions, the useful question is no longer just how large the headline multiplier looks. Customers need to know the measuring window, weekly caps and conditions before they can compare plans meaningfully."
+        ],
+        "paragraphsZh": [
+          "目前没有。裁定只是说部分诉求足以继续审理，不代表 Anthropic 已经败诉，更不代表所有订阅者都会获得退款。原告须在 2026 年 12 月 2 日前修改起诉书；若不修改，Anthropic 须在 2026 年 12 月 16 日前答辩。路透社称，Anthropic 未立即回应其置评请求。",
+          "对于 AI 订阅产品，单看“几倍用量”已经不够。还要看这个倍数按五小时、按周还是按月计算，以及有没有另一层上限。"
+        ]
+      }
+    ],
+    "ending": "A bigger number on a pricing page is useful only when the unit behind it is equally visible.",
+    "endingZh": "订阅页面上的数字再醒目，也应该让用户一眼看清它究竟按什么单位计算。",
+    "sources": [
+      {
+        "name": "Reuters, Anthropic must face lawsuit over Claude subscription marketing",
+        "nameZh": "路透社：Anthropic 订阅营销诉讼继续",
+        "url": "https://www.reuters.com/legal/government/anthropic-must-face-lawsuit-over-claude-subscription-marketing-2026-11-09/",
+        "official": false
+      },
+      {
+        "name": "US District Court, order linked by Reuters",
+        "nameZh": "美国联邦法院裁定书（路透社链接）",
+        "url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-3_26-cv-05763/pdf/USCOURTS-cand-3_26-cv-05763-1.pdf",
+        "official": true
+      }
+    ]
+  },
+  "stayCurious": {
+    "category": "Singapore / Wildlife / City",
+    "categoryZh": "新加坡 / 野生动物 / 城市",
+    "headline": "Why Is Singapore's Most Common Bird an Outsider?",
+    "headlineZh": "新加坡最常见的鸟，为什么其实是“外来户”？",
+    "intro": [
+      "The dark bird with a yellow beak that hops around Singapore's hawker centres may look like a lifelong local. But the Javan myna, now described by NParks as Singapore's most abundant bird, arrived from elsewhere.",
+      "Its story begins with the caged-bird trade, not with the city's parks. And it helps explain why a familiar animal can still be classified as invasive."
+    ],
+    "introZh": [
+      "在新加坡小贩中心和组屋楼下，经常能看到一种深灰色、黄嘴黄脚的小鸟，走几步、跳几下，还会盯着地上的食物看。它是爪哇八哥（Javan Myna）。",
+      "国家公园局称，它已经是新加坡数量最多的鸟。但这个城市里最常见的身影，原来并不是本地原生物种。"
+    ],
+    "sections": [
+      {
+        "heading": "How did it get here?",
+        "headingZh": "它们是怎么来到新加坡的？",
+        "paragraphs": [
+          "The Javan myna, Acridotheres javanicus, was originally associated with Java and Bali in Indonesia. Singapore's Animal and Veterinary Service says it was introduced through the caged-bird trade in the 1920s. It later established breeding populations outside captivity.",
+          "The bird's success is easy to understand in a dense city. It can eat insects and other small animals as well as discarded human food. It nests in cavities, and the urban environment offers many suitable nesting sites and opportunities to find food."
+        ],
+        "paragraphsZh": [
+          "爪哇八哥的学名是 Acridotheres javanicus，原生地包括印尼爪哇和巴厘岛。新加坡动物与兽医事务组（AVS）介绍，这种鸟在 1920 年代通过笼养鸟贸易被带到新加坡，后来在野外繁殖、定居。",
+          "城市生活对它很友好。它能吃昆虫、小动物，也会捡人类丢弃的食物；它会在洞穴中筑巢，城市环境提供了许多适合筑巢和觅食的地方。"
+        ]
+      },
+      {
+        "heading": "Is every myna the same?",
+        "headingZh": "看到的八哥都是同一种吗？",
+        "paragraphs": [
+          "No. The Javan myna has dark grey plumage, a yellow bill and legs, and a short crest. The common myna has a warmer brown body, black head and conspicuous bare yellow skin behind the eye. Both may show white wing patches in flight.",
+          "NParks says the introduced Javan myna is more numerous than the common myna. NParks lists the Javan myna among Singapore's invasive species and says competition with the introduced Javan myna has contributed to a decline in common myna numbers."
+        ],
+        "paragraphsZh": [
+          "不是。爪哇八哥全身偏深灰，嘴和脚是黄色，额头有一小撮冠羽。另一种 Common Myna 则是棕色身体、黑色头部，眼睛后面有一块明显的黄色裸露皮肤。两种鸟飞起来都可能露出白色翼斑。",
+          "国家公园局指出，爪哇八哥的数量已经超过 Common Myna，并将它列入本地入侵物种名单。国家公园局指出，普通八哥（Common Myna）的数量因与引入的爪哇八哥竞争而下降。"
+        ]
+      },
+      {
+        "heading": "Why do so many gather in trees?",
+        "headingZh": "为什么一棵树上会挤满八哥？",
+        "paragraphs": [
+          "Javan mynas roost communally, gathering in large groups in trees. That can make a roadside tree surprisingly noisy and leave droppings around nearby homes. The Animal and Veterinary Service says agencies combine population management with better food-waste control and measures that discourage birds from perching in some food centres.",
+          "Feeding them is not a kindness that helps the city. It can increase their dependence on human food and encourage unusually large populations. AVS advises people not to feed, chase or corner the birds; feeding wildlife in Singapore is prohibited under the Wildlife Act."
+        ],
+        "paragraphsZh": [
+          "爪哇八哥喜欢成群在树上栖息，有时会大量聚集。对住在附近的人来说，叫声和鸟粪都可能造成困扰。AVS 表示，相关部门会管理鸟群，同时改善厨余处理，并在部分小贩中心设置防止停栖的设施。",
+          "看到八哥靠近餐桌，不必喂它。人类食物会让它们更加依赖城市环境，也可能推动数量异常增长。AVS 建议不要投喂、追赶或围堵野生鸟类；新加坡《野生动物法》也禁止投喂野生动物。"
+        ]
+      }
+    ],
+    "ending": "The bird that seems most at home in a city can tell a surprising story about how that city changed.",
+    "endingZh": "一种鸟看起来越像城市的老住户，它的来历反而可能越值得追问。",
+    "sources": [
+      {
+        "name": "AVS, Javan Mynas in Singapore",
+        "nameZh": "新加坡动物与兽医事务组：爪哇八哥",
+        "url": "https://avs.nparks.gov.sg/wildlife/encountering-wildlife/house-crows-pigeons-javan-mynas/javan-mynas/",
+        "official": true
+      },
+      {
+        "name": "NParks BiodiversitySG, Javan Myna",
+        "nameZh": "国家公园局：爪哇八哥",
+        "url": "https://biodiversitysg.nparks.gov.sg/our-biodiversity/birds/crows-starlings-mynas/javan-myna/",
+        "official": true
+      },
+      {
+        "name": "NParks, Invasive species in Singapore",
+        "nameZh": "国家公园局：新加坡入侵物种",
+        "url": "https://www.nparks.gov.sg/nature/invasive-species-singapore",
+        "official": true
+      },
+      {
+        "name": "NParks BiodiversitySG, Common Myna",
+        "nameZh": "国家公园局：Common Myna",
+        "url": "https://biodiversitysg.nparks.gov.sg/our-biodiversity/birds/crows-starlings-mynas/common-myna/",
+        "official": true
+      }
+    ]
+  }
+}
