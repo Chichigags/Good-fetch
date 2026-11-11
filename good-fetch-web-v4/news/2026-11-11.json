@@ -1,0 +1,159 @@
+{
+  "format": "v2",
+  "date": "2026-11-11",
+  "publishedAt": "2026-11-11T08:12:00+08:00",
+  "whatChanged": {
+    "category": "AI / Shopping / Online communities",
+    "categoryZh": "人工智能 / 购物 / 网络社区",
+    "update": false,
+    "headline": "Reddit Is Turning Comments Into AI Product Reviews. Can You Trust the Summary?",
+    "headlineZh": "Reddit 把网友评论变成 AI 商品测评，能相信这份总结吗？",
+    "intro": [
+      "People often search Reddit before buying something because they want the messy details missing from a product page: what broke after six months, whether a coffee machine is noisy, or which headphones actually fit. Reddit now wants AI to do the reading for them.",
+      "On 10 November, after testing the feature since February, Reddit announced a wider rollout of Reddit Reviews, which gathers product discussions into dedicated pages with AI-generated summaries. The initial catalogue covers around 10,000 products. But a neat summary of human opinions is not the same thing as a verified product test."
+    ],
+    "introZh": [
+      "买东西之前，有人会特意去 Reddit 搜评论。官方页面讲参数，网友可能会告诉你咖啡机用半年后哪里容易坏，或者耳机戴久了会不会疼。",
+      "2026 年 11 月 10 日，Reddit 在此前数月测试的基础上，宣布扩大推出 Reddit Reviews，把分散在社区里的商品讨论交给 AI 整理，首批覆盖约一万款商品。它省去了翻帖子的时间，却也带来一个问题：AI 整理出的“大家都这么说”，到底有多可靠？"
+    ],
+    "sections": [
+      {
+        "heading": "What does the new review page actually show?",
+        "headingZh": "它是怎么把帖子变成测评的？",
+        "paragraphs": [
+          "A user can search for a product or tap a highlighted product name in a comment. Reddit says the resulting page brings together relevant discussions, an AI-written account of common themes, and indicators of positive, mixed or negative sentiment. Readers can filter comments, visit the original threads and compare products. It is a way to navigate existing community posts, not a new laboratory that tests each item.",
+          "The rollout is gradual across the US on the web, iOS and Android over the coming weeks. Reddit's official changelog says the English-language feature currently covers selected electronics, health and beauty, home and garden, and apparel products. It is not a worldwide launch. Reddit reportedly plans to expand beyond the US during 2027, and a product missing from the catalogue has not necessarily been judged poorly."
+        ],
+        "paragraphsZh": [
+          "用户搜索商品，或者点击评论中被标出的商品名称，就可能进入专门的评价页面。Reddit 会汇总相关讨论，用 AI 提炼大家反复提到的优缺点，并显示整体评价偏正面、负面还是褒贬不一。读者仍可以按主题筛选评论，点开原帖，或者比较同类商品。",
+          "这不是 Reddit 自己买来一万款产品逐一测试，而是把已有的网友经验重新组织起来。官方说明，这项英文功能将在未来几周逐步向美国的网页、iOS 和 Android 用户开放，最初涉及电子产品、美妆健康、家居园艺和服装。目前仅向美国用户推出，新加坡用户暂时还无法使用；据 TNW 报道，Reddit 计划在 2027 年逐步扩展到美国以外。"
+        ]
+      },
+      {
+        "heading": "Can an AI summary tell whether a review is genuine?",
+        "headingZh": "AI 总结能识别假好评吗？",
+        "paragraphs": [
+          "That is the hard part. AI can group recurring complaints and praise, but repetition does not establish truth. A highly visible thread may reflect an unusual failure; a cluster of glowing comments could be coordinated promotion. A sentiment indicator also cannot tell whether the person writing owned the product.",
+          "Reddit points to moderation, spam detection and measures against automated abuse. Those are safeguards, not proof that every underlying comment is authentic. TechCrunch notes that product-recommendation communities already face the risk of fabricated grassroots enthusiasm. Reddit says brands cannot pay to be featured in Reviews; The Next Web reports that Reddit says it does not take a commission on purchases made through the pages' buy links. Neither statement guarantees that every user comment is unbiased."
+        ],
+        "paragraphsZh": [
+          "这才是最难的一步。AI 擅长找出反复出现的说法，却不能因为一百条评论都夸某个产品，就证明它真的好用。某个故障帖可能是个例；一批相似的好评，也可能来自有组织的推广。",
+          "Reddit 表示会利用社区管理、垃圾信息识别和反自动化滥用措施来维护内容质量。但这些措施并不等于每条评论都经过购买验证。TechCrunch 也提醒，商家伪装普通用户制造口碑，本来就是这类社区面对的风险。Reddit 称商家不能付费让商品入选；媒体还引述其说法称，页面上的购买链接不会给 Reddit 带来交易佣金。这两点都不能自动证明评论完全客观。"
+        ]
+      },
+      {
+        "heading": "What is the useful way to read it?",
+        "headingZh": "买东西时应该怎么看？",
+        "paragraphs": [
+          "Treat the summary as a map, not a verdict. It can reveal questions worth checking, such as repairability, durability or sizing. Then open the source threads, check how recent the experiences are, and look for specific details rather than a simple positive score. The interesting shift is that Reddit is packaging human conversation into a shopping interface, while the value of that interface still depends on the humans behind it."
+        ],
+        "paragraphsZh": [
+          "可以先看 AI 总结，迅速找出值得追问的细节，比如耐用性、维修成本、尺码偏差；再点进原帖，看评论日期、使用时长和具体经历。一个漂亮的“好评占比”，不如几条能交代使用场景的真实描述。",
+          "Reddit 把网友闲聊变成了购物入口。但这个入口是否值得信任，最终还是取决于它所汇总的内容。"
+        ]
+      }
+    ],
+    "ending": "The faster AI makes reviews to read, the more important it becomes to keep the original conversations within reach.",
+    "endingZh": "AI 可以帮我们少翻几十页评论，但最好别替我们省掉判断评论真假的那一步。",
+    "sources": [
+      {
+        "name": "Reddit Help, Changelog November 10, 2026",
+        "nameZh": "Reddit 官方更新日志",
+        "url": "https://support.reddithelp.com/hc/en-us/articles/55472297340308-Changelog-November-10-2026",
+        "official": true
+      },
+      {
+        "name": "TechCrunch, Reddit is turning user conversations into AI-powered product reviews",
+        "nameZh": "TechCrunch：Reddit AI 商品评价",
+        "url": "https://techcrunch.com/2026/11/10/reddit-is-turning-user-conversations-into-ai-powered-product-reviews/",
+        "official": false
+      },
+      {
+        "name": "The Next Web, Reddit Reviews uses AI to summarise what users say about 10,000 products",
+        "nameZh": "TNW：Reddit Reviews 与佣金声明",
+        "url": "https://thenextweb.com/news/reddit-reviews-ai-product-summaries-no-cut-tnw",
+        "official": false
+      }
+    ]
+  },
+  "stayCurious": {
+    "category": "Singapore / Nature / Wildlife",
+    "categoryZh": "新加坡 / 自然 / 野生动物",
+    "headline": "Why Does a Crab on Singapore's Shores Have Blue Blood?",
+    "headlineZh": "新加坡海滩上的鲎，为什么流着蓝色的血？",
+    "intro": [
+      "On Singapore's sandy and muddy shores lives an animal that looks like a tiny armoured vehicle, with a domed shell and a long tail. The coastal horseshoe crab is not actually a true crab. Its lineage stretches back hundreds of millions of years, and its blood is blue.",
+      "That unusual colour comes from a different way of carrying oxygen. It has also made horseshoe crabs important to modern medicine."
+    ],
+    "introZh": [
+      "新加坡的泥滩和沙滩上，生活着一种外形像小型装甲车的动物：圆圆的硬壳，后面拖着一条长尾巴。它叫鲎（horseshoe crab），名字里虽然有“蟹”，却不是真正的螃蟹。",
+      "更特别的是，它的血是蓝色的。这个奇怪的颜色，竟然和现代药品安全检测有关。"
+    ],
+    "sections": [
+      {
+        "heading": "Why blue rather than red?",
+        "headingZh": "为什么血不是红色的？",
+        "paragraphs": [
+          "Human blood is red largely because haemoglobin carries oxygen using iron. Horseshoe crabs use a different oxygen-carrying protein, haemocyanin, which contains copper. When oxygenated, it gives their blood a blue appearance. Blue blood does not mean the animal lives without oxygen; it means its body transports oxygen with different chemistry.",
+          "NParks identifies the coastal horseshoe crab as Tachypleus gigas. Despite the common name, horseshoe crabs are chelicerates, a group more closely related to spiders and scorpions than to true crabs. NParks describes their evolutionary history as extending back about 450 million years, well before dinosaurs."
+        ],
+        "paragraphsZh": [
+          "人的血液呈红色，主要与含铁的血红蛋白有关。鲎用另一种蛋白质血蓝蛋白（haemocyanin）运输氧气，其中含有铜，结合氧气后呈蓝色。它并不是不需要氧气，只是采用了不同的运输方式。",
+          "新加坡国家公园局介绍，本地的海岸鲎学名为 Tachypleus gigas。鲎属于螯肢动物，与蜘蛛、蝎子的亲缘关系比与真正的螃蟹更近。鲎这一类动物的演化历史可追溯约四亿五千万年，比恐龙出现得还早。"
+        ]
+      },
+      {
+        "heading": "Why does medicine care about the blood?",
+        "headingZh": "蓝色血液为什么与药品有关？",
+        "paragraphs": [
+          "Horseshoe crab blood contains cells that react strongly to bacterial endotoxins. This property underlies tests used to detect potentially dangerous contamination in injectable medicines and medical products. The oxygen-carrying protein explains the colour; the endotoxin-sensitive cells explain the medical use. They are two different features of the same blood, and should not be confused.",
+          "The medical value of horseshoe crabs has also raised conservation questions. Synthetic or recombinant alternatives to animal-derived endotoxin testing are increasingly part of that discussion; whether a specific test can replace an established one depends on the relevant validation and regulatory requirements."
+        ],
+        "paragraphsZh": [
+          "鲎的血液里有对细菌内毒素非常敏感的细胞，因此相关成分被用于检测注射药物和医疗产品中可能存在的危险污染。这里要分清两件事：让血呈蓝色的是运输氧气的血蓝蛋白；帮助检测内毒素的是另一套血液反应机制。",
+          "医学用途也引发保护问题。现在已有重组技术制成的替代检测试剂，但能否在具体药品检测中替代传统方法，还要看验证和监管要求，不能简单理解为所有地方都已完全不用鲎血。"
+        ]
+      },
+      {
+        "heading": "Are they common in Singapore?",
+        "headingZh": "在新加坡还能看到它们吗？",
+        "paragraphs": [
+          "NParks says the coastal horseshoe crab lives on sandy and muddy shores and is nationally Endangered because its populations have declined with habitat loss. It may be seen in mating pairs, with a smaller male attached to a larger female. Its eggs are part of the shore food web, feeding birds, fish and other animals.",
+          "The animal is sometimes called a living fossil, but that does not mean today's horseshoe crabs are unchanged copies of their ancient ancestors. The more useful point is that a very old animal lineage still depends on the health of Singapore's present-day coastline."
+        ],
+        "paragraphsZh": [
+          "国家公园局资料显示，海岸鲎生活在沙质和泥质海岸，常见雌雄配对，较小的雄性附在较大的雌性身上。鲎卵也会成为滨鸟、鱼类及其他动物的食物。",
+          "由于栖息地流失，海岸鲎在新加坡被列为国家级濒危物种。人们常称它为“活化石”，但这不代表今天的鲎与几亿年前一模一样。真正值得注意的是：这么古老的一支生命，今天仍需要一片健康的海岸才能活下去。"
+        ]
+      }
+    ],
+    "ending": "An ancient creature can help test modern medicines and still be vulnerable to the loss of a small stretch of shore.",
+    "endingZh": "一种比恐龙还古老的动物，今天的命运却可能取决于一小片海岸能否保留下来。",
+    "sources": [
+      {
+        "name": "NParks BiodiversitySG, Coastal Horseshoe Crab",
+        "nameZh": "新加坡国家公园局：海岸鲎",
+        "url": "https://biodiversitysg.nparks.gov.sg/our-biodiversity/marine-invertebrates/marine-arthropods/coastal-horseshoe-crab/",
+        "official": true
+      },
+      {
+        "name": "NParks Flora & Fauna Web, Horseshoe Crab",
+        "nameZh": "国家公园局动植物资料库：鲎",
+        "url": "https://www.nparks.gov.sg/florafaunaweb/fauna/4/3/438",
+        "official": true
+      },
+      {
+        "name": "Marine Biological Laboratory, Atlantic Horseshoe Crab",
+        "nameZh": "海洋生物实验室：鲎血中的铜、变形细胞与内毒素检测",
+        "url": "https://www.mbl.edu/research/research-organisms/atlantic-horseshoe-crab",
+        "official": true
+      },
+      {
+        "name": "US FDA, FDA Clarifies Current Thinking on Pyrogen and Endotoxins Testing",
+        "nameZh": "美国 FDA：重组内毒素检测试剂及适用性验证",
+        "url": "https://www.fda.gov/science-research/advancing-alternative-methods-fda/fda-clarifies-current-thinking-pyrogen-and-endotoxins-testing",
+        "official": true
+      }
+    ]
+  }
+}
