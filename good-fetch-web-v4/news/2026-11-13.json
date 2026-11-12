@@ -25,74 +25,38 @@
     "alt": "Riva, a cream puppy, reads an open newspaper. Beside the drawing: “A wealth of information creates a poverty of attention.” — Herbert A. Simon, 1971. Illustration by ChatGPT."
   },
   "whatChanged": {
-    "headline": "What Happened to Those AI News Briefings?",
+    "headline": "AI News Briefings Are Changing. Are Readers Losing Interest?",
     "intro": [
       "Hi Human!",
-      "I've been working on Good Fetch's AI news briefings for a while. Lately, I found myself skipping them. That got me wondering: is it just me, or are people losing interest in getting their news through AI?"
+      "I've been working on Good Fetch's AI news briefings for a while. Lately, I found myself skipping them. When I noticed other briefing products disappearing or changing, I wondered whether other readers were feeling the same."
     ],
-    "italicOpening": "I've been working on Good Fetch's AI news briefings for a while. Lately, I found myself skipping them. That got me wondering: is it just me, or are people losing interest in getting their news through AI?",
-    "emphasis": [
-      "42% of respondents sometimes or often avoid the news",
-      "38%",
-      "22%",
-      "12%",
-      "19%"
-    ],
-    "citations": true,
+    "italicOpening": "I've been working on Good Fetch's AI news briefings for a while. Lately, I found myself skipping them. When I noticed other briefing products disappearing or changing, I wondered whether other readers were feeling the same.",
+    "emphasis": ["38%", "22%", "12%", "19%"],
+    "citations": false,
     "sections": [
       {
+        "heading": "What changed?",
         "paragraphs": [
-          "Huxe, an app offering personalised audio briefings, ended its service on May 28, 2026. On June 17, OpenAI announced it was sunsetting ChatGPT Pulse as proactive updates moved into scheduled tasks. Daily briefings could continue through that successor. Two changes, but not the same kind of ending. [2] [3]"
+          "[Huxe](https://www.huxe.com/), an app offering personalised audio briefings, ended its service on May 28, 2026. In June, [OpenAI](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) announced it was sunsetting ChatGPT Pulse, moving proactive updates into scheduled tasks. Users could still request a daily briefing through the successor feature.",
+          "Those are different endings: one service closed; another changed how its updates were delivered. Neither announcement establishes that readers lost interest.",
+          "Elsewhere, products were expanding. Earlier that year, on February 18, [Particle](https://particle.news/blog/particle-news-launches-android-app-bringing-fact-forward-personalized-news-to-more-users-worldwide) launched on Android, bringing its AI-assisted news summaries and tools for comparing coverage to more devices. That predates both changes, but it helps explain why two product decisions cannot stand for the whole category."
         ]
       },
       {
+        "heading": "Are readers losing interest?",
         "paragraphs": [
-          "There were launches, too. Earlier in the year, on February 18, 2026, Particle, an AI-powered news app founded by former Twitter engineers, expanded to Android, with tools to compare reports from different sources. [4]"
+          "The Reuters Institute's 2026 [Digital News Report](https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary) found that 42% of respondents sometimes or often avoid the news. That figure was unchanged from the previous year, so it does not establish a fresh wave of disengagement.",
+          "Among people using AI chatbots for news, 38% belonged to the report's highly engaged “news lover” segment, compared with 22% overall. That complicates my initial suspicion: the people already getting news through AI are relatively engaged readers. It does not tell us whether AI increased their interest, or whether they were enthusiastic readers before trying it.",
+          "Getting news through AI is also different from accepting news made by AI. A separate [Reuters Institute study](https://reutersinstitute.politics.ox.ac.uk/generative-ai-and-news-report-2026-standalone-tools-information-infrastructure) found that, averaged across nine countries, 12% were comfortable with entirely AI-made news, rising to 19% with some human oversight. Those figures measure comfort with production methods, not demand for briefing apps."
         ]
       },
       {
+        "heading": "What would make me keep reading?",
         "paragraphs": [
-          "The audience picture is more complicated than those product changes suggest. The Reuters Institute's 2026 Digital News Report found that 42% of respondents sometimes or often avoid the news, unchanged from the previous year. [5]",
-          "Yet among people using AI chatbots for news, 38% fell into its highly engaged “news lover” segment, compared with 22% overall. These users were more engaged with news than the average respondent. [5]"
+          "The evidence hasn't established that readers are abandoning AI briefings. It has made me less willing to treat a product's closure as a verdict on its audience.",
+          "For Good Fetch, my question is more personal: did this edition help me understand something, make a decision, or find a story worth sharing over dinner?",
+          "That is my editorial test, rather than a finding from these surveys. I still want help finding worthwhile stories. I just don't always need another summary."
         ]
-      },
-      {
-        "paragraphs": [
-          "Comfort with AI-made news is another question. In a separate 2026 Reuters Institute study, averaged across nine countries, only 12% said they were very or somewhat comfortable with news made entirely by AI. That rose to 19% for news made mostly by AI with some human oversight. This measures attitudes toward how news is produced, rather than demand for briefing apps. [6]"
-        ]
-      }
-    ],
-    "ending": "These surveys don't explain the product decisions. But they leave me thinking about why I read: to understand something, make a decision, or find a story worth sharing over dinner. That's what I want Good Fetch to help with. A shorter summary is only useful if I want to read it.",
-    "sources": [
-      {
-        "name": "Herbert A. Simon, 1971 — Designing Organizations for an Information-Rich World, p. 40",
-        "url": "https://gwern.net/doc/design/1971-simon.pdf",
-        "official": true
-      },
-      {
-        "name": "Huxe — May 21, 2026 wind-down notice",
-        "url": "https://www.huxe.com/",
-        "official": true
-      },
-      {
-        "name": "OpenAI — June 17, 2026 release notes, Update on Pulse",
-        "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-        "official": true
-      },
-      {
-        "name": "Particle — February 18, 2026 Android launch",
-        "url": "https://particle.news/blog/particle-news-launches-android-app-bringing-fact-forward-personalized-news-to-more-users-worldwide",
-        "official": true
-      },
-      {
-        "name": "Reuters Institute — Digital News Report 2026 executive summary",
-        "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary",
-        "official": true
-      },
-      {
-        "name": "Reuters Institute — Generative AI and News Report 2026, section 4",
-        "url": "https://reutersinstitute.politics.ox.ac.uk/generative-ai-and-news-report-2026-standalone-tools-information-infrastructure",
-        "official": true
       }
     ]
   }
