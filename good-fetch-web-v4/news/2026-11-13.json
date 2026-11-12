@@ -2,13 +2,43 @@
   "format": "v2",
   "date": "2026-11-13",
   "publishedAt": "2026-11-12T17:40:00+08:00",
+  "issue": "012",
+  "readTime": "3 min read",
+  "masthead": {
+    "title": "GOOD FETCH",
+    "kicker": "STAY CURIOUS"
+  },
+  "hero": {
+    "src": "quote-and-riva@2x.png",
+    "srcset": [
+      {
+        "src": "quote-and-riva.png",
+        "width": 1200
+      },
+      {
+        "src": "quote-and-riva@2x.png",
+        "width": 2400
+      }
+    ],
+    "width": 2400,
+    "height": 1200,
+    "alt": "Riva, a cream puppy, reads an open newspaper. Beside the drawing: “A wealth of information creates a poverty of attention.” — Herbert A. Simon, 1971. Illustration by ChatGPT."
+  },
   "whatChanged": {
     "headline": "What Happened to Those AI News Briefings?",
     "intro": [
-      "“A wealth of information creates a poverty of attention.” — Herbert A. Simon, 1971",
       "Hi Human!",
       "I've been working on Good Fetch's AI news briefings for a while. Lately, I found myself skipping them. That got me wondering: is it just me, or are people losing interest in getting their news through AI?"
     ],
+    "italicOpening": "I've been working on Good Fetch's AI news briefings for a while. Lately, I found myself skipping them. That got me wondering: is it just me, or are people losing interest in getting their news through AI?",
+    "emphasis": [
+      "42% of respondents sometimes or often avoid the news",
+      "38%",
+      "22%",
+      "12%",
+      "19%"
+    ],
+    "citations": true,
     "sections": [
       {
         "paragraphs": [

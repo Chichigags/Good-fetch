@@ -105,6 +105,28 @@ footer{display:block;padding:24px 0 28px;border-top:1px solid var(--line);font-s
 .journal-lead.no-figure{grid-template-columns:minmax(0,1fr);grid-template-areas:"title" "intro"}
 .masthead .sample-flag{margin:8px 0 0;font-size:13px;line-height:1.4;color:var(--muted)}
 @media(max-width:700px){.journal-lead{grid-template-columns:minmax(0,1fr);grid-template-areas:"title" "image" "intro";row-gap:14px} .journal-lead.no-figure{grid-template-areas:"title" "intro"} .journal-figure{justify-self:center;width:min(100%,320px)} .journal-lead h3{font-size:24px;line-height:1.3} .journal-name{font-size:18px} .journal .subhead{font-size:18px}}
+.mag-masthead{margin-top:8px}
+.mag-mast{display:flex;justify-content:space-between;align-items:baseline;gap:12px 24px}
+.mag-brand,.mag-kicker,.mag-issue{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}
+.mag-brand{font-size:15px;font-weight:700;letter-spacing:.28em;line-height:1.2;text-transform:uppercase}
+.mag-kicker{margin-left:auto;font-size:12px;font-weight:600;letter-spacing:.16em;line-height:1.2;text-transform:uppercase;text-align:right}
+.mag-issue{margin-top:8px;font-size:12px;font-weight:600;letter-spacing:.06em;line-height:1.45;text-transform:uppercase}
+.journal.magazine{margin-top:22px;font-family:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,"Liberation Serif",serif}
+.magazine .mag-title{margin:0;font-family:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,"Liberation Serif",serif;font-size:44px;font-weight:700;line-height:1.08;letter-spacing:-.03em;color:var(--ink)}
+.mag-hero{margin:22px 0 26px}
+.mag-hero img{display:block;width:100%;height:auto;background:#f4efe4}
+.magazine .summary{font-size:18px;line-height:1.62;color:var(--prose)}
+.magazine .mag-lede{font-style:italic;font-weight:400;color:var(--body)}
+.mag-em{color:#17606A;font-weight:700;font-style:normal}
+.magazine a.cite{color:#17606A;font-weight:600;font-size:.92em;text-decoration:none;white-space:nowrap}
+.magazine a.cite:hover,.magazine a.cite:focus-visible{text-decoration:underline;text-underline-offset:2px}
+.magazine a.cite:focus-visible{outline:2px solid #17606A;outline-offset:2px}
+.cite-index{flex:0 0 auto;color:#17606A;font-weight:700;font-size:13px}
+.magazine .sources-details,.magazine .sources,.magazine .more-details{font-family:Inter,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}
+@media(max-width:700px){.magazine .mag-title{font-size:32px;line-height:1.12} .mag-brand{font-size:13px;letter-spacing:.18em} .mag-kicker{font-size:11px;letter-spacing:.12em} .magazine .summary{font-size:17px} .mag-mast{flex-wrap:wrap}}
+html[data-theme="dark"] .mag-em,html[data-theme="dark"] .magazine a.cite,html[data-theme="dark"] .cite-index{color:#9ad4dc}
+html[data-theme="dark"] .magazine a.cite:focus-visible{outline-color:#9ad4dc}
+@media(prefers-color-scheme:dark){html:not([data-theme="light"]) .mag-em,html:not([data-theme="light"]) .magazine a.cite,html:not([data-theme="light"]) .cite-index{color:#9ad4dc} html:not([data-theme="light"]) .magazine a.cite:focus-visible{outline-color:#9ad4dc}}
 .story h3{line-height:1.2}
 .story.no-thumb{grid-template-columns:48px minmax(0,1fr)}
 .intro-card .rec-label{margin:0 0 10px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;line-height:1.3;color:var(--muted)}
@@ -543,8 +565,16 @@ function compactDateLine(edition) {
   return date + ' \u00B7 ' + clock + ' SGT';
 }
 
-function renderSources(parent, sources) {
-  const links = sourceList(sources);
+function renderSources(parent, sources, numbered) {
+  const raw = Array.isArray(sources) ? sources : [];
+  const links = [];
+  raw.forEach((item, index) => {
+    const parsed = sourceList([item]);
+    if (!parsed.length) return;
+    const link = parsed[0];
+    link.n = index + 1;
+    links.push(link);
+  });
   if (!links.length) return;
   const details = document.createElement('details');
   details.className = 'more-details sources-details';
@@ -565,6 +595,13 @@ function renderSources(parent, sources) {
     a.href = link.url;
     a.target = '_blank';
     a.rel = 'noopener noreferrer';
+    if (numbered) {
+      a.id = 'source-' + link.n;
+      const mark = document.createElement('span');
+      mark.className = 'cite-index';
+      mark.textContent = '[' + link.n + ']';
+      a.append(mark);
+    }
     const name = document.createElement('span');
     name.className = 'source-name';
     name.textContent = (link.name || ui[lang].sourceFallback) + ' \u2192';
@@ -1058,12 +1095,265 @@ function renderEditionEnd(parent, edition) {
   renderRail(edition);
 }
 
+function assetUrl(src) {
+  const text = clean(src);
+  if (!text || text.includes('..') || /[\0\\]/.test(text)) return '';
+  if (/^[a-z][a-z0-9+.-]*:/i.test(text)) return safeUrl(text);
+  if (text.startsWith('/') || text.startsWith('//')) return '';
+  if (!/^[A-Za-z0-9._@/-]+$/.test(text)) return '';
+  return safeUrl(text);
+}
+
+function magazineHero(edition) {
+  const hero = edition && edition.hero;
+  if (!hero || typeof hero !== 'object' || Array.isArray(hero)) return null;
+  const src = assetUrl(hero.src);
+  if (!src) return null;
+  const sources = [];
+  if (Array.isArray(hero.srcset)) {
+    hero.srcset.forEach(item => {
+      if (!item || typeof item !== 'object') return;
+      const url = assetUrl(item.src);
+      const width = Number(item.width);
+      if (!url || !Number.isFinite(width) || width <= 0) return;
+      sources.push(url + ' ' + Math.round(width) + 'w');
+    });
+  }
+  const width = Number(hero.width);
+  const height = Number(hero.height);
+  return {
+    src: src,
+    alt: localizedString(hero, 'alt'),
+    srcset: sources.join(', '),
+    width: Number.isFinite(width) && width > 0 ? Math.round(width) : 0,
+    height: Number.isFinite(height) && height > 0 ? Math.round(height) : 0
+  };
+}
+
+function usesMagazine(edition) {
+  if (!edition || typeof edition !== 'object') return false;
+  if (clean(edition.issue) || clean(edition.readTime)) return true;
+  if (edition.masthead && typeof edition.masthead === 'object') return true;
+  return !!magazineHero(edition);
+}
+
+function magazineIssueLine(edition) {
+  const parts = [];
+  const issue = clean(edition.issue);
+  if (issue) parts.push('Issue ' + issue);
+  const date = formatDate(edition.date);
+  if (date) parts.push(date);
+  const read = clean(edition.readTime);
+  if (read) parts.push(read);
+  if (!parts.length) return '';
+  return parts.join('  \u00B7  ').toUpperCase();
+}
+
+function magazineMasthead(edition) {
+  const wrap = document.createElement('div');
+  wrap.className = 'mag-masthead';
+  wrap.dataset.anchor = 'mast';
+  const mast = edition.masthead && typeof edition.masthead === 'object' ? edition.masthead : {};
+  const row = document.createElement('div');
+  row.className = 'mag-mast';
+  const brand = document.createElement('p');
+  brand.className = 'mag-brand';
+  brand.textContent = clean(mast.title) || 'GOOD FETCH';
+  row.append(brand);
+  const kicker = clean(mast.kicker);
+  if (kicker) {
+    const right = document.createElement('p');
+    right.className = 'mag-kicker';
+    right.textContent = kicker;
+    row.append(right);
+  }
+  wrap.append(row);
+  const issue = magazineIssueLine(edition);
+  if (issue) {
+    const line = document.createElement('p');
+    line.className = 'mag-issue';
+    line.textContent = issue;
+    wrap.append(line);
+  }
+  return wrap;
+}
+
+function italicOpenings(item) {
+  const value = item && item.italicOpening;
+  const list = typeof value === 'string' ? [value] : (Array.isArray(value) ? value : []);
+  const openings = new Set();
+  list.forEach(line => {
+    const text = clean(line);
+    if (text) openings.add(text);
+  });
+  return openings;
+}
+
+function emphasisPhrases(item) {
+  if (!item || !Array.isArray(item.emphasis)) return [];
+  return item.emphasis
+    .filter(phrase => typeof phrase === 'string' && phrase.trim())
+    .map(phrase => phrase.trim())
+    .sort((a, b) => b.length - a.length);
+}
+
+function citationTarget(sources, n) {
+  if (!Array.isArray(sources) || n < 1 || n > sources.length) return null;
+  const item = sources[n - 1];
+  if (!item || typeof item !== 'object') return null;
+  const url = safeUrl(item.url);
+  if (!url) return null;
+  return { url: url, name: localizedString(item, 'name') || ('Source ' + n) };
+}
+
+function renderRichText(el, text, item) {
+  const ranges = [];
+  function overlaps(start, end) {
+    return ranges.some(range => start < range.end && end > range.start);
+  }
+  if (item && item.citations === true) {
+    const sources = Array.isArray(item.sources) ? item.sources : [];
+    const pattern = /\[(\d+)\]/g;
+    let match;
+    while ((match = pattern.exec(text))) {
+      const n = Number(match[1]);
+      const target = citationTarget(sources, n);
+      if (!target) continue;
+      const start = match.index;
+      const end = start + match[0].length;
+      if (overlaps(start, end)) continue;
+      ranges.push({ start: start, end: end, type: 'cite', n: n, target: target });
+    }
+  }
+  emphasisPhrases(item).forEach(phrase => {
+    let from = 0;
+    while (from <= text.length - phrase.length) {
+      const start = text.indexOf(phrase, from);
+      if (start < 0) break;
+      const end = start + phrase.length;
+      if (!overlaps(start, end)) ranges.push({ start: start, end: end, type: 'em' });
+      from = end;
+    }
+  });
+  ranges.sort((a, b) => a.start - b.start);
+  let cursor = 0;
+  ranges.forEach(range => {
+    if (range.start > cursor) el.append(document.createTextNode(text.slice(cursor, range.start)));
+    if (range.type === 'em') {
+      const strong = document.createElement('strong');
+      strong.className = 'mag-em';
+      strong.textContent = text.slice(range.start, range.end);
+      el.append(strong);
+    } else {
+      const link = document.createElement('a');
+      link.className = 'cite';
+      link.href = range.target.url;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.textContent = '[' + range.n + ']';
+      link.title = range.target.name;
+      link.setAttribute('aria-label', 'Source ' + range.n + ', ' + range.target.name);
+      bindExternal(link, 'link');
+      el.append(link);
+    }
+    cursor = range.end;
+  });
+  if (cursor < text.length) el.append(document.createTextNode(text.slice(cursor)));
+}
+
+function storyParagraph(text, item) {
+  const el = document.createElement('p');
+  el.className = italicOpenings(item).has(text) ? 'summary mag-lede' : 'summary';
+  renderRichText(el, text, item);
+  return el;
+}
+
+function heroFigure(hero) {
+  const figure = document.createElement('figure');
+  figure.className = 'mag-hero';
+  const img = document.createElement('img');
+  img.src = hero.src;
+  img.alt = hero.alt;
+  if (hero.srcset) {
+    img.srcset = hero.srcset;
+    img.sizes = '(max-width: 900px) calc(100vw - 40px), min(960px, calc(100vw - 400px))';
+  }
+  if (hero.width) img.width = hero.width;
+  if (hero.height) img.height = hero.height;
+  img.decoding = 'async';
+  figure.append(img);
+  return figure;
+}
+
+function renderMagazineArticle(parent, item, anchor, hero) {
+  if (!item || typeof item !== 'object') return false;
+  const headline = localizedString(item, 'headline');
+  const intro = firstParagraphs(item, ['intro', 'body', 'opening']);
+  const ending = localizedString(item, 'ending');
+  const sections = Array.isArray(item.sections) ? item.sections : [];
+  const sectionBlocks = sections.filter(section => {
+    if (!section || typeof section !== 'object') return false;
+    return localizedString(section, 'heading') || localizedParagraphs(section, 'paragraphs').length;
+  });
+  const links = sourceList(item.sources);
+  if (!headline && !intro.length && !sectionBlocks.length && !ending && !links.length && !hero) return false;
+
+  const article = document.createElement('article');
+  article.className = 'journal magazine';
+  article.id = anchor;
+  article.dataset.anchor = anchor;
+  if (headline) {
+    const h3 = document.createElement('h3');
+    h3.className = 'mag-title';
+    h3.textContent = headline;
+    article.append(h3);
+  }
+  if (hero) article.append(heroFigure(hero));
+  intro.forEach(text => article.append(storyParagraph(text, item)));
+  sectionBlocks.forEach(section => {
+    const heading = localizedString(section, 'heading');
+    if (heading) {
+      const h4 = document.createElement('h4');
+      h4.className = 'subhead';
+      h4.textContent = heading;
+      article.append(h4);
+    }
+    localizedParagraphs(section, 'paragraphs').forEach(text => article.append(storyParagraph(text, item)));
+  });
+  if (ending) article.append(storyParagraph(ending, item));
+  renderSources(article, item.sources, item.citations === true);
+  parent.append(article);
+  return true;
+}
+
+function renderMagazineEdition(parent, edition) {
+  const articles = journalArticles(edition);
+  const hero = magazineHero(edition);
+  let shown = 0;
+  articles.forEach((article, index) => {
+    if (renderMagazineArticle(parent, article.item, article.anchor, index === 0 ? hero : null)) shown += 1;
+  });
+  if (!shown) {
+    const note = document.createElement('p');
+    note.className = 'load-note';
+    note.textContent = ui[lang].empty;
+    parent.append(note);
+  }
+}
+
 function renderEdition(edition) {
   currentEdition = edition;
   messageKey = '';
   document.title = editionHeader(edition.date);
   const root = document.getElementById('stories');
   root.replaceChildren();
+
+  if (usesMagazine(edition)) {
+    root.append(magazineMasthead(edition));
+    renderMagazineEdition(root, edition);
+    renderEditionEnd(root, edition);
+    return;
+  }
 
   const mast = document.createElement('div');
   mast.className = 'masthead';
