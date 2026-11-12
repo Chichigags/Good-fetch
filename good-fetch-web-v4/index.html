@@ -117,8 +117,13 @@ body.archive-bottom .main{border-right:0;padding-right:0}
 body.archive-bottom .side{padding:0}
 body.archive-bottom .hero{justify-content:flex-start}
 body.archive-bottom .archive h3{font-size:18px}
+.newsletter{width:100%;max-width:700px;margin:32px 0 0;min-width:0}
+.newsletter .formkit-form[data-uid="24b8c40749"]{max-width:100%;min-width:0 !important;border-color:#e6dfd2;border-radius:16px !important}
+.newsletter .formkit-form[data-uid="24b8c40749"] .formkit-field,.newsletter .formkit-form[data-uid="24b8c40749"] .formkit-input{min-width:0;max-width:100%}
+.newsletter + .subscribe-card{margin-top:16px}
 .subscribe-card{display:flex;align-items:center;min-height:44px;margin:28px 0 4px;padding:12px 16px;border:1px solid var(--line);border-radius:14px;background:var(--soft);color:var(--ink);font-size:15px;line-height:1.45;font-weight:600}
 html.tg-app .subscribe-card{display:none}
+@media(max-width:620px){.newsletter .formkit-form[data-uid="24b8c40749"] [data-style="minimal"]{padding:20px 16px}.newsletter .formkit-form[data-uid="24b8c40749"] .formkit-fields{margin-left:0 !important;margin-right:0 !important}.newsletter .formkit-form[data-uid="24b8c40749"] .formkit-field,.newsletter .formkit-form[data-uid="24b8c40749"] .formkit-submit{flex:1 0 100% !important;width:auto;max-width:100%;margin-left:0 !important;margin-right:0 !important}}
 .share{margin:20px 0 8px}
 .share-label{margin:0 0 8px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .share-row{display:flex;flex-wrap:wrap;gap:8px}
@@ -238,6 +243,8 @@ const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
 const MONTHS_LONG = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const SHARE_ORIGIN = 'https://good-fetch-riva.vercel.app/';
 const BOT_LINK = 'https://t.me/GoodFetch_bot?start=site';
+const NEWSLETTER_UID = '24b8c40749';
+const NEWSLETTER_SRC = 'https://good-fetch.kit.com/24b8c40749/index.js';
 const lang = 'en';
 let editions = [];
 let archiveFailed = false;
@@ -900,6 +907,17 @@ function renderClosing(parent, edition) {
   parent.append(line);
 }
 
+function renderNewsletter(parent) {
+  const wrap = document.createElement('div');
+  wrap.className = 'newsletter';
+  const script = document.createElement('script');
+  script.async = true;
+  script.setAttribute('data-uid', NEWSLETTER_UID);
+  script.src = NEWSLETTER_SRC;
+  wrap.append(script);
+  parent.append(wrap);
+}
+
 function renderSubscribe(parent) {
   const link = document.createElement('a');
   link.className = 'subscribe-card';
@@ -985,6 +1003,7 @@ function renderShare(parent, edition) {
 
 function renderEditionEnd(parent, edition) {
   renderClosing(parent, edition);
+  renderNewsletter(parent);
   renderSubscribe(parent);
   renderShare(parent, edition);
 }
