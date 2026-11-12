@@ -1,0 +1,69 @@
+{
+  "format": "v2",
+  "date": "2026-11-13",
+  "publishedAt": "2026-11-12T17:40:00+08:00",
+  "whatChanged": {
+    "headline": "What Happened to Those AI News Briefings?",
+    "intro": [
+      "“A wealth of information creates a poverty of attention.” — Herbert A. Simon, 1971",
+      "Hi Human!",
+      "I've been working on Good Fetch's AI news briefings for a while. Lately, I found myself skipping them. That got me wondering: is it just me, or are people losing interest in getting their news through AI?"
+    ],
+    "sections": [
+      {
+        "paragraphs": [
+          "Huxe, an app offering personalised audio briefings, ended its service on May 28, 2026. On June 17, OpenAI announced it was sunsetting ChatGPT Pulse as proactive updates moved into scheduled tasks. Daily briefings could continue through that successor. Two changes, but not the same kind of ending. [2] [3]"
+        ]
+      },
+      {
+        "paragraphs": [
+          "There were launches, too. Earlier in the year, on February 18, 2026, Particle, an AI-powered news app founded by former Twitter engineers, expanded to Android, with tools to compare reports from different sources. [4]"
+        ]
+      },
+      {
+        "paragraphs": [
+          "The audience picture is more complicated than those product changes suggest. The Reuters Institute's 2026 Digital News Report found that 42% of respondents sometimes or often avoid the news, unchanged from the previous year. [5]",
+          "Yet among people using AI chatbots for news, 38% fell into its highly engaged “news lover” segment, compared with 22% overall. These users were more engaged with news than the average respondent. [5]"
+        ]
+      },
+      {
+        "paragraphs": [
+          "Comfort with AI-made news is another question. In a separate 2026 Reuters Institute study, averaged across nine countries, only 12% said they were very or somewhat comfortable with news made entirely by AI. That rose to 19% for news made mostly by AI with some human oversight. This measures attitudes toward how news is produced, rather than demand for briefing apps. [6]"
+        ]
+      }
+    ],
+    "ending": "These surveys don't explain the product decisions. But they leave me thinking about why I read: to understand something, make a decision, or find a story worth sharing over dinner. That's what I want Good Fetch to help with. A shorter summary is only useful if I want to read it.",
+    "sources": [
+      {
+        "name": "Herbert A. Simon, 1971 — Designing Organizations for an Information-Rich World, p. 40",
+        "url": "https://gwern.net/doc/design/1971-simon.pdf",
+        "official": true
+      },
+      {
+        "name": "Huxe — May 21, 2026 wind-down notice",
+        "url": "https://www.huxe.com/",
+        "official": true
+      },
+      {
+        "name": "OpenAI — June 17, 2026 release notes, Update on Pulse",
+        "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "official": true
+      },
+      {
+        "name": "Particle — February 18, 2026 Android launch",
+        "url": "https://particle.news/blog/particle-news-launches-android-app-bringing-fact-forward-personalized-news-to-more-users-worldwide",
+        "official": true
+      },
+      {
+        "name": "Reuters Institute — Digital News Report 2026 executive summary",
+        "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary",
+        "official": true
+      },
+      {
+        "name": "Reuters Institute — Generative AI and News Report 2026, section 4",
+        "url": "https://reutersinstitute.politics.ox.ac.uk/generative-ai-and-news-report-2026-standalone-tools-information-infrastructure",
+        "official": true
+      }
+    ]
+  }
+}
